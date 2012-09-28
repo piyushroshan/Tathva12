@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_mech_incarnate" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_mech_incarnate"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_incarnate_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:orientation="vertical" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_incarnate_title" android:text ="Incarnate" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="'Engineering problems are under-defined; there are many solutions, good, bad and indifferent. The art is to arrive at a good solution. This is a creative activity, involving imagination, intuition and deliberate choice.'\n- Ove Arup\n\nAs the name suggests, four of you will set out for a challenge like never before. Test your aptitude and diligence as an engineer and test your co-ordination skills.\nIncarnate.\nBuild a machine out of ash. Let spontaneity and common sense prevail." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_incarnate_stmt" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_mech_incarnate_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_incarnate_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="To design and fabricate a working model of a simple mechanism, specified on the spot, from the different materials provided.\nThe materials include the necessary parts, tools and accessories essential to create the mechanism." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+              <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_incarnate_spec" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_mech_incarnate_spec" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_incarnate_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_mech_amphi_contact" android:text="1. A team can consist of a maximum of four members.\n2. Cross college teams are allowed.\n3. The participants should produce a valid identity card of their institute.\n4. The event will consist of two rounds. A preliminary written test and the finale.\n5. The preliminary round will be of duration 60 minutes.\n6. This round is intended to test the logical and analytical aptitude of the contestants.\n7. In the second round, the contestants must design and fabricate a working model, specified on the spot.\n8. All the tools and materials required will be provided by the organisers.\n9. Use of any materials other than that provided by the organisers, will lead to immediate disqualification.\n10. Please contact the event manager before making any assumptions in order to avoid any cribs on the day of the event."
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+                     
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_incarnate_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_mech_incarnate_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_incarnate_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_mech_amphi_contact" android:text="Anees Ashraf\nEvent Manager\nPhone: +91 963 324 8427\nE-mail: anees@tathva.org\n\nMuhammad Abi Afthab\nEvent Manager\nPhone: +91 980 900 5121\nE-mail: abiafthab@tathva.org"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

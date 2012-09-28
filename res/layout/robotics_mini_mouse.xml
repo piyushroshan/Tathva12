@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayouttrans" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_robo_mini_mouse"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_mini_mouse_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linear_robo_mini_mouse_intro_inner" android:layout_width="match_parent" android:layout_height="match_parent">
+                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_mini_title" android:text ="Mini Mouse" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textMouseIntro" android:text="Make two robots to find a hidden treasure. The trailblazer bot should find the path to the treasure and stay there to guard the treasure till the treasure recovery machine arrives. It should communicate with the treasure recovery robot about the path to be taken to reach there. The treasure recovery robot should reach the treasure, collect it and get it back to the starting point." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_mini_mouse_stmt" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_robo_mouse_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linear_robo_mini_mouse_spec_inner" android:layout_width="match_parent" android:layout_height="match_parent">
+               
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textMouseIntro" android:text="Build two bots. BOT1 should traverse the arena and solve the maze, avoiding obstacles, to reach the treasure location shown in the map. The path data should be sent to BOT2 from there and then stay at the guard position near the treasure. BOT2 should follow the path according to the data received, without sensing obstacles and reach the treasure, collect the iron filings present at the treasure-node and take it back to the starting point."
+ android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+ </LinearLayout>
+ </ScrollView>
+            </LinearLayout>
+     
+         	 <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_mini_mouse_specs" android:layout_height="match_parent" android:orientation="vertical">
+              <ScrollView android:id="@+id/scrollView_robo_mouse_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linear_robo_mini_mouse_spec_inner" android:layout_width="match_parent" android:layout_height="match_parent">
+               
+                		<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="1. Minimum no. of participants per team is 2 and maximum no. of participants per team is 4.\n2. Arena consists of a 7 * 7 grid, (white in colour) with a black coloured background of dimension 228cm * 228cm. The path pattern will consist of only straight lines and all the turns are at right angles. The total length of the grid is 208cm, which means distance between the centres of two adjacent lines is 32cm. Each line in the grid will have a width 3 cm.\n3. There will be obstacles at the intersections of the grid.Obstacle will be a red cube of 16 cm. The ENTRY/EXIT and TREASURE locations are fixed as shown in the sample arena. The GUARD'S location will be one cell next to TREASURE into the maze as shown in the sample arena.\n4. The robots shall be subject to following size constraints: length - 20cm, width - 16cm, and height - 20cm. At no point of the competition shall the size of the robot exceed the above constraints. The bots will be passed through a rectangular box having dimensions 20cm*16cm*20cm at the start of the competition to verify the size constraints.\n5. The treasure retrieval robot should not have any sensors to sense the obstacles.\n6. The bots should not drop anything on the arena and any bot disturbing the arena shall be banned from the competition. The bots should not cause any sort of damage to the maze and such bots will be disqualified from the competition.\n7. The bots should not get any outside assistance, i.e. it should be self contained completely.\n8. The bots should be powered by cells/electrical storage batteries. No other power sources will be allowed. The batteries should be sealed and all possible precautions should be taken.\n9. Both the bots should show some indication, like an LED or a buzzer to signal that the machine has reached the respective end points (TREASURE and ENTRY/EXIT). The type of indicator should be informed to the organizers prior to the event.\n10. The decision of the judges shall be final and binding to all.\n11. Contestants will place the BOT1 (Trail Blazer) on the arena on the lower left most end facing north and BOT2 (Treasure Retriever) facing east.\n12. The End Point will be the centre of the maze as shown in the sample arena.\n13. The BOT2 (Treasure Retriever) should move only once BOT1 (Trail Blazer) reaches the GUARD position and halts permanently. BOT1 found moving after the motion of BOT2 will lead to disqualification.\n14. No changes can be made in the program once the arena is unveiled. Any team doing so will be disqualified from the competition.\n15. The arena will be the same as that of the sample arena, but the position and number of obstacles can vary.\n16. The maximum time allotted to each team to access the grid is 7 minutes. The Score will only be taken for a successful run made by the bots inside these 7 minutes. After this period, the team will not be allowed to access the arena. If any team is not ready for competition in the given 10 minutes they will be removed from the competition. The 7 minutes timer will commence after the end of 3 minutes period given for the adjustments.\n17. The navigation of the bot should be strictly based on the line following techniques.\n  a. The bot should not travel from one junction to another avoiding the white line or the junctions between them.\n  b. The bots shouldn't disturb any of the Red Obstacles. It can touch it if it uses a touch sensor, but any bot hitting or crashing into the obstacles there by disturbing its position will be forced to call a Time Out.\n18. RUN TIME: It denotes the time BOT2 takes to move from starting point to Destination point and then back to the Starting point. RUN-TIME shall be recorded only after the Bot signals have returned to the Starting point successfully after collecting the treasure. The mode of signalling must be declared prior to the RUN to the judges.\n19. Contestants are allowed to call time out if the machine goes out of track or halts in between with the permission of the judges. Contestants are allowed to make minor adjustments only in the sensors and not in the machine program. The BOT shall be placed back at the Starting Point. Time taken for the Minor Adjustments will be included in the Competition time of 7 mins.\n20. A contestant may not feed information on the maze to the bots. Therefore, changing ROMs or downloading programs is NOT allowed once the maze is revealed.\n21. However, contestants are allowed to replace batteries between runs, adjust sensors (gain, position etc.) and make repairs.\n22. However, a contestant may not alter a bots in a manner that alters its weight (e.g. removal of a bulky sensor array or switching to lighter batteries to get better speed after mapping the maze is declared is not allowed). The judges shall arbitrate.\n23. The maximum number of TIMEOUTs for a team is 5.\n24. If no successful run has been made, the judge will make a qualitative assessment of the bot's performance; based on how close the bot is to the end zone, 'purposefulness' versus random behaviour and quality of control."
+                		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                	</LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_mini_mouse_arena" android:layout_height="match_parent" android:orientation="vertical">
+                 <ScrollView android:id="@+id/scrollView_robo_mouse_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linear_robo_mini_mouse_spec_inner" android:layout_width="match_parent" android:layout_height="match_parent">
+               
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_robo_mini_mouse_arena" 
+                android:text="The colours and figures for starting point and destination point are just for indication and won't be present in the actual arena."
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <ImageView android:layout_width="wrap_content" android:id="@+id/imageView1" android:src="@drawable/xmarksthespot_1" android:layout_height="wrap_content"></ImageView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_mini_mouse_contact" android:layout_height="match_parent" android:orientation="vertical">
+               
+                <ScrollView android:id="@+id/scrollView_robo_mouse_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linear_robo_mini_mouse_spec_inner" android:layout_width="match_parent" android:layout_height="match_parent">
+               
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textMouseContact" android:text="Ankur Sodhani\nEvent Manager\nPhone: +91 956 710 1003\nE-mail: ankur@tathva.org\n\nSeetesh Choudhury\nEvent Manager\nPhone: +91 889 308 8212\nE-mail: seetesh@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

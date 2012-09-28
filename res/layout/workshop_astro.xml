@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_workshop_astro" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_workshop_astro"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_astro_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_astro_title" android:text ="Astro Photography" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_workshop_astro_Intro" android:text="The night sky fascinates all of us. The systematic study of objects in the sky is the main concern of Astronomy. This is the observation aspect of the study and it is primarily concerned with kinematics and kinetics of heavenly bodies. While physical attributes of this object's studies using the laws of physics/chemistry/biology and the corresponding discipline are known as astro physics/astro chemistry/astro biology. The study includes lot of instrumentation and so engineering students have large scope for higher studies and career in this field. Any body with a good back ground of physics and mathematics can have a full fledged career in astro physics." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_astro_highlights" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_astro_highlights" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_astro_highlights" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_astro_highlights" android:text="1. Why should we study Astronomy?\n2. The Life Cycle of Stars\n3. Astrophysics of Sun\n4. Astro chemistry - an Introduction\n5. Astrophotography - an Introduction\n6. Constellation names and identification\n7. Cosmology - an overview\n8. Spectral classification of Stars\n9. Sky observation with sophisticated telescope" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_astro_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_workshop_astro_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_astro_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_workshop_astro_contact" android:text="Bharathi Kannan\nWorkshop Manager\nPhone: +91 974 682 6313\nE-mail: bkannan@tathva.org\n\nShajee C K\nWorkshop Manager\nPhone: +91 9037 347 020\nE-mail: shajeeck@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

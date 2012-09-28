@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/imageView1" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+
+ <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="match_parent">
+     <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout2" android:orientation="vertical" android:layout_height="wrap_content" android:weightSum="1" android:gravity="center">
+         <LinearLayout android:layout_height="wrap_content" android:gravity="center" android:id="@+id/LinearLayout01" android:orientation="vertical" android:layout_width="match_parent">
+             <TextView android:textSize="20dp" android:layout_height="wrap_content" android:id="@+id/TextView01" android:layout_width="wrap_content" android:text="Lectures"></TextView>
+             <HorizontalScrollView android:id="@+id/HorizontalScrollView01" android:layout_height="wrap_content" android:scrollbars="none" android:layout_width="wrap_content">
+                 <LinearLayout android:layout_height="match_parent" android:id="@+id/LinearLayout02" android:orientation="horizontal" android:layout_width="match_parent">
+                     <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/drppchandrachoodan1" android:layout_width="wrap_content" android:id="@+id/img_lectures_chandra"></ImageView>
+                     <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/drtessythomas1" android:layout_width="wrap_content" android:id="@+id/img_lectures_tessy"></ImageView>
+                     <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/rajunarayanaias1" android:layout_width="wrap_content" android:id="@+id/img_lectures_raju"></ImageView>
+                     <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/unnikrishnan1" android:layout_width="wrap_content" android:id="@+id/img_lectures_unni"></ImageView>
+                 </LinearLayout>
+             </HorizontalScrollView>
+         </LinearLayout>
+         <LinearLayout android:id="@+id/linearLayout3" android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center">
+             <TextView android:textSize="20dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView1" android:text="Envision"></TextView>
+             <HorizontalScrollView android:id="@+id/horizontalScrollView1" android:layout_height="wrap_content" android:scrollbarAlwaysDrawHorizontalTrack="false" android:layout_width="wrap_content" android:scrollbars="none">
+                 <LinearLayout android:id="@+id/linearLayout5" android:orientation="horizontal" android:layout_height="match_parent" android:layout_width="match_parent">
+                     <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/srishti1" android:layout_width="wrap_content" android:id="@+id/img_envision_shristi"></ImageView>
+                     <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/idp1" android:layout_width="wrap_content" android:id="@+id/img_envision_idp"></ImageView>
+                     <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/youngengineer1" android:layout_width="wrap_content" android:id="@+id/img_envision_young_engineer"></ImageView>
+                 </LinearLayout>
+             </HorizontalScrollView>
+         </LinearLayout>
+         <LinearLayout android:id="@+id/linearLayout4" android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center">
+             <TextView android:textSize="20dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView2" android:text="Nites"></TextView>
+             <HorizontalScrollView android:scrollbars="none" android:id="@+id/horizontalScrollView2" android:layout_height="wrap_content" android:layout_width="wrap_content">
+                 <LinearLayout android:id="@+id/linearLayout11" android:orientation="horizontal" android:layout_height="match_parent" android:layout_width="match_parent">
+                     <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/motherjane1" android:layout_width="wrap_content" android:id="@+id/img_nites_mother_jane"></ImageView>
+                     <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/handshadowgraphy1" android:layout_width="wrap_content" android:id="@+id/img_nites_hand_shadow"></ImageView>
+                     <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/soundofmusic1" android:layout_width="wrap_content" android:id="@+id/img_nites_music"></ImageView>
+                     <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/nightofgroove1" android:layout_width="wrap_content" android:id="@+id/img_nites_grooves"></ImageView>
+                     <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/roboshow1" android:layout_width="wrap_content" android:id="@+id/img_nites_robo"></ImageView>
+                 </LinearLayout>
+             </HorizontalScrollView>
+         </LinearLayout>
+     </LinearLayout>
+ </ScrollView>
+ <!--  -->   
+</LinearLayout>

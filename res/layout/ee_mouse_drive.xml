@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_ee_mouse_drive" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_ee_mouse_drive"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ee_mouse_drive_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_mouse_title" android:text ="Mouse Drive" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ee_mouse_drive_Intro" android:text="'The limits of the possible can only be defined by going beyond them into the impossible.'\nThink you are good behind the wheels?? Why not prove you can do it even with a mouse??" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ee_mouse_drive_specs" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_ee_mouse_drive_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_ee_mouse_drive_specs" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ee_mouse_drive_specs" android:text="1. The vehicle must be of at least 10cm x 10cm and should not exceed 25cm x 20cm.\n2. The vehicle's speed and steering control must be implemented using the only motion sense of the mouse, in other words mouse buttons cannot be used to control the speed and direction.\n3. The contestants should be prepared with the circuit diagrams, algorithms and code listing (if any) to give sufficient explanation to the judge's questions.\n4. The vehicle is considered to be out of path if any two or more wheels go out of path.\n5. Power supplies for the system will not be provided.\n\nTeam Specifications\n\n1. Each team can consist of a maximum of 3 members.\n2. Team members have to produce valid ID card of their institute.\n3. Cross college teams are permitted."                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ee_mouse_drive_stmt" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_ee_mouse_drive_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_ee_mouse_drive_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ee_mouse_drive_rounds" android:text="Build a vehicle whose motion is controlled only by movement of the computer mouse.The challenge is to guide the vehicle through a maze as at the arena .The vehicle maybe controlled wireless or using long wires.The wires must in no way be hindrance to the motion of the vehicle." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                 <ImageView android:layout_width="wrap_content" android:id="@+id/imageView_ee_mouse_drive_stmt" android:src="@drawable/mousedrive1" android:layout_height="wrap_content"></ImageView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ee_mouse_drive_judge" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_ee_mouse_drive_judge" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_ee_mouse_drive_judge" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ee_mouse_drive_judge" android:text="1. The judge's decision shall be final and binding.\n2. The score will be based on best time and the number of obstacles the vehicle hits.\n3. Score = 50 - [(your time-best time) / best time] * 40 - (No of red blocks hit) + (no. of green flag poles covered) - (No of times vehicle wheel goes out of the path)." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ee_mouse_drive_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_ee_mouse_drive_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_ee_mouse_drive_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ee_mouse_drive_contact" android:text="Ashish Joseph\nEvent Manager\nPhone: +91 940 007 3850\nE-mail: ashishjoseph@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayouttrans" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhostRobo_Dirt_race"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_dirt_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    	<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTrans_title" android:text="DIRT RACE" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center" android:gravity="center" android:textSize="20dp"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="You all must have played racing games and watched movies where the hero, in spite of lagging throughout the race, recklessly hits up a gas of nitrous and ends up winning it. Ever wondered how it feels to experience this marvel in reality?\nYou all must have played racing games and watched movies where the hero, in spite of lagging throughout the race, recklessly hits up a gas of nitrous and ends up winning it. Ever wondered how it feels to experience this marvel in reality?\nHere's your chance to engulf yourself with passion and live the dream.\nDefy the traps, time your gaps,\nJump the bridges and speed through the tunnels.\nFeel the adrenaline pump though your veins,\nAs Tathva '11 presents you for the first time - DIRT RACE." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_dirt_stmt" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_robo_dirt_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_robo_dirt_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="Design and construct a wired or wireless bot which can race and compete against others, cracking its way through the arena. Only aim is to finish the race as soon as possible." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                 </LinearLayout>
+                 </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_dir_arena" android:layout_height="match_parent" android:orientation="vertical">
+               	<ScrollView android:id="@+id/scrollView_robo_dirt_arena" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_robo_dirt_arena" android:layout_width="match_parent" android:layout_height="match_parent">
+                   
+               	 <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="1.The actual arena will be displayed only on the venue.\n2. It will contain several shortcuts and traps which may prove beneficial or detrimental for the teams.\n3. Different terrains like concrete, sand, soil, gravel, glass, wood, etc. will be used.\n4. A couple of minutes will be given to the teams before the start to study the arena and devise game-play strategies.\n5. There will be bridges, inclined planes, wedges, death wells, rotating platforms, and many more surprising elements.\n6. Final aim is to reach the end line before the other bots."
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                 </LinearLayout>
+                 </ScrollView>
+            </LinearLayout>
+         	
+         	<LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_dirt_spec" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_robo_dirt_spec" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_robo_dirt_spec" android:layout_width="match_parent" android:layout_height="match_parent">
+                   
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="1.A team may consist of a maximum of 4 participants.\n2. Students from different educational institutes can form a team.\n3. All the teams must register to the event on the website.\n4. Each team is allowed to have only one bot for both the rounds.\n5. The bot must fit into a cube of 25cm x 25cm x 20cm.\n6. No external power will be supplied at the venue. All teams should arrange for their own power.\n7. The max potential difference between any two points should not exceed 18 V for wired vehicles and 24 V for wireless bots.\n8. No IC engines are allowed. The batteries can be placed on the bot or held in hand.\n9. In case of wireless bots, the connecting wires from the bot to the remote control should be a minimum of 3 meters in length.\n10. Bot cannot be constructed using ready-made Lego kits or any other such mechanism. But ready-made gear assemblies and wheels can be used. Although the Chassis has to be hand-made.\n11. Violating the clause will lead to immediate disqualification."
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_dirt_contact" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_robo_dirt_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_robo_dirt_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                   
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="Akshay Singh\nEvent Manager\nPhone: +91 889 172 5678\nE-mail: akshay@tathva.org\n\nVishnuram Abhinav\nEvent Manager\nPhone: +91 808 954 0741\nE-mail: vishnuram@tathva.org"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+          </LinearLayout>
+          </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

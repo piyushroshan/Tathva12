@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayouttrans" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_arch_path"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_arch_path_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_path_title" android:text="Path to Fame" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center" android:gravity="center" android:textSize="20dp"></TextView>
+                        	<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="An architect has just passed away, and in doing so has left behind an incomplete project, a project meant to be his masterpiece, if not for the unfortunate incident. It was his last wish for the world to see it in all its glory, and so it is up to you to bring peace to his soul." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_arch_path_stmt" android:layout_height="match_parent" android:orientation="vertical">
+               	<ScrollView android:id="@+id/scrollView_arch_path_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_arch_path_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
+                   
+               	 <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="You have complete freedom to do whatever you want with the structure as long as you build on the work so far, but remember that what you create must be sensible, functional, and easy on the eye. "
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                 </LinearLayout>
+                 </ScrollView>
+            </LinearLayout>
+            
+            
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_arch_path_criteria" android:layout_height="match_parent" android:orientation="vertical">
+               	<ScrollView android:id="@+id/scrollView_arch_path_criteria" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_arch_path_criteria" android:layout_width="match_parent" android:layout_height="match_parent">
+                   
+               	 <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="The design should be close to the client's needs and should uphold the design principle of the previous architect."
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                 </LinearLayout>
+                 </ScrollView>
+            </LinearLayout>
+            
+            
+         	
+         	<LinearLayout android:layout_width="match_parent" android:id="@+id/linear_arch_path_spec" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_arch_path_spec" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_arch_path_spec" android:layout_width="match_parent" android:layout_height="match_parent">
+                   
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="1. The clients are more than willing to offer monetary compensation, but are very keen on you sticking to their original demands.\n2. The layout and plan of the work done so far will be given on the spot and the requirements will be briefed then.\n3. The participant can use any medium to complete the given design in the allotted time. Systems will be provided for working on the design.\n4. Maximum of two participants per team."
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_arch_path_contact" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_arch_path_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_arch_path_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                   
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="Sham Salim\nEvent Manager\nPhone: +91 989 549 4099\nE-mail: sham@tathva.org"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+          </LinearLayout>
+          </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

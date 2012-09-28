@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_blitz_counter" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_blitz_counter"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_blitz_counter_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_counter_title" android:text="Counter-Strike 1.6" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center" android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_blitz_counter_Intro" android:text="You are sneaking past the alley. You hear a flurry of steps.\nYou turn around quickly but it's already too late.\nA spray of bullets.\nGAME OVER.\nCounter Strike never gets old, does it?\n\nCounter-Strike is a tactical first-person shooter which originated from a Half-Life modification. Counter-Strike pits a team of counter-terrorists against a team of terrorists in a series of rounds. Each round is won by either completing the mission objective or eliminating the opposing force. Counter-strike was one of the most popular clan-based games in India till Dot-A overtook it in popularity - however clans still play it extensively and are always ready for yet another round.\nCome prove your clan's skill at Blitzkrieg!\n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.96"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_blitz_counter_specs" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_blitz_counter_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_blitz_counter_specs" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_blitz_counter_specs" android:text="1. Registration Fees: Rs. 500/- per team (excluding Tathva registration). At least 1 member should have a Tathva registration.\n2. Competition Method : 5 vs. 5 (Team Play, 5 players per team)\n3. The first team to win 16 rounds wins the match.\n4. Extra rounds will be played until the winner is decided.\n5. Blitzkrieg may install third party program and/or join as an observer for tournament operations purposes, such as verifying match results or gathering match data.\n6. A knockout tournament structure will be used.\n7. Rounds: 30 Rounds (Max rounds format): 15 rounds as Terrorists and 15 rounds as Counter-Terrorists per team .If a team scores 16 rounds first, the match is ended immediately.\n8. Victory Condition: The first team to win 16 rounds.\n9. Round Time: 1 minute 45 seconds.\n10. Freeze Time: 10 seconds.\n11. Buy Time: 15 seconds.\n12. Counter-Strike, Terrorist will be announced before the match or decided by knifing.\n13. In the case of a tie after regulation, 6 extra rounds will be played. (3 rounds as Terrorists / 3 rounds as Counter-Terrorists per team)\n14. Extra Round restart money: $10,000\n15. In the case of a re-tie after 6 extra rounds as state"
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_blitz_counter_tournament_settings" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_blitz_counter_tournament_settings" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_blitz_counter_tournament_settings" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_blitz_counter_tournament_settings" android:text="Multiplayer Settings\n\nmp_autokick 0 mp_autocrosshair 0\nmp_autoteambalance 0 mp_buytime 0.25\nmp_consistency 1 mp_c4timer 35\nmp_fadetoblack 1 mp_flashlight 1\nmp_forcechasecam 2 mp_forcecamera 2\nmp_footsteps 1 mp_freezetime 10\nmp_friendlyfire 1 mp_hostagepenalty 0\nmp_limitteams 10 mp_logecho 1\nmp_logdetail 3 mp_logfile 1\nmp_logmessages 1 mp_maxrounds 0\nmp_playerid 1 mp_roundtime 1.75\nmp_timelimit 0 mp_tkpunish 0\nServer Commands Used\n\nsv_aim 0 sv_airaccelerate 10\nsv_airmove 1 sv_allowdownload 0\nsv_allowupload 0 sv_alltalk 0\nsv_cheats 0 sv_clienttrace 1\nsv_clipmode 0 sv_friction 4\nsv_gravity 800 sv_lan_rate 35000\nsv_maxrate 35000 sv_maxspeed 400\nsv_maxunlag 0.5 sv_maxupdaterate 101\nsv_minupdaterate 101 sv_minrate 35000\nsv_proxies 1 sv_send_logos 1\nsv_send_resources 1 sv_stepsize 18\nsv_stopspeed 75 sv_unlag 1\nsv_voiceenable 1 sv_unlagsamples 1\nsv_unlagpush 0 sys_ticrate 10000\nallow_spectators 1 decalfrequency 60\nedgefriction 2 host_framerate 0\nlog on pausable 0\nAllowed Setting Values for Client\n\nm_filter 1/0 hud_fastswitch 1/0\nzoom_sensitivity_ratiocl_dynamiccrosshair 1/0\nfps_max 101 brightness 1/3\ngamma 1/3 cl_minmodels 1/0\ncl_shadows 1/0\ncl_updaterate 101 cl_cmdrate 101\ncl_weathermp_corpse_stay\nmp_decalsmax_shells\nmax_smokepuffsfastsprites 0\nex_interp 0.01 rate 35000"
+                               android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_blitz_counter_rules" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_blitz_counter_rules" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_blitz_counter_rules" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_blitz_counter_rules" android:text="These rules are for the Blitzkrieg and are subject to modification in the following aspects.\n1. Players must submit their configuration (if any) to the admin before executing on the computer.\n2. No USB's can be plugged in to the computers at the arena without due consent from the admin.\n3. If a problem occurs with flash bang bug, the referee reviews the demo file and the offending team loses the round. The match continues normally.\n4. Use of personal model/skins (includes weapon skins) are not allowed.\n5. Use of personal map texture is not allowed.\n6. All cheat programs are banned from the arena.\n7. Use of map bugs in play (e.g. map swimming, auto aim, flash bugs etc.) is not allowed.\n8. Uses of unfair but available scripts (e.g. silent run, attack + use, center view script, nore coil script, etc.) are not allowed.\n9. Only team leaders are allowed to use public in-game messages (messagemode1) within a match. The rule also applies when dead. Use of messagemode1 by any member other than the team leader shall result in a warning. Other team members must only use team message (messagemode2), while in a match.\n\n10. If disconnection occurs during a match:\n    a. If all the players cannot play due to an unintended, unforeseen accident such as server stoppage,\n        1. Before the 3rd round starts: restart the half with $800 starting money.\n        2. After the 3rd round starts: Disconnected player must re-connect to the server.\n    b. The round is continued without pausing, and if the disconnected player cannot connect to the server, all players must wait during the freeze time after the round until the disconnected player connects to the server. At this time, the match may continue by without pausing.\n    c. (Not a restart) If up to 3 of all players are unintentionally disconnected: The score for that round is discarded. The game is paused after the round during the freeze time, and all players wait until the disconnected players are connected to the server.\n    d. When all players are connected, the match may continue by without pausing the game.\n    e. In the case of intentional disconnection, the referee may decide to end the match with the offending team losing by forfeit.\n    f. Protests can only be filed by the team leader (i.e.: a player that represents the team)\n\n11. If a player does not agree to any rules, he/she can express his/her protest to a referee before the completion of a match. Any intentional refusal to connect to the match server can result in a default loss for that team with the decision to be made is at the sole discretion of the referee.\n12. If a rematch is decided by the head referee, the team that does not follow this decision will be subject to disqualification.\n13. The gamma rate can be changed in the video graphic driver.\n14. Buying of Shield is prohibited for CT's. If bought, the player should discard it at CT spawn before the round begins. Terrorists are not allowed to pick up a dropped shield.\n15. Use of most recent patch/version release of each official game will be within committee's own discretion.\n16. Changes to in-game settings and options will be necessitated by the use of most recent patch version/release.\n17. Cheat Protection Program release and/or cheat protection functions.\n18. Game settings and/or operations guidelines will be dictated by differences between online and LAN Tournaments.\n19. Teams registering for the tournament are required to bring the individual college ID card at the registration desk. Players will not be allowed to play their matches without showing their Tathva '11 ID.\n20. A player may not be allowed to play for more than one clan for which he/she has been registered to. If found so, the player may be disqualified from the tournament.\n21.Unfair practices are subjected to penalty.\n22. Team members may communicate verbally if they are alive in the match or when all team members are dead.\n23. The player is deemed dead when the screen is completely faded to black. If a bug occurs and the screen doesn't fade to black, the player is deemed dead three seconds after he/she has fallen.\n24. Any player who has died cannot communicate by ANY means (No gesture or verbal communication will be allowed) with any other team member or opponent until the beginning of the next round.\n25. If a player continues to communicate after he/she is killed, the team may be given a warning or lose by default at the referee's sole discretion.\n26. Boosting (stepping on top of own team player) is allowed in play.\n27. Binding 'Duck' to scroll wheel is not allowed.\n28. C4 must be installed at a viewable location. Installing C4 at a location where a boost is required is allowed.\n29. Silent C4 installation is considered bug play. Such an offense may result in a warning or loss of all remaining Terrorist rounds at the sole discretion of the board of referees.\n30. Throwing grenades over buildings in all maps are allowed.\n31. Any use of the flash bang bug will result in a warning at the minimum or loss by default for the offending team."
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_blitz_counter_code" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_blitz_counter_code" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_blitz_counter_code" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_blitz_counter_code" android:text="1. Word of the admin is final. Anyone who disobeys or disregards will be deemed disqualified.\n2. No communication (verbal or gesture) is permitted once fade to black occurs. For each violation of this rule, one warning shall be given to the player. For the second offence he/she may be sent out of the arena. If a fade to black bug occurs on any of the computers after death the player shall remain silent till the round is over.\n3. Request for 'pub' gaming shall not be entertained.\n4. No spectators are allowed beyond the barricades setup in the arena.\n5. Smoking shall not be permitted inside the arena.\n6. Players under the influence of alcohol or drugs shall not be allowed to enter the arena under any circumstances.\n7. A player may be cautioned and be sent off if he commits any of the following offences:\n  a. receives more than one warning\n  b. is guilty of violent conduct\n  c. uses any unlawful or unfair proceedings\n  d. mislead or dupe any tournament official\n  e. is not present at his match schedule\n  f. violates a rule of this regulation\n8. Only registered players are allowed to play at the Tathva '11 arena.\n9. Players are responsible for their own belongings and will have to pay for all damages caused in the arena."                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_blitz_counter_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_blitz_counter_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_blitz_counter_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_blitz_counter_contact" android:text="Shubhangam Agrawal\nEvent Manager\nPhone: +91 984 638 8425\nE-mail: shubhangam@tathva.org\n\nAkhil P A\nEvent Manager\nPhone: +91 956 785 7298\nE-mail: akhilpa@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayouttrans" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_robo_signal_maestro"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_signal_maestro_spec" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_robo_signal_maestro_spec" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_signal_maestro_spec_inner" android:layout_height="match_parent" android:orientation="vertical">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="1. The image will be send to shared folder in the LAN.\n2. The teams can access the shared folder using the IP address of the system (the IP address of the system will be given just before the event).\n3. The images will be of jpeg format and have name 'im' followed by the number of the image as 1, 2, 3...etc. That is image one will have the name 'im1.jpg', image two will have the name 'im2.jpg'...etc.\n4. The above statements are illustrated using an example:\n\nSuppose the IP Address of the LAN connected system is '192.168.2.1'\nThe name of the shared folder is 'events'.\nThen location of the First image is '\\192.168.2.1\events\im1.jpg'\nThe images will be sent to the shared folder in a sequence i.e., the second image comes after first image, the third after the second and so on. The image with the highest image number should be used for processing and control of the bot.\nFor example im1.jpg, im2.jpg and im3.jpg is there in the shared folder im3.jpg should be used for processing.\n5. Length and breadth of bot should not exceed 20cm and 20cm respectively at any height. Organizers will be testing it by passing through a square shaped frame of side 20cm.\n6. Navigator should use an onboard power supply. No external power supply will be allowed.\n7. Navigator should not have any kind of sensors fitted on it. If found then it will lead to immediate disqualification.\n8. The only external input should be from the computer, either serial or parallel or USB communication, using wires.\n9. Navigator can also use wireless communication to communicate with the computer.\n10. All the bots should work strictly on the principle of Image Processing. Any ambiguity found will lead to immediate disqualification of the participant.\n11. Use of any LEGO kits or other readymade kits is strictly prohibited and if found using, then the contestant will be disqualified from the competition. However participants are allowed to use geared motors and gear mechanisms of toys.\n12. The bot should not have speed more than 20 cm/s in any kind of forward or backward motion (the team can use a 60 rpm motor and use 7 cm diameter wheel or something like that to ensure the speed limit). There are no extra points for the high speed of the bots." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        <ImageView android:layout_width="wrap_content" android:id="@+id/image_robo_signal_maestro_spec" android:src="@drawable/signalmaestro1" android:layout_height="wrap_content"></ImageView>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_signal_maestro_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linear_robo_signal_intro_inner" android:layout_width="match_parent" android:layout_height="match_parent">
+                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_signal_title" android:text ="Signal Maestro" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_robo_signal_maestro_intro" android:text="Amongst the innumerable age old inventions, transportation has been definitely one of the vital ones. Transportation remained the greatest problems even amongst the inhabitants of the first civilizations that started developing aeons ago. The invention of wheels not only provided a fillip to the solution of this problem but also opened roads to the formulation of different innovations. As technology developed man started thinking about different ways of making his journey more comfortable, joyful, automated and safe. The use of advance technology evolved from this very idea of making our travel more automated and safe is what we call as Telematics.Here let us try to make a mini Telematics system using Digital image processing." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_signal_maestro_stmt" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_robo_signal_maestro_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linear_robo_signal_maestro_stmt_inner" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="To Build a Computer controlled bot, using the images send to the computer through a LAN, navigate in an open space according to the instructions given to the bot by the computer processing the symbol in the image given to the computer.Each symbol image corresponds to a signal response for the bot like moving forward, turning left, moving backward, turning right, etc.An image will have only one symbol. The image with the symbols and their responds will be published later.Note: There can be more than one symbol corresponding to the same responds."
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                 </LinearLayout>
+                 </ScrollView>
+            </LinearLayout>
+         	
+         	<LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_signal_maestro_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_robo_signal_maestro_contact" android:text="Jones Thomas\nEvent Manager\nPhone: +91 949 537 2685\nE-mail: jones@tathva.org"
+                		  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

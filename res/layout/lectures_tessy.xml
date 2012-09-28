@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:id="@+id/linear_lectures_tessy_intro" android:layout_height="match_parent" android:orientation="vertical">
+               <LinearLayout android:id="@+id/linearLayout_lectures_tessy" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_tessy_title" android:text ="Dr Tessy Thomas" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_lectures_tessy_Intro" android:text="An epitome of today's women, she has made it big in what was once a male-dominated world. She has been rightly dubbed as India's 'missile woman'. She has been part of the highly successful Agni-III project, India's longest-range nuclear missile. A graduate of the Govt. Engineering College, Thrissur and an M.Tech in Guided Missiles, she has had the privilege of working under Dr.A.P.J. Abdul Kalam. She now spearheads India's advanced Agni-II mission. She has always believed in the saying 'with great power comes great responsibility' and strongly believes in doing her bit for the nation, staying as an icon for millions. " android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            
+ </LinearLayout>

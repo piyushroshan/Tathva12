@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_mech_offroad" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_mech_offroad"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_offroad_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_offroad_title" android:text ="The Off Road MI" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="'Scientists investigate that which already is. Engineers create that which has never been'\n- Albert Einstein\n\nImagine you went back to those ages, and we need you to device a mechanism to perform a specified task. Remember, only thing you possess is your logic and principles of classical physics; obviously no electronics and softwares." 
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_offroad_stmt" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_mech_offroad" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_offroad_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="Design and fabricate a vehicle which moves 2m, then remains still for 5 seconds, and then moves 1m, and stops, all along a straight line path, on a multi terrain dry surface in the minimum possible time.What we expect from participants is attaining perfection on the simplest and 'cutest' design by fabrication. As Schumacher said 'Small is beautiful' and as great men say 'Rome was not built in day', try on the pure logic: the Mechanical Intelligence." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_offroad_spec" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_mech_offroad" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_offroad_spec" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="1. Maximum of 3 members are allowed in a team. Inter college teams are allowed.\n2. A plane surface with no slope, basically consisting of two different terrains will be provided. The first terrain would essentially be a hard (wood, plywood or a similar material with comparable surface roughness) surface which would extend upto 2m, while the second one a sandy surface which extends from the 2m mark till the end. Width of the path will be 1.25m.\n3. Since the primary aim is to control the halt of the vehicle at the specified points, the surface would contain concentric circular zones (like in shooting or archery, where the 'bull's eye' denotes the check point) at these check points i.e. 2m and 3m which mark the regions of target.\n4. The region where the front wheels of the vehicle stops decides the points. Each region is associated with a certain value which in terms of scoring point decreases as the distance from the check point increases or as the circles become larger.The boundaries of the path will be marked. If the front wheel stops on the boundary, the higher of the scores will be taken.\n5. The maximum allowed dimensions for the vehicle are 30cm x 20cm x 20cm.The control should be made only of mechanical systems. No electrical or electronics controls are allowed. However the drive can be electrical. All working parts should be visible, at least during the inspection by the judges.\n6. No ready-made systems available in the market shall be used, but participants are allowed to buy individual components and then assemble it by themselves. The mechanisms must be made in such away that it can be reloaded any number of times.\n7. Power supply will not be provided."
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+                  	
+                     
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_offroad_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_mech_offroad_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_offroad_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_mech_offroad_contact" android:text="Murali Gopal M\nEvent Manager\nPhone: +91 889 192 2965\nE-mail: murali@tathva.org\n\nSwathi Uday\nEvent Manager\nPhone: +91 773 674 7290\nE-mail: swathiuday@tathva.org\n\nJobin J Unnupatt\nEvent Manager\nPhone: +91 808 972 7400\nE-mail: jobinjunnupatt@tathva.org"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:id="@+id/linear_wheels_full_throttle_intro" android:layout_height="match_parent" android:orientation="vertical">
+               <LinearLayout android:id="@+id/linearLayout_wheels_		" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:orientation="vertical" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_throttle_title" android:text ="Full Throttle" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_wheels_full_throttle_Intro" android:text="Spent chunks of money on your car revamping its performance and looks? Now you can win some of that money back. All you have to do is register your styled-up car and bring it along to our grounds.\nBe sure to be a crowd-pleaser, because the final call is theirs...\n\nContacts:\nShihar\nEvent Manager\nPhone: +91 808 915 9255\nE-mail: shihar@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            
+ </LinearLayout>

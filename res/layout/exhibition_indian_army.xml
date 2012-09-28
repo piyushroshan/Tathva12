@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:id="@+id/linear_exhibition_isro_intro" android:layout_height="match_parent" android:orientation="vertical">
+               <LinearLayout android:id="@+id/linearLayout_workshop_indian_army" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_army_title" android:text="Indian Army" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center" android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_exhibition_isro_Intro" android:text="The Indian Army is the land based branch and the largest component of the Indian Armed Forces. Indian Army is one of the few reasons why we sleep in peace in our country of brimming violence and insecurity. The highly sophisticated technology used in the making of weapons used by the army, is the result of burning of a lot of midnight oil by a talented team of personnel.\n\nWe bring before you, a promising exhibition, organized by the Indian army for Tathva '11. In the light of many major and remarkable victories in the field of national security and development of highly sophisticated arms and ammunitions, this is sure to give a feast of many exhibits of immense importance and interests.\n\nConfirm your presence in this venture and enter the enchanting arena of a technical kaleidoscope!" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            
+ </LinearLayout>

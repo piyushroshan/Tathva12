@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:id="@+id/linear_initiative_teach_intro" android:layout_height="match_parent" android:orientation="vertical">
+               <LinearLayout android:id="@+id/linearLayout_initiative_teach" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_teach_title" android:text ="Teach For India" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_initiative_teach_Intro" android:text="\n'One day all children will attain excellent education.'\n\nTeach For India is a nationwide movement of outstanding college graduates and young professionals who will commit two-years to teach full-time in under resourced schools and who will become lifelong leaders working from within various sectors toward the pursuit of equity in education.\nTeach For India recently won the award for the best non-profit to work for in the Economic Times Great Places to Work survey 2011." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            
+ </LinearLayout>

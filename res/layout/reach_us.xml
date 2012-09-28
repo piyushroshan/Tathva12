@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <ScrollView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/scrollView1">
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:layout_height="match_parent" android:text="From Calicut Railway Station (22 kms)\n\nBy Bus\n\nTake a 10minute walk or get a rickshaw for a fare of INR12 to Palayam bus stand and board a bus to REC / NIT Calicut\n\nBy Rickshaw\nGet a rickshaw from the Railway Station to NIT Calicut for a fare of INR 300\nBy Taxi\nYou may get a taxi from the railway station to NIT Calicut for a fare of INR 450.\n\nFrom Calicut Airport\n\nCalicut Airport is located at Karipur, 27 Kms south-east of the city and it is 45 kms from NIT Calicut. You can reach NIT Calicut by taxi from the Calicut Airport and the taxi fare is approximately INR 800.\n" android:id="@+id/textView1" android:layout_width="match_parent"></TextView>
+        </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

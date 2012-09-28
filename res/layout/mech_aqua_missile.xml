@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_mech_aqua_missile" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_mech_aqua_missile"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_aqua_missile_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:orientation="vertical" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_aqua_title" android:text ="Aqua Missile" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="One of the most amazing endeavors man has ever undertaken is the exploration of space. A big part of the amazement is the complexity. Space exploration is complicated because there are so many problems to solve and obstacles to overcome, like vacuum in space, heat management, orbital mechanics, but the biggest problem of all is harnessing enough energy simply to get a spaceship off the ground. That is where rockets come in." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_aqua_missile_stmt" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_mech_aqua_missile" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_aqua_missile" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="The participants are required to design and build a single stage water rocket using a plastic container preferably a soft drink bottle. The rocket is to be launched at any angle with respect to the horizontal as per the choice of the team. The winner will be decided on the basis of the rules mentioned below. A launcher should also be constructed that could launch the water rocket safely." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+                  	
+             
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_aqua_missile_spec" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_mech_aqua_missile_spec" android:layout_width="match_parent" android:orientation="vertical" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_aqua_missile_spec" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="1. A maximum of three members are allowed in a team. Students from different educational institutes are allowed to make a team.\n2. Only plastic soft drink bottles are to be used for the rocket body, of maximum size 1.5L.\n3. The water rocket must use only compressed ambient atmospheric air as its source of energy. Water and pressure compressors (foot pump) shall be provided by the organisers. Water brought by the team shall not be allowed in the rockets. The amount of water to be filled in the rocket body is left to the choice of the team.\n4. The pressure inside the container (rocket body) before launch should not exceed 60 psi.\n5. Launchers will NOT be provided by the organisers.\n6. Rocket must be launched from a stationary position on a fixed launcher. (Slingshots, trebuchets, catapults, cannons, and all other forms of launcher boost assists are forbidden). In other words, the internal pressure of the rocket must be the only source of energy for the rocket.\n7. No component or a body part of the rocket should get detached from the main frame during the flight of the rocket. If any part gets detached then the rocket will be disqualified.\n8. Any of the clauses below if satisfied may lead to disqualification of a team:\n  a. If any rocket is found to be dangerous to launch by the organizers and judges.\n  b. If a rocket blasts before the launch.\n  c. If a rocket launches before indicated by the organizers.\n  d. If any part of the rocket breaks off from the rocket during the flight.\n  e. If any readymade models are used.\n  f. If any design rule is not abided by the participant.\n9. The organizers reserve all rights to change any of the above rules as they deem fit. Change in rules, if any will be highlighted on the website. In case of any discrepancy decision of the judges shall be treated as final and binding on all.\n\nElimination Round" 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <ImageView android:id="@+id/image_mech_aqua_spec" android:layout_height="wrap_content" android:layout_width="match_parent" android:src="@drawable/waterrocket1"></ImageView>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_mech_aqua_spec_2" android:text="1. The task is to cover the maximum horizontal distance.\n2. The track is a 30 degree sector with a straight line cutting it into two halves; score will be reduced if there is deviation from this line on landing.\n3. The place where the tip of the bottle falls will be considered for scoring.\n4. Two trials will be given to the participants and the better of the two horizontal distances (in meters) will be considered.\n5. Participants are allowed to use different rockets for this round.\n6. The teams who successfully cross 60m will be eligible for the finals.\n\nFinal Round" 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <ImageView android:id="@+id/image_mech_aqua_spec_2" android:layout_height="wrap_content" android:layout_width="match_parent" android:src="@drawable/waterrocket2"></ImageView>
+                
+                
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_mech_aqua_spec_3" android:text="1. The task is to make the rocket land on the region marked 'bulls-eye' to earn maximum points.\n2. The launch point will be 45m from the center of the 'bulls-eye'.\n3. Two trials will be given to the participants and the better of the two will be considered as the Round 2 score.\n4. The participants are allowed to use different rockets for both the trials.\n5. The team, with the highest score according to the scoring formula as mentioned below will be declared as the winner."
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+             
+             
+                     
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_aqua_missile_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_mech_aqua_missile_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_aqua_missile_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_mech_aqua_missile_contact" android:text="Noha Peter\nEvent Manager\nPhone: +91 904 828 2694\nE-mail: noha@tathva.org\n\nTony Joseph\nEvent Manager\nPhone: +91 949 729 1614\nE-mail: tonyjoseph@tathva.org"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

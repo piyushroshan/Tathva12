@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayouttrans" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_manage_baptist"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_manage_baptist_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+                        	<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_baptist_title" android:text ="B-Aptist" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        	<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="B-APTIST 2011 is the National Business Challenge and Entrepreneurship Conclave of NIT Calicut conducted under the annual Techno-management fest 'TATHVA' that invites most promising business start-ups to find the right investors and receive support of dedicated mentors. The fifth edition of B-Aptist also brings to you, the NSEF IDEA Conference 2011." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_manage_baptist_conference" android:layout_height="match_parent" android:orientation="vertical">
+               	<ScrollView android:id="@+id/scrollView_manage_baptist_conference" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_manage_baptist_conference" android:layout_width="match_parent" android:layout_height="match_parent">
+                   
+               	 <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="'NSEF IDEA Conference' is a platform to catalyze social entrepreneurship amongst the youth, a place to learn about effective solutions to the most pressing social problems,drive home social innovations and a tool to make Indian universities thriving ecosystems of such innovations. IDEA Conferences are of short duration yet they have a high impact and a large number of them are held all over India every year."
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                 </LinearLayout>
+                 </ScrollView>
+            </LinearLayout>
+         	
+         	<LinearLayout android:layout_width="match_parent" android:id="@+id/linear_manage_baptist_spec" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_manage_baptist_spec" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_manage_baptist_spec" android:layout_width="match_parent" android:layout_height="match_parent">
+                   
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="Maximum Team Size: 4\n\nPrelims:\n1. In this round participants will be submitting the executive summary of their B-Plan to the following e-mail id:b_aptist@tathva.org with Subject: B Plan Executive Summary.\n2. Last date for submission of executive summary is 10th October 2011.\n3. Based upon the executive summary, teams will be short-listed for final round.\n4. The shortlisted teams will receive intensive mentoring from our distinguished panel of mentors.\n\nExecutive Summary/Abstract Format:\n1. The abstract should be limited to 1000 words (excluding annexure and introduction), stating briefly the purpose of the plan, opportunities, financial and marketing plan, etc.\n2. The document should be prepared in Times New Roman font sized 12 pt with 1.5 line spacing submitted in pdf format.\n3. The cover page of the abstract should contain name of the team members, college of the team members and contact details. This cover page shall be detached before papers are given for panel evaluation. The name of the author or their institute should not appear anywhere in the body of the paper.\n\nFinal Presentation:\n1. The shortlisted teams will present their B-Plan in front of the judges in form of a presentation at Tathva 2011.\n2. A maximum of 15 minutes will be given to each team to present their idea.\n3. The presentation will be followed by a question and answer round of 10 minutes by the judges as well as the audience.\n4. Points will be deducted for exceeding the time limit.\n5. The ultimate decision will be taken by the judging panel and all participants are requested to abide by it."
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_manage_baptist_contact" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_manage_baptist_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_manage_baptist_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                   
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="Anurag Beniwal\nEvent Manager\nPhone: +91 903 798 1601\nE-mail: anuragbeniwal@tathva.org\n\nRushil Agrawal\nEvent Manager\nPhone: +91 903 795 1026\nE-mail: rushil@tathva.org"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+          </LinearLayout>
+          </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

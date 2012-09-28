@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_mech_contraption" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_mech_Contraption"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_contraption_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_contrapt_title" android:text ="Contraption" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="'Nothing's ever built to last but that doesn't mean it's not worth building.'\n-Unknown\n\nLet's break the very basic rule of engineering. Suppose 'keep it simple, stupid!' is no longer applicable. What kind of madness would you conjure?" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_contraption_stmt" android:layout_height="match_parent" android:orientation="vertical">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="1. Create a contraption to basket a ball such that the ball undergoes projectile motion before entering the basket.\n2. Minimum horizontal distance between initial position of the ball and the basket should be 50 cm.\n3. Minimum diameter of the ball is 5 cm. Maximum diameter of the basket = diameter of the ball + 5 cm." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_contraption_spec" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_mech_contr_spec" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_contr_spec" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="1. A team consists of a maximum of six members.\n2. Cross college teams will also be allowed to participate in the event.\n3. The team members should produce a valid identity card to claim that they are studying in the institute.\n4. All Teams should submit an abstract to the event manager with Subject: Abstract-Contraption (Soft copy/Hard copy) on or before 19th October, 2011.\n5. Abstract should contain following details:\n  a. Tathva ID No.(obtained after online registration)\n  b. Event ID No.\n  c. Name of Participants.\n  d. Plan or layout of the contraption.\n  e. Total number of steps and a short description of each step. Sketches and flowcharts can be made about each step.\n  f. The various energy conversions involved.\n5. All teams must submit abstracts before the above mentioned date in order to get accommodation facility within the campus during the period of TATHVA '11.\n7. The contraption must have a minimum of 25 steps.\n8. The organizers will provide the following at the venue:\n  a. Extension cords\n  b. 230 V AC supply\n9. Only those teams whose abstracts are approved by the event manager will be allowed to participate in the event. Abstracts will be accepted up to 24 hours before the event.\n10. All participants should bring three copies of printed write-ups of their contraption, clearly mentioning the number of steps, description of each step and energy conversion involved.\n11. Only two trials are allowed. There will not be point deduction for any step in the second trial. However, if the participant takes the second trial, then the AVERAGE of the two is taken.\n12. Maximum of THREE interventions is allowed in any trial.\n13. Participants are allowed to skip a maximum of two steps after intervention in any trial.\n14. No alteration in the contraption of any kind is allowed at any point of time.\n15. Failing to start the contraption when asked to by the coordinators, will lead to disqualification of the team for that trial.\n16. Please contact the event manager before making any assumptions in order to avoid any cribs on the day of the event.\n17. Any change in the rules shall be notified through the website.\n\nArena Specification\nA space of 4m x 4m will be given for each team to display their contraption."
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+                    </ScrollView>
+            </LinearLayout>
+         	
+                     
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_contraption_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_mech_contr_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_contr_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="Achindev J\nEvent Manager\nPhone: +91 999 567 9829\nE-mail: achin@tathva.org\n\nSyamlal A R\nEvent Manager\nPhone: +91 963 390 4493\nE-mail: syamlal@tathva.org\n\nMithun Mohan\nEvent Manager\nPhone: +91 890 743 8436\nE-mail: mithunmohan@tathva.org"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

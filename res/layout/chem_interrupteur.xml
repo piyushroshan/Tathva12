@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_chem_interrupteur" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_chem_interrupteur"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_chem_interrupteur_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_Interrupteur_title" android:text ="Interrupteur" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_chem_interrupteur_Intro" android:text="Lighting a bulb is not much of an event. And when we give you a battery, a bulb and wires, what else could you possibly ask for. But that's not all. We would ask you to switch it off after X minutes, and if you need to do that you need a switch. In plain words that's what awaits you at Tathva '11.\n\nMake a switch which comprises of nothing but a beaker and some liquid. Now whatever else your switch could do, but it should work like one. And when we tell you to switch off the bulb after X minutes, your switch should be able to do that without your help, without you pulling out the wires from your switch. Well, make a chemical switch, which has a solution following a timed reaction. Make sure you know who Faraday is and what his laws are!!" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_chem_interrupteur_specs" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_chem_interrupteur_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_chem_interrupteur_specs" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_chem_interrupteur_specs" android:text="1. Maximum of three members per team.\n2. Inter college teams are allowed.\n3. Participants must produce Tathva IDs at the time of event.\n4. Hazardous or explosive chemicals must not be used.\n5. The timer will be started as soon as the setup is ready.\n6. The circuit consists of a 9V battery and bulb connected using insulated copper wires.\n7. The mechanism must be connected to the circuit through the alligator clips that will be a part of the provided circuit.\n8. The two wires cannot be inter-connected by any means.\n9. The mechanism must be self-contained and must fit on a table two feet wide and six feet long.\n10. No human intervention is allowed in between. The bulb should get switched off automatically.\n11. The mechanism must not leave any residue on the table or surrounding area.\n12. The mechanism must not spill any liquids or release any sprays.\n13. The light bulb must not be turned off by destroying it."
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_chem_interrupteur_stmt" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_chem_interrupteur_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_chem_interrupteur_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_chem_interrupteur_rounds" android:text="You'll be given an open circuit. Complete the circuit such that it automatically opens after 3 minutes using a chemical reaction mechanism." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_chem_interrupteur_judge" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_chem_interrupteur_judge" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_chem_interrupteur_judge" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_chem_interrupteur_judge" android:text="1. The judging will be based on how close the circuit gets opened to the specified time.\n2. The teams will be disqualified if the circuit gets broken before 30 seconds or after 4 minutes.\n3. The mechanism with exact time of action wins the event.\n4. In case no team comes up with the exact 3 min breaker circuit, the team with closest time of circuit break wins."
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_chem_interrupteur_guidelines" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_chem_interrupteur_guidelines" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_chem_interrupteur_guidelines" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_chem_interrupteur_judge" android:text="Participants may use gas-producing reactions and harness the gas to turn the light bulb off. A wire in the circuitry may be dipped in acid, which will react with the wire and eventually break the circuit. An iodine clock reaction may be used to trigger a switch." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+                <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_chem_interrupteur_faq" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_chem_interrupteur_faq" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_chem_interrupteur_faq" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_chem_interrupteur_judge" android:text="Qn: What are the apparatus that will be provided?\nAns: Beaker, petri dish,pipette, burette.\n\nQn: Can any electronic components be used?\nAns: Yes. But the initiating mechanism should be a chemical reaction.\n\nQn: Can Magnesium wire be used?\nAns: Yes,it can be used, however interconnecting the wires using magnesium wire and then burning it to break the circuit will not be allowed."
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_chem_interrupteur_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_chem_interrupteur_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_chem_interrupteur_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_chem_interrupteur_contact" android:text="Aswin Vinod\nEvent Manager\nPhone: +91 949 730 2892\nE-mail: aswinvinod@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>
+ 
+ 

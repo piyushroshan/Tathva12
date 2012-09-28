@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:id="@+id/linear_wheels_vista_intro" android:layout_height="match_parent" android:orientation="vertical">
+               <LinearLayout android:id="@+id/linearLayout_wheels_vista" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_vista_title" android:text ="Vista" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_wheels_vista_Intro" android:text="THE BIG ONE.\n\nEnough said.\nFlaunting an array of head turners, displayed for ogling at your ease. A myriad of cars so scintillating all you can think of are those plush seats and how fast that baby revs. How high is your adrenaline now?\n\nP.S. People prone to heart attacks not welcome. After all, you may get blown away.\n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            
+ </LinearLayout>

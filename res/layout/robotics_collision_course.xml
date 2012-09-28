@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_robo_coll_outer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image_robo_collision_course_outer" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_robo_collision_course"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView_robo_coll_course" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout_robo_coll_course_outer" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:orientation="vertical" android:layout_height="match_parent" android:id="@+id/linear_robo_collision_course_spec" android:layout_width="match_parent">
+                <ScrollView android:layout_width="match_parent" android:id="@+id/scrollView_robo_collision_course_spec" android:layout_height="match_parent">
+                    <LinearLayout android:id="@+id/linearLayout_robo_coll_course_inner" android:orientation="vertical" android:weightSum="1" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:text="1. Maximum number of members per team is 4.\n2. The diagram below represents a sample arena.\n" android:id="@+id/textTransBlockSpec1" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="match_parent" android:layout_height="91dp"></TextView>
+                        <ImageView android:layout_height="wrap_content" android:id="@+id/imageView1" android:src="@drawable/collisioncourse2" android:layout_weight="1.09" android:layout_width="match_parent"></ImageView>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_collision_course_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_robo_collision_course_intro" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_collision_title" android:text ="Collision Course" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="Have you ever dreamt of facing a barbarous monster? Or atleast dreamt of fleeing away from it? Well, let it turn real and robotic. Step into an arena where no blood spills, but brutality is assured. Collision Course is gearing up for a grand debut in Tathva '11. So get your bot ready for a battle of wit and fury." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_collision_course_stmt" android:layout_height="match_parent" android:orientation="vertical">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_robo_coll_stmt" android:text="Design and build a remote controlled robot (wired/ wireless) that can play a game of wrestling against a similar bot from an opposing team in a circular arena, under a stipulated time."
+ android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+ 				<ImageView android:id="@+id/image_robo_collision_course_stmt" android:layout_height="wrap_content" android:layout_width="match_parent" android:src="@drawable/collisioncourse1"></ImageView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_collision_course_contact" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_robo_collision_course_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayou23" android:layout_width="match_parent" android:layout_height="match_parent">
+                       
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_robo_coll_course_contact" android:text="Ravi Shankar\nEvent Manager\nPhone: +91 903 744 0696\nE-mail: ravishankar@tathva.org\n\nMatta Sandeep\nEvent Manager\nPhone: +91 773 651 7933\nE-mail: mattasandeep@tathva.org"
+						 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+						</LinearLayout>
+						</ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

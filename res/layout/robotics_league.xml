@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayouttrans" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" 
+        android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhostRoboLeague"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linearTransIntro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeagueIntro" android:layout_height="match_parent" android:orientation="vertical">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_league_title" android:text ="League Of Machines" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textRoboLeagueIntro" android:text="League of Machines or Robo-soccer, as it is popularly known aims at creating robots to play that beautiful game called football. League of machines was first staged in the 2006 edition of Tathva and was a highly popular and entertaining event for both the participants and even the spectators. " android:layout_width="wrap_content" android:layout_height="match_parent"></TextView>
+                        
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeagueProblem" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView21" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeague_problem" android:layout_height="match_parent" android:orientation="vertical">
+                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="Design and build two robots, one remote controlled and the other wire-controlled, that can play a game of soccer against another team of twosimilar bots in an arena."
+ android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+           			</LinearLayout>
+           			</ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeagueContact" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView21" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeagueIntro2" android:layout_height="match_parent" android:orientation="vertical">
+                      
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textLeagueContact" android:text="D Rajesh Krishna\nEvent Manager\nPhone: +91 903 750 3412\nE-mail: devireddyrajesh@tathva.org\n\nM Rama Krishna\nEvent Manager\nPhone: +91 963 325 0720\nE-mail: ramakrishna@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+            </ScrollView>
+            </LinearLayout>
+         	
+         	<LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeagueSpecifications" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView21" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeague_problem" android:layout_height="match_parent" android:orientation="vertical">
+                       
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textRoboLeagueSpecification" android:text=" Maximum number of members per team is 3.\nArena\nThe diagram below represents the actual arena. The arena shall be 260cm long and 180cm wide. The goal post shall be 60cm wide and 22cm in height from bottom. The penalty shot will be taken at a distance of 65cm from the opponent's goal post." 
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <ImageView android:id="@+id/imageLeagueSpec" android:layout_height="wrap_content" android:layout_width="match_parent" android:src="@drawable/leagueofmachines1"></ImageView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

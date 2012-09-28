@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_blitz_rag" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_blitz_rag"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_blitz_rag_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ragr_title" android:text ="Ragdoll Masters" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_blitz_rag_Intro" android:text="Ragdoll Masters is an experiment in the world of 2D beat 'em' ups with the use of ragdoll physics. In this game you control a stylized martial arts master with spectacular moves and impressive blows. It features some of the most sophisticated physics ever used in 2D games and plenty of other neat effects. The key to winning is to score combos and keep blocking the opponents attacks.\n\nCome, show your L337 Sk1llz at Blitzkrieg Arena!" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_blitz_rag_specs" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_blitz_rag_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_blitz_rag_specs" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_blitz_rag_spec" android:text="1. Registration: Rs. 50/- per participant. Tathva registration is compulsory.\n2. Round 1 will be ad-hoc and anyone can participate by registering at any time. If you win in Round 1, you get the entry fees of Rs.50/- back and proceed to the main tournament. The main tournament will continue on a knockout basis with people being called by phone and as per availability of game system.\n3. Games/Matches will be stopped when win condition is achieved.\n4. All Rounds: 1 match; Semi-Finals: 3 matches; Finals: 5 matches\n5. The matches may be broadcasted on a projector\n6. People are expected to maintain their calm and not take out any frustration on the people and equipment.\n7. You will be informed of the game at least 30 min before game-time (from round2 onwards).\n8. If time is not feasible, it will be rescheduled as per mutual agreement of both players if possible. If you cannot turn up at the venue by the scheduled time, the event-manager may disqualify you based on his decision.\n9. The managers decision will be final. Rules or structure may be modified at any time.\n10. Game Settings:\n  a. Gravity: 1\n  b. Players Speed: 4\n  c. Flexibility: 5\n  d. Blow power: 5\n  e. AI Level: 1\n  f. Slow Motion: 7\n  g. Blood: 20\n  h. Full Screen: 1\n  i. Plasma Effects: 1\n  j. Sound Level: 10\n  k. Music Level: 10\n"
+                         android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_blitz_rag_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_blitz_rag_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_blitz_rag_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_blitz_rag_contact" android:text="Shubhangam Agrawal\nEvent Manager\nPhone: +91 984 638 8425\nE-mail: shubhangam@tathva.org\n\nAkhil P A\nEvent Manager\nPhone: +91 956 785 7298\nE-mail: akhilpa@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>
+ 
+ 

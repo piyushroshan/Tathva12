@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayouttrans" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhostTrans"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            
+            <LinearLayout android:layout_width="match_parent" android:orientation="vertical" android:id="@+id/linearRoboTrans_phase1" android:layout_height="match_parent">
+                <ScrollView android:id="@+id/scrollView3" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_height="match_parent" android:orientation="vertical" android:layout_width="match_parent" android:id="@+id/linearRoboTrans_phase1" android:gravity="center">
+                        <TextView android:layout_width="wrap_content" android:text="Problem Statement:\n\nDesign and build a manual machine which picks up weight from ground and place it in the specified position after going through a bridge in a stipulated time.\n\nArena Specification:\nThe arena consists of three zones, made from plywood.\n\nZone A\nZone A is the pickup point of the blocks. The starting zone for the manual machine will be marked. The outer dimensions of Zone A are 1.2m * 0.7m (length * breadth). The blocks shall be placed randomly in Zone A. Zone A will be separated from Zone B by a boundary wall of height 0.07m.\n\nZone B\nMainly it consists of a bridge with a slope of width 40 cm, and base length 25cm. The height at the maximum elevation of the slope is 10cm, the top portion of the bridges an elevated platform of dimensions 0.4m * 0.35m. The entire zone have a size of 1.20m * .80m, refer to the sample arena.\n\nZone C\nThis is the zone meant to unload the weights; it is at ground level and separated from zone B by a white line. The dimension of the zone is 1.20m x 0.95m. In Zone C there will be three Collection pits for the wooden blocks, with 0.4m * 0.2m area on top and height of 20cm (platform no1), 15cm (plarform no2) and 10cm (platform no3) respectively. The top of the collection pits will have a boundary wall of height 1cm.\n" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:layout_height="wrap_content"></TextView>
+                        <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:src="@drawable/transporter7" android:layout_height="wrap_content"></ImageView>
+                        <TextView android:layout_width="wrap_content" android:text="Problem Statement:\nDesign and build a manual machine which picks up weight from ground and place it in the specified position after going through a bridge in a stipulated time.\n\nArena Specification:\nThe arena consists of three zones, made from plywood.\n\nZone A\nZone A is the pickup point of the blocks. The starting zone for the manual machine will be marked. The outer dimensions of Zone A are 1.2m * 0.7m (length * breadth). The blocks shall be placed randomly in Zone A. Zone A will be separated from Zone B by a boundary wall of height 0.07m.\n\nZone B\nMainly it consists of a bridge with a slope of width 40 cm, and base length 25cm. The height at the maximum elevation of the slope is 10cm, the top portion of the bridges an elevated platform of dimensions 0.4m * 0.35m. The entire zone have a size of 1.20m * .80m, refer to the sample arena.\n\nZone C\nThis is the zone meant to unload the weights; it is at ground level and separated from zone B by a white line. The dimension of the zone is 1.20m x 0.95m. In Zone C there will be three Collection pits for the wooden blocks, with 0.4m * 0.2m area on top and height of 20cm (platform no1), 15cm (plarform no2) and 10cm (platform no3) respectively. The top of the collection pits will have a boundary wall of height 1cm.\n\ntransporter4\n\n\nCompetition Rules\n1. The objective is to move all the twelve blocks from Zone A to Zone C as early as possible. The team securing maximum points shall be declared as winners in the Phase 1, all those teams moving at least three blocks within the stipulated time will qualify to Phase2. The time limit will be 10 minutes.\n2. At the beginning of the game, the team will have to place their machine in the Start Zone (in Zone A) marked red by one of the team member.\n3. Each team will be given an initial time of two minutes to set up their machine in the arena.\n4. Once a block is picked by the manual machine, if it is dropped anywhere in the arena the block and the machine will be put back to their initial positions. The game will not be paused.\n5. The bot shall not, under any circumstances, cross the white line separating zone B and zone C.\n6. In case of any technical problem with machine it can be resolved and should be placed back to the starting zone in zone A with the current block placed in its initial position, the game won't be paused (the timer will be running), the organizers should be acknowledged before such an action.\n7. Points at the end of the stipulated time will be calculated as:\n\nScore = 300 - (Time taken in seconds) + (no. of blocks transported to platform3) * 100 + (no. of blocks transported to platform2) * 200 + (no. of blocks transported to platform1) * 300.\n\n8. The machines should not leave their respective arenas at any point of time during the game. No part of the machine should touch anything outside the arena during the course of the game.\n9. The machine cannot cause any damage to the block or any part of the arena during the course of the game. If found doing so it will lead to disqualification of the team. Judges hold the right to subjectively evaluate this clause. \n" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView3" android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linearTransIntro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearRoboTransIntro" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_transporter_title" android:text ="Transporter" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textRoboTransIntro" android:text="Carrying huge weights was always a big problem for mankind. From the days of the pyramids of Egypt man has been using different techniques to transport huge weights. The latest addition to this is the use of robots. Weight carrying robots or transporters as they are popularly known, are robots which can lift weights and transport them from one area to another.\n\n'Transporter' made its first appearance at Tathva in its '06 version. This time it is going bigger and bigger with two phases in competition, one for manual machines alone and other a combined version of manual and autonomous machine. To make the competition much more exciting each phase carries its own prize. To take part in the second phase the contestant must qualify in the first phase, or may choose to compete only in the first phase. " android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboTransRules" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView2" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearRoboTrans_rules" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="1. The teams must adhere to the spirit of healthy competition. The teams must not damage the opponent's machine in any way. Judges reserve the right to disqualify any team indulging in misbehaviour.\n2. A team can have a maximum of 4 members. Students from different institutions can form a team.\n3. The machine would be checked for its safety before the race and would be discarded if found unsafe for other participants and spectators.\n4. Any team that is not ready at the time specified will be disqualified from the competition automatically.\n5. The name of your machine must be prominently displayed on the manual as well as the autonomous machine.\n6. Judges' decision shall be treated as final and binding on all.\n7. The organisers reserve all rights to change any or all of the above rules as they deem fit. Change in rules, if any will be highlighted on the website and notified to the registered participants.\n"
+ android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+ 					</LinearLayout>
+ 					</ScrollView>
+            </LinearLayout>
+            
+            
+              <LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboTrans_fab" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView3" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearRoboTrans_spec" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="1. Base of the machine must not be greater than 0.30 m x 0.25 m (Length x Breadth) and its height should be less than 0.45 m at the start of the game. Boundary of the Base is defined by the points on the machine touching the ground in the horizontal position. The machine should fit into a box having the above mentioned size constraints. No human interference with the machine is allowed after the dimension test.\n2. The external wired/wireless remote control used to control the machine manually is not included in this size constraint.\n3. If the machine uses an externally placed power supply, the dimensions of the power supply are not included in the size constraint.\n4. During the game, the machine can expand or detach itself into multiple parts provided it does not damage the arena in any way. The judges hold the right to subjectively determine if the machine violates this clause.\n5. Machines cannot be constructed using readymade Lego kits or any readymade mechanism but use of readymade gear assemblies is allowed. Violating this clause will lead to disqualification of the machines. Judges hold the right to subjectively evaluate this clause. \n"
+ android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+ 					</LinearLayout>
+ 					</ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboTrans_prop" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView3" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearRoboTrans_prop" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="1. The machine can use an externally placed or on-board electric or non-electric power supply. Use of compressors is not allowed. However the power supply must be non-polluting and must satisfy the safety constraints determined by the judges. In case the machine is using a non-electric power supply, kindly get it approved from the organizers beforehand via email. Organizers are not responsible for inconvenience if approval is not sought.\n2. The method of propulsion is at the discretion of the builder, provided it does not damage the arena in any way and it satisfies the safety constraints determined by the judges. The judges hold the right to subjectively determine if the machine violates this clause.\n3. In case of an electric power supply, the voltage at any point on the machine must be lower than or equal to 12V at any point of time during the game.\n4. The organizers will provide a standard 12V, 1A DC power supply. Any extension cords, eliminators, adaptors etc. required will have to be arranged by the participants themselves.\n"
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+ 					</LinearLayout>
+ 					</ScrollView>
+            </LinearLayout>
+            
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboTransContact" android:layout_height="match_parent" android:orientation="vertical">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textRoboTransContact" android:text="Sarath George\nEvent Manager\nPhone: +91 949 537 0267\nE-mail: sarathgeorge@tathva.org"
+ android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+         	
+         	<LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboTransBlockSpec" android:layout_height="match_parent" android:orientation="vertical">
+             <ScrollView android:id="@+id/scrollView3" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearRoboTrans_spec" android:layout_width="match_parent" android:layout_height="match_parent">
+                     
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textRoboTransBlockSpec" android:text="There will be twelve cylindrical blocks, each having a base diameter of 4 cm and height 8 m, and about 150 gm weight (within 10% error) and will be distributed randomly in the Zone A. Blocks are made using wood. All twelve blocks will have a metallic semi-circular ring (of non-magnetic material) on the top. The placement of the blocks will be the same for every team. Blocks will be distributed in rows with 15 cm spacing in between(from center to center)." 
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

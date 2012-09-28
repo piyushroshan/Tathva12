@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_ee_coil_gun" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_ee_coil_gun"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ee_coil_gun_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_coil_title" android:text ="Coil Gun" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ee_coil_gun_Intro" android:text="Coil gun is the simplest model that explains how electrical energy can be converted into mechanical energy. This conversion demonstrates the flexibility of electrical energy which makes it the best for energy transmission." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ee_coil_gun_specs" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_ee_coil_gun_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_ee_coil_gun_specs" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ee_coil_gun_specs" android:text="1.Team Specifications\n  a. Maximum of 2 members per team.\n2.Gun Specifications\n  a. Weight of the gun, including all circuitries involved (except power supply), must not exceed 1 kg.\n  b. The length of the barrel should be less than 50 cm.\n3.Bullet specifications\n  a. The bullet will be made of a ferromagnetic material, and will weigh less than 15gm.\n  b. Bullet will have a cylindrical shape with a radius of 3mm and a length of 2cm.\n4.Power Supply Specifications\n  a. A regulated dc power supply (9V, 2A) will be provided.\n  b. The participants are not allowed to use their own power supply.\n5.Conduct\n  a. The Organisers will hand over the supply leads and the bullet to one of the team members.\n  b. Only that member is allowed to set up and fire the gun in the arena.\n  c. After loading the bullet, no manual interventions with the gun are allowed except switching it on and firing with the control switches.\n  d. The barrel should be kept horizontal in an elevated position 2m from the ground before firing and should fire in the given direction.\n  e. It should be placed in the specified position of the arena.\n  f. 3 trials will be given to each team and the best shot will be considered.\n  g. Set up time per team would be 4 min, and the time gap between trials will be less than 1min.\n  h. The participants must ensure their safety before they plug in their devices.\n  i. In case of any danger (explosion, shock etc.) the team will be disqualified immediately, and the organisers hold the discretion power for the same.\n  j. The circuit must be built from discrete components except in the case of timer IC-555.\n  k. No ready-made circuits should be used (even as a block in the entire circuit). "
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ee_coil_gun_stmt" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_ee_coil_gun_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_ee_coil_gun_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ee_coil_gun_rounds" android:text="You are supposed to build a coil gun which depends only on the given dc power supply to fire a given small ferromagnetic 'bullet' to the maximum possible horizontal distance." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ee_coil_gun_judge" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_ee_coil_gun_judge" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_ee_coil_gun_judge" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ee_coil_gun_judge" android:text="1. The gun which fires the bullet to maximum horizontal distance will win the prize.\n2. The organisers hold the right to avail more time as in the case of system failure.\n3. The first point of contact of the bullet will be considered for distance measurement, in case it rolls on the ground.\n4. The distance will be measured from the tip of the barrel in the horizontal direction.\n5. The judge's decision shall be final, and binding on all." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ee_coil_gun_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_ee_coil_gun_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_ee_coil_gun_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ee_coil_gun_contact" android:text="Anuj C Thomas\nEvent Manager\nPhone: +91 949 738 0631\nE-mail: anuj@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

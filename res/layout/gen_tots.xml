@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_gen_tots" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_gen_tots"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_tots_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_tots_title" android:text ="TOTS" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_gen_tots_Intro" android:text="It's an acronym for Tathva On The Spot. We believe that Tathva is not just about a bunch of geeks or a bag of gizmos. It's also about the ordinary lot of us, who can think a bit differently and a bit wackily. T.O.T.S is pure and mad fun. It's as simple as that. Check out a few of our events. " android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_tots_hunt" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_gen_tots_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_tots_specs" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_tots_specs" android:text="Event: Treasure Hunt.\n\nDate: 22nd October, 2011\n\nThey say that there once existed a civilisation, which was so advanced in technology, that they challenged the Gods themselves. Two thousand years later, we will be taking a voyage to discover the remnants of Atlantis and it's lost heritage.\n\nRules:\n1. A maximum of 4 members are allowed in a team.\n2. There will be preliminary written round from which six teams will be selected for the final event.\n3. Prizes:\nFirst 	INR 3000/-\nSecond   	INR 2000/-\n+ Vouchers "
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_tots_elementart" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_gen_tots_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_tots_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_tots_stmt" android:text="Date: 21st October, 2011\n\nIt was one of the favourite buzzwords of Sherlock Holmes. To any seemingly complicated problem, there's always a simple solution. Do you have the brains to crack that simple yet elusive answer?\n\nRules:\n1. A maximum of 2 members are allowed in a team.\n2. Elementary is composed of two rounds of events.\n3. There will be a preliminary written round, which will test you on the simple concepts which drive science and technology. It will also check out your logical abilities and common sense.\n4. Those selected from the preliminary round will undergo a final round, which would involve simple hands-on events, which will check your scientific acumen and your ability to crack puzzling brain teasers.\nMore than anything else, expect a lot of mad fun.\n5. Prizes:\nFirst 	INR 1000/-\nSecond   	INR 600/-\n+ Vouchers "
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_tots_tech" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_gen_tots_judge" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_tots_judge" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_tots_judge" android:text="Date: 22nd October, 2011\n\nWe believe that science is absolutely above the barrier of languages. And, we intend to prove it to you.\n\nRules:\n1. A maximum of 3 members are allowed in a team.\n2. It's the usual Dumb Charades with a different set of rounds.\n3. The stuff you would have to act out and decipher might include:\n  a. Famous personalities (Thomas Alva Edison, Alexander Graham Bell etc.)\n  b. Inventions (Penicillin, Telephone, Radio etc.)\n  c. Theories and Concepts (How would you act out gravity for instance?)\n  d. Events( Hiroshima bombing, Chernobyl Disaster)\n\nOn top of it, there will be really wacky rounds, which will blow you apart. So, be prepared. The fun never stops here at T.O.T.S.\n\nPrizes:\nFirst INR 600/-\nSecond INR 300/-\n+ Vouchers "
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_tots_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_gen_tots_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_tots_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_gen_tots_contact" android:text="Nitheesh I S\nEvent Manager\nPhone: +91 949 726 9030\nE-mail: nitheeshis@tathva.org\n\nAravind A N\nEvent Manager\nPhone: +91 889 172 5632\nE-mail: aravind@tathva.org\n\nKrishnakumar S\nEvent Manager\nPhone: +91 871 422 2918\nE-mail: krishnakumar@tathva.org\n\nPrajith Pramod\nEvent Manager\nPhone: +91 999 576 8336\nE-mail: prajithp@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

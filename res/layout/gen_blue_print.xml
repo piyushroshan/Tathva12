@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_gen_blue_print" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_gen_blue_print"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_blue_print_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_blue_title" android:text="Blue Print" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_gen_blue_print_Intro" android:text="Today's ideas are tomorrow's technology. Think you have an idea that can make a difference? If your answer is yes, then you wouldn't want to miss this event. Blueprint is the ultimate paper presentation contest, encompassing the below mentioned broad categories." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_blue_print_topics" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_gen_blue_print_topics" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_blue_print_topics" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_blue_print_topics" android:text="CHEMICAL ENGINEERING\n\n* Biochemical engineering\n* Ceramics\n* Chemical engineering thermodynamics\n* Chemical Process Technology\n* Chemical reaction engineering\n* Food process engineering\n* Interfacial Engineering\n* Micro fluidics\n* Nanotechnology and Chemical Engineering\n* Petrochemical technology\n* Polymer sciences\n* Process Utilities and Pipeline Design\n* Pulp and Paper Technology\n* Separation processes\n* Transport Phenomenon\n\nCIVIL ENGINEERING\n* Building Construction\n* Environmental engineering\n* Geotechnical engineering\n* Structural Mechanics\n* Traffic and Transportation\n\nCOMPUTER SCIENCE ENGINEERING\n* Algorithms-complexity\n* Operating systems/Distributed/Networking Systems\n* Information Security/Cryptography\n* Bioinformatics\n* Mobile Communication\n\nELECTRICAL ENGINEERING\n* Control systems\n* Digital Signal Processing\n* Digital electronics\n* Electronic Circuit Design\n* Filter Design\n* Instrumentation and Measurement Systems\n* Microprocessors and Microcontrollers\n* Power Quality and Conservation\n* Power systems-generation and transmission\n\nELECTRONICS ENGINEERING\n* VLSI Design\n* Embedded Systems\n* Power Electronics\n* Theory of semiconductor devices and development\n\nMECHANICAL ENGINEERING\n* Aerospace - aerodynamics\n* Fabrication\n* Fluid Mechanics\n* Heat and Mass Transfer\n* Material Science\n* Solid Mechanics\n* Structural analysis\n* Design"                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+			 <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_blue_print_rules" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_gen_blue_print_rules" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_blue_print_rules" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_blue_print_rules" android:text="1. There can be a maximum of two members per team.\n2. Team members must register online in Tathva '11 website. On registering, members will be mailed a unique Tathva '11 ID which shall be useful during the course of the event.\n3. For screening purposes, a pre-event abstract, along with your tathva id's and other details has to be submitted in .pdf or .doc format. The abstract should be mailed to blueprint@tathva.org.\n4. In the pre-event abstract to be sent, the participant should mention as to under which department, under which topic he wishes to present the paper.\n5. The last date for submission of pre-event abstracts will be 10th October 2011.\n6. Short listed teams will be informed by mail. A list of short listed teams will also be displayed on the Tathva '11 website.\n7. The participants will be given 20 minutes to present their paper before a panel of judges.\n8. 15 minutes will be for presentation and 5 minutes for the Viva.\n9. The participant is expected to bring 3 hard copies as well as a soft copy of the paper."
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>            
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_blue_print_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_gen_blue_print_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_blue_print_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_gen_blue_print_contact" android:text="Nripan V\nEvent Manager\nPhone: +91 949 557 6278\nE-mail: nripan@tathva.org\n\nJinu John\nEvent Manager\nPhone: +91 904 868 9395\nE-mail: jinujohn@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

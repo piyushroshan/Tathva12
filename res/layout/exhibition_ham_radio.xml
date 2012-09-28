@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:id="@+id/linear_exhibition_isro_intro" android:layout_height="match_parent" android:orientation="vertical">
+               <LinearLayout android:id="@+id/linearLayout_exhibition_ham_radio" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ham_title" android:text="Ham Radio" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center" android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_exhibition_ham_radio_Intro" android:text="Amateur Radio, also known as Ham Radio, is the use of designated radio frequency spectrum for purposes of private recreation, non-commercial exchange of messages, wireless experimentation, self-training, and emergency communication. Since its inception, Ham radio has played a vital part in technical and scientific advances and social work.\nHere is your chance to have a closer look at its actual operation...\nTathva '11 hosts a live demonstration - an opportunity to learn and try hands-on application in the fascinating world of Ham radio." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            
+ </LinearLayout>

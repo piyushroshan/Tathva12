@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_workshop_cloud_computing" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_workshop_cloud_computing"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_cloud_computing_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_cloud_title" android:text ="Cloud Computing" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_workshop_cloud_computing_Intro" android:text="Cloud Computing is the latest technology that will make life easier for people in organizations dealing with huge amounts of data and information. Today institutions, both government and private, invest a great deal in maintaining servers to store that information. However, not all of this data is accessed frequently. This result is under utilization of available services and unnecessary costs. That's where cloud computing helps." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_cloud_computing_benefits" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_cloud_computing_benefits" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_cloud_computing_benefits" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_cloud_computing_benefits" android:text="1. Set Up of Cloud Based Virtual System for Client/User\n2. Study Materials\n3. CDs'\n4. Scoring Points\n5. Fellowships\n6. Internships\n7. Online Support\n8. Collaboration Learning with Mentors\n9. On completion the students will be able to :\n  a. Install and configure Windows Server 2008 Hyper-V.\n  b. Understand Hyper-V Virtual Networking.\n  c. Understand the types of Virtual Hard Drives and their benefits.\n  d. Create and manage Virtual Machines on the Hyper-V server.\n  e. Understand how to configure the Hyper-V server to ensure high availability.\n  f. Monitor the performance of the Hyper-V server.\n  g. Understand how to use existing virtual machines in the Hyper-V server.\n  h. Understand the issues with migrating existing Virtual Machines to Hyper-V.\n  i. Understand how System Center Virtual Machine Manager (VMM) can be used to manage Hyper-V servers throughout the enterprise.\n  j. Use Power Shell to manage the Hyper-V server and the virtual machines hosted on the Hyper-V server.\n  k. Implement a disaster recovery plan for Virtual Machines on Hyper-V.\n  l. Distribution of certificates to participates with Grades.\n\n10. The practicum include:\n\n  a. Training Material (Handouts)\n  b. Hands-on experience on the specially designed takeaway software kits and future online assistance with other Development Equipments\n  c. Participation Certificate (to all participants)\n  d. An open offer for Our Re-investment programs\n  e. Green Jobs/Internship network membership" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_cloud_computing_curriculum" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_cloud_computing_curriculum" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_cloud_computing_curriculum" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_cloud_computing_curriculum" android:text="1. Introduction to Technology Basic Fundamentals of Technology\n2. Hands-on-sessions Industry Linkage\n3. Existing and Ongoing Project Case Studies\n4. Career Perspectives Applications and Research\n5. Cloud Computing\n6. Evolution of Cloud Computing and its real-time applications" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_cloud_computing_details" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_cloud_computing_details" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_cloud_computing_details" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_cloud_computing_details" android:text="Duration: 1 day (10 hours)\nDate: Oct 22, 2011\nOrganizers: GREEN ADD+\nCost: INR 500/-\nVisit www.greenadd.in for further details\nE-mail: info@greenadd.in" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_cloud_computing_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_workshop_cloud_computing_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_cloud_computing_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_workshop_cloud_computing_contact" android:text="Bharathi Kannan\nWorkshop Manager\nPhone: +91 974 682 6313\nE-mail: bkannan@tathva.org\n\nShajee C K\nWorkshop Manager\nPhone: +91 9037 347 020\nE-mail: shajeeck@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

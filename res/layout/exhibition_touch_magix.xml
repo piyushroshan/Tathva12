@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:id="@+id/linear_exhibition_isro_intro" android:layout_height="match_parent" android:orientation="vertical">
+               <LinearLayout android:id="@+id/linearLayout_exhibition_touch_magix" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:orientation="vertical" android:layout_height="match_parent">
+                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_touch_title" android:text="Touch Magix" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                       
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_exhibition_touch_magix_Intro" android:text="Imagine a world where you can interact with the walls, floors, tables and even windows! This is not a science fiction movie, this is reality. Tathva '11 brings to you TouchMagix, presenting an array of fascinating applications in new-age technology. Widely used in the fields of advertising, gaming and retail, TouchMagix takes science to a whole new level. Prepare to be amazed as you experience the magic first hand." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            
+ </LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_highlight_envision_srishti" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_highlight_envision_srishti"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_srishti_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_srishti_title" android:text ="Srishti" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_highlight_envision_srishti_Intro" android:text="'Hide not your talents\nThey for use where made\nWhat's a sundial in a shade?\n\nThe ever increase in road rage casualties highlights the need for improved safety measures. It's always better to act beforehand rather than hoping for miracles while driving. The Social Engineering Forum of NIT Calicut envisions the concept of 'Technology For Society' and provides you with the perfect platform to be a pioneer in the field of expanding technology. Be safety-minded; bring forth your ideas and share it with the world at Tathva '11. " android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_srishti_stmt" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_highlight_envision_srishti_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_highlight_envision_srishti_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_highlight_envision_srishti_stmt" android:text="Put forth your innovative and simple ideas to modify vehicles (cycles/cars/bikes/trucks/buses etc.) to make it safer on the road."
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+              <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_srishti_rules" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_highlight_envision_srishti_rules" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_highlight_envision_srishti_rules" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_highlight_envision_srishti_rules" android:text="1. Participants should register online in Tathva website.\n2. Each team can consist of maximum 2 members.\n3. Cross college teams are accepted.\n4. The ideas must be innovative and not replicated from any source.\n5. An abstract containing the details of your presentation should be submitted on or before 19th October, 2011.\n6. Submissions can be in the form of paper presentation (compulsory). Extra credits will be awarded if it is explained with cad, working models etc.\n7. The participants will be given 20 minutes to present their paper before the judging panel.\n8. 15 minutes will be provided for presentation and 5 minutes for the Viva.\n9. The participants are expected to bring 3 hard copies as well as a soft copy of their paper presentation."                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_srishti_guidelines" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_highlight_envision_srishti_criteria" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_highlight_envision_srishti_criteria" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_highlight_envision_srishti_criteria" android:text="Your paper presentation can be pertaining to any innovative idea which would increase road safety.\n\nExamples:\n1. Mechanism to improve braking for vehicles using drum brakes in wet conditions.\n2. Increasing visibility in rain and fog conditions.\n3. Better bike crash protection."                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_srishti_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_highlight_envision_srishti_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_highlight_envision_srishti_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_highlight_envision_srishti_contact" android:text="Jose Dominic\nEvent Manager\nPhone: +91 949 633 5064\nE-mail: josedominic@tathva.org\n\nRoshima Mukund\nEvent Manager\nPhone: +91 949 729 2866\nE-mail: roshima@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

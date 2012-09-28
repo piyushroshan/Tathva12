@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_workshop_accelero_botix" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_workshop_accelero_botix"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_accelero_botix_intro" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_accelero_botix_intro" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout_workshop_accelero_botix_intro" android:layout_width="match_parent" android:layout_height="match_parent">
+                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_acceler_title" android:text ="Accelero Botix" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView> 
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_accelero_botix_intro" android:text="Accelero-Botix is a new approach to the Human Machine Interface. It is based on the implementation of acceleration sensor on robotics, graphics and embedded application development. This technology is now widely used in virtual reality, mobile phones, gaming solutions, animated movies etc.\nTathva '11 is going to take you through the world of accelero-botix with the best of its kind workshop, conducted by Technophilia." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+			
+			<LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_accelero_botix_highlights" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_accelero_botix_highlights" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_accelero_botix_highlights" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_accelero_botix_highlights" android:text="1. Fundamentals of AVR series of microcontroller\n2. Programming the microcontroller using embedded C\n3. Interfacing and controlling various devices like keypad, LED, buzzer, motors, sensors etc with microcontroller\n4. Implementation of I2C communication protocol\n5. Making serial communication with PC using hyper terminal and UART communication protocol\n6. Speed control of DC motor using PWM\n7. Interfacing acceleration sensor with microcontroller\n8. Interfacing acceleration sensor with PC\n9. Recognizing hand gesture using acceleration sensor\n10. Computer graphics control using acceleration sensor\n11. Controlling Robotic vehicle using acceleration sensor" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_accelero_botix_course_contents" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_accelero_botix_course_contents" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_accelero_botix_course_contents" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_accelero_botix_course_contents" android:text="INTRODUCTION\n\n1. Introduction to robotics\n2. Introduction to embedded systems\n3. Introduction to Human machine interface (HMI)\n4. Introduction to Human Computer interface (HCI)\n\nMicrocontroller\n\n1. Overview of popular microcontrollers\n2. The AVR series of microcontrollers and its core\n3. AVR microcontroller features and capabilities\n\nProgramming\n\n1. Embedded C\n2. Use of Embedded C IDE\n3. Use of flash tool\n4. Writing code in embedded C\n5. Accessing various functions of AVR microcontroller using embedded C\n6. Basic I/O operations\n7. Timers and counters\n8. UART communication protocol\n9. I2C communication protocol\n10. PWM wave generation\n11. Implementation of artificial intelligence using embedded C\n\nActuators\n\n1. Basics on servo and stepper motor\n2. Interfacing geared DC motor\n3. Controlling the speed of DC motor using PWM\n4. Use of DC motor for Robotic vehicle maneuvering\n\nSensors\n\n1. Basics on different types of sensors used in robotics\n2. Basics on Optical, ultrasonic, infrared, acceleration and gyro sensor\n3. Different interfacing technologies used to interface sensors\n\nAcceleration Sensor: Concepts and Activities\n\n1. What is an acceleration sensor?\n2. Working principle of an acceleration sensor\n3. Types of acceleration sensors available in market\n4. Different interfacing technologies used with acceleration sensor\n5. Hardwire interfacing circuitry of a 3 axis acceleration sensor\n6. Register configuration of an acceleration sensor\n7. Reading x, y, z and tilt parameters\n8. Configuring the acceleration sensor for shake detection\n9. Configuring the acceleration sensor for tap detection\n10. Configuring the Acceleration sensor for orientation detection\n11. Mapping the hand gesture through acceleration sensor and controlling a robotic vehicle\n12. Interfacing acceleration sensor with PC for computer graphics manipulation" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_accelero_botix_kit_contents" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_accelero_botix_kit_contents" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_accelero_botix_kit_contents" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_accelero_botix_kit_contents" android:text="1. Microcontroller development board(1)\n2. Acceleration sensor(1)\n3. Serial cable(1)\n4. USB cable(1)\n5. A set of robotic chassis(1)\n6. Geared DC motor(2)\n7. Molded plastic Wheels with rubber grip(2)\n8. Ball caster with 360 degree freedom(2)\n9. Batteries for power supply(2)" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_accelero_botix_details" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_accelero_botix_details" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_accelero_botix_details" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_accelero_botix_details" android:text="Duration: 2 days (8 hours on each day)\nDate: Oct 21 and 22, 2011\nOrganizers: Technophilia\nCost: Rs 1250/- per person.\n\nParticipants can register in teams of 4 members as the Takeaway kit is for 4 people\n\nVisit www.technophilia.co.in for further details\nE-mail: info@technophilia.co.in" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_accelero_botix_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_workshop_accelero_botix_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_accelero_botix_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_workshop_accelero_botix_contact" android:text="Bharathi Kannan\nWorkshop Manager\nPhone: +91 974 682 6313\nE-mail: bkannan@tathva.org\n\nShajee C K\nWorkshop Manager\nPhone: +91 9037 347 020\nE-mail: shajeeck@tathva.org\n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_blitz_dota" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_blitz_dota"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_blitz_dota_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_dota_title" android:text="DotA" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center" android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_blitz_dota_Intro" android:text="Slash. Hack. Burn. Retreat.\nBuy. Heal. Relax.\nSlash. Hack. Burn. Retreat.\nBut, you better be smart\nOr pawned, you will be.\n\nDefense of the Ancients (commonly known as DotA) is the wildly popular map for the real-time strategy game Warcraft III, based on the 'Aeon of Strife' map for StarCraft. The objective is for each team to destroy the opponents' Ancients, heavily guarded structures at opposing corners of the map. Players use powerful units known as heroes, and are assisted by allied heroes and AI-controlled fighters called 'creeps'. Gamasutra declared that DotA was perhaps the most popular 'free, non-supported game mod in the world'. DotA takes a few days to learn, but years to master and has become extremely popular in India since the last few years and the competitive scene has risen. In any LAN Cafe, one can walk in to find DotA games in progress and many nights are wasted playing and discussing DotA.\n\nCome battle some of the best teams of South India at Blitzkrieg!" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_blitz_dota_specs" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_blitz_dota_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_blitz_dota_specs" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_blitz_dota_specs" android:text="1. Registration Fees: Rs. 500/- per team (This is excluding Tathva registration and at least 1 member should have a Tathva registration.)\n2. Competition format: 5v5 Teams\n3. Match format: Single elimination i.e,Knockout (may be changed to Double Elimination if feasible)\n4. Match winner: The team who destroys the opponent's Frozen Throne / World Tree first, or the team who's opponent surrenders by typing gg/ff/forfeit into the All-Chat.\n5. Finals will be 'Best of 3 games' and all other rounds will be single game only."
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_blitz_dota_settings" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_blitz_dota_settings" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_blitz_dota_settings" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_blitz_dota_settings" android:text="1. Game Version: 1.26a\n2. DotA Version: 6.72f\n3. Drafting mode: Captains Mode (-cm)\n4. Game Speed: Fast\n5. Item Restrictions: None\n6. Coin Toss: Winner selects Sentinel / Scourge OR Picks first hero during draft."
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_blitz_dota_rules" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_blitz_dota_rules" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_blitz_dota_rules" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_blitz_dota_rules" android:text="General :\n\n1. Teams must report to the venue at the time informed. If they cannot report within 10mins of allotted time, they will be disqualified. The time will be informed in the contact provided by the team at least 45 minutes in advance.\n2. The administrator's decision will be final in case of any dispute.\n3. Game will be hosted by Blitzkrieg using referees.\n4. Team members are not allowed to change seats once the DOTA map has started to load.\n5. At the end of the match, competitors must maintain the final screenshots and receive the confirmation from the admin.\n6. Backdooring is allowed. However instances of teleport abuse are not allowed. You cannot use any form of teleport (furion skill) to enter an enemy base unless your creeps are already present in the base.\n  Example: Furion teleporting into enemy's base without Furion's creeps present.\n7. Sharing of items is allowed as long as the game permits.\n\n8. Item pooling of any sort is not allowed. This means that:\n  a. Items bought with a competitor's own money cannot at any time be carried by any of his teammates. Using shared courier is allowed.\n  b. Items bought with the competitor's own money can only be carried or sold by him.\n  c. This rule applies to competitors on the same team. Competitors can pick up items dropped by their opponents.\n9. Control Sharing is allowed.\n\n10. Abuse and Exploitation:\n  a. Trees Trapping: intentionally trapping enemies in trees is not allowed (except Furion's skill)\n  b. Pause Abuse: From the point after hero selection process is completed, pausing without any valid reason is not allowed.\n  c. Creep Blocking: Creep blocking (such as using Chen's creeps to block the entrance to the base, disallowing creeps from moving down the lane completely) is not allowed. Creep slowing (such as moving in front of the creeps in zigzag manner to slow their progress or using fissure) is allowed.\n  d. Bug Exploitation: Exploitation of any known or newly discovered bug during the match will result in an immediate disqualification of the team. Excuses will not be entertained. Not knowing the bug is not an excuse, competitors are expected to know the current bugs\n\n11. Definition of Bugs\n  a. Anything abnormal which will give a competitor / team an unfair advantage\n  b. Anything which will cause interruption / fatal error to the game\n\n12. Penalties\n  a. Warning: After a warning is given, the game goes on. If these warnings are accumulated by the team during the match, the team will be disqualified from the tournament\n  b. Game Loss: A 'Game loss' given to a team means that the team will automatically lose the game, irrelevant of the actual match result.\n  c. Disqualifications: A team disqualification will lead to the team being removed from the tournament. They will not be allowed to take part in the current event.\n\n13. Game Saves\n  a. First save will be at either:\n   1. 15 minutes into the game\n   2. First blood\n  b. Second save onwards will be every 15 minutes of the game\n  c. Saves will be done after any tower/rax are taken down or after a major gank/team-battle at a 'safe' instance decided by the Admins/Referees.\n  d. Admins/Referees have the right to request for additional game save at any moment during the tournament.\n\n14. Any competitor found to have intentionally disconnected from the game will give that competitor's team a loss for that match.\n15. If any competitors are disconnected within 15 minutes after the game start, the game will be restarted with same heroes on same players and same lanes have to be maintained till 1st creepwave clashes.\n16. If any competitors are disconnected 15 minutes after the game start, the game will be reloaded from the latest save, if no barracks have been destroyed since last save. If so, the game will continue.\n17. In case of game crash, the game will be reloaded from the latest save.\n18. No random chats are allowed in all-chat during the game. Request for pause or save can be made by either captain at any point.\n19. Pauses are allowed, but there can only be a maximum of two pauses, each 5 minutes, per team. If you cannot agree for longer pauses, the game can be resumed after 5 minutes. Before pausing and un-pausing , you need to inform your enemy about this, so that you don't get any advantage. Pauses must be for genuine reasons only.\n20. War3HK tool, WarKeys and DotaKeys are allowed to remap keys - however any use of such tools must be declared and subject to inspection before the game.\n21. Any use of hacks like maphack or any software or scripts which gives any unfair advantage is banned and will result in instant disqualification from the tournament.\n22. Players are required to conduct themselves in a professional manner, showing sportsmanship and respect for everyone involved. Any flaming or insulting will result in team-disqualification.\n23. Team or player names may not be vulgar. While it is up to the admins' discretion, as a guideline, avoid the following: profanity, hate-speech, drug use, or sexual references."
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_blitz_dota_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_blitz_dota_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_blitz_dota_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_blitz_dota_contact" android:text="Shubhangam Agrawal\nEvent Manager\nPhone: +91 984 638 8425\nE-mail: shubhangam@tathva.org\n\nAkhil P A\nEvent Manager\nPhone: +91 956 785 7298\nE-mail: akhilpa@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>
+ 
+ 

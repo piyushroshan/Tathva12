@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_ee_pure_tricks" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_ee_pure_tricks"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ee_pure_tricks_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:orientation="vertical" android:layout_height="match_parent">
+                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_pure_title" android:text ="Pure Tricks" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ee_pure_tricks_Intro" android:text="You will be given certain challenges, which may or may not have simple solutions, but you are expected to do it purely trically!! This is an opportunity for electrical enthusiasts to travel the path less explored, feeling the real pulse of Electrical Engineering, recollecting the basics, implementing the known and the unknown!!!\n\nYou may not expect mind-boggling questions and unbreakable tasks at Pure Trics!! All challenges are meant to test your VERY BASICS." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ee_pure_tricks_specs" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_ee_pure_tricks_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_ee_pure_tricks_specs" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ee_pure_tricks_specs" android:text="1. There can be a maximum of three members and a minimum of two members, per team.\n2. Members of a team need not be from the same institution.\n3. Participants can be from any branch of engineering.\n4. Teams will NOT be allowed to carry their own personal components to the event. All the components required for the event will be provided by the organizers.\n\nRound 1\na. The prelims round is on-the-spot; no pre-registration is required.\nb. The first round will be a paper-based exam, meant to test the basic understanding of concepts. Objective questions can be expected.\n\nRound 2\na. The participants who clear Round 1 will move to Round 2.\nb. This round too will be paper-based, but the questions will be slightly more complex and challenging than Round 1. Questions of any type can be expected.\n\nRound 3\na. This is the final round.\nb. Here, the participants have to go through a hands-on challenge. Participants will be provided with certain tasks/challenges."
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ee_pure_tricks_judge" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_ee_pure_tricks_judge" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_ee_pure_tricks_judge" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ee_pure_tricks_judge" android:text="1. In Round 1 and Round 2, teams with higher aggregate will be more preferred to the next round.\n2. In Round 3, which is the final round, simplicity of the logic, minimal use of resources, neatness of the circuit, time taken to complete the task - everything will be accounted for determining the winner.\n3. In case of a tie in Round 3, performance in Round 1 and Round 2 too will be considered to determine the ultimate winner.\n4. In case of any discrepancy, the decision of the event coordinators shall be final in all respects." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ee_pure_tricks_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_ee_pure_tricks_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_ee_pure_tricks_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ee_pure_tricks_contact" android:text="Vinayak R Kartha\nEvent Manager\nPhone: +91 989 581 9531\nE-mail: vinayak@tathva.org\n\nRahil Bassim\nEvent Manager\nPhone: +91 944 648 1273\nE-mail: rahil@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

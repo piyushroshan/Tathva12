@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_gen_inq_virt" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_gen_inq_virt"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_inq_virt_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_inq_title" android:text="Inquisito Virtuoso" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_gen_inq_virt_Intro" android:text="'Doubt, indulged and cherished, is in danger of becoming denial; but if honest, and bent on thorough investigation, it may soon lead to full establishment of the truth.'\n- Ambrose Bierce\n\nOur inks are over, blotting on maps and papers. Our eyes are red, looking for every speck of evidence. Nights have passed. Not yet have we zeroed down on HIM. Put in your hands. Give in your wit and spot the culprit.\nSo, are you in...??" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_inq_virt_specs" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_gen_inq_virt_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_inq_virt_specs" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_inq_virt_specs" android:text="The event is conducted under three stages: Prelims, Qualifiers and Finals.\n\nPRELIMS:\nThe first round is a written preliminary round evaluating basic knowledge on Forensic Intelligence and Life sciences.\n\nQUALIFIERS:\nThe qualifiers of prelims will get into the second round and will be assessed for the finals under two stages.\n1) Evidence Collection:\nThe selected participants will first be prone to a crime scene and have to submit a note on the visual evidences collected.\n2) Written Assessment:\nA list of all possible suspects along with their profiles containing all necessary information will be provided. The qualifiers will have to write a detailed note on their suspect, citing solid reasons from their visual evidences collected within a time span of 1 hour.\n3 teams qualifying these 2 rounds will be selected for the finals.\n\nTeam Specifications\n1. Each team should comprise of atmost 3 members.\n2. All team members must produce a valid identity card from their respective institutions."
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_inq_virt_stmt" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_gen_inq_virt_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_inq_virt_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_inq_virt_stmt" android:text="This event is meant to gauge your aptitude in crime scene investigation, analysis of evidence and observational skills. Track the culprit with your intelligence and make your day..!!"
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+             
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_inq_virt_judge" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_gen_inq_virt_judge" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_inq_virt_judge" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_inq_virt_judge" android:text="1) Points will be allotted by the judges on the basis of:\n  a. Evidence collection\n  b. Interpretation and reasoning\n  c. Performance in written exam round\n  d. Performance in final round\n  e. Total time taken\n2) In case of tie, a quiz based on forensic science will be conducted.\n3) Judge's decision will be final.\n4) Event coordinators reserve rights to change any rule if needed."
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_inq_virt_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_gen_inq_virt_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_inq_virt_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_gen_inq_virt_contact" android:text="Minu Vasundhara\nEvent Manager\nPhone: +91 949 733 4804\nE-Mail: minu@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

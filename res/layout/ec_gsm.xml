@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_ec_gsm" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_ec_gsm"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ec_gsm_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_gsm_title" android:text ="GSM" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ec_gsm_Intro" android:text="Global System for Mobile communication is currently the globally accepted standard for digital cellular communication. But, engineers as we are, it's hard to suppress our innate urge to do something different with it. And, this year, we challenge you to build a rover which is controlled by your mobile phone and must be able to reach a predetermined destination with the given map and other signs." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ec_gsm_specs" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_ec_gsm_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_ec_gsm_specs" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ec_gsm_specs" android:text="Think of driving a car using a mobile phone. As seen in James Bond movies you will certainly be amused. The advantage of using GSM for this transmitting purpose is that you don't have to use any further ideas for transmission and there are a number of ways in which you can build this thing.\n\n1. The objective is to build a robot much like a rover which can navigate using your instructions.\n2. Base of the machine must not be greater than 0.30 m * 0.25 m (Length * Breadth) and its height should be less than 0.45 m at the start of the game.\n3. The control of the bot can be done through switches in the mobile which the participants are using and also the participants can make their own model of mobile phone or modify the mobile phone in such a way suitable for their competition the participants can use mobile application .\n4. Communication between the rover and the participant will be through the GSM it cannot be IR beams , Bluetooth and radio services .Readymade SMS kits are not allowed in the event but the participants can manually build their own SMS kits or modules which can be interfaced with the bot. The rover can operate by giving different self designed codes such as 123,789 and code which will be created as per the design of the system.\n5. The different codes can control the motion of the rover and thus can move around as per the need which is indicated in the map.\n6. One of the team members can stay with the rover to make sure the way of the travel which has been indicated in the map given to them just before the starting of the events.\n7. The judge's decision will be final. Each team will be given a maximum of 15 minutes time to complete the competition.\n8. Power supplies won't be provided externally.\n\nTeam Specification\n1. Each team consist a maximum of 4 members.\n2. Team members have to produce valid ID card of the institute.\n3. Inter-college teams are permitted."
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ec_gsm_stmt" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_ec_gsm_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_ec_gsm_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ec_gsm_rounds" android:text="The objective is to build a robot much like a rover which can navigate using your instructions." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ec_gsm_judge" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_ec_gsm_judge" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_ec_gsm_judge" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ec_gsm_judge" android:text="1. The teams may be asked questions on the design of the circuit and other details on the implementation.\n2. A specific time will be allotted before which the mission has to be completed.\n3. Teams which finish before the time limit will get bonus points.\n4. Any human interevention after dimension test will lead to deduction of points.\n5. The score scheme will be as follows:\n  2000-2*t-n*c\n  t=Time taken in seconds (a maximum of 10 minutes),\n  n=number of corrections,\n  c = points deducted for each correction\n5. The team member with the bot can place the bot in the original position if it slips from the original position, for which correction points will be deducted.\n6. Judges decisions will be final, and any of the above mentioned rules can change according to the scenario of the event." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ec_gsm_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_ec_gsm_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_ec_gsm_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ec_gsm_contact" android:text="Ashhar\nEvent Manager\nPhone: +91 903 743 0474\nE-mail: ashhar@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_highlight_envision_yi" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_highlight_envision_yi"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_yi_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:orientation="vertical" android:layout_height="match_parent">
+                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_yi_title" android:text ="Young Engineer" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_highlight_envision_yi_Intro" android:text="'A child can ask questions that a wise man cannot answer.'\n\nThis event aims at bringing up young students not to just ask questions, but to answer them with ideas that project innovation and creativity. With Young Engineer, we want to ignite interest among upper primary and high school students to create models that are both productive and positive." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_yi_stmt" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_highlight_envision_yi_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_highlight_envision_yi_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_highlight_envision_yi_stmt" android:text="Create exhibits pertaining to any limb of science, mathematics, technology and the like. Any innovative concepts, still model and working model exhibits, projects can be submitted."
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+              <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_yi_spec" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_highlight_envision_yi_spec" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_highlight_envision_yi_spec" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_highlight_envision_yi_spec" android:text="1. Any high school (classes 8, 9, 10) and higher secondary school (classes +1, +2) student can participate and showcase their exhibits.\n2. The exhibits may be pertaining to different limbs of science, mathematics, technology and the like. Any innovative concepts, still model and working model exhibits, projects can be submitted for the review of our elite Judging Panel.\n3. 'YOUNG ENGINEER' will happen in 2 Rounds.\n\nScreening Round:\nA document is to be submitted online (youngengineer@tathva.org)/posted in the address given below containing\n  a. A brief description of the exhibit.\n  b. Videos or image layouts of the exhibit.\n   c. Your contact information- email-id, phone number etc.\nThe best 30 entries will be selected from the 'Screening Round' by a judging panel with reference to the documents submitted by the participants\n\nFinals:\nThe selected 30 exhibits will be given the opportunity to be showcased during Tathva '11 NIT Calicut (Oct20-23). The selected participants should produce the necessary explaining documents. Judging will be done based on the functionality of the exhibits and the explaining documents."                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_yi_criteria" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_highlight_envision_yi_criteria" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_highlight_envision_yi_criteria" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_highlight_envision_yi_criteria" android:text="All exhibits will be evaluated on the basis of the following in decreasing order of relevance:\n\n1. Innovation: What we intend to do is inspire innovations. Unfold your creativity and make something ingenious.\n2. Social Relevance: The social purpose the model can provide will hold a high priority. The eco-friendliness of the model, the purpose it can serve and its simplicity will earn you marks.\n3. Economy: The cost of the project that you present will be taken into account. Try making it more economical and user friendly."                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_yi_benefits" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_highlight_envision_yi_benefits" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_highlight_envision_yi_benefits" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_highlight_envision_yi_benefits" android:text="1.The best 3 exhibits will be selected and prizes will be awarded as following:\n  1st Prize : INR 10,000\n  2nd Prize : INR 5,000\n  3rd Prize : INR 2,500\n2. All other remaining 27 finalists are assured of prizes.\n3. Certificate from Regional Science Centre and NIT Calicut.\n4. Exposure to young engineers, entrepreneurs and research scholars.\n5. Career building platform via exposure to company representatives."                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_yi_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_highlight_envision_yi_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_highlight_envision_yi_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_highlight_envision_yi_contact" android:text="Arun Kumar T M\nEvent Manager\nPhone: +91 974 563 4720\nE-mail: arun@tathva.org\n\nArjun Vijay\nEvent Manager\nPhone: +91 949 633 6564\nE-mail: arjunvijay@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

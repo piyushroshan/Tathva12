@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_gen_bizbio_perzanta" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_gen_bizbio_perzanta"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_bizbio_perzanta_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_bizbio_title" android:text="Bizbio Perzanta" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_gen_bizbio_perzanta_Intro" android:text="Entrepreneurial dynamism with novel ideas is what we seek. Are you the proud owner of your own new brain child? Does your idea belong to bio or eco field pertaining to the present scenario in industries/business sector? If your answer is yes, drop by our event. This event is purely focused to explore the entrepreneur in you and welcoming economically feasible, marketable ideas and plans. We offer you our dais. Present your ideas and convince us that you are the best." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_bizbio_perzanta_specs" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_gen_bizbio_perzanta_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_bizbio_perzanta_specs" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_bizbio_perzanta_specs" android:text="The event will be conducted in two stages: Abstract submission and Final presentation round.\n\nAbstract submission round:\n1) Participants are to submit an abstract of their business plan on or before October 10th. There will be no entry fee for abstract submission.\n2) A team will be allowed to present only a single business plan .Participants will be acknowledged through an e-mail on receiving their abstracts.\n3) Font size for the abstract is 12 for text and 14 for heading and both should be in Times New Roman. Abstracts should be in word format and should not exceed 200 words.\n4) Send your abstracts on bio@tathva.org. Include your mobile number also.\n\nFinal Presentation:\n1) Selected entries will be informed through email. Selected teams are supposed to present their complete business plan on the day of the event.\n2) Selected teams are required to submit a soft copy and a hard copy of their paper before the event, to the event coordinator.\n3) Duration of presentation is 15 mins (10 mins maximum for presentation and 5 mins for query handling)\n4) The presentation is to be made in Microsoft PowerPoint only.\n\nTeam Specifications:\n1) Each team can consist of a maximum of 3 members.\n2) All members of a participating team should hold a valid identity card of their respective institution."
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+			 <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_bizbio_perzanta_stmt" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_gen_bizbio_perzanta_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_bizbio_perzanta_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_bizbio_perzanta_stmt" android:text="Bizbio Perzanta is an event welcoming new ideas in the field of biotechnology, thereby exploiting the benefits of nature and the living kingdom."
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>            
+            
+            
+             
+
+             
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_bizbio_perzanta_judge" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_gen_bizbio_perzanta_judge" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_bizbio_perzanta_judge" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_bizbio_perzanta_judge" android:text="Allotment of points will be based on\n1. Originality and novelty of the idea.\n2. Economic feasibility.\n3. Expediency of the plan.\n4. Presentation skills." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_bizbio_perzanta_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_gen_bizbio_perzanta_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_bizbio_perzanta_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_gen_bizbio_perzanta_contact" android:text="Rajalakshmi Ramya A S\nEvent Manager\nPhone: +91 956 734 4171\nE-mail: rajalakshmi@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

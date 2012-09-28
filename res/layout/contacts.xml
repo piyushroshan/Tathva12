@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:weightSum="1">
+    <ScrollView android:layout_height="wrap_content" android:id="@+id/scrollView1" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:layout_height="wrap_content" android:id="@+id/textView1" android:text="Technical Affairs Secretary	\n\nRojith Jones\nrojith@tathva.org\n+91-9497308105\n\nStudent Coordinator\n\nMarilyn George\nmarilyn@tathva.org\n+91-9497778936\n\nMarketing Managers\n\nNitheesh K Pai\nnitheeshkpai@tathva.org\n+91-9895689519\n\nRashid CMP\nrashidcmp@tathva.org\n+91-9746749787" android:layout_width="wrap_content"></TextView>
+        </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

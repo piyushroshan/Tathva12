@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_gen_quiz" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_gen_quiz"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_quiz_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_quiz_title" android:text ="General Quiz" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_gen_quiz_Intro" android:text="Tathva, the annual techno-management fest of the National Institute of Technology, Calicut has always been a favourite playground for quizzers from all over the country. The previous editions of Tathva quizzes have seen impressive participation, intense competition between the best quizzers and exciting quizzes by renowned quizmasters.\nWhen the best of the quiz masters and the quizzers in the country are in the same room, you're bound to experience an energy that makes you wish you were one among them." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_quiz_prahela" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_gen_quiz_prahela" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_quiz_prahela" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_quiz_prahela" android:text="Do you think you've what it takes to battle it out to be the ultimate technocrat? Then Prahelika is the place for you. Come, test technical trivia with the best budding minds to conquer the most treasured prize in technical quizzing. With participation from teams all over South India, Prahelika is where you'll see the finest college teams showcasing their technical knowledge. Not to forget the prizes amounting to 10K.\n\nSpecifications:\n1. It is a college level event.\n2. A team can consist of maximum 2 members.\n3. Any number of teams from an institution is allowed.\n4. Cross college teams are also allowed.\n5. Registration for the event will be separate i.e. participants need not register for Tathva.\n6. Participants must produce a valid college ID card during registration.\n7. Those who have registered for Tathva need not register for the event separately."
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_quiz_artha" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_gen_quiz_artha" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_quiz_artha" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_quiz_artha" android:text="Catch Artha, the best of business quizzing in Kerala. Artha is where the best in the circuit show what it takes to be the best. Definitely a quiz not to be missed if an entertaining trip down the line of business know-how is what gives you a kick. With a prize tag of 15K, it takes more than being just a quizzer to conquer this one.\n\nSpecifications:\n1. It is an open event.\n2. A team can consist of maximum 2 members.\n3. Any number of teams from an institution is allowed.\n4. Registration for the event will be separate i.e. participants need not register for Tathva.\n5. Participants must produce a valid ID card during registration.\n6. Those who have registered for Tathva need not register for the event separately."
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_quiz_Samasya" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_gen_quiz_Samasya:" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_quiz_Samasya:" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_quiz_Samasya:" android:text="For all our school going friends, Tathva presents Samasya, the school quiz. Get your grey cells into action as questions and answers fly out one after the other.\n\nWatch young quizzers outsmart each other, and watch the level Tathva school quiz has attained over the years. You cannot afford to miss this if you like an amusing and wholesome journey through the world of general quizzing. With huge participation and a prize amount of 4K, this is, without much doubt, one of the biggest school quizzes in Kerala.\n\nSpecifications:\n1. It is a school level event.\n2. A team can consist of maximum 2 members.\n3. Any number of teams from an institution is allowed.\n4. Cross school teams are also allowed.\n5. Registration for the event will be separate i.e. participants need not register for Tathva.\n6. Participants must produce a valid school ID card during registration."
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_quiz_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_gen_quiz_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_quiz_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_gen_quiz_contact" android:text="Deepak Thomas\nEvent Manager\nPhone: +91 949 727 6432\nE-mail: deepakthomas@tathva.org\n\nSharath George\nEvent Manager\nPhone: +91 956 718 4271\nE-mail: sharath@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

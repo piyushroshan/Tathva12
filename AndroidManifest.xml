@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.work"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name"  android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:name=".Tathva"
+                  android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		
+		<activity android:label="@string/app_workshops" android:name="Workshops"/>
+		<activity android:label="@string/app_events" android:name="Events"/>
+		<activity android:label="@string/app_help" android:name="Help"/>
+		<activity android:label="@string/app_exhibitions" android:name="Exhibitions"/>
+		<activity android:label="@string/app_Robo_Trans" android:name="Robotics_Transporter"/>
+		<activity android:label="@string/app_Robo_league" android:name="Robotics_League"/>
+		<activity android:label="@string/app_Robo_DirtRace" android:name="Robotics_Dirt_Race"/>
+		<activity android:label="@string/app_Robo_Mini_Mouse" android:name="Robotics_Mini_Mouse"/>
+		<activity android:label="@string/app_Robo_SignalMaestro" android:name="Robotics_Signal_Maestro"/>
+		<activity android:label="@string/app_Robo_CollisionCourse" android:name="Robotics_Collision_Course"/>
+		<activity android:label="@string/app_mech_contraption" android:name="Mech_Contraption"/>
+		<activity android:label="@string/app_mech_amphi" android:name="Mech_Amphi"/>
+		<activity android:label="@string/app_mech_incarnate" android:name="Mech_Incarnate"/>
+		<activity android:label="@string/app_mech_offroad" android:name="Mech_OffRoad"/>
+		<activity android:label="@string/app_mech_aqua" android:name="Mech_Aqua_Missile"/>
+		<activity android:label="@string/app_cs_tux" android:name="CS_tux"/>
+		<activity android:label="@string/app_cs_befunge" android:name="CS_befunge"/>
+		<activity android:label="@string/app_cs_koderkombat" android:name="CS_koderkombat"/>
+		<activity android:label="@string/app_ee_coilgun" android:name="EE_Coil_Gun"/>
+		<activity android:label="@string/app_ee_puretricks" android:name="EE_Pure_Tricks"/>
+		<activity android:label="@string/app_ec_gsm" android:name="EC_GSM"/>
+		<activity android:label="@string/app_ee_mousedrive" android:name="EE_Mouse_Drive"/>
+		<activity android:label="@string/app_ec_sonic" android:name="EC_Sonic"/>
+		<activity android:label="@string/app_ec_eracer" android:name="EC_Eracer"/>
+		<activity android:label="@string/app_gen_inq_virt" android:name="GEN_Inq_Virt"/>
+		<activity android:label="@string/app_gen_tots" android:name="GEN_Tots"/>
+		<activity android:label="@string/app_gen_quiz" android:name="GEN_Quiz"/>
+		<activity android:label="@string/app_gen_bizbio_perzanta" android:name="GEN_Bizbio_Perzanta"/>
+		<activity android:label="@string/app_gen_blue_print" android:name="GEN_Blue_Print"/>
+		<activity android:label="@string/app_gen_log_iq" android:name="GEN_Log_IQ"/>
+		<activity android:label="@string/app_highlights" android:name="Highlights"/>
+		<activity android:label="@string/app_initiatives" android:name="Initiatives"/>
+		<activity android:label="@string/app_work_astro" android:name="Workshop_Astro"/>
+		<activity android:label="@string/app_work_rc_plane" android:name="Workshop_RC_Plane"/>
+		<activity android:label="@string/app_work_hack_attack" android:name="Workshop_Hack_attack"/>
+		<activity android:label="@string/app_work_cloud_computing" android:name="Workshop_Cloud_Computing"/>
+		<activity android:label="@string/app_work_automotive" android:name="Workshop_Automotive"/>
+		<activity android:label="@string/app_work_accelero_botix" android:name="Workshop_Accelero_Botix"/>
+		<activity android:label="@string/app_exhibition_indian_army" android:name="Exhibition_Indian_Army"/>
+		<activity android:label="@string/app_exhibition_npol" android:name="Exhibition_NPOL"/>
+		<activity android:label="@string/app_exhibition_isro" android:name="Exhibition_ISRO"/>
+		<activity android:label="@string/app_exhibition_ham_radio" android:name="Exhibition_Ham_Radio"/>
+		<activity android:label="@string/app_exhibition_touch_magix" android:name="Exhibition_Touch_Magix"/>
+		<activity android:label="@string/app_exhibition_interface" android:name="Exhibition_Interface"/>
+		<activity android:label="@string/app_wheels_concept_car_design" android:name="Wheels_Concept_Car_Design"/>
+		<activity android:label="@string/app_wheels_vista" android:name="Wheels_Vista"/>
+		<activity android:label="@string/app_wheels_full_throttle" android:name="Wheels_Full_Throttle"/>
+		<activity android:label="@string/app_wheels_hands_on" android:name="Wheels_Hands_On"/>
+		<activity android:label="@string/app_lectures_chandra" android:name="Lectures_Chandra"/>
+		<activity android:label="@string/app_lectures_raju" android:name="Lectures_Raju"/>
+		<activity android:label="@string/app_lectures_tessy" android:name="Lectures_Tessy"/>
+		<activity android:label="@string/app_lectures_unni" android:name="Lectures_Unni"/>
+		<activity android:label="@string/app_highlights_envision_idp" android:name="Highlights_IDP"/>
+		<activity android:label="@string/app_highlights_envision_yi" android:name="Highlights_YI"/>
+		<activity android:label="@string/app_highlights_envision_srishti" android:name="Highlights_Srishti"/>
+		<activity android:label="@string/app_nites_mother_jane" android:name="Nites_Mother_Jane"/>
+		<activity android:label="@string/app_nites_hand_shadow" android:name="Nites_Hand_Shadow"/>
+		<activity android:label="@string/app_nites_music" android:name="Nites_Music"/>
+		<activity android:label="@string/app_nites_robo_show" android:name="Nites_Robo_Show"/>
+		<activity android:label="@string/app_nites_groove" android:name="Nites_Groove"/>
+		<activity android:label="@string/app_initiative_teach" android:name="Initiative_Teach"/>
+		<activity android:label="@string/app_initiative_school" android:name="Initiative_School"/>
+		<activity android:label="@string/app_blitz_dota" android:name="Blitz_Dota"/>
+		<activity android:label="@string/app_blitz_fifa" android:name="Blitz_Fifa"/>
+		<activity android:label="@string/app_blitz_nfs" android:name="Blitz_Nfs"/>
+		<activity android:label="@string/app_blitz_rag" android:name="Blitz_Rag"/>
+		<activity android:label="@string/app_blitz_street" android:name="Blitz_Street"/>
+		<activity android:label="@string/app_blitz_counter" android:name="Blitz_Counter"/>
+		<activity android:label="@string/app_civil_erecthion" android:name="Civil_Erecthion"/>
+		<activity android:label="@string/app_civil_descartes" android:name="Civil_Descartes"/>
+		<activity android:label="@string/app_civil_floating" android:name="Civil_Floating"/>
+		<activity android:label="@string/app_manage_baptist" android:name="Manage_Baptist"/>
+		<activity android:label="@string/app_manage_bizz" android:name="Manage_Bizz"/>
+		<activity android:label="@string/app_manage_tycoon" android:name="Manage_Tycoon"/>
+		<activity android:label="@string/app_arch_path" android:name="Arch_Path"/>
+		<activity android:label="@string/app_arch_pod" android:name="Arch_Pod"/>
+		<activity android:label="@string/app_arch_kinetic" android:name="Arch_Kinetic"/>
+		<activity android:label="@string/app_chem_interrupteur" android:name="Chem_Interrupteur"/>
+		<activity android:label="@string/app_chem_cheautic" android:name="Chem_Cheautic"/>
+		<activity android:label="@string/app_help_map" android:name="image_scroller"/>
+		<activity android:label="@string/app_help_info" android:name="info"/>
+		<activity android:label="@string/app_help_reach_us" android:name="reach_us"/>
+		<activity android:label="@string/app_help_contacts" android:name="contact"/>
+    </application>
+</manifest>
+
+

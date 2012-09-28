@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_workshop_automotive" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_workshop_automotive"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_automotive_intro" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_automotive_intro" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_automotive_intro" android:layout_width="match_parent" android:orientation="vertical" android:layout_height="match_parent">
+                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_auto_title" android:text ="Automotive and Engine Design" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView> 
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_automotive_intro" android:text="Today's automotive leaders face new and pressing challenges: rising customer expectations, emerging technologies and intensifying competitive pressures. Success depends on finding new ways to create value and distribute the value benefits.\n\nThis stream of engineering studies deals with the design, creation, manufacture and operation of machines relevant to automobiles ranging from the ubiquitous motorcycle to buses and trucks. Combining industry knowledge and innovating solutions, this time at Tathva, MetaWing comes up with a short term professional course designed for young individuals on Automotive and Engine Design. Apart from being an impeccable opportunity for you to learn the basic concepts, it will surely act as a platform to gain the practical experience while unfolding every part of the engine.\n\nMetaWing is well acknowledged as pioneers in conducting interactive training programmes in India in which an open engine is showcased so that the students can enhance their knowledge and experimentation skills. They have developed a prototype for a Gyro Car (a self balancing 2 wheel car) which is made to run by a water engine, All Terrain Vehicle, Solaris and many more.\n\nAll the concepts are explained in detail with the Help of Theory and with Specially Designed Animations which would help students to visualize things before practically working on it. " android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+			
+			<LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_automotive_highlights" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_automotive_highlights" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_automotive_highlights" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_automotive_highlights" android:text="1. 16 hours of certified workshop accompanied with practical implementation to give you a glimpse of different areas in the Automation and Engine Designing industry.\n2. Study Materials to be given to every student so as to keep a note of what he/she has studied hitherto.\n3. Students will be given an opportunity to work on an open engine parts and moulds.\n4. Further help in industrial projects and Placement guidance.\n5. Career consultancy for GRE, MBA and other job opportunities.\n6. Chance to win an International Internship in USA, Germany, Singapore etc.\n7. International Certification from ISTP-Canada,SGT-International and AIESEC chennai as certifying bodies.\n8. Online certificate verification." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_automotive_benefits" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_automotive_benefits" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_automotive_benefits" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_automotive_benefits" android:text="1. In-depth knowledge of Engine Design and its applications\n2. Opportunity to get into top notch Automation Industry\n3. Firsthand experience of working on high end projects\n4. There will be two practical sessions:\n  a. One on assembling and de-assembling of whole engine with all designing aspects.\n   b. Second practical on a Commercial car covering each and every aspect of it.\n5. Also 20 merit students will get to work on Industrial RandD projects.\n6. Merit certificates for Merit students and partcipation certificates for all from ISTp-Canada, SGT-International,AIESEC Chennai with company certification." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_automotive_catalog" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_automotive_catalog" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_automotive_catalog" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_automotive_catalog" android:text="1. Introduction\n2. Types of Locomotive vehicles\n3. Chassis Design\n4. Suspension Unit\n5. Types of Suspension\n6. Rear suspension - dependent type\n7. Braking Unit\n8. Practical on soft ware's like CAD/CATIA\n9. Transmission System\n10. Engine Design\n11. Alternate Fuels and Propulsion Techniques\n12. Electronics and Electrical system\n13. Interactive sessions" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_automotive_details" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_automotive_details" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_automotive_details" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_automotive_details" android:text="Duration: 2 days (8 hours on each day)\nDate: Oct 21 and 22, 2011\nOrganizers: MetaWing\nCost: Rs 1000/- per person.\n\nVisit www.metawing.com for further details\nE-mail: info@metawing.com" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_automotive_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_workshop_automotive_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_automotive_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_workshop_automotive_contact" android:text="Bharathi Kannan\nWorkshop Manager\nPhone: +91 974 682 6313\nE-mail: bkannan@tathva.org\n\nShajee C K\nWorkshop Manager\nPhone: +91 9037 347 020\nE-mail: shajeeck@tathva.org\n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_chem_cheautic" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_chem_cheautic"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_chem_cheautic_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_cheautic_title" android:text ="Che Autic" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_chem_cheautic_Intro" android:text="Speed is the order of the day. Attempts to speed up 'speed' are not new stories. According to Chinese legend, a Chinese official named Wan Hoo designed a chair equipped with two kites and 47 gunpowder rockets in 1500 A.D. The rockets were ignited, and when the ensuing explosion and smoke cleared, Wan Hoo and his innovative chair were gone.\n\nAlthough Wan Hoo's flight was likely his last, actual attempts at propulsion mechanism didn't get off the ground until much later in history. The first of that kind was the Rocket car, and then came Jet car. Now these are the fastest moving things on land that man has ever produced; a highest speed of 670 kmph on land..!!! Isn't that awesome?? Many more attempts are being done on building faster 'cars' on land, which can overtake jets in air.\nSo, bring out the engineer in you and let's see how good you are in making speed. Welcome to the arena of Rocket Cars. Charge in your Gas. Spark your engines. Get ready to Blast off...!!" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_chem_cheautic_specs" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_chem_cheautic_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_chem_cheautic_specs" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_chem_cheautic_specs" android:text="1. Maximum of three members per team. Cross college teams are allowed.\n2. Team members should produce a valid identity card.\n3. Dimensions: The Car should fit into a box of size 30cm*25cm*20cm.\n4. Readymade kits should not be used for the event. (eg. LEGO).\n5. No commercial batteries can be used.\n6. Hazardous chemicals like dynamite, fireworks, mercuric chloride, white phosphorous, nitro.\n7. Cellulose, aluminum alkyls, gunpowder and other explosive chemicals should not be used for the propulsion.\n8. Poisonous gas like Hydrogen Cyanide, fluorine and chlorine etc should not be emitted from the machine during the event.\n9. The car must not damage the track. If it does, the team is disqualified.\n10. Judges' and coordinators' decision is final and all the teams shall abide by it.\n11. Teams may be given a second round and/or re-try based on the competition and necessity. The decision lies with the judges.\n\nArena Specifications:\n1. The track will be straight with different turf of sand, red oxide, wet area (water till tire level only; no need of floating mechanism), lubrication and inclinations.\n2. The length of the track will be 6 m.\n3. There will be walls on both the edges of the track (only one wall is shown in the model track for convenience).\n4. The model track is only a probable estimate of the actual track, uploaded for the ease of the participants. Actual track may vary from the model track."
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                 
+                 <ImageView android:id="@+id/image_che_2" android:layout_height="wrap_content" android:layout_width="match_parent" android:src="@drawable/cheautic2"></ImageView>
+                 <ImageView android:id="@+id/imageche_3" android:layout_height="wrap_content" android:layout_width="match_parent" android:src="@drawable/cheautic3"></ImageView>
+                 
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_chem_cheautic_stmt" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_chem_cheautic_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_chem_cheautic_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_chem_cheautic_rounds" android:text="Design and build a self propelled car which runs on a controlled chemical reaction and completes the specified track in minimum time." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_chem_cheautic_judge" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_chem_cheautic_judge" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_chem_cheautic_judge" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_chem_cheautic_judge" android:text="The car which reaches the end point in the lowest time wins.\nIf two cars reach the end point in the same time, a re-test may be considered.\nAgain, the final decision lies with the judges."
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_chem_cheautic_guidelines" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_chem_cheautic_guidelines" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_chem_cheautic_guidelines" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_chem_cheautic_judge" android:text="1. Controlling the reaction to increase the time of run is the key.\n2. The common reactions that can be used are as follows-\n  a. Baking soda and vinegar.\n   b. Dry ice and water.\n3. Take adequate care that the chemical reaction (reactants) is sustained till the end of the track." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+                <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_chem_cheautic_faq" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_chem_cheautic_faq" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_chem_cheautic_faq" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_chem_cheautic_judge" android:text="Can an ignition engine be used for this purpose (eg: Petrol engine)?\n* No. It cannot be used. No conventional combustion engines should be used.\nCan any ready-made parts be used for the car?\n* No. Only wheels can be readymade. All the parts should be fabricated.\nIs there any preregistration required for the event?\nNo. Teams have to register only in Tathva website, and take the Tathva ID provided on the day of Tathva. On the spot registration will be there for the event."
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_chem_cheautic_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_chem_cheautic_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_chem_cheautic_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_chem_cheautic_contact" android:text="arshit Krishnakumar\nEvent Manager\nPhone: +91 974 551 9452\nE-mail: harshit@tathva.org\n\nDurga Raja\nEvent Manager\nPhone: +91 956 731 4621\nE-mail: durga@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>
+ 
+ 

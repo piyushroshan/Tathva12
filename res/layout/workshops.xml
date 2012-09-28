@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/imageView1" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+
+ <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="match_parent">
+     <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout2" android:orientation="vertical" android:layout_height="wrap_content" android:weightSum="1" android:gravity="center">
+         <LinearLayout android:id="@+id/linearLayout3" android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center">
+             <TextView android:textSize="20dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView1" android:text="General"></TextView>
+             <HorizontalScrollView android:id="@+id/horizontalScrollView1" android:layout_height="wrap_content" android:scrollbarAlwaysDrawHorizontalTrack="false" android:layout_width="wrap_content" android:scrollbars="none">
+                 <LinearLayout android:id="@+id/linearLayout5" android:orientation="horizontal" android:layout_height="match_parent" android:layout_width="match_parent">
+                     <ImageView android:src="@drawable/astrophotography1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/image_workshop_astro"></ImageView>
+                 </LinearLayout>
+             </HorizontalScrollView>
+         </LinearLayout>
+         <LinearLayout android:id="@+id/linearLayout4" android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center">
+             <TextView android:textSize="20dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView2" android:text="Technical"></TextView>
+             <HorizontalScrollView android:scrollbars="none" android:id="@+id/horizontalScrollView2" android:layout_height="wrap_content" android:layout_width="wrap_content">
+                 <LinearLayout android:id="@+id/linearLayout11" android:orientation="horizontal" android:layout_height="match_parent" android:layout_width="match_parent">
+                     <ImageView android:paddingRight="5dp" android:src="@drawable/hackattack1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/image_workshop_hack"></ImageView>
+                     <ImageView android:paddingRight="5dp" android:src="@drawable/cloudcomputing1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/image_workshop_cloud"></ImageView>
+                     <ImageView android:paddingRight="5dp" android:src="@drawable/rcplane1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/image_workshop_rc_plane"></ImageView>
+                     <ImageView android:paddingRight="5dp"  android:src="@drawable/accelerobotix1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/image_workshop_accelerobotix"></ImageView>
+                     <ImageView android:paddingRight="5dp" android:src="@drawable/automotiveandenginedesign1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/image_workshop_automotive"></ImageView>
+                 </LinearLayout>
+             </HorizontalScrollView>
+         </LinearLayout>
+     </LinearLayout>
+ </ScrollView>
+ <!--  -->   
+</LinearLayout>

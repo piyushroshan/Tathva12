@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayouttrans" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_manage_bizz"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_manage_bizz_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+                        	<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_bizz_title" android:text ="Sociobizz 11" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        	<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="' I'm a creative. I'm a visionary. And I'm a human who wants to touch the lives of people all over the world by making it a better place to live in!!'\n\nDo you know what is required to build a social enterprise??\nA 'VISION' being driven on the right path." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_manage_bizz_criteria" android:layout_height="match_parent" android:orientation="vertical">
+               	<ScrollView android:id="@+id/scrollView_manage_bizz_criteria" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_manage_bizz_criteria" android:layout_width="match_parent" android:layout_height="match_parent">
+                   
+               	 <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="Social b-plans will be evaluated on these 4 criteria:\n1. Effect on the quality of life and poverty alleviation in one or more developing economies.\n2. Financial sustainability - evidence of demand in the marketplace, a plan for reaching potential customers/users and the potential for significant scaling.\n3. Expansion readiness - feasibility of the business/operating model for scaling, process and systems in place, transferability (if geographic scaling), and potential for success.\n4. Rigor and feasibility of the financial model including sustainability over the long term.\n\nPlans must clearly demonstrate the Social Return on Investment (SROI) and provide a social impact assessment.\nThe business plans may focus on any subject area.\nThe competition is open to currently enrolled students, in any discipline and level of study, at any academic institution of higher education worldwide.\nMulti-disciplinary teams are strongly encouraged. Teams may be comprised of students from different academic institutions."
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                 </LinearLayout>
+                 </ScrollView>
+            </LinearLayout>
+         	
+         	<LinearLayout android:layout_width="match_parent" android:id="@+id/linear_manage_bizz_spec" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_manage_bizz_spec" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_manage_bizz_spec" android:layout_width="match_parent" android:layout_height="match_parent">
+                   
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="Maximum Team Size: 4\n\nPrelims:\n1. In this round participants will be submitting the abstract of their social B-Plan to the following e-mail:\nID: alka@tathva.org\nSubject: Social B Plan abstract\n2. Last date for submission of abstract is 5th October 2011.\n3. Based upon the abstract, teams will be short-listed for final round.\n4. The shortlisted teams will receive intensive mentoring from our distinguished panel of mentors.\n\nAbstract Format:\n1. The abstract should be limited to 1000 words (excluding annexure and introduction), stating briefly the purpose of the plan, opportunities, financial and marketing plan, etc.\n2. The document should be prepared in Times New Roman font sized 12 pt with 1.5 line spacing submitted in pdf format.\n3. The cover page of the abstract should contain name of the team members, college of the team members and contact details. This cover page shall be detached before papers are given for panel evaluation. The name of the author or their institute should not appear anywhere in the body of the paper.\n\nFinal Presentation:\n1. The shortlisted teams will present their B-Plan in front of the judges in form of a presentation during Tathva '11.\n2. A maximum of 15 minutes will be given to each team to present their idea.\n3. The presentation will be followed by a question and answer round for 10 minutes by the judges and the audience.\n4. Points will be deducted for exceeding the time limit.\n5. The ultimate decision will be taken by the judging panel and all participants are to abide by it.\n6. The cover page of the executive summary should contain name of the team members, college of the team members and contact details. This cover page shall be detached before papers are given for panel evaluation. The name of the author or their institute should not appear anywhere in the body of the paper.\n7. The selected teams should submit 2 hard copies of their B-plan (executive summary) 1 hr prior to their final presentation at the venue."
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_manage_bizz_resources" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_manage_bizz_resources" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_manage_bizz_resources" android:layout_width="match_parent" android:layout_height="match_parent">
+                   
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="1. Abstract\nThe abstract should be limited to 1000 words (excluding annexure and introduction), stating briefly the purpose of the plan, opportunities, financial and marketing plan etc.\nA sample abstract can be downloaded for reference\n\n2. Executive summary\nB-Plan Format\nThe body of the plan must not exceed 25 pages. This does not include financials or other appendices (a.k.a. exhibits). Exhibits must not total more than 5 additional pages for a total of 30 pages. Resumes of the team members and/or advisors are also not included in the page limit restrictions.\n\nSummary Aspects\n* Your business idea or concept\n* Your social mission\n* The target market and size\n* The target customers\n* Your competitive advantage\n* Barriers to entry\n* Estimated year of breakeven profitability\n* Estimated quantitative social impact\n\n* Three years of estimated revenues and net income\n Your funding requirements\n\nBusiness Overviewn\n* Company description and business model\n* Value proposition- financial\n* Value proposition- social or environmental\n* Vision\n* Current status\n* Current or committed funding and all funding sources\n\nThe Market Opportunity (the problem, the customer's pain)\n* Why is this such a great idea? Define the problem, describe the pain\n* Competitive analysis (how the problem is not being solved by competitors)\n\nMarket Solution\n* Product or service\n* Description of a working model or prototype, if appropriate\n* How you will remove the pain, solve the problem?\n* Ability to create barriers to entry\n\nThe Market\n* Identification of customer(s)\n* Market size, analysis and forecast\n* Industry analysis and forecast\n\nManagement Team\n* Founders and key management\n* Industry experience, education\n* Board of advisors (Critical-- it can augment team experience if needed)\n* Optional: Board of directors (3 required by law, usually not needed until first round of institutional funding is in place)\n\nFinancial Analysis\n* Outline overall financial model with detailed projections through Year 3\n* including pro forma cash flow and budget analysis\n* Other analysis, as appropriate (i.e. break even analysis)\n* Discuss assumptions and capital requirements\n\nSocial/environmental quantitative impact analysis\n* Definition of your Social Value Proposition (i.e., Theory of Change)\n\nQuantification of your top three Social Indicators (e.g., Social Impact Value Chain)\n* Monetization of your social impact (i.e., Social Return on Investment)\n* Discuss key assumptions throughout the analysis#\n* Discuss your potential negative social or environmental impact, if any.\n* Discuss, where applicable, how you are addressing each of the following areas within your business: economic development, community involvement, environmental practices, governance, hiring and workplace practices, sourcing/supply chain\n* Other considerations (e.g., analysis of stakeholder needs, qualitative or anecdotal social impact data)\n\n# recall that true Social Impact is defined as the value your venture provides beyond the status quo (what would have been without your social venture)\n\nFunding request\nA sample B-plan can be downloaded for reference"                                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_manage_bizz_contact" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_manage_bizz_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_manage_bizz_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                   
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="Alka\nEvent Manager\nPhone: +91 889 346 4882\nE-mail: alka@tathva.org"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+          </LinearLayout>
+          </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>
+ 
