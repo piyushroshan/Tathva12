@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:background="#000000"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_workshop_msp430" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_workshop_msp430"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00688B"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+       	</LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_msp430_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_msp430_title" android:text ="MSP430 MICRO CONTROLLER" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_workshop_msp430_Intro" android:text="The MSP430 is a mixed-signal micro controller family from Texas Instruments. Built around a 16-bit CPU, the MSP430 is designed for low cost and, specifically, low power consumption embedded applications at price of other 8 bit conventional MCU." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_msp430_highlights" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_msp430_highlights" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_msp430_highlights" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_msp430_highlights" android:text="You will be able to make your own audio player!!!" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_msp430_kit" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_msp430_kit" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_msp430_kit" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_msp430_kit" android:text="1. LaunchPad emulator socket board (MSP-EXP430G2)\n\n2. Mini USB-B cable, 0.5 m\n\n3. Two MSP430 flash devices\n\n4. MSP430G2231: Low-power 16-bit\n\n5. MSP430 microcontroller with an 8-channel 10-bit ADC, on-chip comparator, universal serial communication interface, 2kB flash memory, and 512 bytes of RAM (preloaded with a sample program).\n\n6. MSP430G2211: Low-power 16-bit MSP430 microcontroller with an 8-channel 10-bit ADC, on-chip comparator, universal serial interface, 2kB flash memory, and 256 bytes of SRAM.\n\n7. Two 10-pin PCB connectors female\n\n8. 32.768-kHz clock crystal from Micro Crystal\n\n9. Quick start guide\n\n10. Printed Materials\n\n11. Tutorial Materials\n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_msp430_organiser" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_msp430_organiser" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_msp430_organiser" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_msp430_organiser" android:text="Organizers: IEEE NITC\n\nDuration: 2 days\nDates: 22-23 September,13-14 October 2012\nFees: Rs.1800 for a team of two" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_msp430_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_workshop_msp430_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_msp430_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_workshop_msp430_contact" android:text="Jeeth Joseph\nWorkshop Manager\nPhone:+91\nE-mail:workshop@tathva.org\n\nNijesh K U\nWorkshop Manager\nPhone:+919995982014\nE-mail:workshop@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

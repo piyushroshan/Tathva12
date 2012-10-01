@@ -19,13 +19,13 @@ public class Workshops extends Activity {
 	
 	private void setControls()  {
 		
-		ImageView imgAstro = (ImageView)findViewById(R.id.image_workshop_astro);
-		imgAstro.setOnClickListener(new OnClickListener() {
+		ImageView imgmsp430 = (ImageView)findViewById(R.id.image_workshop_msp430);
+		imgmsp430.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Workshops.this, Workshop_Astro.class);
+				Intent myIntent = new Intent(Workshops.this, Workshop_msp430.class);
 				Workshops.this.startActivity(myIntent);
 			}
 		});
