@@ -30,13 +30,13 @@ public class Workshops extends Activity {
 			}
 		});
 		
-		ImageView imgRC = (ImageView)findViewById(R.id.image_workshop_rc_plane);
-		imgRC.setOnClickListener(new OnClickListener() {
+		ImageView imgDelta_wing = (ImageView)findViewById(R.id.image_workshop_delta_wing);
+		imgDelta_wing.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Workshops.this, Workshop_RC_Plane.class);
+				Intent myIntent = new Intent(Workshops.this, Workshop_Delta_Wing.class);
 				Workshops.this.startActivity(myIntent);
 			}
 		});
@@ -64,24 +64,24 @@ public class Workshops extends Activity {
 		});
 		
 		
-		ImageView imgAutomotive = (ImageView)findViewById(R.id.image_workshop_automotive);
-		imgAutomotive.setOnClickListener(new OnClickListener() {
+		ImageView imgAutonova = (ImageView)findViewById(R.id.image_workshop_autonova);
+		imgAutonova.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Workshops.this, Workshop_Automotive.class);
+				Intent myIntent = new Intent(Workshops.this, Workshop_Autonova.class);
 				Workshops.this.startActivity(myIntent);
 			}
 		});
 		
-		ImageView imgAccelero = (ImageView)findViewById(R.id.image_workshop_accelerobotix);
-		imgAccelero.setOnClickListener(new OnClickListener() {
+		ImageView imgRobo = (ImageView)findViewById(R.id.image_workshop_robovision);
+		imgRobo.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Workshops.this, Workshop_Accelero_Botix.class);
+				Intent myIntent = new Intent(Workshops.this, Workshop_Robo_Vision.class);
 				Workshops.this.startActivity(myIntent);
 			}
 		});

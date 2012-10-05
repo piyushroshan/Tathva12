@@ -3,7 +3,10 @@
       package="com.work"
       android:versionCode="1"
       android:versionName="1.0">
+<uses-sdk android:minSdkVersion="8" android:targetSdkVersion="10"></uses-sdk>
+<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
 
+<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
 
     <application android:icon="@drawable/icon" android:label="@string/app_name"  android:theme="@android:style/Theme.NoTitleBar">
         <activity android:name=".Tathva"
@@ -15,7 +18,7 @@
         </activity>
 		
 		<activity android:label="@string/app_workshops" android:name="Workshops"/>
-		<activity android:label="@string/app_events" android:name="Events"/>
+		<activity android:label="@string/app_competitions" android:name="Competitions"/>
 		<activity android:label="@string/app_help" android:name="Help"/>
 		<activity android:label="@string/app_exhibitions" android:name="Exhibitions"/>
 		<activity android:label="@string/app_Robo_Trans" android:name="Robotics_Transporter"/>
@@ -46,12 +49,12 @@
 		<activity android:label="@string/app_gen_log_iq" android:name="GEN_Log_IQ"/>
 		<activity android:label="@string/app_highlights" android:name="Highlights"/>
 		<activity android:label="@string/app_initiatives" android:name="Initiatives"/>
-		<activity android:label="@string/app_work_msp430" android:name=".Workshop_msp430"/>
-		<activity android:label="@string/app_work_rc_plane" android:name="Workshop_RC_Plane"/>
+		<activity android:label="@string/app_work_msp430" android:name="Workshop_msp430"/>
+		<activity android:label="@string/app_work_delta_wing" android:name="Workshop_Delta_Wing"/>
 		<activity android:label="@string/app_work_hack_attack" android:name="Workshop_Hack_attack"/>
 		<activity android:label="@string/app_work_cloud_computing" android:name="Workshop_Cloud_Computing"/>
-		<activity android:label="@string/app_work_automotive" android:name="Workshop_Automotive"/>
-		<activity android:label="@string/app_work_accelero_botix" android:name="Workshop_Accelero_Botix"/>
+		<activity android:label="@string/app_work_autonova" android:name="Workshop_Autonova"/>
+		<activity android:label="@string/app_work_robo_vision" android:name="Workshop_Robo_Vision"/>
 		<activity android:label="@string/app_exhibition_indian_army" android:name="Exhibition_Indian_Army"/>
 		<activity android:label="@string/app_exhibition_npol" android:name="Exhibition_NPOL"/>
 		<activity android:label="@string/app_exhibition_isro" android:name="Exhibition_ISRO"/>

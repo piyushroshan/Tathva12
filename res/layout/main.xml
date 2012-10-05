@@ -9,7 +9,7 @@
     </LinearLayout>
     <LinearLayout android:id="@+id/linearLayout2" android:gravity="center" android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical" android:weightSum="1" android:layout_weight="0.90">
         <TextView android:textSize="22dp" android:layout_height="wrap_content" android:layout_weight="0.13" 
-        android:layout_width="wrap_content" android:text="Events" android:id="@+id/textmainE"
+        android:layout_width="wrap_content" android:text="Competitions" android:id="@+id/textmainC"
          android:clickable="true"></TextView>
         <TextView android:text="Workshops"  android:clickable="true" android:textSize="22dp" android:id="@+id/textmainW" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.11"></TextView>
         <TextView android:text="Exhibitions"  android:clickable="true" android:textSize="22dp" android:id="@+id/textmainEx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.12"></TextView>

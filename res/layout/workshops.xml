@@ -3,6 +3,7 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="#00688B"
     android:weightSum="1">
     <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
         <ImageView android:id="@+id/imageView1" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
@@ -14,7 +15,7 @@
              <TextView android:textSize="20dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView1" android:text="General"></TextView>
              <HorizontalScrollView android:id="@+id/horizontalScrollView1" android:layout_height="wrap_content" android:scrollbarAlwaysDrawHorizontalTrack="false" android:layout_width="wrap_content" android:scrollbars="none">
                  <LinearLayout android:id="@+id/linearLayout5" android:orientation="horizontal" android:layout_height="match_parent" android:layout_width="match_parent">
-                     <ImageView android:src="@drawable/msp430" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/image_workshop_msp430"></ImageView>
+                    
                  </LinearLayout>
              </HorizontalScrollView>
          </LinearLayout>
@@ -22,11 +23,12 @@
              <TextView android:textSize="20dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView2" android:text="Technical"></TextView>
              <HorizontalScrollView android:scrollbars="none" android:id="@+id/horizontalScrollView2" android:layout_height="wrap_content" android:layout_width="wrap_content">
                  <LinearLayout android:id="@+id/linearLayout11" android:orientation="horizontal" android:layout_height="match_parent" android:layout_width="match_parent">
+                     <ImageView android:src="@drawable/msp430" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/image_workshop_msp430"></ImageView>
                      <ImageView android:paddingRight="5dp" android:src="@drawable/hackattack1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/image_workshop_hack"></ImageView>
                      <ImageView android:paddingRight="5dp" android:src="@drawable/cloudcomputing1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/image_workshop_cloud"></ImageView>
-                     <ImageView android:paddingRight="5dp" android:src="@drawable/rcplane1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/image_workshop_rc_plane"></ImageView>
-                     <ImageView android:paddingRight="5dp"  android:src="@drawable/accelerobotix1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/image_workshop_accelerobotix"></ImageView>
-                     <ImageView android:paddingRight="5dp" android:src="@drawable/automotiveandenginedesign1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/image_workshop_automotive"></ImageView>
+                     <ImageView android:paddingRight="5dp" android:src="@drawable/deltawing1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/image_workshop_delta_wing"></ImageView>
+                     <ImageView android:paddingRight="5dp"  android:src="@drawable/robovision1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/image_workshop_robovision"></ImageView>
+                     <ImageView android:paddingRight="5dp" android:src="@drawable/autonova1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/image_workshop_autonova"></ImageView>
                  </LinearLayout>
              </HorizontalScrollView>
          </LinearLayout>

@@ -3,7 +3,7 @@
     <string name="hello">Hello World, Tathva!</string>
     <string name="app_name">Tathva</string>
     <string name="app_help">Help</string>
-    <string name="app_events">Events</string>
+    <string name="app_competitions">Competitions</string>
     <string name="app_workshops">Workshops</string>
      <string name="app_initiatives">Initiatives</string>
      <string name="app_highlights">Highlights</string>
@@ -34,12 +34,12 @@
     <string name="app_gen_bizbio_perzanta">Bizbio Perzanta</string>
      <string name="app_gen_blue_print">Blue Print</string>
      <string name="app_gen_log_iq">Log IQ</string>
-     <string name="app_work_msp430">msp430 Photography</string>
-    <string name="app_work_rc_plane">RC Plane</string>
+     <string name="app_work_msp430">MSP430</string>
+    <string name="app_work_delta_wing">Delta Wing</string>
     <string name="app_work_hack_attack">Hack Attck</string>
     <string name="app_work_cloud_computing">Cloud Computing</string>
-    <string name="app_work_automotive">Automotive Engine Design</string>
-    <string name="app_work_accelero_botix">Accelero Botix</string>
+    <string name="app_work_autonova">Automotive Engine Design</string>
+    <string name="app_work_robo_vision">Robo Vision</string>
     <string name="app_exhibition_npol">NPOL</string>
     <string name="app_exhibition_isro">ISRO</string>
     <string name="app_exhibition_indian_army">Indian Army</string>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_workshop_robo_vision" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_workshop_robo_vision"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_robo_vision_intro" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_robo_vision_intro" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout_workshop_robo_vision_intro" android:layout_width="match_parent" android:layout_height="match_parent">
+
+                       <TextView
+                           android:id="@+id/text_acceler_title"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:layout_weight="0.03"
+                           android:gravity="center"
+                           android:text="RoboVision"
+                           android:textAppearance="?android:attr/textAppearanceMedium"
+                           android:textSize="20dp" >
+</TextView> 
+
+                <TextView
+                    android:id="@+id/textView_workshop_robo_vision_intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Through Robo-Vision, Technophilia introduces the masses to integration of Image Processing and Robotics i.e. gifting an eye to the robot.\nVision Robotics aims to impart the concepts of Machine Vision to help you in developing vision based autonomous machines. The workshop provides application oriented sessions, which will eventually result in the development of vision based robots such as Ball follower robot, Line follower robot etc."
+                    android:textAppearance="?android:attr/textAppearanceMedium" >
+</TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+			
+			<LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_robo_vision_highlights" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_robo_vision_highlights" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_robo_vision_highlights" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_robo_vision_highlights" android:text="There will be a Robo Tournament as part of the workshop." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_robo_vision_course_contents" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_robo_vision_course_contents" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_robo_vision_course_contents" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_robo_vision_course_contents" android:text="The concepts that will be covered during the workshop are:-\n\nIntroduction to Robotics\n Basics of robotics\n Types of robotics\n Autonomous robots\n Different parts of an autonomous robot\n\nIntroduction to Machine Vision\n Sensors and its classification\n Sensors used in machine vision\n Camera vision\n Different types of cameras used in robotics\n Basic construction and working principle of a camera\n Different types of interface used for camera\n Advantage of camera vision\n\nExploring MATLAB\n Introduction to Matlab\n Introduction to Commands and functions\n .m-files and functions\n Matrix operation\n\nFamiliarization with Image processing terminologies\n Types of image\n Different parameters of an image\n Concepts like Luminance, Chrominance, Hue, and Intensity\n Different colour Spaces\n Texture, Resolution and Pixel\n\nHandling Images in MATLAB\n Importing image\n Image representation\n Finding pixel value\n Operations using pixel value\n Image matrix\n Image Processing Approaches\n Functions to Enhance Images\n Thresholding\n Image arithmetic\n Noise and noise reduction\n Edge Detection\n\nHardware Details\n Different types motors used in robotics and their working principles\n Need of Motor drivers?\n How to construct a motor driver\n Motor driver using motor driver IC L293D\n Controlling DC motors through PC\n AVR microcontroller feature, capability and interfacing\n\nMicrocontroller Programming\n Embedded C\n Use of Embedded C IDE\n Use of flash tool\n Writing code in embedded C\n Accessing various functions of AVR microcontroller using embedded C\n Basic I/O operations\n Use of UART communication protocol\n\nData Communication using MATLAB\n Accessing the PC\'s serial port\n Accessing the PC\'s parallel port\n Sending data from MATLAB/PC to Microcontroller\n Development of Image Processing Robots\n PC control robot using GUIDE\n Color detector robot\n Ball follower robot\n Line follower robot\n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_robo_vision_kit_contents" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_robo_vision_kit_contents" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_robo_vision_kit_contents" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_robo_vision_kit_contents" android:text="Robo-Vision kit consists of the following components\n\nMicrocontroller development board with the following features:\n Uses Atmel\'s AVR Microcontroller\n On-board LCD interface option (it can also be used for any other general purpose application)\n On-board Motor Driver for connecting 4 DC motors or 2 Stepper motors\n On board Servo interface\n On-board regulated power supply\n PC interface through UART\n On-board Buzzer (optional)\n Provision for external crystal connection\n Exposed almost all I/O pins\n Exposed I/O pins for ADC and sensors with 5V/1A power supply\n Exposed I/O pins for servo motors and sensors with dual power supply\n Five tact switches for external input and reset\n Four test surface mounted LEDs for status and debugging purpose\n Two supply indicator LEDs\n Dual power supply through DC source (6V to 16V) or USB powered\n On board USB programmer\n Dual or single power supply option\n Exposed ISP pins for programming\n\nMolded plastic wheel with rubber grip\nGeneral Purpose robotic vehicle chassis\nBall caster with 360 degree freedom\nSerial cable\nUSB cable\nBatteries for power supply\nBattery connector\nCamera (NON-TAKE AWAY)\nScrew driver, spacers, nut and bolts\nCD containing user manuals, sample codes and software" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_robo_vision_details" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_robo_vision_details" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_robo_vision_details" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_robo_vision_details" android:text="Date:2 days(8 hours/day) on 19-20 October, 2012.\nFees: INR 1500/- per head.\nOrganizers: Technophilia Systems\n\nParticipants can register in teams of maximum 4 members as the Takeaway kit is for 4 people." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_robo_vision_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_workshop_robo_vision_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_robo_vision_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_workshop_robo_vision_contact" android:text="Jeeth Joseph\nWorkshop Manager\nPhone:+919037407889\nE-mail:workshop@tathva.org\n\nNijesh K U\nWorkshop Manager\nPhone:+919995982014\nE-mail:workshop@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

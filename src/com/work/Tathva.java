@@ -18,13 +18,13 @@ public class Tathva extends Activity {
     
     private void setControls()  {
     	
-    	TextView tvE = (TextView)findViewById(R.id.textmainE);
+    	TextView tvE = (TextView)findViewById(R.id.textmainC);
     	tvE.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Tathva.this, Events.class);
+				Intent myIntent = new Intent(Tathva.this, Competitions.class);
 				Tathva.this.startActivity(myIntent);
 
 			}

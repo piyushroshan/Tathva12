@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    
+    <LinearLayout android:id="@+id/linearLayout_workshop_delta_wing" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_workshop_delta_wing"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_delta_wing_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/text_delta_wing_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.03"
+                            android:gravity="center"
+                            android:text="DELTA WING AIRCRAFT DESIGN"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="20dp" >
+</TextView>
+
+                        <TextView
+                            android:id="@+id/text_workshop_delta_wing_Intro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A delta wing is a wing whose shape when viewed from above looks like a triangle, often with its tip cut off. Delta wings have become popular during the world war II and have been explicitly researched upon till date to develop new and efficient configurations. The practical issues related to the development of delta wing configuration have posed many challenges to the great minds. Over the course of time few of them have been tackled but a lot many remained in the grey area. All the combat aircrafts of the new era are either delta planes or tail-less delta planes.\n"
+                            android:textAppearance="?android:attr/textAppearanceMedium" >
+</TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_delta_wing_specialities" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_delta_wing_specialities" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_delta_wing_specialities" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_delta_wing_specialities" android:text="1. No pre-designed kits are given to participants. Participants design their own air crafts (using hand calculation and software) under the guidance of our professionals which are later fabricated by them.\n2. The workshop is organized personally by IIT Kanpur Aerospace Engineering Graduates." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+			
+			<LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_delta_wing_structure" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_delta_wing_structure" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_delta_wing_structure" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_delta_wing_structure" android:text="The workshop is divided into 4 modules:\n1. Understanding Flight\n2. Design of Aircraft\n3. Fabrication of Aircraft\n4. Flying using Remote Control\n\nThere will be a competition at the end of the workshop in which the completed models will compete to win a surprise prize!" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_delta_wing_contents" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_delta_wing_contents" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_delta_wing_contents" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_delta_wing_contents" android:text="Hardware\n Engine/ Electric Motor *\n Electric Motor Controller *\n Propeller *\n Transmitter *\n Receiver *\n Li-Po battery *\n Servo motors (3 pieces) *\n Landing Gear ( main and tail dragger)\n Wheels (2 pieces)\n Coroplast\n Styrofoam\n Control Rods\n Epoxy Glue\n Wing Holders\n Working Tools#\n Other miscellaneous items\n\nThe parts marked * are not part of standard kit. \nThese components would be provided during the workshop but would be taken back after the workshop. This is being done to reduce the cost of the workshop and make it affordable for students who do not want to buy the complete kit. \n#Working tools will be taken back after the completion of workshop Complete kit consists of all the above items excluding transmitter and receiver Participants can buy the receiver and transmitter for an additional cost at the venue. \n\nSoftware\n Software used to design and test RC planes\n RC Simulator\n RC Flying Tutorials and videos\n\nOther Material\n Booklet on Aircraft Maintenance\n Booklet on aerobatic maneuvers\n Booklet on history and advancements of Delta Wing Aircraft\n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_delta_wing_details" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_delta_wing_details" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_delta_wing_details" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_delta_wing_details" android:text="Date: 3 days(8 hours/day) on 19,20 and 21 October, 2012.\nFees:\n Rs 8000/- per team for the standard kit\n Rs 13000/- for the complete kit\nOrganizers: AerotriX\n\nParticipants can register in team containing maximum of 5 members\n\nVisit www.aerotrix.com for further details" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_delta_wing_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_workshop_delta_wing_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_delta_wing_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_workshop_delta_wing_contact" android:text="Jeeth Joseph\nWorkshop Manager\nPhone:+919037407889\nE-mail:workshop@tathva.org\n\nNijesh K U\nWorkshop Manager\nPhone:+919995982014\nE-mail:workshop@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>
