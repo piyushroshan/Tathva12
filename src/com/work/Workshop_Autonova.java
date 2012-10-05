@@ -35,18 +35,11 @@ public class Workshop_Autonova extends Activity {
 	        
 	        
 	        
-	        TabHost.TabSpec spec8= tabs.newTabSpec("benefits");
-
-	        spec8.setContent(R.id.linear_workshop_autonova_benefits);
-	        spec8.setIndicator("  Benefits  ");
-
-	        tabs.addTab(spec8);
 	        
-	        
-	        TabHost.TabSpec spec9= tabs.newTabSpec("catalog");
+	        TabHost.TabSpec spec9= tabs.newTabSpec("curriculam");
 
-	        spec9.setContent(R.id.linear_workshop_autonova_catalog);
-	        spec9.setIndicator("  Catalog  ");
+	        spec9.setContent(R.id.linear_workshop_autonova_curriculam);
+	        spec9.setIndicator("  Curriculam  ");
 
 	        tabs.addTab(spec9);
 	        

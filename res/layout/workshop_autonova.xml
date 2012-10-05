@@ -3,11 +3,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
+    android:background="#00688B"
     android:layout_height="fill_parent"
-    android:weightSum="1">
-    
+    android:weightSum="0">
+   
+   
     <LinearLayout android:id="@+id/linearLayout_workshop_autonova" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:scaleType="fitStart"
+            android:src="@drawable/img" >
+
+		</ImageView>
     </LinearLayout>
     <TabHost 
     android:id="@+id/tabhost_workshop_autonova"
@@ -40,7 +50,7 @@
             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_autonova_intro" android:layout_height="match_parent" android:orientation="vertical">
                <ScrollView android:id="@+id/scrollView_workshop_autonova_intro" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_workshop_autonova_intro" android:layout_width="match_parent" android:orientation="vertical" android:layout_height="match_parent">
-                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_auto_title" android:text ="autonova and Engine Design" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView> 
+                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_auto_title" android:text ="Autonova" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView> 
                 <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_autonova_intro" android:text="Autonova workshop offers a chance for the automobile enthusiasts to explore each and every aspect of an automobile, from the systems and subsystems of an automobile to a hands on experience on a honda engine.\n\nSo, don\'t miss this golden opportunity to learn everything about automobiles in just 16 hours!" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
@@ -56,20 +66,13 @@
                 </ScrollView>
             </LinearLayout>
             
-            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_autonova_benefits" android:layout_height="match_parent" android:orientation="vertical">
-               <ScrollView android:id="@+id/scrollView_workshop_autonova_benefits" android:layout_width="match_parent" android:layout_height="wrap_content">
-                    <LinearLayout android:id="@+id/linearLayout_workshop_autonova_benefits" android:layout_width="match_parent" android:layout_height="match_parent">
-                        
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_autonova_benefits" android:text="1. In-depth knowledge of Engine Design and its applications\n2. Opportunity to get into top notch Automation Industry\n3. Firsthand experience of working on high end projects\n4. There will be two practical sessions:\n  a. One on assembling and de-assembling of whole engine with all designing aspects.\n   b. Second practical on a Commercial car covering each and every aspect of it.\n5. Also 20 merit students will get to work on Industrial RandD projects.\n6. Merit certificates for Merit students and partcipation certificates for all from ISTp-Canada, SGT-International,AIESEC Chennai with company certification." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
-                </LinearLayout>
-                </ScrollView>
-            </LinearLayout>
+           
             
-            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_autonova_catalog" android:layout_height="match_parent" android:orientation="vertical">
-               <ScrollView android:id="@+id/scrollView_workshop_autonova_catalog" android:layout_width="match_parent" android:layout_height="wrap_content">
-                    <LinearLayout android:id="@+id/linearLayout_workshop_autonova_catalog" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_workshop_autonova_curriculam" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_workshop_autonova_curriculam" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_workshop_autonova_curriculam" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_autonova_catalog" android:text="1. Introduction\n2. Types of Locomotive vehicles\n3. Chassis Design\n4. Suspension Unit\n5. Types of Suspension\n6. Rear suspension - dependent type\n7. Braking Unit\n8. Practical on soft ware's like CAD/CATIA\n9. Transmission System\n10. Engine Design\n11. Alternate Fuels and Propulsion Techniques\n12. Electronics and Electrical system\n13. Interactive sessions" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_autonova_curriculam" android:text="DAY 1\n\nSession 1\n Introduction (1 Hr)\n What is an automobile?\n Brief history\n Changes over the years\n Indian automobile industry\n Sigma ratings\n Introduction (1 Hr)\n SNMP Enumeration\n PS TOOLs\n Demo \u2013 SolarWinds\n Countermeasures\nSession 2\n Chassis design\n Brief terminology\n Multi point strut bar\n Fender bar\n Anti roll bar\n Monocoque\n Tubular space\n Longeron rh,lh\n Types of chassis\n Ladder frame chassis\n Tubular space frame chassis\n Monocoque frame chassis\n Ulsab monocoque\n Backbone frame chassis\n Aluminium space frame\n Carbon fibre monocoque\n\nSession 3\nSuspension Unit (1 Hr 30 Min)\n Brief terminology\n Weight transfer (sprung and unsprung)\n Jacking forces\n Camber and caster angle\n Anti dive and anti squat\n Spring Rate\n Travel\n\nSession 4\n Types of suspensions\n Dependent suspension\n Independent suspension\n Front Independent Suspensions\n McPherson Strut\n Double wishbone\n Coil Spring type1\n Coil spring type2\n Multi link type\n Trailing arm suspension\n I beam suspension\n Rear suspension - dependant systems\n Solid-axle, leaf-spring\n Solid-axle, coil-spring\n Beam Axle\n Hydra gas Suspension\n Hydro pneumatic Suspension\n Progressively wound springs\n Torsion bars\n\nSession 5\n Braking Unit (1Hr)\n Disc brakes\n Self adjusting nature\n Disc damage modes\n Servicing your disc\n Drum brakes\n Magnetic brakes\n Vaccum brakes\n Anti-lock braking system\n Four-channel, four-sensor ABS\n Three-channel, three-sensor ABS\n One-channel, one-sensor ABS\n\nSession 6\n Brake Actuators\n Cable-operated\n Solid bar connection\n Single-circuit hydraulic\n Dual-circuit hydraulic\n Brake-by-wire\n Power Brakes and master cylinders\n Brake fluids\n Drawing, modifying and dimensions in AutoCAD\n Sketching and Part modeling in CATIA.\n Drawing, modifying and dimensions in AutoCAD\n\nDAY 2\n\nSession 1\n Transmission system\n Types of Transmission system\n Manual transmission\n Gear ratio\n Different types of gear\n Clutch and its components\n Reverse and its working\n Automatic transmission\n Planetry gearsets\n DSG / DCT Gearboxes\n Torque Converters\n Semi automatic Transmission\n Continuously variable transmission\n Differentials\n Open Differentials\n Limited-slip differentials\n Locking differentials\n 2WD, 4WD, AWD\n Tyres and Traction Control\n Tyre size notations\n Tyre types for passenger cars\n Tyre constructions\n Cross-ply construction\n Radial construction\n Tyre tread\n Traction and its control\n\nSession 2\n IC engines\n Types\n Compression ignition\n Spark ignition\n Layout\n Engine balancing\n Spark plug\n Carburetor\n Fuel injector\n Valves and valve timing\n Valve trains\n Engine cooling\n Turbochargers\n Superchargers\n Air/Fuel ratios\n Wankel Engine (6 stroke)\n Latest technologies\n PGMFi,DTS-Fi,MPFI,CRDI,VVTi, iVtec, TDI\n MPFi, CRDI\n VVTI, RTR\n iVTec, TDI\n Session 3:\n Air Bags and Steering System\n Technical aspects of various student car projects\n Formula student car project\n Solar vehicle\n Mini Baja\n Super Mileage Vehicle\n Hybrid vehicle\n Live Engine Demonstration - Honda 110 CC (45 Min)\n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>
@@ -79,7 +82,7 @@
                <ScrollView android:id="@+id/scrollView_workshop_autonova_details" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_workshop_autonova_details" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_autonova_details" android:text="Duration: 2 days (8 hours on each day)\nDate: Oct 21 and 22, 2011\nOrganizers: MetaWing\nCost: Rs 1000/- per person.\n\nVisit www.metawing.com for further details\nE-mail: info@metawing.com" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_autonova_details" android:text="Date: 19-20 Oct 2012(8 hours/day)\nFees: Rs 1000/-\nOrganizers: INDROYD LABS" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>
@@ -89,7 +92,7 @@
                 <ScrollView android:id="@+id/scrollView_workshop_autonova_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_workshop_autonova_contact" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_workshop_autonova_contact" android:text="Bharathi Kannan\nWorkshop Manager\nPhone: +91 974 682 6313\nE-mail: bkannan@tathva.org\n\nShajee C K\nWorkshop Manager\nPhone: +91 9037 347 020\nE-mail: shajeeck@tathva.org\n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_workshop_autonova_contact" android:text="Jeeth Joseph\nWorkshop Manager\nPhone:+919037407889\nE-mail:workshop@tathva.org\n\nNijesh K U\nWorkshop Manager\nPhone:+919995982014\nE-mail:workshop@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>

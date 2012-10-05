@@ -55,6 +55,8 @@
 		<activity android:label="@string/app_work_cloud_computing" android:name="Workshop_Cloud_Computing"/>
 		<activity android:label="@string/app_work_autonova" android:name="Workshop_Autonova"/>
 		<activity android:label="@string/app_work_robo_vision" android:name="Workshop_Robo_Vision"/>
+		<activity android:label="@string/app_work_staad" android:name="Workshop_Staad"/>
+		<activity android:label="@string/app_work_total_station" android:name="Workshop_Total_Station"/>
 		<activity android:label="@string/app_exhibition_indian_army" android:name="Exhibition_Indian_Army"/>
 		<activity android:label="@string/app_exhibition_npol" android:name="Exhibition_NPOL"/>
 		<activity android:label="@string/app_exhibition_isro" android:name="Exhibition_ISRO"/>

@@ -40,6 +40,8 @@
     <string name="app_work_cloud_computing">Cloud Computing</string>
     <string name="app_work_autonova">Automotive Engine Design</string>
     <string name="app_work_robo_vision">Robo Vision</string>
+    <string name="app_work_total_station">Total Station</string>
+    <string name="app_work_staad">STAAD</string>
     <string name="app_exhibition_npol">NPOL</string>
     <string name="app_exhibition_isro">ISRO</string>
     <string name="app_exhibition_indian_army">Indian Army</string>

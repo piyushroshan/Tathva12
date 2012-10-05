@@ -2,10 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
+    android:background="#00688B"
     android:layout_height="fill_parent"
-    android:weightSum="1">
+    android:weightSum="0">
+   
+   
+
     <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <ImageView android:id="@+id/imageView1" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+               <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:scaleType="fitStart"
+            android:src="@drawable/img" >
+
+		</ImageView>
     </LinearLayout>
     <LinearLayout android:id="@+id/linearLayout2" android:gravity="center" android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical" android:weightSum="1" android:layout_weight="0.90">
         <TextView android:textSize="22dp" android:layout_height="wrap_content" android:layout_weight="0.13" 
@@ -24,11 +36,11 @@
     android:maxLines="1"
     android:scrollHorizontally="true"
     android:ellipsize="marquee"
-    android:focusable="true"
+	   android:focusable="true"
     android:focusableInTouchMode="true"
     android:marqueeRepeatLimit="marquee_forever"
     android:textColor="#ffffff"
-    android:text="  Online registrations have closed. On the spot registration will begin on 20th October. | The schedule has been updated on 18th October | The list of shortlisted entries for B-Aptist and Sociobizz has been posted "
+    android:text="  Online registrations are welcome. "
     android:id="@+id/ticker"
     />
 </LinearLayout>

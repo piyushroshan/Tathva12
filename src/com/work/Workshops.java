@@ -30,6 +30,28 @@ public class Workshops extends Activity {
 			}
 		});
 		
+		ImageView imgStaad = (ImageView)findViewById(R.id.image_workshop_staad);
+		imgStaad.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent myIntent = new Intent(Workshops.this, Workshop_Staad.class);
+				Workshops.this.startActivity(myIntent);
+			}
+		});
+
+		ImageView imgTotal = (ImageView)findViewById(R.id.image_workshop_total_station);
+		imgTotal.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent myIntent = new Intent(Workshops.this, Workshop_Total_Station.class);
+				Workshops.this.startActivity(myIntent);
+			}
+		});
+		
 		ImageView imgDelta_wing = (ImageView)findViewById(R.id.image_workshop_delta_wing);
 		imgDelta_wing.setOnClickListener(new OnClickListener() {
 			
