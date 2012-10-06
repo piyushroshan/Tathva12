@@ -63,7 +63,7 @@
                <ScrollView android:id="@+id/scrollView_workshop_total_station_highlights" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_workshop_total_station_highlights" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_total_station_highlights" android:text="The work shop is intended to introduce you to the use and working of Total Station, mainly covering:\nA Theory Session\nHands-on experience in the field: Measurement of angles, co-ordinates, distances etc.\nA Session on Data Processing: Transferring the data to a computer using application software.\nPrinted hand-outs (explaining the theory and working) will be issued to every participant." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_workshop_total_station_highlights" android:text="The work shop is intended to introduce you to the use and working of Total Station, mainly covering:\n\n A Theory Session\n Hands-on experience in the field: Measurement of angles, co-ordinates, distances etc.\n A Session on Data Processing: Transferring the data to a computer using application software.\n Printed hand-outs (explaining the theory and working) will be issued to every participant." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>

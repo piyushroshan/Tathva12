@@ -21,6 +21,21 @@ public class Competitions extends Activity {
 		
 		/* ----------------------------------- ROBOTICS------------------------*/
 		
+		ImageView imgCollision = (ImageView)findViewById(R.id.imgCollision);
+		imgCollision.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent myIntent = new Intent(Competitions.this, Robotics_Collision_Course.class);
+				Competitions.this.startActivity(myIntent);
+			}
+		});
+		
+		
+		
+		
+		
 		ImageView imgTrans = (ImageView)findViewById(R.id.imgTrans);
 		imgTrans.setOnClickListener(new OnClickListener() {
 			
@@ -66,16 +81,7 @@ public class Competitions extends Activity {
 			}
 		});
 		
-		ImageView imgCollision = (ImageView)findViewById(R.id.imgCollision);
-		imgCollision.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Competitions.this, Robotics_Collision_Course.class);
-				Competitions.this.startActivity(myIntent);
-			}
-		});
+		
 		
 		ImageView imgDirt = (ImageView)findViewById(R.id.imgDirt);
 		imgDirt.setOnClickListener(new OnClickListener() {

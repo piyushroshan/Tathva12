@@ -422,7 +422,7 @@ public final class R {
         public static final int linearLayout_nites_mother_jane=0x7f050362;
         public static final int linearLayout_nites_music=0x7f050366;
         public static final int linearLayout_nites_robo_show=0x7f05036a;
-        public static final int linearLayout_robo_coll_course_inner=0x7f050374;
+        public static final int linearLayout_robo_coll_course_inner=0x7f050377;
         public static final int linearLayout_robo_coll_course_outer=0x7f050371;
         public static final int linearLayout_robo_coll_outer=0x7f05036d;
         public static final int linearLayout_robo_dirt_arena=0x7f050388;
@@ -686,8 +686,8 @@ public final class R {
         public static final int linear_nites_music_intro=0x7f050365;
         public static final int linear_nites_robo_show_intro=0x7f050369;
         public static final int linear_robo_collision_course_contact=0x7f05037c;
-        public static final int linear_robo_collision_course_intro=0x7f050376;
-        public static final int linear_robo_collision_course_spec=0x7f050372;
+        public static final int linear_robo_collision_course_intro=0x7f050372;
+        public static final int linear_robo_collision_course_spec=0x7f050375;
         public static final int linear_robo_collision_course_stmt=0x7f050379;
         public static final int linear_robo_dir_arena=0x7f050386;
         public static final int linear_robo_dirt_contact=0x7f05038c;
@@ -893,8 +893,8 @@ public final class R {
         public static final int scrollView_mech_offroad=0x7f050351;
         public static final int scrollView_mech_offroad_contact=0x7f050356;
         public static final int scrollView_robo_collision_course_contact=0x7f05037d;
-        public static final int scrollView_robo_collision_course_intro=0x7f050377;
-        public static final int scrollView_robo_collision_course_spec=0x7f050373;
+        public static final int scrollView_robo_collision_course_intro=0x7f050373;
+        public static final int scrollView_robo_collision_course_spec=0x7f050376;
         public static final int scrollView_robo_dirt_arena=0x7f050387;
         public static final int scrollView_robo_dirt_contact=0x7f05038d;
         public static final int scrollView_robo_dirt_spec=0x7f05038a;
@@ -999,7 +999,7 @@ public final class R {
         public static final int textRoboTransContact=0x7f0503c5;
         public static final int textRoboTransIntro=0x7f0503bd;
         public static final int textTransBlockSpec=0x7f050014;
-        public static final int textTransBlockSpec1=0x7f050375;
+        public static final int textTransBlockSpec1=0x7f050378;
         public static final int textTransContact=0x7f05000d;
         public static final int textTransIntro=0x7f050009;
         public static final int textTrans_title=0x7f050382;
@@ -1127,7 +1127,7 @@ public final class R {
         public static final int text_chem_interrupteur_contact=0x7f0500cc;
         public static final int text_cloud_title=0x7f0503f2;
         public static final int text_coil_title=0x7f0501b5;
-        public static final int text_collision_title=0x7f050378;
+        public static final int text_collision_title=0x7f050374;
         public static final int text_concept_title=0x7f0503ca;
         public static final int text_contrapt_title=0x7f05033a;
         public static final int text_counter_title=0x7f050036;
