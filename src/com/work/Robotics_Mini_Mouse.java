@@ -46,6 +46,13 @@ public class Robotics_Mini_Mouse extends Activity {
 
 	        tabs.addTab(spec3);
 	        
+	        TabHost.TabSpec spec6 = tabs.newTabSpec("prizes");
+
+	        spec6.setContent(R.id.linear_robo_mini_mouse_prizes);
+	        spec6.setIndicator(" Prizes  ");
+
+	        tabs.addTab(spec6);
+	        
 	        TabHost.TabSpec spec5 = tabs.newTabSpec("contact");
 
 	        spec5.setContent(R.id.linear_robo_mini_mouse_contact);

@@ -38,6 +38,13 @@ public class Robotics_League extends Activity {
 
 	        tabs.addTab(spec2);
 	        
+	        TabHost.TabSpec spec9 = tabs.newTabSpec("Prizes");
+
+	        spec9.setContent(R.id.linearRoboLeaguePrizes);
+	        spec9.setIndicator("  Prizes  ");
+
+	        tabs.addTab(spec9);
+	        
 	        
 	        TabHost.TabSpec spec3 = tabs.newTabSpec("Contact");
 

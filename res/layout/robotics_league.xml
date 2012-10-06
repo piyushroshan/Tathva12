@@ -1,87 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:background="#00688B"
-    android:layout_height="fill_parent"
-    android:weightSum="0">
-   
-   
-    <LinearLayout android:id="@+id/linearLayouttrans" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" 
-        android:layout_width="wrap_content"></ImageView>
-    </LinearLayout>
-    <TabHost 
-    android:id="@+id/tabhostRoboLeague"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:padding="5dp">
-        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
-        android:fillViewport="true"
-        android:scrollbars="none"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
-        <TabWidget
-        
-            android:id="@android:id/tabs"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" 
-            />
-            </LinearLayout>
-    </HorizontalScrollView>
-        <FrameLayout
-            android:id="@android:id/tabcontent"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:padding="5dp" >
-            <LinearLayout android:layout_width="match_parent" android:id="@+id/linearTransIntro" android:layout_height="match_parent" android:orientation="vertical">
-                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
-                    <LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeagueIntro" android:layout_height="match_parent" android:orientation="vertical">
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_league_title" android:text ="League Of Machines" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textRoboLeagueIntro" android:text="League of Machines or Robo-soccer, as it is popularly known aims at creating robots to play that beautiful game called football. League of machines was first staged in the 2006 edition of Tathva and was a highly popular and entertaining event for both the participants and even the spectators. " android:layout_width="wrap_content" android:layout_height="match_parent"></TextView>
-                        
-                    </LinearLayout>
-                </ScrollView>
-            </LinearLayout>
-            <LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeagueProblem" android:layout_height="match_parent" android:orientation="vertical">
-                <ScrollView android:id="@+id/scrollView21" android:layout_width="match_parent" android:layout_height="wrap_content">
-                    <LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeague_problem" android:layout_height="match_parent" android:orientation="vertical">
-                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="Design and build two robots, one remote controlled and the other wire-controlled, that can play a game of soccer against another team of twosimilar bots in an arena."
- android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
-           			</LinearLayout>
-           			</ScrollView>
-            </LinearLayout>
-            
-            
-            <LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeagueContact" android:layout_height="match_parent" android:orientation="vertical">
-               <ScrollView android:id="@+id/scrollView21" android:layout_width="match_parent" android:layout_height="wrap_content">
-                    <LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeagueIntro2" android:layout_height="match_parent" android:orientation="vertical">
-                      
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textLeagueContact" android:text="D Rajesh Krishna\nEvent Manager\nPhone: +91 903 750 3412\nE-mail: devireddyrajesh@tathva.org\n\nM Rama Krishna\nEvent Manager\nPhone: +91 963 325 0720\nE-mail: ramakrishna@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
-            </LinearLayout>
-            </ScrollView>
-            </LinearLayout>
-         	
-         	<LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeagueSpecifications" android:layout_height="match_parent" android:orientation="vertical">
-                <ScrollView android:id="@+id/scrollView21" android:layout_width="match_parent" android:layout_height="wrap_content">
-                    <LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeague_problem" android:layout_height="match_parent" android:orientation="vertical">
-                       
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textRoboLeagueSpecification" android:text=" Maximum number of members per team is 3.\nArena\nThe diagram below represents the actual arena. The arena shall be 260cm long and 180cm wide. The goal post shall be 60cm wide and 22cm in height from bottom. The penalty shot will be taken at a distance of 65cm from the opponent's goal post." 
-                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
-                <ImageView android:id="@+id/imageLeagueSpec" android:layout_height="wrap_content" android:layout_width="match_parent" android:src="@drawable/leagueofmachines1"></ImageView>
-                </LinearLayout>
-                </ScrollView>
-            </LinearLayout>
-            
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:background="#00688B"
+android:layout_height="fill_parent"
+	android:weightSum="0">
+
+
+		<LinearLayout android:id="@+id/linearLayouttrans" android:layout_width="match_parent" android:layout_height="wrap_content">
+			<ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08"
+			android:layout_width="wrap_content">
+		</ImageView>
+	</LinearLayout>
+	<TabHost
+	android:id="@+id/tabhostRoboLeague"
+	android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+			android:padding="5dp">
+			<HorizontalScrollView  android:id="@+id/horizontalScrollView1"
+			android:fillViewport="true"
+			android:scrollbars="none"
+			android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+					<LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+						<TabWidget
+
+						android:id="@android:id/tabs"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+							/>
+						</LinearLayout>
+					</HorizontalScrollView>
+					<FrameLayout
+					android:id="@android:id/tabcontent"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+						android:padding="5dp" >
+							<LinearLayout android:layout_width="match_parent" android:id="@+id/linearTransIntro" android:layout_height="match_parent" android:orientation="vertical">
+								<ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+									<LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeagueIntro" android:layout_height="match_parent" android:orientation="vertical">
+									<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_league_title" android:text ="League Of Machines" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03">
+									</TextView>
+									<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textRoboLeagueIntro" android:text="Flaunt your soccer skills through your bots. Let your bots aim, shoot and win in this miniature version of FIFA!!!\nLeague of Machines was first staged in the 2006 edition of Tathva and is a highly popular and anticipated event for both the participants and the techlovers.  " android:layout_width="wrap_content" android:layout_height="match_parent">
+									</TextView>
+
+								</LinearLayout>
+							</ScrollView>
+						</LinearLayout>
+						<LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeagueProblem" android:layout_height="match_parent" android:orientation="vertical">
+							<ScrollView android:id="@+id/scrollView21" android:layout_width="match_parent" android:layout_height="wrap_content">
+								<LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeague_problem" android:layout_height="match_parent" android:orientation="vertical">
+									<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="Design and build two remote controlled robots, one wireless remote controlled and the other wired-remote controlled,or you can bring both wireless robots that can play a game of soccer against another team of two similar bots in an arena.There can\'t be two wired robots in a team.Instead, you can bring a single bot, either wired or wireless, wireless is preferred, but do keep in mind that your score under the coordination with the team-mate column will be left to the judges discretion. \n"
+									android:layout_width="wrap_content" android:layout_height="wrap_content">
+								</TextView>
+							</LinearLayout>
+						</ScrollView>
+					</LinearLayout>
+
+					<LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeaguePrizes" android:layout_height="match_parent" android:orientation="vertical">
+						<ScrollView android:id="@+id/scrollView21" android:layout_width="match_parent" android:layout_height="wrap_content">
+							<LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeagueIntro2" android:layout_height="match_parent" android:orientation="vertical">
+
+								<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textLeagueContact" android:text="First\tRs. 12000/-\nSecond\tRs. 7000/-\nThird\tRs. 5000/-\nThe team with maximum goals at the completion of the match will emerge as the winner.\nThe competition comprises of league matches and knockout matches. In case there is a tie at the end of the match in the knockout stage, a penalty shootout shall be conducted to resolve the tie.\nReady-made chassis are not allowed and would lead to the disqualification of the team.\nIn the penalty shootout, each team shall be given five penalty shots from the penalty spot with no vehicle of the opposition guarding the goal. The team that can net maximum number of goals during the shootout will be declared the winner.\n" android:layout_width="wrap_content" android:layout_height="wrap_content">
+								</TextView>
+							</LinearLayout>
+						</ScrollView>
+					</LinearLayout>
+					<LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeagueContact" android:layout_height="match_parent" android:orientation="vertical">
+						<ScrollView android:id="@+id/scrollView21" android:layout_width="match_parent" android:layout_height="wrap_content">
+							<LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeagueIntro2" android:layout_height="match_parent" android:orientation="vertical">
+
+								<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textLeagueContact" android:text="V Ruthvik\nEvent Manager\nPhone:+919895553370\nE-mail:leagueofmachines@tathva.org\n\nRama krishna P\nEvent Manager\nPhone:+919746961546\nE-mail:leagueofmachines@tathva.org\n\nDikshit Ch\nEvent Manager\nPhone:+917736842083\nE-mail:leagueofmachines@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content">
+							</TextView>
+						</LinearLayout>
+					</ScrollView>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeagueSpecifications" android:layout_height="match_parent" android:orientation="vertical">
+					<ScrollView android:id="@+id/scrollView21" android:layout_width="match_parent" android:layout_height="wrap_content">
+						<LinearLayout android:layout_width="match_parent" android:id="@+id/linearRoboLeague_problem" android:layout_height="match_parent" android:orientation="vertical">
+
+							<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textRoboLeagueSpecification" android:text=" Maximum number of members per team is 3.\n\nArena\nThe diagram below represents the actual arena.The arena shall be 260cm long and 180cm wide. The goal post shall be 60cm wide and 22cm in height from bottom. The penalty shot will be taken at a distance of 65cm from the opponent\'s goal post."
+							android:layout_width="wrap_content" android:layout_height="wrap_content">
+						</TextView>
+						<ImageView android:id="@+id/imageLeagueSpec" android:layout_height="wrap_content" android:layout_width="match_parent" android:src="@drawable/leagueofmachines1">
+						</ImageView>
+						<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textRoboLeagueSpecification" android:text=" Let us address two imaginary teams playing a match as Team T1 and Team T2 respectively. T1 defends its goal on the left half and T2 defends the goal on the right. For a team, the remote controlled bot will act as the striker and the wire controlled bot, the defender. Let S1 be the remote controlled bot and P1 be the wire controlled bot in T1 and similarly S2 alongwith P2 be the bots in T2. As shown in the figure, the arena has been divided into four zones A, B, C and D. The zones accessible to each vehicle throughout the course of the match are given below:\nS1: In zones B, C or D.\nS2: In A, B or C.\nP1: In A or B.\nP2: In C or D.\nA starting configuration is also presented below. Only S1 or S2 can start the match. The positions given below are valid when S2 starts the match, after which the above mentioned restrictions shall hold.\nS1: Anywhere in B but outside the centre circle.\nS2: Within the centre circle (in any half B or C).\nP1: A.\nP2: D.\nAt the start of the match each team will be assigned one of the two sides of the arena. All the controllers are allowed to move only along the side assigned to them.\n\nGameplay\nA standard golf ball will be used for the game. (with an approximate diameter of 45mm and weight 45gm).\nEach league match shall be 10 minutes long with half time of 5 minutes.\nSemi-final and final match durations shall be of 12 minutes with half time of 6 minutes each.\nOnly the remote controlled bot of a team can enter the opponents half during play, the other vehicle can only play within its own half. These robots cannot swap positions during the game.\nAll the four vehicles on the arena are allowed to hit goals.\nThe configurations that the vehicle must abide by during the match are described under arena specifications.\nThere should be no entanglement of wires during the match.\nIntentional physical cornering and rough play may be declared as foul depending on the decision of the judges.\nThe referee shall take decisions regarding the fouls committed during the match.\nFour fouls shall lead to a penalty shoot-out.\nThe penalties shall be taken from the centre of the penalty spot which is at a distance of 65cm from the goal post, on an open goal (None of the machines can guard their goal).\nThe restrictions on the accessible areas on the arena for each vehicle shall be strictly followed during the course of the match. A violation of this rule shall lead to a penalty shoot.\nIf a technical glitch occurs, the team shall be allowed to remove their vehicle from the arena for repair. If it cannot be resolved within 2 minutes of its occurrence, the team will have to play with only one vehicle which has the freedom to move anywhere on the arena.\nIf the ball leaves the arena, the game will be started from the center.\nA Foul in the A or D-box (the area just before the goal post) leads to a penalty to the opposite team.\n\nMachine\nBoth the bots, at their maximum size (all retractable projections included) should fit into a box of dimensions 20cm x 15cm x 15cm. The measurements shall be done just before the start of the match, and the constraints shall apply throughout the course of the match.\nUse of readymade parts like LEGO kits (except remote control kits) is strictly prohibited. If judges suspect that a team has put no effort into the construction of the vehicle and has purchased it readymade, they are liable for disqualification.\nThe vehicle can only drag the ball. Capturing the ball by any means (Example: by means of a slot running through the body, or a cup) may lead to disqualification.\nThe ball cannot roll under the vehicle. Guiding slots (projections/depressions on the surface of the vehicle) should not exceed the radius of the ball. The vehicles can employ a mechanism to strike the ball. The striking mechanism may exceed the dimensional constraints while making the shot.\nGear boxes of toy cars may be used.\n\na. Wire-controlled machine:\nThe wire controlled bots can move only in the respective halves of the arena allotted to a team to defend the goal, as described under problem specifications.\nThe participants must control their machines using hand held switches connected by means of wires.\nOnly electrical powered actuators are allowed. The power supply may be on-board or external. A maximum voltage of 12V D.C. and a maximum current of 3 A can be used to power the vehicle.\nParticipants should bring the required length of wire along with them. The wires should remain slack throughout the match.\n\nb. Radio-controlled machine:\nThe radio-controlled machine of a team can move in the zones of the arena as described above. For example, the machine of the team defending the left half of the arena can move in zones B, C and D. The machine has to be controlled by a wireless radio-controlled mechanism throughout the competition.\nIn order to avoid frequency interference with the opponent team, the machine must have a dual frequency remote control circuit or two control circuits which may be interchanged before the start of the race.\nRemote control systems from toys could be used. Remote control systems available in the market may also be used. The machine must have an on-board power supply to provide power to any mechanism requiring electric power. The machine can use a maximum voltage of 12 V D.C and a maximum current of 3 A at any point of the game."
+							android:layout_width="wrap_content" android:layout_height="wrap_content">
+						</TextView>
+					</LinearLayout>
+				</ScrollView>
+			</LinearLayout>
+
           </FrameLayout>
-            
+
     </LinearLayout>
-    
+
 </TabHost>
  </LinearLayout>

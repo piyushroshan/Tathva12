@@ -45,7 +45,12 @@ public class Robotics_Dirt_Race extends Activity {
 
 	        tabs.addTab(spec5);
 	        
-	        
+	        TabHost.TabSpec spec6 = tabs.newTabSpec("Prizes");
+
+	        spec6.setContent(R.id.linear_robo_dirt_prizes);
+	        spec6.setIndicator("  Prizes  ");
+
+	        tabs.addTab(spec6);
 	        TabHost.TabSpec spec3 = tabs.newTabSpec("Contact");
 
 	        spec3.setContent(R.id.linear_robo_dirt_contact);

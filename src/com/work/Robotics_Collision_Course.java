@@ -38,6 +38,13 @@ public class Robotics_Collision_Course extends Activity {
 
 	        tabs.addTab(spec2);
 	        
+	        TabHost.TabSpec spec6 = tabs.newTabSpec("prizes");
+
+	        spec6.setContent(R.id.linear_robo_collision_course_prizes);
+	        spec6.setIndicator("  Prizes  ");
+
+	        tabs.addTab(spec6);
+	        
 	        
 	        TabHost.TabSpec spec3 = tabs.newTabSpec("Contact");
 

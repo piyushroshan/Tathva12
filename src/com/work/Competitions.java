@@ -33,9 +33,6 @@ public class Competitions extends Activity {
 		});
 		
 		
-		
-		
-		
 		ImageView imgTrans = (ImageView)findViewById(R.id.imgTrans);
 		imgTrans.setOnClickListener(new OnClickListener() {
 			
@@ -46,6 +43,10 @@ public class Competitions extends Activity {
 				Competitions.this.startActivity(myIntent);
 			}
 		});
+		
+		
+		
+		
 		
 		ImageView imgLeague = (ImageView)findViewById(R.id.imgLeague);
 		imgLeague.setOnClickListener(new OnClickListener() {

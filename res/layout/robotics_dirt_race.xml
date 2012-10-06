@@ -51,7 +51,14 @@
                 <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
                     	<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTrans_title" android:text="DIRT RACE" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center" android:gravity="center" android:textSize="20dp"></TextView>
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="You all must have played racing games and watched movies where the hero, in spite of lagging throughout the race, recklessly hits up a gas of nitrous and ends up winning it. Ever wondered how it feels to experience this marvel in reality?\nYou all must have played racing games and watched movies where the hero, in spite of lagging throughout the race, recklessly hits up a gas of nitrous and ends up winning it. Ever wondered how it feels to experience this marvel in reality?\nHere's your chance to engulf yourself with passion and live the dream.\nDefy the traps, time your gaps,\nJump the bridges and speed through the tunnels.\nFeel the adrenaline pump though your veins,\nAs Tathva '11 presents you for the first time - DIRT RACE." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+
+                        <TextView
+                            android:id="@+id/textTransIntro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Here is your chance to feel the passion and live the dream. Defy the traps, time your gaps, jump the bridges and speed through the tunnels. Feel the adrenaline pump though your veins, as Tathva \'12 presents to you Dirt Races. \n\nGet ready to conquer the racing arena, see if the robot of your creation has what it takes to withstand this test of speed, skill and endurance. Stride past the other robots at top speed to emerge the champion of this race."
+                            android:textAppearance="?android:attr/textAppearanceMedium" >
+</TextView>
                         </LinearLayout>
                 </ScrollView>
             </LinearLayout>
@@ -59,7 +66,7 @@
                 <ScrollView android:id="@+id/scrollView_robo_dirt_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_robo_dirt_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="Design and construct a wired or wireless bot which can race and compete against others, cracking its way through the arena. Only aim is to finish the race as soon as possible." 
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="Design and construct a wired or wireless bot which can race against others. The goal is to complete the given racetrack in the minimum amount of time." 
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                  </LinearLayout>
                  </ScrollView>
@@ -69,7 +76,7 @@
                	<ScrollView android:id="@+id/scrollView_robo_dirt_arena" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_robo_dirt_arena" android:layout_width="match_parent" android:layout_height="match_parent">
                    
-               	 <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="1.The actual arena will be displayed only on the venue.\n2. It will contain several shortcuts and traps which may prove beneficial or detrimental for the teams.\n3. Different terrains like concrete, sand, soil, gravel, glass, wood, etc. will be used.\n4. A couple of minutes will be given to the teams before the start to study the arena and devise game-play strategies.\n5. There will be bridges, inclined planes, wedges, death wells, rotating platforms, and many more surprising elements.\n6. Final aim is to reach the end line before the other bots."
+               	 <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="1.The actual arena will be displayed only at the venue.\n2.The bot may use any shortcut it finds in the racecourse, but it must complete all the obstacles.\n3.Different terrains like concrete, sand, soil, gravel, glass, wood, etc. will be used in the track.\n4.Two minutes preparatory time will be given to the teams before the start to study the arena and devise game-play strategies.\n5.There may be bridges, inclined planes, wedges, death wells, rotating platforms, and many more surprise elements.\n6.Final aim is to reach the finish line before the other bots.\n7.The actual arena may or may not have the above mentioned elements.\n8.Apart from these, the arena may hold any other such contrivances which will be revealed only at the venue."
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                  </LinearLayout>
                  </ScrollView>
@@ -79,17 +86,25 @@
                <ScrollView android:id="@+id/scrollView_robo_dirt_spec" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_robo_dirt_spec" android:layout_width="match_parent" android:layout_height="match_parent">
                    
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="1.A team may consist of a maximum of 4 participants.\n2. Students from different educational institutes can form a team.\n3. All the teams must register to the event on the website.\n4. Each team is allowed to have only one bot for both the rounds.\n5. The bot must fit into a cube of 25cm x 25cm x 20cm.\n6. No external power will be supplied at the venue. All teams should arrange for their own power.\n7. The max potential difference between any two points should not exceed 18 V for wired vehicles and 24 V for wireless bots.\n8. No IC engines are allowed. The batteries can be placed on the bot or held in hand.\n9. In case of wireless bots, the connecting wires from the bot to the remote control should be a minimum of 3 meters in length.\n10. Bot cannot be constructed using ready-made Lego kits or any other such mechanism. But ready-made gear assemblies and wheels can be used. Although the Chassis has to be hand-made.\n11. Violating the clause will lead to immediate disqualification."
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="A team may consist of a maximum of 4 members.\nInter-college teams are allowed.\nAll the teams must register for the event on the website.\nEach team is allowed to have only one bot for both the rounds.\nThe bot must fit into a cube of 25cm x 25cm x 20cm and should not weigh more than 3Kgs in all ( with controller, battery, and wires).\nNo external power supply will be supplied at the venue. All teams should arrange for their own power.\nThe maximum potential difference between any two points should not exceed 18 V for wired vehicles and 24 V for wireless bots.\nNo IC engines are allowed. The batteries can be placed on the bot or held in hand.\nIn case of wireless bots, the connecting wires from the bot to the remote control should be a minimum of 3 meters in length.\nBots cannot be constructed using ready-made Lego kits or any other such mechanism. But ready-made gear assemblies and wheels can be used. Although the chassis has to be hand-made.\nViolating the clause will lead to immediate disqualification.\n\n\n*Wireless bots will be given a higher preference in the wild card round due to design. \n*On the spot registrations are accepted but the racing slots are subject to availability. \n*Rules are subject to change. Decisions of the officials are final."
                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>
-            
+                      <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_dirt_prizes" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_robo_dirt_prizes" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_robo_dirt_prizes" android:layout_width="match_parent" android:layout_height="match_parent">
+                   
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="First\tRs. 10000/-\nSecond\tRs. 6000/-\nThird\tRs. 3500/-\n\n         RULES\nOnly two players are allowed into the arena. One to control the bot and the another to hold connecting wires.\nThere will be checkpoints all along the track. If any kind of human intervention is required, then the bot has to start once again from the last checkpoint.\nFor example, if a bot falls from a cliff and is unable to get back on the track, then the Official will restart the bot immediately from the last checkpoint it had surpassed, while the other team continues to move ahead on its path without stopping.\nThe above policy can be used only three times for a given checkpoint. If a team cannot reach the next checkpoint in spite of restarting from a previous checkpoint thrice, it will be disqualified.\nAlso if a bot hasn\'t moved from its spot for more than 90 seconds, it will lead to disqualification.\nIn case of wire entanglement, the timers will be stopped and the race will be restarted from a previous checkpoint.\nIn order to prevent the loss of momentum during such an event, wireless robots are encouraged.\nIn case of any discrepancy, decision of the organizing panel will be considered absolute."
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+          </LinearLayout>
+              </ScrollView>
+            </LinearLayout>
             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_dirt_contact" android:layout_height="match_parent" android:orientation="vertical">
                <ScrollView android:id="@+id/scrollView_robo_dirt_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_robo_dirt_contact" android:layout_width="match_parent" android:layout_height="match_parent">
                    
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="Akshay Singh\nEvent Manager\nPhone: +91 889 172 5678\nE-mail: akshay@tathva.org\n\nVishnuram Abhinav\nEvent Manager\nPhone: +91 808 954 0741\nE-mail: vishnuram@tathva.org"
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="Sandeep Kandregula\nEvent Manager\nPhone:+917736387081\nE-mail:dirtraces@tathva.org\n\nCh Siva Surya Kiran\nEvent Manager\nPhone:+917736725605\nE-mail:dirtraces@tathva.org\n"
                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
           </LinearLayout>
           </ScrollView>
