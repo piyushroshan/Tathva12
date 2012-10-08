@@ -17,7 +17,8 @@
     <string name="app_mech_contraption">Contraption</string>
     <string name="app_mech_mechnascene">Amphi Boat</string>
     <string name="app_mech_incarnate">Incarnate</string>
-    <string name="app_mech_conceptcar">The Off Road MI</string>
+    <string name="app_mech_conceptcar">Concept Car Design</string>
+     <string name="app_mech_navigator">Navigator</string>
     <string name="app_mech_aqua">Aqua Missile</string>
     <string name="app_cs_befunge">Befunge</string>
     <string name="app_cs_tux">Tux of War</string>

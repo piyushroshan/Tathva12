@@ -32,6 +32,7 @@
 		<activity android:label="@string/app_mech_incarnate" android:name="Mech_Incarnate"/>
 		<activity android:label="@string/app_mech_conceptcar" android:name=".Mech_Concept_Car"/>
 		<activity android:label="@string/app_mech_aqua" android:name="Mech_Aqua_Missile"/>
+		<activity android:label="@string/app_mech_navigator" android:name="Mech_Navigator"/>
 		<activity android:label="@string/app_cs_tux" android:name="CS_tux"/>
 		<activity android:label="@string/app_cs_befunge" android:name="CS_befunge"/>
 		<activity android:label="@string/app_cs_koderkombat" android:name="CS_koderkombat"/>

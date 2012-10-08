@@ -50,8 +50,8 @@
             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_navigator_intro" android:layout_height="match_parent" android:orientation="vertical">
                 <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:orientation="vertical" android:layout_height="match_parent">
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_navigator_title" android:text ="navigator" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="Roll the parts into the slots and reveal the extent of your expertise!!!\t\nHere\'s the ultimate hunt for the best contriver." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_navigator_title" android:text ="Navigator" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="Fabricate a remote controlled racing boat that speeds up through the checkpoints. Let your thirst for victory, your desire to create and your passion to pioneer escort you to that handsome cash prize.\n\nBring in your ideas and innovations and swim past your opponents and be crowned the NAVIGATOR!!!" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                         </LinearLayout>
                 </ScrollView>
             </LinearLayout>
@@ -60,7 +60,7 @@
                <ScrollView android:id="@+id/scrollView_mech_navigator" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_mech_navigator" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="The participants have to assemble the given parts in the alloted time, so that the assembly functions as the desired machine." 
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="Build a remote controlled vehicle which can race on water. \nThe vehicle has to be steered using a remote controller. All the boats will have to race along a track one after the other.\nThe vehicle crossing the finish line in the least time period will be the winner." 
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
@@ -70,7 +70,7 @@
                <ScrollView android:id="@+id/scrollView_mech_navigator" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_mech_navigator" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="1. A team can consist of a maximum of three members.\n2. Cross college teams are allowed.\n3. The event will consist of two rounds. A preliminary written test and the final.\n4. The preliminary round will be of 15 minutes duration.\n5. In the final that follows, the contestants must assemble the machine within the alloted\ntime.\n6. The mechanism to be built will be informed on the spot.\n7. All tools and materials will be provided.\n8. Use of any material other than those provided will lead to immediate disqualification.\n9. The event managers have the right to eliminate the participants in case of any\nmisconduct." 
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="1. The vehicle should fit in a box of 30cm x 30cm x 30cm at all times.\n2. External remote control and power supply batteries are excluded from this constraint.\n3. Readymade remote control kits or any other such mechanism in your boat will lead\nto immediate disqualification. However individual components of such ready made\nkits such as motors or gear\u00adbox can be used. But the chassis and steering\nmechanisms should be hand\u00admade.\n4. There are no restrictions whatsoever on the weight and construction for the boat.\n5. Participants are supposed to use electric motors for propulsion of the vehicle.\n6. Use of IC engine or any other kind of propulsion device is not allowed.\n7. Usage of any energy storage device (other than batteries) is not allowed.\n8. Wired or wireless remote controls are permitted.\n9. The decision of the judges is final and binding to all." 
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
@@ -80,7 +80,7 @@
                <ScrollView android:id="@+id/scrollView_mech_navigator" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_mech_navigator" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="First\tRs. 5000/-\nSecond\tRs. 3000/-\nThird\tRs. 2000/-\n\n\n1. All decisions taken by the judges shall be final and binding to all.\n2. S=(N\u00adT)+20n+10y\n\u25cb S: Total score\n\u25cb N: Total time given\n\u25cb T: Total time taken\n\u25cb n: Number of components correctly assembled\n\u25cb y: Number of questions correctly answered regarding the\nmachine/mechanism.\n3. The time allotted will be informed on the spot. " 
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="First\tRs. 8000/-\nSecond\tRs. 5000/-\nThird\tRs. 3000/-\n\n\nJUDGING CRITERIA\n1. A trial round of 1 minute will be given to all the contestants to strategise their play.\n2. If the vehicle touches any of the markers, the team will be granted a compensation of\n5 seconds in their time for each marker.\n3. If the vehicle touches any of the edge\u00adwalls, a penalty of 5 seconds will be added to\nthe timer.\n4. If any kind of human intervention is required, a penalty of 15 seconds will be added to\nthe timer.\n5. After each physical involvement, the vehicle must either be kept at the point of\ndesertion or at any previous checkpoint, but not any further.\n6. If the bots are unable to reach the final line in a time of 5 minutes excluding all the\npenalties and compensations, they will be timed\u00adout.\n7. S= T+15H+5E\u00ad5M\n\u25cb S= SCORE\n\u25cb T= Time taken to complete the race track in seconds\n\u25cb H= No. of human interventions between the race\n\u25cb E= No. of times the boat touches the edge of circuit\n\u25cb M= No. of markers earned\n8. The team having a minimum score(S) will be declared as the winner." 
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
@@ -92,7 +92,7 @@
                 <ScrollView android:id="@+id/scrollView_mech_contr_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_mech_contr_contact" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_mech_navigator_contact" android:text="Arun Menon M\nEvent Manager\nPhone:+919567503335\nE-mail:machnascence@tathva.org\n\nRazal Faizal\nEvent Manager\nPhone:+919746182500\nE-mail:machnascence@tathva.org\n\nKevin Varghese\nEvent Manager\nPhone:+919400431184\nE-mail:machnascence@tathva.org"
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_mech_navigator_contact" android:text="VISHNU DAS\nEvent Manager\nPhone:+919446896707\nE-mail:navigator@tathva.org\n\nNAVANEETH.P.V\nEvent Manager\nPhone:+919496237761\nE-mail:navigator@tathva.org\n\nNIKHIL VARGHESE\nEvent Manager\nPhone:+919645450928\nE-mail:navigator@tathva.org"
                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>

@@ -51,7 +51,7 @@
                 <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
                         <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_inq_title" android:text="Inquisito Virtuoso" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_gen_inq_virt_Intro" android:text="'Doubt, indulged and cherished, is in danger of becoming denial; but if honest, and bent on thorough investigation, it may soon lead to full establishment of the truth.'\n- Ambrose Bierce\n\nOur inks are over, blotting on maps and papers. Our eyes are red, looking for every speck of evidence. Nights have passed. Not yet have we zeroed down on HIM. Put in your hands. Give in your wit and spot the culprit.\nSo, are you in...??" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_gen_inq_virt_Intro" android:text="'Ladies and Gentlemen.. \n\nThe Dark forces are getting murkier by the days and my brilliant yet half-nutter friend, Sherlock has immersed himself in Hollywood paranoia. A murderer is on the loose. Answers are many but none seems to fit. Even the air seems to be hanging with smell of blood. Each passing moment lays another soul to rest. \nDo you have the  Elementary  in you? Sovereigns and Hearts assured. Jump in as soon as you make up your mind.\n\nDr. Watson\nPS- Danger awaits on the trail. \n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                         </LinearLayout>
                 </ScrollView>
             </LinearLayout>
@@ -60,7 +60,7 @@
                <ScrollView android:id="@+id/scrollView_gen_inq_virt_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_gen_inq_virt_specs" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_inq_virt_specs" android:text="The event is conducted under three stages: Prelims, Qualifiers and Finals.\n\nPRELIMS:\nThe first round is a written preliminary round evaluating basic knowledge on Forensic Intelligence and Life sciences.\n\nQUALIFIERS:\nThe qualifiers of prelims will get into the second round and will be assessed for the finals under two stages.\n1) Evidence Collection:\nThe selected participants will first be prone to a crime scene and have to submit a note on the visual evidences collected.\n2) Written Assessment:\nA list of all possible suspects along with their profiles containing all necessary information will be provided. The qualifiers will have to write a detailed note on their suspect, citing solid reasons from their visual evidences collected within a time span of 1 hour.\n3 teams qualifying these 2 rounds will be selected for the finals.\n\nTeam Specifications\n1. Each team should comprise of atmost 3 members.\n2. All team members must produce a valid identity card from their respective institutions."
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_inq_virt_specs" android:text="1. Each team should comprise of utmost 3 members.\n2. The event will take place in three stages: Prelims, Qualifiers and finals\n\u25cb PRELIMS : The first round is a written preliminary round evaluating basic\nknowledge on Forensic Intelligence and Life sciences.\n\u25cb QUALIFIERS : The qualifiers of prelims will get into the second round and will\nbe assessed for the finals under two stages.\n\u25a0 Evidence Collection: The selected participants will first be prone to a\ncrime scene and have to submit a note on the visual evidences\ncollected.\n\u25a0 Written Assessment: A list of all possible suspects along with their\nprofiles containing all necessary information will be provided. The\nqualifiers will have to write a detailed note on their suspect, citing solid\nreasons from their visual evidences collected within a time span of 1\nhour.\n\u25cb FINALS : Three teams qualifying the previous rounds will proceed to the\nfinals."
                                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
@@ -71,7 +71,7 @@
                <ScrollView android:id="@+id/scrollView_gen_inq_virt_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_gen_inq_virt_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_inq_virt_stmt" android:text="This event is meant to gauge your aptitude in crime scene investigation, analysis of evidence and observational skills. Track the culprit with your intelligence and make your day..!!"
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_inq_virt_stmt" android:text="The crime scene has been analyzed. Medical Examiners and Law enforcement are at your service. All you have to do is unravel the perfect crime by threading the evidences to pin down the perpetrator. Common sense and presence of mind will prevail. "
                                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
@@ -83,17 +83,26 @@
                <ScrollView android:id="@+id/scrollView_gen_inq_virt_judge" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_gen_inq_virt_judge" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_inq_virt_judge" android:text="1) Points will be allotted by the judges on the basis of:\n  a. Evidence collection\n  b. Interpretation and reasoning\n  c. Performance in written exam round\n  d. Performance in final round\n  e. Total time taken\n2) In case of tie, a quiz based on forensic science will be conducted.\n3) Judge's decision will be final.\n4) Event coordinators reserve rights to change any rule if needed."
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_gen_inq_virt_judge" android:text="Points will be allotted by the judges on the basis of :\n1. Evidence collection.\n2. Interpretation and reasoning.\n3. Performance in written exam round.\n4. Performance in final round.\n5. Total time taken.\n6. In the case of a tie, a quiz based on forensic science will be conducted.\n7. The decision of Judges shall be final and binding.\n8. Event coordinators reserve rights to change any rule as they deem fit"
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>
-            
+         
+                         <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_inq_virt_prizes" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_gen_inq_virt_prizes" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_gen_inq_virt_prizes" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_gen_inq_virt_prizes" android:text="First\tRs. 6000/-\nSecond\tRs. 4000/-\nThird\tRs. 2000/-\n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+             
             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_gen_inq_virt_contact" android:layout_height="match_parent" android:orientation="vertical">
                 <ScrollView android:id="@+id/scrollView_gen_inq_virt_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_gen_inq_virt_contact" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_gen_inq_virt_contact" android:text="Minu Vasundhara\nEvent Manager\nPhone: +91 949 733 4804\nE-Mail: minu@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_gen_inq_virt_contact" android:text="Stevin Wilson\nEvent Manager\nPhone:+919633429249\nE-mail: inq@tathva.org\n\nBabukrishna M\nEvent Manager\nPhone:+919567503080\nE-mail: inq@tathva.org\n\nAruna Mohan\nEvent Manager\nPhone:+918891761904\nE-mail: inq@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>

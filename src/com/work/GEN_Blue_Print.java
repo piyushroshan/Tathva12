@@ -39,6 +39,13 @@ public class GEN_Blue_Print extends Activity {
 
 	        tabs.addTab(spec8);
 	        
+	        TabHost.TabSpec spec10 = tabs.newTabSpec("prizes");
+
+	        spec10.setContent(R.id.linear_gen_blue_print_prizes);
+	        spec10.setIndicator("  Prizes  ");
+
+	        tabs.addTab(spec10);
+	        
 	        TabHost.TabSpec spec3 = tabs.newTabSpec("Contact");
 
 	        spec3.setContent(R.id.linear_gen_blue_print_contact);

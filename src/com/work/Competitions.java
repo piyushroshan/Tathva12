@@ -143,7 +143,15 @@ public class Competitions extends Activity {
 			}
 		});
 		
-		
+		ImageView imgNavigator = (ImageView)findViewById(R.id.imgNavigator);
+		imgNavigator.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent myIntent = new Intent(Competitions.this, Mech_Navigator.class);
+				Competitions.this.startActivity(myIntent);
+			}
+		});
 		
 		/* ----------------------------------- END OF MECH------------------------*/
 		

@@ -52,6 +52,7 @@
                      <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/conceptcar" android:layout_width="wrap_content" android:id="@+id/imgOff"></ImageView>
                      <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/machnascene" android:layout_width="wrap_content" android:id="@+id/imgmechnascene"></ImageView>
                      <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/inc1" android:layout_width="wrap_content" android:id="@+id/imgIncarnate"></ImageView>
+                     <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/navigator" android:layout_width="wrap_content" android:id="@+id/imgNavigator"></ImageView>
                      <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/aqua" android:layout_width="wrap_content" android:id="@+id/imgAqua"></ImageView>
                  </LinearLayout>
              </HorizontalScrollView>

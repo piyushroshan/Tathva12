@@ -31,7 +31,8 @@ public class GEN_Inq_Virt extends Activity {
 
 	        tabs.addTab(spec8);
 	        
-	        
+
+	           
 	        TabHost.TabSpec spec4 = tabs.newTabSpec("specifications");
 
 	        spec4.setContent(R.id.linear_gen_inq_virt_specs);
@@ -46,6 +47,13 @@ public class GEN_Inq_Virt extends Activity {
 	        spec7.setIndicator("  Criteria  ");
 
 	        tabs.addTab(spec7);
+	        
+	        TabHost.TabSpec spec10 = tabs.newTabSpec("prizes");
+
+	        spec10.setContent(R.id.linear_gen_inq_virt_prizes);
+	        spec10.setIndicator("  Prizes  ");
+
+	        tabs.addTab(spec10);
 	        
 	        TabHost.TabSpec spec3 = tabs.newTabSpec("Contact");
 
