@@ -15,9 +15,9 @@
     <string name="app_Robo_SignalMaestro">Signal Maestro</string>
     <string name="app_Robo_CollisionCourse">Collision Course</string>
     <string name="app_mech_contraption">Contraption</string>
-    <string name="app_mech_amphi">Amphi Boat</string>
+    <string name="app_mech_mechnascene">Amphi Boat</string>
     <string name="app_mech_incarnate">Incarnate</string>
-    <string name="app_mech_offroad">The Off Road MI</string>
+    <string name="app_mech_conceptcar">The Off Road MI</string>
     <string name="app_mech_aqua">Aqua Missile</string>
     <string name="app_cs_befunge">Befunge</string>
     <string name="app_cs_tux">Tux of War</string>
@@ -69,8 +69,6 @@
 	<string name="app_blitz_dota">DotA</string>
 	<string name="app_blitz_fifa">Fifa</string>
 	<string name="app_blitz_nfs">NFS</string>
-	<string name="app_blitz_rag">Ragdoll Masters</string>
-	<string name="app_blitz_street">Super Street Fighter 4: Arcade Edition</string>
 	<string name="app_blitz_counter">Counter-Strike 1.6</string>
 	<string name="app_civil_erecthion">eRECthion 5.0</string>
 	<string name="app_civil_descartes">Descartes Square</string>

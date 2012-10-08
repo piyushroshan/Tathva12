@@ -38,7 +38,18 @@ public class Robotics_Signal_Maestro extends Activity {
 
 	        tabs.addTab(spec2);
 	        
-	        
+	        TabHost.TabSpec spec8 = tabs.newTabSpec("arena");
+
+	        spec8.setContent(R.id.linear_robo_signal_maestro_arena);
+	        spec8.setIndicator("  Arena ");
+
+	        tabs.addTab(spec8);
+	        TabHost.TabSpec spec9 = tabs.newTabSpec("prizes");
+
+	        spec9.setContent(R.id.linear_robo_signal_maestro_prizes);
+	        spec9.setIndicator(" Prizes ");
+
+	        tabs.addTab(spec9);	        
 	        TabHost.TabSpec spec5 = tabs.newTabSpec("contact");
 
 	        spec5.setContent(R.id.linear_robo_signal_maestro_contact);

@@ -51,7 +51,15 @@
                 <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:orientation="vertical" android:layout_height="match_parent">
                         <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_incarnate_title" android:text ="Incarnate" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="'Engineering problems are under-defined; there are many solutions, good, bad and indifferent. The art is to arrive at a good solution. This is a creative activity, involving imagination, intuition and deliberate choice.'\n- Ove Arup\n\nAs the name suggests, four of you will set out for a challenge like never before. Test your aptitude and diligence as an engineer and test your co-ordination skills.\nIncarnate.\nBuild a machine out of ash. Let spontaneity and common sense prevail." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+
+                        <TextView
+                            android:id="@+id/textTransIntro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="&quot;A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing to take away &quot; - Antoine de Saint-Exupery\n\nAn engineer applies the theories of science and mathematics to research and develop solutions to technical problems. The technical wonders of the world are conceived in his brain and take shape in his hand. The real talent of an engineer is to design the perfect system or mechanism out of the available resources. And here, we give you the opportunity to display yourself as one of them!!\n\nThe task at your hand is to construct or design a machine or a mechanism from the given materials. It must satisfy the specified conditions and should be completed within the allotted time."
+                            android:textAppearance="?android:attr/textAppearanceMedium" >
+
+</TextView>
                         </LinearLayout>
                 </ScrollView>
             </LinearLayout>
@@ -60,7 +68,7 @@
                <ScrollView android:id="@+id/scrollView_mech_incarnate_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_mech_incarnate_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="To design and fabricate a working model of a simple mechanism, specified on the spot, from the different materials provided.\nThe materials include the necessary parts, tools and accessories essential to create the mechanism." 
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="Design and fabricate a working model of a simple mechanism which will be specified on the spot. The model must be constructed using the different materials provided which include the junk materials, tools and other accessories essential to its creation." 
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
@@ -70,17 +78,27 @@
                 <ScrollView android:id="@+id/scrollView_mech_incarnate_spec" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_mech_incarnate_contact" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_mech_amphi_contact" android:text="1. A team can consist of a maximum of four members.\n2. Cross college teams are allowed.\n3. The participants should produce a valid identity card of their institute.\n4. The event will consist of two rounds. A preliminary written test and the finale.\n5. The preliminary round will be of duration 60 minutes.\n6. This round is intended to test the logical and analytical aptitude of the contestants.\n7. In the second round, the contestants must design and fabricate a working model, specified on the spot.\n8. All the tools and materials required will be provided by the organisers.\n9. Use of any materials other than that provided by the organisers, will lead to immediate disqualification.\n10. Please contact the event manager before making any assumptions in order to avoid any cribs on the day of the event."
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_mech_amphi_contact" android:text="1. A team can consist of a minimum of two members and a maximum of four\nmembers.\n2. Cross college teams are allowed\n3. The participants should produce a valid identity card of their institute.\n4. The event will consist of two rounds. A preliminary written test and the final.\n5. The preliminary round will be of duration 60 minutes.\n6. This round is intended to test the logical and analytical aptitude of the contestants.\n7. In the second round, the contestants must design and fabricate a working model,\nspecified on the spot.\n8. All the tools and materials required will be provided by the organisers.\n9. Use of any materials other than that provided by the organisers, will lead to\nimmediate disqualification.\n10. Please contact the event manager before making any assumptions in order to avoid\nany cribs during the event."
                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>
-                     
+            
+              <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_incarnate_prizes" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_mech_incarnate_prizes" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_incarnate_prizes" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_mech_amphi_prizes" android:text="First\tRs. 6000/-\nSecond\tRs. 4000/-\nThird\tRs. 2500/-\n\nJUDGEMENT CRITERIA\n1.Creativity and stability of the structure will earn you extra points.\n2.The decision of the judges will be final and binding."
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+              
             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_incarnate_contact" android:layout_height="match_parent" android:orientation="vertical">
                 <ScrollView android:id="@+id/scrollView_mech_incarnate_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_mech_incarnate_contact" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_mech_amphi_contact" android:text="Anees Ashraf\nEvent Manager\nPhone: +91 963 324 8427\nE-mail: anees@tathva.org\n\nMuhammad Abi Afthab\nEvent Manager\nPhone: +91 980 900 5121\nE-mail: abiafthab@tathva.org"
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_mech_amphi_contact" android:text="Rony Peter\nEvent Manager\nPhone:+919497274433\nE-mail:incarnate@tathva.org\n\nR Vishnuraj\nEvent Manager\nPhone:+919446949900\nE-mail:incarnate@tathva.org"
                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>

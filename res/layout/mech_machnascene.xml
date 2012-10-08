@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:background="#00688B"
+    android:layout_height="fill_parent"
+    android:weightSum="0">
+   
+   
+    <LinearLayout android:id="@+id/linearLayout_mech_machnascene" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:scaleType="fitStart"
+            android:src="@drawable/img" >
+
+		</ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_mech_machnascene"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_machnascene_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:orientation="vertical" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_machnascene_title" android:text ="Machnascene" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="Roll the parts into the slots and reveal the extent of your expertise!!!\t\nHere\'s the ultimate hunt for the best contriver." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_machnascene_stmt" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_mech_machnascene" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_machnascene" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="The participants have to assemble the given parts in the alloted time, so that the assembly functions as the desired machine." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+              <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_machnascene_spec" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_mech_machnascene" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_machnascene" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="1. A team can consist of a maximum of three members.\n2. Cross college teams are allowed.\n3. The event will consist of two rounds. A preliminary written test and the final.\n4. The preliminary round will be of 15 minutes duration.\n5. In the final that follows, the contestants must assemble the machine within the alloted\ntime.\n6. The mechanism to be built will be informed on the spot.\n7. All tools and materials will be provided.\n8. Use of any material other than those provided will lead to immediate disqualification.\n9. The event managers have the right to eliminate the participants in case of any\nmisconduct." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+              <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_machnascene_prizes" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_mech_machnascene" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_machnascene" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="First\tRs. 5000/-\nSecond\tRs. 3000/-\nThird\tRs. 2000/-\n\n\n1. All decisions taken by the judges shall be final and binding to all.\n2. S=(N\u00adT)+20n+10y\n\u25cb S: Total score\n\u25cb N: Total time given\n\u25cb T: Total time taken\n\u25cb n: Number of components correctly assembled\n\u25cb y: Number of questions correctly answered regarding the\nmachine/mechanism.\n3. The time allotted will be informed on the spot. " 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+                  	
+                     
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_machnascene_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_mech_contr_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_contr_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_mech_machnascene_contact" android:text="Arun Menon M\nEvent Manager\nPhone:+919567503335\nE-mail:machnascence@tathva.org\n\nRazal Faizal\nEvent Manager\nPhone:+919746182500\nE-mail:machnascence@tathva.org\n\nKevin Varghese\nEvent Manager\nPhone:+919400431184\nE-mail:machnascence@tathva.org"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

@@ -39,6 +39,13 @@ public class Mech_Incarnate extends Activity {
 	        spec4.setIndicator("  Pblm Stmt  ");
 
 	        tabs.addTab(spec4);
+
+	        TabHost.TabSpec spec7 = tabs.newTabSpec("Prizes");
+
+	        spec7.setContent(R.id.linear_mech_incarnate_prizes);
+	        spec7.setIndicator("  Prizes  ");
+
+	        tabs.addTab(spec7);
 	        
 	        TabHost.TabSpec spec3 = tabs.newTabSpec("Contact");
 

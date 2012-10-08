@@ -22,7 +22,6 @@ public class Exhibitions extends Activity {
 		ImageView imgISRO = (ImageView)findViewById(R.id.img_isro);
 		imgISRO.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Exhibitions.this, Exhibition_ISRO.class);
@@ -33,7 +32,6 @@ public class Exhibitions extends Activity {
 		ImageView imgNPOL = (ImageView)findViewById(R.id.img_npol);
 		imgNPOL.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Exhibitions.this, Exhibition_NPOL.class);
@@ -44,7 +42,6 @@ public class Exhibitions extends Activity {
 		ImageView imgIndianarmy = (ImageView)findViewById(R.id.im_indian_army);
 		imgIndianarmy.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Exhibitions.this, Exhibition_Indian_Army.class);
@@ -55,7 +52,6 @@ public class Exhibitions extends Activity {
 		ImageView imgHAM = (ImageView)findViewById(R.id.img_exhibition_ham_radio);
 		imgHAM.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Exhibitions.this, Exhibition_Ham_Radio.class);
@@ -66,7 +62,6 @@ public class Exhibitions extends Activity {
 		ImageView imgInterface = (ImageView)findViewById(R.id.img_exhibition_interface);
 		imgInterface.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Exhibitions.this, Exhibition_Interface.class);
@@ -77,7 +72,6 @@ public class Exhibitions extends Activity {
 		ImageView imgTouch = (ImageView)findViewById(R.id.img_exhibition_touch_magix);
 		imgTouch.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Exhibitions.this, Exhibition_Touch_Magix.class);
@@ -88,7 +82,6 @@ public class Exhibitions extends Activity {
 		ImageView imgVista = (ImageView)findViewById(R.id.img_wheels_vista);
 		imgVista.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Exhibitions.this, Wheels_Vista.class);
@@ -99,7 +92,6 @@ public class Exhibitions extends Activity {
 		ImageView imgFull = (ImageView)findViewById(R.id.img_wheels_fullthrottle);
 		imgFull.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Exhibitions.this, Wheels_Full_Throttle.class);
@@ -110,7 +102,6 @@ public class Exhibitions extends Activity {
 		ImageView imgConcept = (ImageView)findViewById(R.id.img_wheels_concept);
 		imgConcept.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Exhibitions.this, Wheels_Concept_Car_Design.class);
@@ -122,7 +113,6 @@ public class Exhibitions extends Activity {
 		ImageView imgHands = (ImageView)findViewById(R.id.img_wheels_hands_on);
 		imgHands.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Exhibitions.this, Wheels_Hands_On.class);

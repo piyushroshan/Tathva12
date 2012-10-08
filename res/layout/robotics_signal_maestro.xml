@@ -6,8 +6,8 @@
     android:background="#00688B"
     android:layout_height="fill_parent"
     android:weightSum="0">
-   
-   
+
+
     <LinearLayout android:id="@+id/linearLayouttrans" android:layout_width="match_parent" android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/image"
@@ -19,7 +19,7 @@
 
 		</ImageView>
     </LinearLayout>
-    <TabHost 
+    <TabHost
     android:id="@+id/tabhost_robo_signal_maestro"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
@@ -28,17 +28,17 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:padding="5dp">
-        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1"
         android:fillViewport="true"
         android:scrollbars="none"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
         <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
         <TabWidget
-        
+
             android:id="@android:id/tabs"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" 
+            android:layout_height="wrap_content"
             />
             </LinearLayout>
     </HorizontalScrollView>
@@ -50,8 +50,8 @@
             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_signal_maestro_spec" android:layout_height="match_parent" android:orientation="vertical">
                 <ScrollView android:id="@+id/scrollView_robo_signal_maestro_spec" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_signal_maestro_spec_inner" android:layout_height="match_parent" android:orientation="vertical">
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="1. The image will be send to shared folder in the LAN.\n2. The teams can access the shared folder using the IP address of the system (the IP address of the system will be given just before the event).\n3. The images will be of jpeg format and have name 'im' followed by the number of the image as 1, 2, 3...etc. That is image one will have the name 'im1.jpg', image two will have the name 'im2.jpg'...etc.\n4. The above statements are illustrated using an example:\n\nSuppose the IP Address of the LAN connected system is '192.168.2.1'\nThe name of the shared folder is 'events'.\nThen location of the First image is '\\192.168.2.1\events\im1.jpg'\nThe images will be sent to the shared folder in a sequence i.e., the second image comes after first image, the third after the second and so on. The image with the highest image number should be used for processing and control of the bot.\nFor example im1.jpg, im2.jpg and im3.jpg is there in the shared folder im3.jpg should be used for processing.\n5. Length and breadth of bot should not exceed 20cm and 20cm respectively at any height. Organizers will be testing it by passing through a square shaped frame of side 20cm.\n6. Navigator should use an onboard power supply. No external power supply will be allowed.\n7. Navigator should not have any kind of sensors fitted on it. If found then it will lead to immediate disqualification.\n8. The only external input should be from the computer, either serial or parallel or USB communication, using wires.\n9. Navigator can also use wireless communication to communicate with the computer.\n10. All the bots should work strictly on the principle of Image Processing. Any ambiguity found will lead to immediate disqualification of the participant.\n11. Use of any LEGO kits or other readymade kits is strictly prohibited and if found using, then the contestant will be disqualified from the competition. However participants are allowed to use geared motors and gear mechanisms of toys.\n12. The bot should not have speed more than 20 cm/s in any kind of forward or backward motion (the team can use a 60 rpm motor and use 7 cm diameter wheel or something like that to ensure the speed limit). There are no extra points for the high speed of the bots." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
-                        <ImageView android:layout_width="wrap_content" android:id="@+id/image_robo_signal_maestro_spec" android:src="@drawable/signalmaestro1" android:layout_height="wrap_content"></ImageView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="ROBOT SPECIFICATION\n\nDimensions of robot should not exceed 20 X 24 X 24 cm.\nOrganizers will be testing the dimensions.\nPower supplies for the laptop will be provided externally.\nUse of onboard camera is not allowed.\nThe communication between the laptop and the robot can be implemented with the help of an RF transceiver module.\nThe file for processing is to be copied to the respective teams laptop prior to the event.\n\nEVENT SPECIFICATION\n\nLEVEL I:\n\nIn level I the robot is expected to cross all the passages and get to the other side of the arena. The arena consists of five passages each having three doors of green, red and blue colours that will be shuffled. \nThe game begins as soon as the teams are given the folder enclosing the images for processing. \nThe teams will be given an image file in JPEG format which indicates the colour of the safe door for them. The positions of safe doors are to be determined by processing the image from an overhead camera.\n\nNote: The teams crossing the passages through wrong doors will be penalised. \n\nLEVEL II:\n\nWhen the team comes out of the passages, each team will be allowed to access the key (the second image in the folder). It will be a black and white image of JPEG format. \nFinding the corresponding lock for the key: Every key will have a matching lock which can be computed by inverting the image (white space replaced by black and black space replaced by white).\nThe matching locks will be given in the far end of the arena as shown in the layout. The robot has to find its respective lock and should park in the corresponding area.\n\nBoth the image files mentioned will be given in a folder named:\n\nSIGNAL_MAESTRO \n\nfig_1.jpg\t-\tcolour of the safe door \nfig_2.jpg\t-\tkey for parking \n\nFinally the team that parks the robot within the minimum time penalties wins." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+
                     </LinearLayout>
                 </ScrollView>
             </LinearLayout>
@@ -59,28 +59,42 @@
                 <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:orientation="vertical" android:id="@+id/linear_robo_signal_intro_inner" android:layout_width="match_parent" android:layout_height="match_parent">
                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_signal_title" android:text ="Signal Maestro" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_robo_signal_maestro_intro" android:text="Amongst the innumerable age old inventions, transportation has been definitely one of the vital ones. Transportation remained the greatest problems even amongst the inhabitants of the first civilizations that started developing aeons ago. The invention of wheels not only provided a fillip to the solution of this problem but also opened roads to the formulation of different innovations. As technology developed man started thinking about different ways of making his journey more comfortable, joyful, automated and safe. The use of advance technology evolved from this very idea of making our travel more automated and safe is what we call as Telematics.Here let us try to make a mini Telematics system using Digital image processing." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+					   <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_robo_signal_maestro_intro" android:text="As we know, human beings are predominantly visual creatures. We rely heavily on our vision to make sense of the world around us. We not only look at things to identify and classify them, but also scan for differences and obtain an overall rough feeling of a scene with a quick glance. We have evolved with very precise visual skills: can identify objects, differentiate colours and process a large range of information. " android:layout_width="wrap_content" android:layout_height="wrap_content">
+                       </TextView>
                     </LinearLayout>
                 </ScrollView>
             </LinearLayout>
-            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_signal_maestro_stmt" android:layout_height="match_parent" android:orientation="vertical">
-                <ScrollView android:id="@+id/scrollView_robo_signal_maestro_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
-                    <LinearLayout android:id="@+id/linear_robo_signal_maestro_stmt_inner" android:layout_width="match_parent" android:layout_height="match_parent">
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="To Build a Computer controlled bot, using the images send to the computer through a LAN, navigate in an open space according to the instructions given to the bot by the computer processing the symbol in the image given to the computer.Each symbol image corresponds to a signal response for the bot like moving forward, turning left, moving backward, turning right, etc.An image will have only one symbol. The image with the symbols and their responds will be published later.Note: There can be more than one symbol corresponding to the same responds."
-                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_signal_maestro_arena" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_robo_signal_maestro_arena" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linear_robo_signal_maestro_arena_inner" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+                         <ImageView android:layout_width="match_parent" android:layout_height="wrap_content"  android:src="@drawable/signalmaestro1"  android:id="@+id/text_robo_signal_maestro_arena"></ImageView>
+						<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_robo_signal_maestro_arenaa" android:text="The background of the Arena will be white.\nThe line following principle is to be accomplished by following the lines of thickness 3 cm in the track.\nA USB Camera will be fixed above the arena at some height.\nThe position of the camera will be fixed with respect to the arena.\n\nNote: The height and resolution of the camera and dimensions of the arena will be specified later.\nIsometric View Of Arena \n"  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+						       
+
+		
                  </LinearLayout>
                  </ScrollView>
             </LinearLayout>
-         	
-         	<LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_signal_maestro_contact" android:layout_height="match_parent" android:orientation="vertical">
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_robo_signal_maestro_contact" android:text="Jones Thomas\nEvent Manager\nPhone: +91 949 537 2685\nE-mail: jones@tathva.org"
-                		  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_signal_maestro_stmt" android:layout_height="match_parent" android:orientation="vertical">
+				<ScrollView android:id="@+id/scrollView_robo_signal_maestro_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
+					<LinearLayout android:id="@+id/linear_robo_signal_maestro_stmt_inner" android:layout_width="match_parent" android:layout_height="match_parent">
+						<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="To Build a Computer controlled bot, using the images send to the computer through a LAN, navigate in an open space according to the instructions given to the bot by the computer processing the symbol in the image given to the computer.Each symbol image corresponds to a signal response for the bot like moving forward, turning left, moving backward, turning right, etc.An image will have only one symbol. The image with the symbols and their responds will be published later.Note: There can be more than one symbol corresponding to the same responds."
+						android:layout_width="wrap_content" android:layout_height="wrap_content">
+					</TextView>
+				</LinearLayout>
+			</ScrollView>
             </LinearLayout>
-            
-            
+         	<LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_signal_maestro_prizes" android:layout_height="match_parent" android:orientation="vertical">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_robo_signal_maestro_prizes" android:text="First\tRs. 18000/-\nSecond\tRs. 10000/-\nThird\tRs. 7000/-\n\n\nDecision of the Judge will be final, and any of the above mentioned rules can change according to the scenario of the event.\nThe code for image processing will be verified by the judges and the final selection of the teams may depend on this.\nTeams which finish before the time limit will get bonus points.\nBonus points = (10min - time taken in mins)*5\nThe score scheme will be as follows:\nTOTAL = (3000-2*t-n*c) + BONUS \nt = Time taken in seconds (a maximum of 10 minutes), n = Number of corrections,\nc = Points deducted for each penalty\nDecision of the judges will be final, and any of the above mentioned rules can change according to the scenario of the event.\nScoring:\nPenalties will be given for entering the wrong door.( penalty = 10 points).\nAny deviation in the recognition of the parking space results in a penalty of 30 points.\nDisqualification:\nAny damage of the arena or the doors.\nRobot leaving the arena and any of the participants entering the arena.\nAny usage of signals other than that send by the laptop outside the arena.\n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+         	<LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_signal_maestro_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_robo_signal_maestro_contact" android:text="Siva Sankar A\nEvent Manager\nPhone:+919446520865\nE-mail:signalmaestro@tathva.org\n\nSwathy U Lal\nEvent Manager\nPhone:+919497164425\nE-mail:signalmaestro@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+
           </FrameLayout>
-            
+
     </LinearLayout>
-    
+
 </TabHost>
  </LinearLayout>

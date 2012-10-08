@@ -24,7 +24,6 @@ public class Initiatives extends Activity {
 		ImageView imgYI = (ImageView)findViewById(R.id.img_intiative_yi);
 		imgYI.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Initiatives.this, Highlights_YI.class);
@@ -35,7 +34,6 @@ public class Initiatives extends Activity {
 		ImageView imgTeach = (ImageView)findViewById(R.id.img_initiative_teach);
 		imgTeach.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Initiatives.this, Initiative_Teach.class);
@@ -47,7 +45,6 @@ public class Initiatives extends Activity {
 		ImageView imgSchool = (ImageView)findViewById(R.id.img_initiative_school);
 		imgSchool.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Initiatives.this, Initiative_School.class);

@@ -49,8 +49,8 @@
              <HorizontalScrollView android:scrollbars="none" android:id="@+id/horizontalScrollView2" android:layout_height="wrap_content" android:layout_width="wrap_content" android:scrollbarAlwaysDrawHorizontalTrack="false">
                  <LinearLayout android:id="@+id/linearLayout11" android:orientation="horizontal" android:layout_height="match_parent" android:layout_width="match_parent">
                      <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/contr1" android:layout_width="wrap_content" android:id="@+id/imgContr"></ImageView>
-                     <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/offroad1" android:layout_width="wrap_content" android:id="@+id/imgOff"></ImageView>
-                     <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/amphi1" android:layout_width="wrap_content" android:id="@+id/imgAmphi"></ImageView>
+                     <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/conceptcar" android:layout_width="wrap_content" android:id="@+id/imgOff"></ImageView>
+                     <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/machnascene" android:layout_width="wrap_content" android:id="@+id/imgmechnascene"></ImageView>
                      <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/inc1" android:layout_width="wrap_content" android:id="@+id/imgIncarnate"></ImageView>
                      <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/aqua" android:layout_width="wrap_content" android:id="@+id/imgAqua"></ImageView>
                  </LinearLayout>
@@ -131,8 +131,6 @@
                  <LinearLayout android:id="@+id/linearLayout12" android:layout_height="match_parent" android:orientation="horizontal" android:layout_width="match_parent">
                      <ImageView   android:paddingRight="5dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/fifa111" android:id="@+id/img_blitz_fifa"></ImageView>
                      <ImageView   android:paddingRight="5dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/nfsmw1" android:id="@+id/img_blitz_nfs"></ImageView>
-                     <ImageView   android:paddingRight="5dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/ragdollmasters1" android:id="@+id/img_blitz_ragdoll"></ImageView>
-                     <ImageView   android:paddingRight="5dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/streetfighter1" android:id="@+id/img_blitz_street"></ImageView>
                      <ImageView   android:paddingRight="5dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/counterstrike1" android:id="@+id/img_blitz_counter"></ImageView>
                      <ImageView   android:paddingRight="5dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/dota1" android:id="@+id/img_blitz_dota"></ImageView>
                  </LinearLayout>

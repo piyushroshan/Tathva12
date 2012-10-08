@@ -28,9 +28,9 @@
 		<activity android:label="@string/app_Robo_SignalMaestro" android:name="Robotics_Signal_Maestro"/>
 		<activity android:label="@string/app_Robo_CollisionCourse" android:name="Robotics_Collision_Course"/>
 		<activity android:label="@string/app_mech_contraption" android:name="Mech_Contraption"/>
-		<activity android:label="@string/app_mech_amphi" android:name="Mech_Amphi"/>
+		<activity android:label="@string/app_mech_mechnascene" android:name=".Mech_Machnascene"/>
 		<activity android:label="@string/app_mech_incarnate" android:name="Mech_Incarnate"/>
-		<activity android:label="@string/app_mech_offroad" android:name="Mech_OffRoad"/>
+		<activity android:label="@string/app_mech_conceptcar" android:name=".Mech_Concept_Car"/>
 		<activity android:label="@string/app_mech_aqua" android:name="Mech_Aqua_Missile"/>
 		<activity android:label="@string/app_cs_tux" android:name="CS_tux"/>
 		<activity android:label="@string/app_cs_befunge" android:name="CS_befunge"/>
@@ -84,8 +84,6 @@
 		<activity android:label="@string/app_blitz_dota" android:name="Blitz_Dota"/>
 		<activity android:label="@string/app_blitz_fifa" android:name="Blitz_Fifa"/>
 		<activity android:label="@string/app_blitz_nfs" android:name="Blitz_Nfs"/>
-		<activity android:label="@string/app_blitz_rag" android:name="Blitz_Rag"/>
-		<activity android:label="@string/app_blitz_street" android:name="Blitz_Street"/>
 		<activity android:label="@string/app_blitz_counter" android:name="Blitz_Counter"/>
 		<activity android:label="@string/app_civil_erecthion" android:name="Civil_Erecthion"/>
 		<activity android:label="@string/app_civil_descartes" android:name="Civil_Descartes"/>

@@ -37,6 +37,12 @@ public class Mech_Contraption extends Activity {
 	        spec2.setIndicator("  Specifications  ");
 
 	        tabs.addTab(spec2);
+	        TabHost.TabSpec spec9 = tabs.newTabSpec("prizes");
+
+	        spec9.setContent(R.id.linear_mech_contraption_prizes);
+	        spec9.setIndicator("  Prizes  ");
+
+	        tabs.addTab(spec9);
 	        
 	        TabHost.TabSpec spec3 = tabs.newTabSpec("Contact");
 

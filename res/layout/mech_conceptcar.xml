@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:background="#00688B"
+    android:layout_height="fill_parent"
+    android:weightSum="0">
+   
+   
+    <LinearLayout android:id="@+id/linearLayout_mech_conceptcar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:scaleType="fitStart"
+            android:src="@drawable/img" >
+
+		</ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_mech_conceptcar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_conceptcar_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_conceptcar_title" android:text ="Concept Car Design" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="The fact that man has dreamt of flight since the day he came into existence is quite apparent. Get ready to create the new paradigm of modern transportation, the one which combines both car and aeroplane. So fire up your minds to literally give wings to your design." 
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_conceptcar_stmt" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_mech_conceptcar" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_conceptcar_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="You have to design a car that is capable of flight. The car must not run on aviation fuels, but normal fuel used in car(gasoline,electricity,etc). The design of the car should comply with the present rules of the road.It must be capable of flying at an altitude of at least 1000ft. The car should serve the purpose of day to day commutation without sacrificing basic luxuries. New innovations in the field of fuel economy and on road comfort are welcomed." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_conceptcar_spec" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_mech_conceptcar" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_conceptcar_spec" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="1. The entries should contain :\n\u25cb A simulation in CAD format\n\u25cb A pencil sketch with atleast three different views, attached as scanned copies\n2. A write up in less than 1000 words describing all the details justifying your claims\nmust also be submitted.\n3. Last date for submission of the abstract is 10th October, 2011\n4. Send your entry to wheels@tathva.org. Include your contact number in the email.\n5. The selected participants will be notified through e\u00admail.\n6. The participants will be given 15 minutes to present their paper before a panel of\njudges.\n7. 10 minutes will be for presentation and 5 minutes for the Viva.\n8. The participant is expected to bring 3 hard copies as well as a soft copy of the paper."
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_conceptcar_prizes" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_mech_conceptcar_prizes" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_conceptcar_prizes" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_mech_conceptcar_prizes" android:text="First\tRs. 5000/-\nSecond\tRs. 3000/-\nThird\tRs. 2000/-\n\nJUDGING CRITERION\n\nPoints will be awarded based on the following criteria:\n1.Practicality of the design.\n2.Feasibility of the design.\n3.Application of aerodynamic principles and techniques in the design.\n4.Implementation of other modern necessities and luxuries.\n5.Environmental friendliness in the design."
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>      	
+                     
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_mech_conceptcar_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_mech_conceptcar_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_mech_conceptcar_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_mech_conceptcar_contact" android:text="Midhun K\nEvent Manager\nPhone:+919496345050\nE-mail:wheels@tathva.org\n"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

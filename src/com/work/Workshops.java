@@ -22,7 +22,6 @@ public class Workshops extends Activity {
 		ImageView imgmsp430 = (ImageView)findViewById(R.id.image_workshop_msp430);
 		imgmsp430.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Workshops.this, Workshop_msp430.class);
@@ -33,7 +32,6 @@ public class Workshops extends Activity {
 		ImageView imgStaad = (ImageView)findViewById(R.id.image_workshop_staad);
 		imgStaad.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Workshops.this, Workshop_Staad.class);
@@ -44,7 +42,6 @@ public class Workshops extends Activity {
 		ImageView imgTotal = (ImageView)findViewById(R.id.image_workshop_total_station);
 		imgTotal.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Workshops.this, Workshop_Total_Station.class);
@@ -55,7 +52,6 @@ public class Workshops extends Activity {
 		ImageView imgDelta_wing = (ImageView)findViewById(R.id.image_workshop_delta_wing);
 		imgDelta_wing.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Workshops.this, Workshop_Delta_Wing.class);
@@ -66,7 +62,6 @@ public class Workshops extends Activity {
 		ImageView imgHack = (ImageView)findViewById(R.id.image_workshop_hack);
 		imgHack.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Workshops.this, Workshop_Hack_attack.class);
@@ -77,7 +72,6 @@ public class Workshops extends Activity {
 		ImageView imgCloud = (ImageView)findViewById(R.id.image_workshop_cloud);
 		imgCloud.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Workshops.this, Workshop_Cloud_Computing.class);
@@ -89,7 +83,6 @@ public class Workshops extends Activity {
 		ImageView imgAutonova = (ImageView)findViewById(R.id.image_workshop_autonova);
 		imgAutonova.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Workshops.this, Workshop_Autonova.class);
@@ -100,7 +93,6 @@ public class Workshops extends Activity {
 		ImageView imgRobo = (ImageView)findViewById(R.id.image_workshop_robovision);
 		imgRobo.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Workshops.this, Workshop_Robo_Vision.class);

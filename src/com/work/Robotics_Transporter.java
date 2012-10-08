@@ -39,13 +39,6 @@ public class Robotics_Transporter extends Activity {
 	        tabs.addTab(spec7);
 	        
 	        
-	        TabHost.TabSpec spec9 = tabs.newTabSpec("rob_prop");
-
-	        spec9.setContent(R.id.linearRoboTrans_prop);
-	        spec9.setIndicator("  Robot Propulsion  ");
-
-	        tabs.addTab(spec9);
-	        
 	        
 	        TabHost.TabSpec spec5 = tabs.newTabSpec("rob_phase1");
 
@@ -54,7 +47,12 @@ public class Robotics_Transporter extends Activity {
 
 	        tabs.addTab(spec5);
 	        
-	      
+	        TabHost.TabSpec spec6 = tabs.newTabSpec("rob_phase2");
+
+	        spec6.setContent(R.id.linearRoboTrans_phase2);
+	        spec6.setIndicator("  Phase 2  ");
+
+	        tabs.addTab(spec6);
 	        
 	        
 	        TabHost.TabSpec spec2 = tabs.newTabSpec("rules");
@@ -63,7 +61,12 @@ public class Robotics_Transporter extends Activity {
 	        spec2.setIndicator("  Rules  ");
 
 	        tabs.addTab(spec2);
-	        
+	        TabHost.TabSpec spec8 = tabs.newTabSpec("prizes");
+
+	        spec8.setContent(R.id.linearRoboTransPrizes);
+	        spec8.setIndicator("  Prizes  ");
+
+	        tabs.addTab(spec8);
 	        
 	        TabHost.TabSpec spec3 = tabs.newTabSpec("Contact");
 

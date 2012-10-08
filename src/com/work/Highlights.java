@@ -22,7 +22,6 @@ public class Highlights extends Activity {
 		ImageView imgRaju = (ImageView)findViewById(R.id.img_lectures_raju);
 		imgRaju.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Highlights.this, Lectures_Raju.class);
@@ -34,7 +33,6 @@ public class Highlights extends Activity {
 		ImageView imgTessy = (ImageView)findViewById(R.id.img_lectures_tessy);
 		imgTessy.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Highlights.this, Lectures_Tessy.class);
@@ -45,7 +43,6 @@ public class Highlights extends Activity {
 		ImageView imgUnni = (ImageView)findViewById(R.id.img_lectures_unni);
 		imgUnni.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Highlights.this, Lectures_Unni.class);
@@ -56,7 +53,6 @@ public class Highlights extends Activity {
 		ImageView imgChandra = (ImageView)findViewById(R.id.img_lectures_chandra);
 		imgChandra.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Highlights.this, Lectures_Chandra.class);
@@ -68,7 +64,6 @@ public class Highlights extends Activity {
 		ImageView imgIDP = (ImageView)findViewById(R.id.img_envision_idp);
 		imgIDP.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Highlights.this, Highlights_IDP.class);
@@ -79,7 +74,6 @@ public class Highlights extends Activity {
 		ImageView imgYI = (ImageView)findViewById(R.id.img_envision_young_engineer);
 		imgYI.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Highlights.this, Highlights_YI.class);
@@ -91,7 +85,6 @@ public class Highlights extends Activity {
 		ImageView imgSrishti = (ImageView)findViewById(R.id.img_envision_shristi);
 		imgSrishti.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Highlights.this, Highlights_Srishti.class);
@@ -102,7 +95,6 @@ public class Highlights extends Activity {
 		ImageView imgMother = (ImageView)findViewById(R.id.img_nites_mother_jane);
 		imgMother.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Highlights.this, Nites_Mother_Jane.class);
@@ -114,7 +106,6 @@ public class Highlights extends Activity {
 		ImageView imgShadow = (ImageView)findViewById(R.id.img_nites_hand_shadow);
 		imgShadow.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Highlights.this, Nites_Hand_Shadow.class);
@@ -126,7 +117,6 @@ public class Highlights extends Activity {
 		ImageView imgMusic = (ImageView)findViewById(R.id.img_nites_music);
 		imgMusic.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Highlights.this, Nites_Music.class);
@@ -137,7 +127,6 @@ public class Highlights extends Activity {
 		ImageView imgRobo = (ImageView)findViewById(R.id.img_nites_robo);
 		imgRobo.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Highlights.this, Nites_Robo_Show.class);
@@ -149,7 +138,6 @@ public class Highlights extends Activity {
 		ImageView imgGroove = (ImageView)findViewById(R.id.img_nites_grooves);
 		imgGroove.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Highlights.this, Nites_Groove.class);

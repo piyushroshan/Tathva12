@@ -21,7 +21,6 @@ public class Tathva extends Activity {
     	TextView tvE = (TextView)findViewById(R.id.textmainC);
     	tvE.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Tathva.this, Competitions.class);
@@ -33,7 +32,6 @@ public class Tathva extends Activity {
     	TextView tvW = (TextView)findViewById(R.id.textmainW);
     	tvW.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Tathva.this, Workshops.class);
@@ -46,7 +44,6 @@ public class Tathva extends Activity {
     	TextView tvEx = (TextView)findViewById(R.id.textmainEx);
     	tvEx.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Tathva.this, Exhibitions.class);
@@ -58,7 +55,6 @@ public class Tathva extends Activity {
     	TextView tvHigh = (TextView)findViewById(R.id.textmainH);
     	tvHigh.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Tathva.this, Highlights.class);
@@ -69,7 +65,6 @@ public class Tathva extends Activity {
     	TextView tvInitiative = (TextView)findViewById(R.id.textmainI);
     	tvInitiative.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Tathva.this, Initiatives.class);
@@ -80,7 +75,6 @@ public class Tathva extends Activity {
     	TextView tvHelp = (TextView)findViewById(R.id.textmainHelp);
     	tvHelp.setOnClickListener(new OnClickListener() {
 			
-			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Tathva.this, Help.class);
