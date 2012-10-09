@@ -36,9 +36,16 @@ public class EE_Pure_Tricks extends Activity {
 	        TabHost.TabSpec spec7= tabs.newTabSpec("criteria");
 
 	        spec7.setContent(R.id.linear_ee_pure_tricks_judge);
-	        spec7.setIndicator("  Criteria  ");
+	        spec7.setIndicator("  Judging Criteria  ");
 
 	        tabs.addTab(spec7);
+	        
+	        TabHost.TabSpec spec11 = tabs.newTabSpec("Prizes");
+
+	        spec11.setContent(R.id.linear_ee_pure_tricks_prizes);
+	        spec11.setIndicator("  Prizes  ");
+
+	        tabs.addTab(spec11);
 	        
 	        TabHost.TabSpec spec3 = tabs.newTabSpec("Contact");
 
