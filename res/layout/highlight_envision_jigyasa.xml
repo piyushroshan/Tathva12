@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:background="#00688B"
+    android:layout_height="fill_parent"
+    android:weightSum="0">
+   
+   
+    <LinearLayout android:id="@+id/linearLayout_highlight_envision_jigyasa" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:scaleType="fitStart"
+            android:src="@drawable/img" >
+
+		</ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_highlight_envision_jigyasa"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="wrap_content">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+       <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="wrap_content" android:id="@+id/linear_highlight_envision_jigyasa_intro" android:layout_height="wrap_content" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="wrap_content" android:orientation="vertical" android:layout_height="wrap_content">
+                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_jigyasa_title" android:text ="Young Engineer" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_highlight_envision_jigyasa_Intro" android:text="I was 6 years old when I persuaded my grandmother to stay up whole night and narrate the stories of fairyland. She did that with love. I was 10 years old, when I questioned my father that why the parrot flies and cat doesn\u2019t. He answered me with joy. I was 12 years old when I asked my mother that why is the sky blue and why are the leaves green. She answered me with a smile. I was 15 years old when I asked my teacher that why we feel cooler when we switch on the fan and warmer when we rub our hands. She answered me with assurance. The life was new and questions were many. But, there was always someone to hold our hand and teach that one lesson of life worth remembering forever. Every child deserves that one magic wand which would give answers that make him believe in the reality and emotion of world around. I want to create that magic wand for every child. Would you like to join me?? \n\nVisit us at  www.facebook.com/ProjectJigyasa" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_jigyasa_stmt" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_highlight_envision_jigyasa_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_highlight_envision_jigyasa_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_highlight_envision_jigyasa_stmt" android:text="Make a video on any of the topics given"
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_jigyasa_objective" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_highlight_envision_jigyasa_objective" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_highlight_envision_jigyasa_objective" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_highlight_envision_jigyasa_objective" android:text="We aim to create a database of video lectures in different vernacular languages in order to increase penetration of high quality learning tools in villages and far flung areas where English is not the medium of instruction. The project also strives to cover different scientific and non scientific facts and concepts which will help in triggering incisive thoughts and in turn provoking ground breaking innovations from each and every part of India. \n\nThe project is an open source project which thrives to harness the knowledge of thousands of Indians and give them a way to contribute to the society with whatever knowledge they have acquired to bridge the rural and urban education gap. The education for us is not just the curriculum which is followed in our schools. It is any form of knowledge that you want to share with generations to come. \n\nVisit us at www.facebook.com/ProjectJigyasa"
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+              <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_jigyasa_rules" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_highlight_envision_jigyasa_rules" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_highlight_envision_jigyasa_rules" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_highlight_envision_jigyasa_rules" android:text="\\u25cf A maximum of 4 participants are allowed to form a team.\n\u25cf A video module should have a maximum duration of 15 minutes only.\n\u25cf The team should send script of the content to be presented in the video module prior\nto formation of the video to jigyasa@tathva.org.\n\u25cf The last date for submission of video module is 17th October 2012 (11:59 PM IST).\nBut teams are requested to make the videos at the earliest possible.\n\u25cf Only after the script submitted by the team is verified and accepted shall the team be\nallowed to progress further in the competition.\n\u25cf All the documents and work products submitted by the team, in the Jigyasa\ncompetition must be the team\u2019s original work. Wherever the team refers to other\nsources, appropriate references should be given and wherever team consults other\nsources relevant approvals/permissions from the parties must be produced.\n\u25cf The content used in the video modules should not infringe the Copyright laws and\nIntellectual Property Rights of the content owner. Hence, all participants are strongly\nrequested to obtain No Objection Approvals/Permissions from the respective content\nowners.\n\u25cf Organisers, Representatives, Executives, Students, Clubs representing National\nInstitute of Technology Calicut through \u201cJigyasa\u201d Tathva 2012 shall not be\nresponsible in any manner if any such case arises wherein a participant is found to\ninfringe the Copyright laws and Intellectual Property Rights. The participant in such a\ncase shall be solely responsible for his/her actions.\n\u25cf Team members shall not speak, disclose to, reveal to or advertise with the media or\nother agencies or otherwise publish or disseminate in any public forum regarding the\nproject that will be submitted to Jigyasa competition until after a period of six (6)\nmonths has elapsed from the completion of the competition or as may be directed by\nthe organizers of Jigyasa competition.\n\u25cf All IP rights related to the video module/project including research material, statistics,\ncontent that arise out of the team\u2019s work for the competition will be governed by the\nIP policy of National Institute of Technology Calicut as applicable from time to time.\n\n\nVisit us at  www.facebook.com/ProjectJigyasa"                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+              
+                           <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_jigyasa_guidelines" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_highlight_envision_jigyasa_guidelines" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_highlight_envision_jigyasa_guidelines_inner" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_highlight_envision_jigyasa_guidelines" android:text="\u25cf The video should be made in very simple language that can be understood easily by\nany standard student. Avoid using highly technical terms and try replacing them with\ncommon lingo terms so that we actually teach them the underlying concept rather\nconfuse them.\n\u25cf Try explaining things using common examples prevalent in our day to day life so that\nstudents can relate everything to their real life experience. We want them to absorb\nconcepts rather than just accept them.\n\u25cf If you are creating video in a language other than English please mention the English\ndescription of the technical term once wherever used in the lecture.\n\u25cf Use of black/white board to explain a simple concept is encouraged as it makes the\nsession interactive. Even figures and explanations done on waste paper sheets can\nbe scanned or video graphed and included in the lecture.\n\u25cf Search from the available resources on internet and try to include some innovative\nconcepts which may enrich the learning experience making the students to think out\nof the box.\n\u25cf If possible demonstrate the concept by simple experiments and also suggest related\nactivities which the students can do on their own.\n\u25cf Use attractive pictures, video clips in the lecture. If you are borrowing any picture or\nvideo be sure to obtain proper permissions from the owner of the video/picture before\nincluding it in the lecture. Including photographs or pictures taken by you is always\nbeneficial."                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+         <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_jigyasa_topics" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_highlight_envision_jigyasa_topics" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_highlight_envision_jigyasa_topics_inner" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_highlight_envision_jigyasa_topics" android:text="Topics from NCERT Science textbooks for classes VI-VIII need to be addressed.The list of topics has been given in separate sections on the website. You can select any one topic and make a video on that. \nSince there is no cap on entries by an individual/team, you can send as many videos as you want, but all videos should address different topics. \n\nYou can also refer to the books using the following links:  www.ncert.nic.in/NCERTS/textbook/textbook.htm?fesc1=1-15 : NCERT TEXTBOOKS \n\nYou can refer to the following sample videos: \nLANGUAGE: Hindi\n\nThe first sample video is about Evaporation: \n www.youtube.com/watch?v=twG8z75Atfw&amp;feature=youtu.be\nThe second sample video is about Rain Water Harvesting\n www.youtube.com/watch?v=twG8z75Atfw&amp;feature=youtu.be"                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+
+            
+            
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_jigyasa_benefits" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_highlight_envision_jigyasa_benefits" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_highlight_envision_jigyasa_benefits" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_highlight_envision_jigyasa_benefits" android:text="This work for a noble cause won\'t go unrewarded hence....\n\n1. Selected members of the top 3 teams will get an opportunity to intern at IIM Ahmedabad, IIM Kozhikode and Techpedia during Summer 2013.\n\n2. Selected participants shall receive certificates of Merit issued by IIM Ahmedabad.\n\n3. Selected participants shall receive certificates of Merit issued by Tathva 2012, National Institute of Technology Calicut.\n\nVisit us at  www.facebook.com/ProjectJigyasa"               android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_jigyasa_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_highlight_envision_jigyasa_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_highlight_envision_jigyasa_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_highlight_envision_jigyasa_contact" android:text="Anurag Beniwal\nEvent Manager\nPhone:+919037981601\nE-mail:jigyasa@tathva.org\n\nJaivendra Singh\nEvent Manager\nPhone:+919746922102\nE-mail:jigyasa@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

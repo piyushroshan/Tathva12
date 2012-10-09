@@ -61,12 +61,12 @@ public class Highlights extends Activity {
 		});
 		
 		
-		ImageView imgIDP = (ImageView)findViewById(R.id.img_envision_shristi);
-		imgIDP.setOnClickListener(new OnClickListener() {
+		ImageView imgJigyasa = (ImageView)findViewById(R.id.img_envision_jigyasa);
+		imgJigyasa.setOnClickListener(new OnClickListener() {
 			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Highlights.this, Highlights_IDP.class);
+				Intent myIntent = new Intent(Highlights.this, Highlights_Jigyasa.class);
 				Highlights.this.startActivity(myIntent);
 			}
 		});
