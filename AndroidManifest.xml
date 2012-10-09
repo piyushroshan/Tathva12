@@ -64,7 +64,7 @@
 		<activity android:label="@string/app_exhibition_ham_radio" android:name=".Exhibition_Sushant_Patnaik"/>
 		<activity android:label="@string/app_exhibition_touch_magix" android:name=".Exhibition_Blink_Solutions"/>
 		<activity android:label="@string/app_exhibition_interface" android:name="Exhibition_Interface"/>
-		<activity android:label="@string/app_wheels_concept_car_design" android:name="Wheels_Concept_Car_Design"/>
+		<activity android:label="@string/app_wheels_concept_car_design" android:name=".Wheels_Autoquiz"/>
 		<activity android:label="@string/app_wheels_vista" android:name="Wheels_Vista"/>
 		<activity android:label="@string/app_wheels_full_throttle" android:name="Wheels_Full_Throttle"/>
 		<activity android:label="@string/app_wheels_hands_on" android:name="Wheels_Hands_On"/>

@@ -90,12 +90,22 @@ public class Exhibitions extends Activity {
 			}
 		});
 		
-		ImageView imgConcept = (ImageView)findViewById(R.id.img_wheels_concept);
-		imgConcept.setOnClickListener(new OnClickListener() {
+		ImageView imgAutograph = (ImageView)findViewById(R.id.img_wheels_autograph);
+		imgAutograph.setOnClickListener(new OnClickListener() {
 			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Exhibitions.this, Wheels_Concept_Car_Design.class);
+				Intent myIntent = new Intent(Exhibitions.this, Wheels_Autograph.class);
+				Exhibitions.this.startActivity(myIntent);
+			}
+		});
+		
+		ImageView imgAutoquiz = (ImageView)findViewById(R.id.img_wheels_autoquiz);
+		imgAutoquiz.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent myIntent = new Intent(Exhibitions.this, Wheels_Autoquiz.class);
 				Exhibitions.this.startActivity(myIntent);
 			}
 		});

@@ -61,7 +61,8 @@
                      <ImageView android:layout_width="wrap_content"  android:paddingRight="5dp" android:src="@drawable/handson1" android:layout_height="wrap_content" android:id="@+id/img_wheels_hands_on"></ImageView>
                      <ImageView android:layout_width="wrap_content"  android:paddingRight="5dp" android:src="@drawable/vista1" android:layout_height="wrap_content" android:id="@+id/img_wheels_vista"></ImageView>
                      <ImageView android:layout_width="wrap_content" android:paddingRight="5dp"  android:src="@drawable/fullthrottle1" android:layout_height="wrap_content" android:id="@+id/img_wheels_fullthrottle"></ImageView>
-                     <ImageView android:layout_width="wrap_content" android:paddingRight="5dp"  android:src="@drawable/conceptcardesign1" android:layout_height="wrap_content" android:id="@+id/img_wheels_concept"></ImageView>
+                     <ImageView android:layout_width="wrap_content" android:paddingRight="5dp"  android:src="@drawable/autoquiz" android:layout_height="wrap_content" android:id="@+id/img_wheels_autoquiz"></ImageView>
+                     <ImageView android:layout_width="wrap_content" android:paddingRight="5dp"  android:src="@drawable/autograph" android:layout_height="wrap_content" android:id="@+id/img_wheels_autograph"></ImageView>
                  </LinearLayout>
              </HorizontalScrollView>
          </LinearLayout>
