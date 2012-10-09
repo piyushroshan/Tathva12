@@ -35,7 +35,7 @@ public class EC_GSM extends Activity {
 	        TabHost.TabSpec spec8= tabs.newTabSpec("stmt");
 
 	        spec8.setContent(R.id.linear_ec_gsm_stmt);
-	        spec8.setIndicator("  Statement  ");
+	        spec8.setIndicator("  Problem Statement  ");
 
 	        tabs.addTab(spec8);
 	        
@@ -43,7 +43,7 @@ public class EC_GSM extends Activity {
 	        TabHost.TabSpec spec7= tabs.newTabSpec("criteria");
 
 	        spec7.setContent(R.id.linear_ec_gsm_judge);
-	        spec7.setIndicator("  Criteria  ");
+	        spec7.setIndicator("  Judging Criteria  ");
 
 	        tabs.addTab(spec7);
 	        
@@ -53,6 +53,13 @@ public class EC_GSM extends Activity {
 	        spec3.setIndicator("  Contact  ");
 
 	        tabs.addTab(spec3);
+	        
+	        TabHost.TabSpec spec13 = tabs.newTabSpec("Prize");
+
+	        spec13.setContent(R.id.linear_ec_gsm_prize);
+	        spec13.setIndicator("  Prize  ");
+
+	        tabs.addTab(spec13);
 	}
 
 }

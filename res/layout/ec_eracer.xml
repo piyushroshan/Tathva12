@@ -51,7 +51,7 @@
                 <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
                         <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_eracer_title" android:text ="E Racer" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ec_eracer_Intro" android:text="The event will be a shorter version of 'The Amazing Race'." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ec_eracer_Intro" android:text="Are you the digital warrior who gets an adrenaline rush when faced with a problem to sink your teeth into ?\nDoes the tick of a clock leave you shaken and stirred ?\nDo you feel right at home in the middle of resistors, transistors, soldering, CROs and capacitors?\n\nThen E RACER is just the event for you!\n\nIf you have the guts to enter the spider\'s web and come out of it,Tathva 12 presents E-racer where you race against time and rivals to collect the circuit required to complete your design.\nPit your knowledge and skills against the rest. The race is on!" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                         </LinearLayout>
                 </ScrollView>
             </LinearLayout>
@@ -60,28 +60,46 @@
                <ScrollView android:id="@+id/scrollView_ec_eracer_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_ec_eracer_specs" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ec_eracer_specs" android:text="1. Each team should consist of two members.\n2. The event will be conducted in two stages - prelims and mains.\n3. Prelims:\n  a. It will comprise of a questionnaire related to basic electronics engineering.\n  b. At most 10 teams will be selected from the prelims to contest in the mains.\n4. Mains:\n  a. The contestants will be asked to complete certain tasks.\n  b. After the completion of each task, contestants will be given directions to their next task.\n  c. Altogether there will be about 3-4 tasks.\n  d. Each task will require basic understanding of the electronic circuits, logic design and workshop practice."
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ec_eracer_specs" android:text="THE GAUNTLET\n\u25cf The teams will be given a questionnaire of 25 questions.\n\u25cf The questions will test the participants &quot; practical as well as theoretical knowledge of\nelectronics, their idea about the working of various common components. There will also\nbe some out of the box questions to test their problem solving skills and some mind\ntwisters too.\n\u25cf The Gauntlet allows a max of 10 groups to pass through.\n\nTHE RACE\n\u25cf The participants have to earn their design question.\n\u25cf The circuit will be divided into parts which the participants have to earn in the race by\nfinishing small tasks in the given time limit.\n\u25cf After the completion of each task, contestants will be given directions to their next task.\n\u25cf The race will be modeled on The Amazing Race  and each task will require basic\nunderstanding of the electronic circuits, logic design and workshop practice.\n\u25cf There will be limited number of circuits per task.\n\u25cf The top 5 teams to collect the complete circuit will go through to the next round.\n\nSHOWTIME\n\u25cf Participants will have to implement the design they acquired from the earlier round.\n\u25cf They will have 45 minutes to earn their entry to the final round.\n\u25cf In this time they will have to collect their components, get the stuff assembled and most\nimportantly, ensure that the circuit is working.\n  \nTHE ULTIMATE RACEWAY \u00ad To finish first, you must first finish!\n\u25cf This round measures your expertise in Electronics. Unleash your speed on the Ultimate\nRaceway.\n\u25cf It consists of 2 questions, both of which will be provided with 15 minutes for\nbrainstorming and 45 minutes for building, using components from the provided list.\n\u25cf These can be from any of the following topics\u00ad Logic Design, Network Theory and\nTelecommunication.\n\u25cf Partial completion of the task will also be considered for judging.\n"
                                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>
             
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ec_eracer_team_specs" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_ec_eracer_team_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_ec_eracer_team_specs" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ec_eracer_team_specs" android:text="\n\u25cf Each team must consist of two members.\n\u25cf Participants must produce valid ID card of their institute.\n\u25cf Inter\u00adcollege teams are permitted.\n"
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
              
              <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ec_eracer_judge" android:layout_height="match_parent" android:orientation="vertical">
                <ScrollView android:id="@+id/scrollView_ec_eracer_judge" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_ec_eracer_judge" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ec_eracer_judge" android:text="1. After successful completion of each task, the teams will be awarded points.\n2. In case a team is unable to complete any task, they will be given points according to their progress in the task and this will be at the complete discretion of the judges.\n3. At the end of the race, each team's accumulated points will be added and the team with the maximum points will win the race." 
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ec_eracer_judge" android:text=" \n\u25cf During the race,points will be awarded based on speed and accuracy of completing each\ntask.\n\u25cf In case of no output,partial outputs will also be considered for judging.\n\u25cf In the case of a tie, the points during the race will also be taken into consideration.\n\u25cf The decision of the event managers shall be final.\n" 
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>
-            
+           
             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ec_eracer_contact" android:layout_height="match_parent" android:orientation="vertical">
                 <ScrollView android:id="@+id/scrollView_ec_eracer_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_ec_eracer_contact" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ec_eracer_contact" android:text="Dileep C R\nEvent Manager\nPhone: +91 944 737 6791\nE-mail: dileep@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ec_eracer_contact" android:text="\nARAVIND K J\nEvent Manager\nPhone:+918891299576\nE-mail:eracer@tathva.org\n\nJOHN THOMAS\nEvent Manager\nPhone:+919496866692\nE-mail:eracer@tathva.org\n\nNEELIMA PRATAP\nEvent Manager\nPhone:+919400774128\nE-mail:eracer@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ec_eracer_prize" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_ec_eracer_prize" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_ec_eracer_prize" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ec_eracer_prize" android:text="First\tRs. 7000/-\nSecond\tRs. 5000/-\nThird\tRs. 2000/-" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>

@@ -24,18 +24,25 @@ public class EC_Eracer extends Activity {
 	        
 	        tabs.addTab(spec1);
 	        
-	        TabHost.TabSpec spec4 = tabs.newTabSpec("specifications");
+	        TabHost.TabSpec spec4 = tabs.newTabSpec("eventspecifications");
 
 	        spec4.setContent(R.id.linear_ec_eracer_specs);
-	        spec4.setIndicator("  Specifications  ");
+	        spec4.setIndicator("  Event Specifications  ");
 
 	        tabs.addTab(spec4);
+	        
+	        TabHost.TabSpec spec11 = tabs.newTabSpec("teamspecifications");
+
+	        spec11.setContent(R.id.linear_ec_eracer_team_specs);
+	        spec11.setIndicator("  Team Specifications  ");
+
+	        tabs.addTab(spec11);
 	        
 	        
 	        TabHost.TabSpec spec7= tabs.newTabSpec("criteria");
 
 	        spec7.setContent(R.id.linear_ec_eracer_judge);
-	        spec7.setIndicator("  Criteria  ");
+	        spec7.setIndicator("  Judging Criteria  ");
 
 	        tabs.addTab(spec7);
 	        
@@ -45,6 +52,13 @@ public class EC_Eracer extends Activity {
 	        spec3.setIndicator("  Contact  ");
 
 	        tabs.addTab(spec3);
+	        
+	        TabHost.TabSpec spec12 = tabs.newTabSpec("Prizes");
+
+	        spec12.setContent(R.id.linear_ec_eracer_prize);
+	        spec12.setIndicator("  Prizes  ");
+
+	        tabs.addTab(spec12);
 	}
 
 }

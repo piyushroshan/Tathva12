@@ -20,7 +20,7 @@ public class EC_Sonic extends Activity {
 	        TabHost.TabSpec spec1 = tabs.newTabSpec("intro");
 
 	        spec1.setContent(R.id.linear_ec_sonic_intro);
-	        spec1.setIndicator("  Introduction");
+	        spec1.setIndicator("  Introduction ");
 	        
 	        tabs.addTab(spec1);
 	        
@@ -35,15 +35,23 @@ public class EC_Sonic extends Activity {
 	        TabHost.TabSpec spec8= tabs.newTabSpec("stmt");
 
 	        spec8.setContent(R.id.linear_ec_sonic_stmt);
-	        spec8.setIndicator("  Statement  ");
+	        spec8.setIndicator("  Problem Statement  ");
 
 	        tabs.addTab(spec8);
+	        
+
+	        TabHost.TabSpec spec11= tabs.newTabSpec("rounds");
+
+	        spec11.setContent(R.id.linear_ec_sonic_rounds);
+	        spec11.setIndicator("  Event Format  ");
+
+	        tabs.addTab(spec11);
 	        
 	        
 	        TabHost.TabSpec spec7= tabs.newTabSpec("criteria");
 
 	        spec7.setContent(R.id.linear_ec_sonic_judge);
-	        spec7.setIndicator("  Criteria  ");
+	        spec7.setIndicator("  Judging Criteria  ");
 
 	        tabs.addTab(spec7);
 	        
@@ -53,6 +61,13 @@ public class EC_Sonic extends Activity {
 	        spec3.setIndicator("  Contact  ");
 
 	        tabs.addTab(spec3);
+	        
+	        TabHost.TabSpec spec13 = tabs.newTabSpec("Prize");
+
+	        spec13.setContent(R.id.linear_ec_sonic_prize);
+	        spec13.setIndicator("  Prize  ");
+
+	        tabs.addTab(spec13);
 	}
 
 }

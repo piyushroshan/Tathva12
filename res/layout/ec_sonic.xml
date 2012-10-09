@@ -50,8 +50,8 @@
             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ec_sonic_intro" android:layout_height="match_parent" android:orientation="vertical">
                 <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_sonic_title" android:text ="SonicI" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ec_sonic_Intro" android:text="Sound detection systems continue to be an important research field though much more sophisticated technologies have substituted them. Sound detection and its applications are able to outrate any modern technologies in its area of importance. Here, at Tathva '11, be ready to witness a journey through this technology." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_sonic_title" android:text ="AnalogiQ" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ec_sonic_Intro" android:text="Is the game of 1\'s and 0\'s driving you nuts ? \n\nANALOGIQ provides you a platform to showcase your talents in innovative thinking and circuit design.\nThe event basically focuses on the participant\'s ideas and the power to transform ideas into commercially viable and cost effective circuit using analog components." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                         </LinearLayout>
                 </ScrollView>
             </LinearLayout>
@@ -60,7 +60,7 @@
                <ScrollView android:id="@+id/scrollView_ec_sonic_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_ec_sonic_specs" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ec_sonic_specs" android:text="1. The position of receiver is static throughout the event.\n2. The entire detector system should fit well inside a cuboid of size 30 cm x 30 cm x 40 cm.\n3. The maximum radial distance between the source and the receiver in all the trials will be 3 metres. Height of the source is fixed.\n4. Each team will be allowed to fine tune the receiver system one day prior to the event. No changes can be made during the event.\n5. Participants must bring all equipment they need. Ready-made kits are not allowed.\n6. A team may comprise of maximum 4 members.\n7. Cross college teams are permitted."
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ec_sonic_specs" android:text="\u25cf CIRCUIT SPECIFICATIONS\n1.The circuit cost should be less than Rs.1000.\n2.The circuit should be neatly assembled on a PCB .\n3.External power will be provided if required .\n4.The judge\'s decision will be final .\n5.Ready made kits should not be used .\n6.ICs other than those mentioned should not be used and if used, will lead to\ndisqualification\n7. The final circuit should be the same as the one approved in prelims by the judges and if\nthere is large variation in the proposed design and assembled circuit , the team will be\ndisqualified .\n8. Direct circuits from the internet and books should not be used .\n9. Judges decisions will be final, and any of the above mentioned rules can change\naccording to the scenario of the event\n\n\n\u25cfTEAM SPECIFICATIONS\n1.Each team consist a maximum of 3 members.\n2.Team members must produce valid ID card of their institute.\n3.Inter\u00adcollege teams are permitted.\n\n"
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
@@ -71,7 +71,17 @@
                <ScrollView android:id="@+id/scrollView_ec_sonic_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_ec_sonic_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ec_sonic_rounds" android:text="There will be a sound source which produces sound at a frequency of 10 KHz with sufficient intensity. You have to design a static receiver which could detect and locate the source using a laser beam. A total of five chances of duration 90 seconds each will be given to each team." 
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ec_sonic_stmt" android:text="The Objective of the event is to design an innovative and cost efficient commercial circuit using analog components. " 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ec_sonic_rounds" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_ec_sonic_rounds" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_ec_sonic_rounds" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ec_sonic_rounds" android:text="\nThe event shall comprise of two rounds :\n\n1. PRELIMINARY ROUND :\n\nTeams are supposed to send their ideas and the proposed design to us. The 15 most\npromising ideas will be shortlisted and they will be qualified for the final round.\n\n2. FINAL ROUND :\n\nTeams that pass through the prelims shall take part in the final round . The working\nmodel of the circuit has to be presented to the esteemed panel of judges for evaluation.\n " 
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
@@ -81,7 +91,7 @@
                <ScrollView android:id="@+id/scrollView_ec_sonic_judge" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_ec_sonic_judge" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ec_sonic_judge" android:text="1. Each hit in the specified area (within 5 cm radius of the source) will be awarded 100 credits.\n2. Any deviation (per centimetre) from the periphery of the circle (of radius 5cm) will be noted as a parameter 'd' and the credits awarded will be (100 - d2).\n3. After five trials, the team with maximum points (out of 500) will be declared as the winner. In case of a tie, the simplicity and innovation of the circuit will also be considered.\n4. The decision of judges will be final and binding to all." 
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_ec_sonic_judge" android:text="\n1.The circuit will be evaluated on the basis of :\n\u25cf Circuit Idea\n\u25cf Cost efficiency\n\u25cf Design\n\u25cf PCB Assembly\n\u25cf Innovation\n2.  The  teams   may   be  tested  through  viva\u00advoce  on  the  design  of  the  circuit  and  other  details   of\nimplementation.\n" 
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
@@ -91,7 +101,16 @@
                 <ScrollView android:id="@+id/scrollView_ec_sonic_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_ec_sonic_contact" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ec_sonic_contact" android:text="Sujith Jose\nEvent Manager\nPhone: +91 980 900 4749\nE-mail: sujith@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ec_sonic_contact" android:text="\nANANTHU R KRISHNAN\nEvent Manager\nPhone:+919400590976\nE-mail:analogiq@tathva.org\n\nNITHIN SIMON\nEvent Manager\nPhone:+918086613325\nE-mail:analogiq@tathva.org\n\nARUN KOSHY T\nEvent Manager\nPhone:+919446481866\nE-mail:analogiq@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ec_sonic_prize" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_ec_sonic_prize" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_ec_sonic_prize" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ec_sonic_prize" android:text="First\tRs. 8000/-\nSecond\tRs. 5000/-\nThird\tRs. 3000/-" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>
