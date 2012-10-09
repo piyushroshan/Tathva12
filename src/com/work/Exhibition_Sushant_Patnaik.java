@@ -4,14 +4,14 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TabHost;
 
-public class Exhibition_Indian_Army extends Activity {
+public class Exhibition_Sushant_Patnaik extends Activity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		
-		setContentView(R.layout.exhibition_indian_army);
+		setContentView(R.layout.exhibition_sushant_patnaik);
 
 	}
 

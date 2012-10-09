@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:background="#57ab0b" android:layout_width="match_parent" android:id="@+id/linear_exhibition_lspc" android:layout_height="match_parent" android:orientation="vertical">
+               <LinearLayout android:id="@+id/linearLayout_workshop_lspc_intro" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:scaleType="fitStart"
+            android:src="@drawable/img" >
+
+		</ImageView>
+    </LinearLayout>
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_army_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.03"
+                            android:gravity="center"
+                            android:text="LPSC"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="20dp" >
+</TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_exhibition_isro_Intro" android:text="Liquid Propulsion Systems Centre was eablished in 1956 at Trivandrum, Kerala. LPSC is the centre of excellence in the area of Liquid Propulsion for ISRO\'s Launch Vehicles and Spacecraft programmes. The Centre is entrusted with the responsibility of research and development of Earth Storable and Cryogenic Propulsion systems and delivers Engines, Stages, associated Control Systems and Components for Launch Vehicle and Spacecraft programmes of ISRO. The development of liquid propellant stages for PSLV, control systems for SLV-3, ASLV, PSLV and GSLV, satellite propulsion systems including those for INSAT and IRS and production of pressure transducers are done by the LPSC for India. The LPSC has developed indigenous cryogenic upper stage for Geosynchronous Satellite Launch Vehicle (GSLV) which was successfully test fired by ISRO on August 4, 2007." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            
+ </LinearLayout>
