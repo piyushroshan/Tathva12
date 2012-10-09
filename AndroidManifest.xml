@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="com.work"
-      android:versionCode="1"
-      android:versionName="1.0">
+      android:versionName="1.0.0"
+    android:versionCode="1">
 <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="10"></uses-sdk>
 <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
 
 <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
 
-    <application android:icon="@drawable/icon" android:label="@string/app_name"  android:theme="@android:style/Theme.NoTitleBar">
+    <application android:icon="@drawable/icon" android:label="@string/app_name"  android:debuggable="false" android:theme="@android:style/Theme.NoTitleBar">
         <activity android:name=".Tathva"
+            
                   android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -73,7 +74,7 @@
 		<activity android:label="@string/app_lectures_raju" android:name="Lectures_Raju"/>
 		<activity android:label="@string/app_lectures_tessy" android:name=".Lectures_Shivathanu"/>
 		<activity android:label="@string/app_lectures_unni" android:name=".Lectures_Madhavan"/>
-		<activity android:label="@string/app_highlights_envision_idp" android:name="Highlights_IDP"/>
+		<activity android:label="@string/app_highlights_envision_jigyasa" android:name="Highlights_Jigyasa"/>
 		<activity android:label="@string/app_highlights_envision_yi" android:name="Highlights_YI"/>
 		<activity android:label="@string/app_highlights_envision_srishti" android:name="Highlights_Srishti"/>
 		<activity android:label="@string/app_nites_mother_jane" android:name=".Nites_Suchithra"/>

@@ -31,25 +31,6 @@ public class Initiatives extends Activity {
 			}
 		});
 		
-		ImageView imgTeach = (ImageView)findViewById(R.id.img_initiative_teach);
-		imgTeach.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Initiatives.this, Initiative_Teach.class);
-				Initiatives.this.startActivity(myIntent);
-			}
-		});
-		
-		
-		ImageView imgSchool = (ImageView)findViewById(R.id.img_initiative_school);
-		imgSchool.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Initiatives.this, Initiative_School.class);
-				Initiatives.this.startActivity(myIntent);
-			}
-		});
+
 	}
 }
