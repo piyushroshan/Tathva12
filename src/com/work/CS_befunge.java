@@ -40,6 +40,22 @@ public class CS_befunge extends Activity {
 	        tabs.addTab(spec7);
 	        
 	        
+	        TabHost.TabSpec spec10 = tabs.newTabSpec("tutorial");
+
+	        spec10.setContent(R.id.linear_cs_befunge_tutorial);
+	        spec10.setIndicator("  Tutorial  ");
+	        
+	        tabs.addTab(spec10);
+	        
+	        
+	        TabHost.TabSpec spec12 = tabs.newTabSpec("prizes");
+
+	        spec12.setContent(R.id.linear_cs_befunge_prizes);
+	        spec12.setIndicator("  prizes  ");
+	        
+	        tabs.addTab(spec12);
+	        
+	        
 	        TabHost.TabSpec spec3 = tabs.newTabSpec("Contact");
 
 	        spec3.setContent(R.id.linear_cs_befunge_contact);

@@ -51,7 +51,7 @@
                 <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
                         <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_befunge_title" android:text ="Befunge" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="Defy gravity and write code upwards or if you're feeling whacky read it backwards. You can also wrap around the code space! Want to write self modifying code? You can do all that with BEFUNGE!\n\nBEFUNGE has a two-dimensional toroidal code space. Commands are basically single characters. The instruction pointer can move up, down, left, and right across the source. It implements each and every function via stack manipulation.\n\nAlthough it is a Turing complete language, no proper compiler exists for it. The only way of executing the BEFUNGE code is by interpreting it into a C code and compiling it.\n\nSo break all the coding boundaries and prove your skill by mastering BEFUNGE!" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="Want to make programming more interesting? Lets free programming from the confines of dimensions. \n\nBEFUNGE is a 2-dimensional language which offers 4 directions for the instruction pointer.\nSo break all the coding boundaries and battle it out to be the Lord of BEFUNGE!" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                         </LinearLayout>
                 </ScrollView>
             </LinearLayout>
@@ -60,7 +60,7 @@
                <ScrollView android:id="@+id/scrollView_cs_befunge_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_cs_befunge_specs" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="1. The Befunge-93 specification will be followed.\n2. Participation can be individual or in teams of two.\n3. Any number of teams are allowed from a college but a participant can be a member of only one team.\n4. There will be a written preliminary round to test the basic knowledge of the team.\n5. The next round shall be a practical round in which the selected teams will have to code programs in Befunge and show its output.\n6. Tim's Befunge Compiler must be used for interpretation to C followed by compilation using GCC.\n7. Systems will be provided for the final round. " 
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text=" 1. The Befunge\u00ad93 specification will be followed.\n2. There is no limit to the number of teams from a college. However one person should\nbelong to only one team.\n3. The event will be conducted in two stages \u00ad prelims and mains.\n   \u25cb Prelims will be a 30 min written exam on befunge.\n   \u25cb Mains will be a practical round in which the selected teams will have to code\nprograms in Befunge and show its output.\n4. TBC must be used for interpretation to C followed by compilation using GCC.\n5. Systems will be provided for the final round.\n " 
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
@@ -70,19 +70,37 @@
                <ScrollView android:id="@+id/scrollView_cs_befunge_criteria" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_cs_befunge_criteria" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="1. Marks will be awarded for clean coding style and usage of loops and other Befunge tricks.\n2. The coordinator's decision shall be final."
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="1. Marks will be awarded for clean coding style and usage of loops and other Befunge\ntricks.\n2. Marks scored in a round will not be carried over to the succeeding rounds.\n3. Programs will be evaluated against standard test cases set by the organizers.\n4. In case of any discrepancy, the decision of the event coordinators shall be final in all\nrespects.\n\n"
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>
             
             
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_cs_befunge_tutorial" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_cs_befunge_tutorial" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_cs_befunge_tutorial" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_cs_befunge_tutorial" android:text="Tim\'s Befunge Compiler\nTim\'s   Befunge  Compiler  is   a  pseudocompiler  for  Befunge\u00ad93  source  files.  It  is   written in\nANSI  C,  and  it  outputs   an  ANSI  C  version  of  its   input  file.  This   output  file  contains   the  Befunge\nprogram, already loaded into an array, and the guts of Chris Pressey\'s b93 interpreter.\nCompiling in TBC\n1. Download tbc.c and core.int and keep it in the same folder.\n2. Compile TBC\ngcc tbc.c \u00ado tbc\n3. Code your program in your favorite text editor and save it as infile.bf.\n4. Run ./tbc infile.bf > outfile.c\n5. Compile outfile.c in gcc\ngcc outfile.c \u00ado out\n6. Run ./out\nFor sample programs visit\n1. http://en.wikipedia.org/wiki/Befunge\nOr\n2. http://progopedia.com/language/befunge/\n\n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
             
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_cs_befunge_prizes" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_cs_befunge_prizes" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_cs_befunge_prizes" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_cs_befunge_prizes" android:text="First\tRs. 3000/-\nSecond\tRs. 2000/-\nThird\tRs. 1000/-\n\n"  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+             
+             
             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_cs_befunge_contact" android:layout_height="match_parent" android:orientation="vertical">
                 <ScrollView android:id="@+id/scrollView_cs_befunge_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_cs_befunge_contact" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_cs_befunge_contact" android:text="Shubhangam Agrawal\nEvent Manager\nPhone: +91 984 638 8425\nE-mail: shubhangam@tathva.org"                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_cs_befunge_contact" android:text="Lijin C\nEvent Manager\nPhone:+919633606663\nE-mail:befunge@tathva.org\n\nNihal Abdulla P T\nEvent Manager\nPhone:+919846005026\nE-mail:befunge@tathva.org\n\nSachin Thomas\nEvent Manager\nPhone:+919497890246\nE-mail:befunge@tathva.org\n\n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>
