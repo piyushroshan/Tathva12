@@ -51,7 +51,7 @@
                 <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
                         <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_mouse_title" android:text ="Mouse Drive" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ee_mouse_drive_Intro" android:text="'The limits of the possible can only be defined by going beyond them into the impossible.'\nThink you are good behind the wheels?? Why not prove you can do it even with a mouse??" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ee_mouse_drive_Intro" android:text="Guide your automaton through a plethora of twists and turns. Make sure the bumps on the road don't catch you off-guard." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                         </LinearLayout>
                 </ScrollView>
             </LinearLayout>
