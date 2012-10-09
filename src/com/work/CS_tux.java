@@ -31,6 +31,20 @@ public class CS_tux extends Activity {
 
 	        tabs.addTab(spec4);
 	        
+	        TabHost.TabSpec spec11 = tabs.newTabSpec("round1");
+
+	        spec11.setContent(R.id.linear_cs_tux_round1);
+	        spec11.setIndicator("  Round 1  ");
+
+	        tabs.addTab(spec11);
+	        
+	        TabHost.TabSpec spec13 = tabs.newTabSpec("Prizes");
+
+	        spec13.setContent(R.id.linear_cs_tux_prizes);
+	        spec13.setIndicator("  Prizes  ");
+
+	        tabs.addTab(spec13);
+	        
 	        TabHost.TabSpec spec3 = tabs.newTabSpec("Contact");
 
 	        spec3.setContent(R.id.linear_cs_tux_contact);

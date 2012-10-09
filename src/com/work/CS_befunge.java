@@ -51,7 +51,7 @@ public class CS_befunge extends Activity {
 	        TabHost.TabSpec spec12 = tabs.newTabSpec("prizes");
 
 	        spec12.setContent(R.id.linear_cs_befunge_prizes);
-	        spec12.setIndicator("  prizes  ");
+	        spec12.setIndicator("  Prizes  ");
 	        
 	        tabs.addTab(spec12);
 	        

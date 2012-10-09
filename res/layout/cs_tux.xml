@@ -51,7 +51,7 @@
                 <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_tux_title" android:text ="Tux of War" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="Attention Linux afficionados!\nFrom basic Linux know-how to advanced shell scripting, it's all here.\nSo grab your thinking hats, and get ready to battle it out in Tux of War." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="Attention Linux afficionados!!!\n\n\nFrom basic Linux know-how to advanced shell scripting, it &quot;s all here. So grab your thinking hats, and get ready to battle it out in Tux of War. An online qualification round will be conducted just two weeks before the formal launch of Tathva. Exact dates will be announced soon. " android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                         </LinearLayout>
                 </ScrollView>
             </LinearLayout>
@@ -60,19 +60,40 @@
                <ScrollView android:id="@+id/scrollView_cs_tux_rules" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_cs_tux_rules" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="1. Maximum two participants per team.\n2. Any number of teams are allowed from a college. However the members of a team must be from the same college.\n3. There will be a maximum of three rounds.\n4. The first round will be an online qualifying round from which a maximum of 10 teams will be shortlisted.\n5. The final 2 rounds will be conducted at NITC campus during Tathva. Consisting of a debugging/sysadmin round (including but not limited to common linux hassles/problems, system environment editing, etc.) and a bash scripting round, these will test the participants' practical skills in a Linux environment.\n6. Marks from first round will not be carried over to the other two rounds.\n7. However marks from Round 2 will be carried over to Round 3 i.e. winning teams will be decided on the basis of performance in the last two rounds.\n8. The co-ordinator's decision shall be final." 
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="\n1. Maximum two participants per team.\n2. Any number of teams are allowed from a college. However the members of a team must\nbe from the same college.\n3. There will be a maximum of three rounds.\n4. The first round will be an online qualifying round from which a maximum of 10 teams will\nbe shortlisted.\n5. The final 2 rounds will be conducted at NITC campus during Tathva. Consisting of a\ndebugging/sysadmin round (including but not limited to common linux hassles/problems,\nsystem environment editing, etc.) and a bash scripting round, these will test the\nparticipants &quot; practical skills in a Linux environment.\n6. Marks from first round will not be carried over to the other two rounds.\n7. However marks from Round 2 will be carried over to Round 3 i.e. winning teams will be\ndecided on the basis of performance in the last two rounds.\n8. The co\u00adordinator\'s decision shall be final.\n" 
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>
             
-                  	
+                 
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_cs_tux_round1" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_cs_tux_round1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_cs_tux_round1" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_cs_tux_round1" android:text="1. This will be an online round.\n2. Questions will consist of MCQs and one\u00adliners based on UNIX/Linux commands, tools,\nconcepts and philosophy.\n3. Duration will be 30 minutes.\n4. This will be an elimination round and only the qualifying teams will appear for next 2\nrounds.\n5. The contest will be held on a separate contest portal.\n6. This first round will be held within 2 weeks before the formal launch of Tathva. Exact\ndates will be announced soon.\n7. Details about the last two rounds will be provided on the contest portal.\n\n"  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_cs_tux_prizes" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_cs_tux_prizes" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_cs_tux_prizes" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_cs_tux_prizes" android:text="First\tRs. 3500/-\nSecond\tRs. 2000/-\nThird\tRs. 1500/-\n\n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            	
                      
             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_cs_tux_contact" android:layout_height="match_parent" android:orientation="vertical">
                 <ScrollView android:id="@+id/scrollView_cs_tux_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_cs_tux_contact" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_cs_tux_contact" android:text="Kartik Singhal\nEvent Manager\nPhone: +91 974 688 7377\nE-mail: kartik@tathva.org\n\nJerrin Shaji George\nEvent Manager\nPhone: +91 956 742 8090\nE-mail: jerrin@tathva.org"                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_cs_tux_contact" android:text="\nSudev Ambadi\nEvent Manager\nPhone:+918089442513\nE-mail:tuxofwar@tathva.org\n\nRoshan Piyush\nEvent Manager\nPhone:+917736520669\nE-mail:tuxofwar@tathva.org\n\nAyush Jaiswal\nEvent Manager\nPhone:+919447884634\nE-mail:tuxofwar@tathva.org\n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>

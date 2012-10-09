@@ -39,6 +39,20 @@ public class CS_koderkombat extends Activity {
 
 	        tabs.addTab(spec6);
 	        
+	        TabHost.TabSpec spec11 = tabs.newTabSpec("criteria");
+
+	        spec11.setContent(R.id.linear_cs_koderkombat_criteria);
+	        spec11.setIndicator("  Judging Criteria  ");
+
+	        tabs.addTab(spec11);
+	        
+	        TabHost.TabSpec spec13 = tabs.newTabSpec("Prizes");
+
+	        spec13.setContent(R.id.linear_cs_koderkombat_prizes);
+	        spec13.setIndicator("  Prizes  ");
+
+	        tabs.addTab(spec13);
+	        
 	        TabHost.TabSpec spec3 = tabs.newTabSpec("Contact");
 
 	        spec3.setContent(R.id.linear_cs_koderkombat_contact);
