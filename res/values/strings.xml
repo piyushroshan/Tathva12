@@ -51,7 +51,8 @@
     <string name="app_exhibition_interface">Interface</string>
     <string name="app_wheels_vista">Vista</string>
     <string name="app_wheels_hands_on">Hands On</string>
-    <string name="app_wheels_concept_car_design">Concept Car Design</string>
+    <string name="app_wheels_autoquiz">Auto Quiz</string>
+    <string name="app_wheels_autograph">Autograph</string>
     <string name="app_wheels_full_throttle">Full Throttle</string>
     <string name="app_lectures_tessy">Tessy</string>
     <string name="app_lectures_raju">Raju</string>
@@ -75,7 +76,7 @@
 	<string name="app_civil_descartes">Descartes Square</string>
 	<string name="app_civil_floating">Age of Floating Empires</string>
 	<string name="app_manage_baptist">B-Aptist</string>
-	<string name="app_manage_bizz">Sociobizz 11</string>
+	<string name="app_manage_bizz">Sociobizz 12</string>
 	<string name="app_manage_tycoon">Tycoon</string>
 	<string name="app_arch_path">Path to Fame</string>
 	<string name="app_arch_pod">Pod Design</string>

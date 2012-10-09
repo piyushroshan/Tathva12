@@ -14,8 +14,8 @@
     </LinearLayout>
                 <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
-                      <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_autoquiz_title" android:text ="Concept Car Design" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_wheels_autoquiz_Intro" android:text="Wanna be the next Dilip Chhabria? Here is your chance to be India's most famous car designer. So grab your keyboard and mouse, and let the art flow (using CAD of course!). Design the machine of your dreams, and they might just come true!\n\nContacts:\nNikhil Babu\nEvent Manager\nPhone: +91 944 632 6544\nE-mail: nikhil@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                      <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_autoquiz_title" android:text ="Auto Quiz" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_wheels_autoquiz_Intro" android:text="If things with wheels stoke you more than things with legs, then the Wheels Autoquiz is the right place to be at. Gear yourselves up for the grittiest, greasiest and the greatest automobile quizzes of all time." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                         </LinearLayout>
                 </ScrollView>
             
