@@ -674,7 +674,7 @@ public final class R {
         public static final int linear_ec_gsm_contact=0x7f0501d9;
         public static final int linear_ec_gsm_intro=0x7f0501ca;
         public static final int linear_ec_gsm_judge=0x7f0501d5;
-        public static final int linear_ec_gsm_prize=0x7f0501dd;
+        public static final int linear_ec_gsm_prizes=0x7f0501dd;
         public static final int linear_ec_gsm_specs=0x7f0501cd;
         public static final int linear_ec_gsm_stmt=0x7f0501d1;
         public static final int linear_ec_sonic_contact=0x7f0501f6;
@@ -1394,7 +1394,7 @@ public final class R {
         public static final int text_ec_eracer_prize=0x7f0501c7;
         public static final int text_ec_gsm_Intro=0x7f0501cc;
         public static final int text_ec_gsm_contact=0x7f0501dc;
-        public static final int text_ec_gsm_prize=0x7f0501e0;
+        public static final int text_ec_gsm_prizes=0x7f0501e0;
         public static final int text_ec_sonic_Intro=0x7f0501e5;
         public static final int text_ec_sonic_contact=0x7f0501f9;
         public static final int text_ec_sonic_prize=0x7f0501fd;

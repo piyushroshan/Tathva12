@@ -51,7 +51,15 @@
                 <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
                         <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_gsm_title" android:text ="GSM" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ec_gsm_Intro" android:text="\nGlobal System for Mobile communication is currently the global standard for digital cellular communication. However, engineers as we are, it &quot; s hard to suppress our innate urge to revolutionize.\n\nThis year at Tathva &quot; 12, we challenge you to build a mobile phone controlled rover, which must be able to reach a predetermined destination for the given maze."></TextView>
+
+                        <TextView
+                            android:id="@+id/text_ec_gsm_Intro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="\nGlobal System for Mobile communication is currently the global standard for digital cellular communication. However, engineers as we are, it &quot; s hard to suppress our innate urge to revolutionize.\n\nThis year at Tathva &quot; 12, we challenge you to build a mobile phone controlled rover, which must be able to reach a predetermined destination for the given maze."
+                            android:textAppearance="?android:attr/textAppearanceMedium" >
+
+</TextView>
                         </LinearLayout>
                 </ScrollView>
             </LinearLayout>
@@ -96,11 +104,11 @@
                 </ScrollView>
             </LinearLayout>
             
-             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ec_gsm_prize" android:layout_height="match_parent" android:orientation="vertical">
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_ec_gsm_prizes" android:layout_height="match_parent" android:orientation="vertical">
                 <ScrollView android:id="@+id/scrollView_ec_gsm_prize" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_ec_gsm_prize" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ec_gsm_prize" android:text="First\tRs. 10000/-\nSecond\tRs. 5000/-\nThird\tRs. 3500/-\n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ec_gsm_prizes" android:text="First\tRs. 10000/-\nSecond\tRs. 5000/-\nThird\tRs. 3500/-\n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>

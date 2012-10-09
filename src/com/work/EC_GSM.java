@@ -47,6 +47,13 @@ public class EC_GSM extends Activity {
 
 	        tabs.addTab(spec7);
 	        
+	        TabHost.TabSpec spec13 = tabs.newTabSpec("Prizes");
+
+	        spec13.setContent(R.id.linear_ec_gsm_prizes);
+	        spec13.setIndicator("  Prizes  ");
+
+	        tabs.addTab(spec13);
+	        
 	        TabHost.TabSpec spec3 = tabs.newTabSpec("Contact");
 
 	        spec3.setContent(R.id.linear_ec_gsm_contact);
@@ -54,12 +61,7 @@ public class EC_GSM extends Activity {
 
 	        tabs.addTab(spec3);
 	        
-	        TabHost.TabSpec spec13 = tabs.newTabSpec("Prize");
 
-	        spec13.setContent(R.id.linear_ec_gsm_prize);
-	        spec13.setIndicator("  Prize  ");
-
-	        tabs.addTab(spec13);
 	}
 
 }
