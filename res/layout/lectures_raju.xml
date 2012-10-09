@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-   <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:id="@+id/linear_lectures_raju_intro" android:layout_height="match_parent" android:orientation="vertical">
+   <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:background="#01901a" android:layout_width="match_parent" android:id="@+id/linear_lectures_raju_intro" android:layout_height="match_parent" android:orientation="vertical">
                <LinearLayout android:id="@+id/linearLayout_lectures_raju" android:layout_width="match_parent" android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/image"
@@ -15,7 +15,7 @@
                 <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollbars="none">
                     <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
                         <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_raju_title" android:text ="Raju Narayanaswamy" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_lectures_raju_Intro" android:text="An IAS officer by profession, this IIT-M graduate is a blessing in disguise to the common man. After having turned down an MIT scholarship, this first rank-holder in the Civil Services Examination is currently the Secretary, General Education, Government of Kerala. Born into a middle-class family, this former collector of Idukki district has always fought for everything legal. He is a staunch believer of working for the society and its people, in giving back to the nation what he has learnt from it. He is also a prolific writer with 23 books to his credit. He has also won the Kerala Sahithya Akademi award in the travelogue segment in 2004." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_lectures_raju_Intro" android:text="\nRaju Narayana Swamy is an Indian Administrative Service officer. Currently, he is Commissioner, Civil Supplies Department, Government of Kerala. With the most impressive pedigree of academic accolades the nation had seen till date, he was the most promising yet candidate to enter the Indian Civil Services in 1991. In 21 years of service to his country, Narayana Swamy\'s career has been marked with political controversies due to his uncompromising stand against corruption." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                         </LinearLayout>
                 </ScrollView>
             

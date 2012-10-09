@@ -24,10 +24,10 @@
              <TextView android:textSize="20dp" android:layout_height="wrap_content" android:id="@+id/TextView01" android:layout_width="wrap_content" android:text="Lectures"></TextView>
              <HorizontalScrollView android:id="@+id/HorizontalScrollView01" android:layout_height="wrap_content" android:scrollbars="none" android:layout_width="wrap_content">
                  <LinearLayout android:layout_height="match_parent" android:id="@+id/LinearLayout02" android:orientation="horizontal" android:layout_width="match_parent">
-                     <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/drppchandrachoodan1" android:layout_width="wrap_content" android:id="@+id/img_lectures_chandra"></ImageView>
-                     <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/drtessythomas1" android:layout_width="wrap_content" android:id="@+id/img_lectures_tessy"></ImageView>
-                     <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/rajunarayanaias1" android:layout_width="wrap_content" android:id="@+id/img_lectures_raju"></ImageView>
-                     <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/unnikrishnan1" android:layout_width="wrap_content" android:id="@+id/img_lectures_unni"></ImageView>
+                     <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/raju_swamy" android:layout_width="wrap_content" android:id="@+id/img_lectures_raju"></ImageView>
+                     <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/archana_sharma" android:layout_width="wrap_content" android:id="@+id/img_lectures_archana"></ImageView>
+                     <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/shivathanu" android:layout_width="wrap_content" android:id="@+id/img_lectures_shivathanu"></ImageView>
+                     <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/madhavan_nair" android:layout_width="wrap_content" android:id="@+id/img_lectures_madhavan"></ImageView>
                  </LinearLayout>
              </HorizontalScrollView>
          </LinearLayout>

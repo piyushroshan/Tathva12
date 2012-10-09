@@ -68,10 +68,10 @@
 		<activity android:label="@string/app_wheels_vista" android:name="Wheels_Vista"/>
 		<activity android:label="@string/app_wheels_full_throttle" android:name="Wheels_Full_Throttle"/>
 		<activity android:label="@string/app_wheels_hands_on" android:name="Wheels_Hands_On"/>
-		<activity android:label="@string/app_lectures_chandra" android:name="Lectures_Chandra"/>
+		<activity android:label="@string/app_lectures_chandra" android:name=".Lectures_Archana"/>
 		<activity android:label="@string/app_lectures_raju" android:name="Lectures_Raju"/>
-		<activity android:label="@string/app_lectures_tessy" android:name="Lectures_Tessy"/>
-		<activity android:label="@string/app_lectures_unni" android:name="Lectures_Unni"/>
+		<activity android:label="@string/app_lectures_tessy" android:name=".Lectures_Shivathanu"/>
+		<activity android:label="@string/app_lectures_unni" android:name=".Lectures_Madhavan"/>
 		<activity android:label="@string/app_highlights_envision_idp" android:name="Highlights_IDP"/>
 		<activity android:label="@string/app_highlights_envision_yi" android:name="Highlights_YI"/>
 		<activity android:label="@string/app_highlights_envision_srishti" android:name="Highlights_Srishti"/>
