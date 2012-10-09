@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:background="#00688B"
+    android:background="#c3202e"
     android:layout_height="fill_parent"
     android:weightSum="0">
    
@@ -45,11 +45,39 @@
              <TextView android:textSize="20dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView2" android:text="Nites"></TextView>
              <HorizontalScrollView android:scrollbars="none" android:id="@+id/horizontalScrollView2" android:layout_height="wrap_content" android:layout_width="wrap_content">
                  <LinearLayout android:id="@+id/linearLayout11" android:orientation="horizontal" android:layout_height="match_parent" android:layout_width="match_parent">
-                     <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/motherjane1" android:layout_width="wrap_content" android:id="@+id/img_nites_mother_jane"></ImageView>
-                     <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/handshadowgraphy1" android:layout_width="wrap_content" android:id="@+id/img_nites_hand_shadow"></ImageView>
-                     <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/soundofmusic1" android:layout_width="wrap_content" android:id="@+id/img_nites_music"></ImageView>
-                     <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/nightofgroove1" android:layout_width="wrap_content" android:id="@+id/img_nites_grooves"></ImageView>
-                     <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/roboshow1" android:layout_width="wrap_content" android:id="@+id/img_nites_robo"></ImageView>
+
+                     <ImageView
+                         android:id="@+id/img_nites_rahul_nambiar"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:paddingRight="5dp"
+                         android:src="@drawable/rahul_nambiar" >
+</ImageView>
+
+                     <ImageView
+                         android:id="@+id/img_nites_suchithra"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:paddingRight="5dp"
+                         android:src="@drawable/suchithra" >
+</ImageView>
+
+                     <ImageView
+                         android:id="@+id/img_nites_acrobatics"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:paddingRight="5dp"
+                         android:src="@drawable/acrobatics" >
+</ImageView>
+
+                     <ImageView
+                         android:id="@+id/img_nites_agam"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:paddingRight="5dp"
+                         android:src="@drawable/agam" >
+</ImageView>
+
                  </LinearLayout>
              </HorizontalScrollView>
          </LinearLayout>

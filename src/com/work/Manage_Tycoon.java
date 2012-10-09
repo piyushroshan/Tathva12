@@ -24,10 +24,10 @@ public class Manage_Tycoon extends Activity {
 	        
 	        tabs.addTab(spec1);
 	        
-	        TabHost.TabSpec spec4 = tabs.newTabSpec("criteria");
+	        TabHost.TabSpec spec4 = tabs.newTabSpec("teaser");
 
-	        spec4.setContent(R.id.linear_manage_tycoon_criteria);
-	        spec4.setIndicator("  Criteria  ");
+	        spec4.setContent(R.id.linear_manage_tycoon_teaser);
+	        spec4.setIndicator("  Teaser  ");
 
 	        tabs.addTab(spec4);
 	        
@@ -39,6 +39,13 @@ public class Manage_Tycoon extends Activity {
 
 	        tabs.addTab(spec8);
 	        
+	        
+	        TabHost.TabSpec spec9 = tabs.newTabSpec("prizes");
+
+	        spec9.setContent(R.id.linear_manage_tycoon_prizes);
+	        spec9.setIndicator("  Prizes  ");
+
+	        tabs.addTab(spec9);
 	        
 	        TabHost.TabSpec spec3 = tabs.newTabSpec("Contact");
 

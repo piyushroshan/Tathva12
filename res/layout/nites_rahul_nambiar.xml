@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android" android:background="#d34827" android:layout_width="match_parent" android:id="@+id/linear_nites_rahul_intro" android:layout_height="match_parent" android:orientation="vertical">
+               <LinearLayout android:id="@+id/linearLayout_nites_rahul" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:scaleType="fitStart"
+            android:src="@drawable/img" >
+
+		</ImageView>
+    </LinearLayout>
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_rahul_title" android:text ="Rahul Nambiar" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_nites_rahul_Intro" android:text="The Adada Mazhada singer, has managed to create his own space in Malayalam with hits like Neeyam Thanalinu in Cocktail and Amruthamaayi in Snehaveedu. This versatile singer is popular for his songs from various genres- Western, Carnatic, light music and hip-hop. Winner of the Filmfare award in the Best Male Playback Singer Award category for Thaman\'s &quot;Guruvaram&quot; song (Dookudu), this young singer has proven himself beyond doubt. Brace yourself for a captivating musical experience as this singing sensation takes the stage!" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            
+ </LinearLayout>

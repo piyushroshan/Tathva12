@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:background="#00688B"
+    android:layout_height="fill_parent"
+    android:weightSum="0">
+   
+   
+    <LinearLayout android:id="@+id/linearLayout_chem_cheo" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:scaleType="fitStart"
+            android:src="@drawable/img" >
+
+		</ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_chem_cheo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_chem_cheo_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/text_cheautic_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.03"
+                            android:gravity="center"
+                            android:text="Cheo-Propello"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="20dp" >
+</TextView>
+
+                        <TextView
+                            android:id="@+id/text_chem_cheo_Intro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="From the age old field-made missiles of the great king Tipu Sultan to the Neolithic multi-stage propulsion systems that drive the rockets and space shuttles, propulsion using chemicals has come a long way and a balance between speed and control has been the need of the hour. After all, Einstein did say, Human stupidity had no bounds; then why should your wheels have it?!! \n\nThis Tathva, when your knowledge and automobile instincts are pitted against the best of techies in India in the ultimate showdown, the leader keeps the others choking in smoke. So let loose your Bugatti at this rat race of ups and downs."
+                            android:textAppearance="?android:attr/textAppearanceMedium" >
+</TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/linear_chem_cheo_specs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+               <ScrollView android:id="@+id/scrollView_chem_cheo_specs" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_chem_cheo_specs" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView
+                    android:id="@+id/textView_chem_cheo_specs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="General Specifications\n\n1. Maximum of three members per team. Cross college teams are allowed.\n2. Team members should produce a valid identity card.\n3. Dimensions: The Car should fit into a box of size 30cm x 25cm x 20cm.\n4. Ready\u00admade kits should not be used for the event (eg. LEGO).\n5. No commercial batteries,motors can be used.\n6. Use of hazardous chemicals like dynamite, fireworks, mercuric chloride, white\nphosphorous, nitroglycerin are strictly forbidden.\n7. Cellulose, aluminum alkyls, gunpowder and other explosive chemicals should not be\nused for the propulsion.\n8. Poisonous gases like Hydrogen Cyanide, fluorine and chlorine etc should not be\nemitted from the machine during the event.\n9. The car must not damage the track. If it does, the team will be disqualified.\n10. Teams may be given a second round and/or re\u00adtry based on the competition and\nnecessity. The decision is left to the discretion the judges.\n11. Decision of judges and coordinators is final and all the teams shall abide by it.\n\n\nArea Specifications:\n\n1. The track will be straight with different turfs of sand, red oxide, wet area (water till tire\nlevel only\u037e floating mechanism is not required), lubrication and inclinations.\n2. The length of the track will be 6 m.\n3. There will be walls on both the edges of the track (only one wall is shown in the model\ntrack for convenience).\n4. The model track is only a probable estimate of the actual track, uploaded for the ease\nof the participants. Actual track may vary from the model track."
+                    android:textAppearance="?android:attr/textAppearanceMedium" >
+</TextView>
+                 
+                 <ImageView android:id="@+id/image_che_2" android:layout_height="wrap_content" android:layout_width="match_parent" android:src="@drawable/cheautic2"></ImageView>
+
+                 <ImageView
+                     android:id="@+id/imageche_3"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/cheautic3" >
+</ImageView>
+                 
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_chem_cheo_stmt" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_chem_cheo_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_chem_cheo_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView
+                    android:id="@+id/textView_chem_cheo_rounds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Design and fabricate a self propelled car which runs on a controlled chemical reaction and completes the specified track in minimum time."
+                    android:textAppearance="?android:attr/textAppearanceMedium" >
+				</TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             <LinearLayout
+                 android:id="@+id/linear_chem_cheo_judge"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical" >
+
+               <ScrollView android:id="@+id/scrollView_chem_cheo_judge" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_chem_cheo_judge" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_chem_cheo_judge" android:text="The car which reaches the end point in the lowest time wins.\nThe cars must touch the track throughout.\nIf two cars reach the end point in the same time, a re-test may be considered. Again, the final decision lies with the judges."
+                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_chem_cheo_guidelines" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_chem_cheo_guidelines" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_chem_cheo_guidelines" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView
+                    android:id="@+id/textView_chem_cheo_judge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Controlling the reaction and decreasing the time of run is the key.\n2. The common reactions that can be used are as follows\u00ad\n\u25cb Baking soda and vinegar.\n\u25cb Dry ice and water.\n3. Take adequate care that the chemical reaction (reactants) is sustained till the end of\nthe track."
+                    android:textAppearance="?android:attr/textAppearanceMedium" >
+</TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+                <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_chem_cheo_faq" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_chem_cheo_faq" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_chem_cheo_faq" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView
+                    android:id="@+id/textView_chem_cheo_judge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Q.\tCan an ignition engine be used for this purpose (eg: Petrol engine)?\nA. No. It cannot be used. No conventional combustion engines should be used.\n\nQ.\tCan any ready-made parts be used for the car?\nA. No. Only wheels can be readymade. All the other parts should be fabricated.\n\nQ.\tIs there any pre-registration required for the event?\nA. No. Teams just have to register on the Tathva website, and collect the Tathva ID provided on the day of Tathva. On the spot registration will also be available for the event."
+                    android:textAppearance="?android:attr/textAppearanceMedium" >
+</TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_chem_cheo_contact" android:layout_height="match_parent" android:orientation="vertical">
+
+                <ScrollView
+                    android:id="@+id/scrollView_chem_cheo_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout android:id="@+id/linearLayout_chem_cheo_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView
+                    android:id="@+id/text_chem_cheo_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Midhun Mohan\nEvent Manager\nPhone:+919895939057\nE-mail:cheopropello@tathva.org\n\nY Bhargav Ram\nEvent Manager\nPhone:+917736517797\nE-mail:cheopropello@tathva.org\n\nVenkat Swaroop\nEvent Manager\nPhone:+919048197659\nE-mail:cheopropello@tathva.org"
+                    android:textAppearance="?android:attr/textAppearanceMedium" >
+</TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>
+ 
+ 

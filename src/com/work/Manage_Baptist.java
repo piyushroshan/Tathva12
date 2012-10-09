@@ -24,13 +24,7 @@ public class Manage_Baptist extends Activity {
 	        
 	        tabs.addTab(spec1);
 	        
-	        TabHost.TabSpec spec4 = tabs.newTabSpec("conference");
 
-	        spec4.setContent(R.id.linear_manage_baptist_conference);
-	        spec4.setIndicator("  NSEF IDEA Conference  ");
-
-	        tabs.addTab(spec4);
-	        
 	        
 	        TabHost.TabSpec spec8= tabs.newTabSpec("spec");
 
@@ -38,6 +32,13 @@ public class Manage_Baptist extends Activity {
 	        spec8.setIndicator("  Specification  ");
 
 	        tabs.addTab(spec8);
+	     
+	        TabHost.TabSpec spec4 = tabs.newTabSpec("prizes");
+
+	        spec4.setContent(R.id.linear_manage_baptist_prizes);
+	        spec4.setIndicator(" Prizes ");
+
+	        tabs.addTab(spec4);
 	        
 	        
 	        TabHost.TabSpec spec3 = tabs.newTabSpec("Contact");

@@ -467,7 +467,7 @@ public class Competitions extends Activity {
 			
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Competitions.this, Arch_Path.class);
+				Intent myIntent = new Intent(Competitions.this, Arch_Transform.class);
 				Competitions.this.startActivity(myIntent);
 			}
 		});
@@ -477,7 +477,7 @@ public class Competitions extends Activity {
 			
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Competitions.this, Arch_Pod.class);
+				Intent myIntent = new Intent(Competitions.this, Arch_Parallel.class);
 				Competitions.this.startActivity(myIntent);
 			}
 		});
@@ -512,7 +512,7 @@ public class Competitions extends Activity {
 			
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Competitions.this, Chem_Cheautic.class);
+				Intent myIntent = new Intent(Competitions.this, Chem_Cheo.class);
 				Competitions.this.startActivity(myIntent);
 			}
 		});

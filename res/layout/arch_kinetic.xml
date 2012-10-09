@@ -51,7 +51,7 @@
                 <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:orientation="vertical" android:layout_height="match_parent">
 	                        	<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_kinetic_title" android:text="Kinetic Sculpture" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center" android:gravity="center" android:textSize="20dp"></TextView>
-	                        	<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="An interesting way to give 'life' to a still entity is to add the effect of motion to it. The department of Architecture becomes a host to yet another mesmerising event that requires its participants to create a motion-supporting sculpture to display the magical blend of kinematics with creativity.\n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	                        	<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="AFrom telling stories to living out fantasies to changing perspectives of the masses, art has always been dynamic, at least in effect. This time around, we hope this motion becomes more tangible. As part of Tathva '12, the Kinetic Sculpture event aims to provide a platform to the physically creative." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                         </LinearLayout>
                 </ScrollView>
             </LinearLayout>
@@ -61,7 +61,7 @@
                	<ScrollView android:id="@+id/scrollView_arch_kinetic_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_arch_kinetic_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
                    
-               	 <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="All the participants are required to make a sculpture, which moves for a tangible amount of time without human aid."
+               	 <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="Participants are required to create a piece of art with moving parts in accordance to a theme of their own choice. Shortlisted entries will be asked to present their idea and sculpture before a jury."
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                  </LinearLayout>
                  </ScrollView>
@@ -72,7 +72,7 @@
                	<ScrollView android:id="@+id/scrollView_arch_kinetic_criteria" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_arch_kinetic_criteria" android:layout_width="match_parent" android:layout_height="match_parent">
                    
-               	 <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="1. Creativity\n2. The variety in materials used and the mechanism involved will be considered."
+               	 <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="1. Only two entries per college are allowed.\n2. Entries must be made in advance and submitted at Tathva \'12.\n3. Only shortlisted entries will qualify for the jury.\n4. The jury\'s decision is final.\n5. Participants have complete freedom of theme, proportions and material.\n\nJudging will be based on the creativity, aesthetic appeal and functionality of the sculpture."
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                  </LinearLayout>
                  </ScrollView>
@@ -84,7 +84,7 @@
                <ScrollView android:id="@+id/scrollView_arch_kinetic_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_arch_kinetic_contact" android:layout_width="match_parent" android:layout_height="match_parent">
                    
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="A V Venugopal\nEvent Manager\nPhone: +91 808 953 6128\nE-mail: venugopal@tathva.org"
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="Pravar Chaudhary\nEvent Manager\nPhone:+918086813352\nE-mail:kineticsculpture@tathva.org\n\nNishan Nazer\nEvent Manager\nPhone:+919400555952\nE-mail:kineticsculpture@tathva.org"
                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
           </LinearLayout>
           </ScrollView>

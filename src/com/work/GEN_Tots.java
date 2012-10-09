@@ -31,6 +31,7 @@ public class GEN_Tots extends Activity {
 
 	        tabs.addTab(spec8);
 	        
+
 	        
 	        TabHost.TabSpec spec4 = tabs.newTabSpec("elementart");
 
@@ -46,6 +47,13 @@ public class GEN_Tots extends Activity {
 	        spec7.setIndicator("  Tech Dumb Charades  ");
 
 	        tabs.addTab(spec7);
+	        
+	        TabHost.TabSpec spec10 = tabs.newTabSpec("prizes");
+
+	        spec10.setContent(R.id.linear_gen_tots_prizes);
+	        spec10.setIndicator("  Prizes  ");
+
+	        tabs.addTab(spec10);
 	        
 	        TabHost.TabSpec spec3 = tabs.newTabSpec("Contact");
 
