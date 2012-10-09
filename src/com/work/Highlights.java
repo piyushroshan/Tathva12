@@ -55,7 +55,7 @@ public class Highlights extends Activity {
 			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Highlights.this, Lectures_Archana.class);
+				Intent myIntent = new Intent(Highlights.this, Lectures_Madhavan.class);
 				Highlights.this.startActivity(myIntent);
 			}
 		});

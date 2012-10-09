@@ -58,11 +58,11 @@
 		<activity android:label="@string/app_work_robo_vision" android:name="Workshop_Robo_Vision"/>
 		<activity android:label="@string/app_work_staad" android:name="Workshop_Staad"/>
 		<activity android:label="@string/app_work_total_station" android:name="Workshop_Total_Station"/>
-		<activity android:label="@string/app_exhibition_indian_army" android:name="Exhibition_Indian_Army"/>
-		<activity android:label="@string/app_exhibition_npol" android:name="Exhibition_NPOL"/>
+		<activity android:label="@string/app_exhibition_indian_army" android:name=".Exhibition_LPSC"/>
+		<activity android:label="@string/app_exhibition_npol" android:name=".Exhibition_NPCIL"/>
 		<activity android:label="@string/app_exhibition_isro" android:name="Exhibition_ISRO"/>
-		<activity android:label="@string/app_exhibition_ham_radio" android:name="Exhibition_Ham_Radio"/>
-		<activity android:label="@string/app_exhibition_touch_magix" android:name="Exhibition_Touch_Magix"/>
+		<activity android:label="@string/app_exhibition_ham_radio" android:name=".Exhibition_Sushant_Patnaik"/>
+		<activity android:label="@string/app_exhibition_touch_magix" android:name=".Exhibition_Blink_Solutions"/>
 		<activity android:label="@string/app_exhibition_interface" android:name="Exhibition_Interface"/>
 		<activity android:label="@string/app_wheels_concept_car_design" android:name="Wheels_Concept_Car_Design"/>
 		<activity android:label="@string/app_wheels_vista" android:name="Wheels_Vista"/>

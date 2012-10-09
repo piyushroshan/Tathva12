@@ -24,8 +24,8 @@
              <TextView android:textSize="20dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView1" android:text="Government"></TextView>
              <HorizontalScrollView android:id="@+id/horizontalScrollView1" android:layout_height="wrap_content" android:scrollbarAlwaysDrawHorizontalTrack="false" android:layout_width="wrap_content" android:scrollbars="none">
                  <LinearLayout android:id="@+id/linearLayout5" android:orientation="horizontal" android:layout_height="match_parent" android:layout_width="match_parent">
-                     <ImageView android:layout_width="wrap_content" android:paddingRight="5dp" android:src="@drawable/npol1" android:layout_height="wrap_content" android:id="@+id/img_npol"></ImageView>
-                     <ImageView android:layout_width="wrap_content" android:paddingRight="5dp"  android:src="@drawable/indianarmy1" android:layout_height="wrap_content" android:id="@+id/im_indian_army"></ImageView>
+                     <ImageView android:layout_width="wrap_content" android:paddingRight="5dp" android:src="@drawable/npcil" android:layout_height="wrap_content" android:id="@+id/img_npcil"></ImageView>
+                     <ImageView android:layout_width="wrap_content" android:paddingRight="5dp"  android:src="@drawable/lpsc" android:layout_height="wrap_content" android:id="@+id/img_lpsc"></ImageView>
                      <ImageView android:layout_width="wrap_content" android:paddingRight="5dp"  android:src="@drawable/isro1" android:layout_height="wrap_content" android:id="@+id/img_isro"></ImageView>
                  </LinearLayout>
              </HorizontalScrollView>
@@ -34,14 +34,28 @@
              <TextView android:textSize="20dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView2" android:text="Tech Symposium"></TextView>
              <HorizontalScrollView android:scrollbars="none" android:id="@+id/horizontalScrollView2" android:layout_height="wrap_content" android:layout_width="wrap_content">
                  <LinearLayout android:id="@+id/linearLayout11" android:orientation="horizontal" android:layout_height="match_parent" android:layout_width="match_parent">
-                     <ImageView android:layout_width="wrap_content" android:paddingRight="5dp"  android:src="@drawable/hamradio" android:layout_height="wrap_content" android:id="@+id/img_exhibition_ham_radio"></ImageView>
-                     <ImageView android:layout_width="wrap_content"  android:paddingRight="5dp" android:src="@drawable/interface1" android:layout_height="wrap_content" android:id="@+id/img_exhibition_interface"></ImageView>
-                     <ImageView android:layout_width="wrap_content" android:paddingRight="5dp"  android:src="@drawable/touchmagix1" android:layout_height="wrap_content" android:id="@+id/img_exhibition_touch_magix"></ImageView>
+                     <ImageView android:layout_width="wrap_content" android:paddingRight="5dp"  android:src="@drawable/blink_solutions" android:layout_height="wrap_content" android:id="@+id/img_exhibition_blink_solutions"></ImageView>
                  </LinearLayout>
              </HorizontalScrollView>
          </LinearLayout>
+         <LinearLayout android:id="@+id/linearLayout4" android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center">
+             <TextView android:textSize="20dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView2" android:text="Innovators"></TextView>
+             <HorizontalScrollView android:scrollbars="none" android:id="@+id/horizontalScrollView2" android:layout_height="wrap_content" android:layout_width="wrap_content">
+                 <LinearLayout android:id="@+id/linearLayout11" android:orientation="horizontal" android:layout_height="match_parent" android:layout_width="match_parent">
+                     <ImageView android:layout_width="wrap_content" android:paddingRight="5dp"  android:src="@drawable/sushant_patnaik" android:layout_height="wrap_content" android:id="@+id/img_exhibition_sushant_patnaik"></ImageView>
+                 </LinearLayout>
+             </HorizontalScrollView>
+         </LinearLayout>
+         
          <LinearLayout android:id="@+id/linearLayout9" android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center">
-             <TextView android:textSize="20dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView3" android:text="Wheels '11"></TextView>
+
+             <TextView
+                 android:id="@+id/textView3"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Wheels &apos;12"
+                 android:textSize="20dp" >
+</TextView>
              <HorizontalScrollView  android:scrollbars="none" android:id="@+id/horizontalScrollView4" android:layout_height="wrap_content" android:layout_width="wrap_content">
                  <LinearLayout android:id="@+id/linearLayout13" android:orientation="horizontal" android:layout_height="match_parent" android:layout_width="match_parent" android:paddingRight="5dp">
                      <ImageView android:layout_width="wrap_content"  android:paddingRight="5dp" android:src="@drawable/handson1" android:layout_height="wrap_content" android:id="@+id/img_wheels_hands_on"></ImageView>

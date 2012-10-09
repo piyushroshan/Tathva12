@@ -29,56 +29,47 @@ public class Exhibitions extends Activity {
 			}
 		});
 		
-		ImageView imgNPOL = (ImageView)findViewById(R.id.img_npol);
-		imgNPOL.setOnClickListener(new OnClickListener() {
+		ImageView imgNPCIL = (ImageView)findViewById(R.id.img_npcil);
+		imgNPCIL.setOnClickListener(new OnClickListener() {
 			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Exhibitions.this, Exhibition_NPOL.class);
+				Intent myIntent = new Intent(Exhibitions.this, Exhibition_NPCIL.class);
 				Exhibitions.this.startActivity(myIntent);
 			}
 		});
 		
-		ImageView imgIndianarmy = (ImageView)findViewById(R.id.im_indian_army);
-		imgIndianarmy.setOnClickListener(new OnClickListener() {
+		ImageView imgLPSC = (ImageView)findViewById(R.id.img_lpsc);
+		imgLPSC.setOnClickListener(new OnClickListener() {
 			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Exhibitions.this, Exhibition_Indian_Army.class);
+				Intent myIntent = new Intent(Exhibitions.this, Exhibition_LPSC.class);
 				Exhibitions.this.startActivity(myIntent);
 			}
 		});
 		
-		ImageView imgHAM = (ImageView)findViewById(R.id.img_exhibition_ham_radio);
-		imgHAM.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Exhibitions.this, Exhibition_Ham_Radio.class);
-				Exhibitions.this.startActivity(myIntent);
-			}
-		});
 		
-		ImageView imgInterface = (ImageView)findViewById(R.id.img_exhibition_interface);
-		imgInterface.setOnClickListener(new OnClickListener() {
+		ImageView imgBlink = (ImageView)findViewById(R.id.img_exhibition_blink_solutions);
+		imgBlink.setOnClickListener(new OnClickListener() {
 			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Exhibitions.this, Exhibition_Interface.class);
-				Exhibitions.this.startActivity(myIntent);
-			}
-		});
-		
-		ImageView imgTouch = (ImageView)findViewById(R.id.img_exhibition_touch_magix);
-		imgTouch.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Exhibitions.this, Exhibition_Touch_Magix.class);
+				Intent myIntent = new Intent(Exhibitions.this, Exhibition_Blink_Solutions.class);
 				Exhibitions.this.startActivity(myIntent);
 			}
 		});
 
+		ImageView imgSushant = (ImageView)findViewById(R.id.img_exhibition_sushant_patnaik);
+		imgSushant.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent myIntent = new Intent(Exhibitions.this,Exhibition_Sushant_Patnaik.class);
+				Exhibitions.this.startActivity(myIntent);
+			}
+		});
+		
 		ImageView imgVista = (ImageView)findViewById(R.id.img_wheels_vista);
 		imgVista.setOnClickListener(new OnClickListener() {
 			
