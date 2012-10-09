@@ -4,14 +4,14 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TabHost;
 
-public class Wheels_Concept_Car_Design extends Activity {
+public class Wheels_Autograph extends Activity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		
-		setContentView(R.layout.wheels_concept);
+		setContentView(R.layout.wheels_autograph);
 
 	}
 
