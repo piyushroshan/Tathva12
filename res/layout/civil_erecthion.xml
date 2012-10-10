@@ -50,8 +50,8 @@
             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_civil_erecthion_intro" android:layout_height="match_parent" android:orientation="vertical">
                 <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_erecthion_title" android:text ="eRECthion 5.0" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="The fifth edition of eRECthion celebrates man's obsession to reach for the heavens. At Tathva '11, we set the stage for you to exhibit this passion." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_erecthion_title" android:text ="ERECTHION" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="The construction of the Burj Al Arab required the workers to move loads weighing tons up to a height of about 300m. A complex system of trusses and beams made this task a walk in the park for them. Here at Tathva '12, we set the stage for you to exhibit your skill in designing a prototype model of a crane with ice cream sticks." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                         </LinearLayout>
                 </ScrollView>
             </LinearLayout>
@@ -59,7 +59,7 @@
                 <ScrollView android:id="@+id/scrollView_civil_erecthion_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_civil_erecthion_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="You are required to construct the tallest standing, load bearing structure using a given number of ice-cream sticks. " 
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="Construct a stable crane structure, using a given number of ice-cream sticks. " 
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                  </LinearLayout>
                  </ScrollView>
@@ -69,7 +69,7 @@
                	<ScrollView android:id="@+id/scrollView_civil_erecthion_criteria" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_civil_erecthion_criteria" android:layout_width="match_parent" android:layout_height="match_parent">
                    
-               	 <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="1. The platform will be loaded sequentially until failure.\n2. The height of the structure is measured from the base to the platform.\n3. The scoring will be as follows:\n  a. 50 points are awarded to the highest structure\n  b. 40 to the strongest structure and relative scores will be awarded to the other structures.\n  c. A score out of 10 is awarded based on aesthetics by the judges.\n4. The structure with the highest cumulative score will be declared the winner.\n5. Judge's decision shall be final in all respects."
+               	 <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="\n1. The structure will be loaded at the boom tip sequentially until failure.\n2. Breakage of the first stick is considered as failure.\n3. The length of the boom L will be measured as shown in the figure.\n4. The scoring will be as follows:\n      \u25cb 50 points are awarded to the longest boom.\n      \u25cb Remaining teams would be awarded points based on linear interpolation of their\n        own height between the maximum and the minimum (25cm).\n      \u25cb Note that the entries with boom length less than 25 cm will be disqualified.\n      \u25cb 50 points to the structure that bears the maximum load at failure.\n      \u25cb Remaining teams would be awarded points based on linear interpolation of their\n        own capacity between the maximum and the minimum.\n5. The structure with the highest cumulative score (out of 100) will be declared the winner.\n6. Judge\'s decision shall be final in all respects.\n"
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                  </LinearLayout>
                  </ScrollView>
@@ -79,17 +79,29 @@
                <ScrollView android:id="@+id/scrollView_civil_erecthion_spec" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_civil_erecthion_spec" android:layout_width="match_parent" android:layout_height="match_parent">
                    
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="1. 250 ice-cream sticks will be provided per team along with a limited amount of glue.\n2. Scissors, knives and measuring instruments will be provided on request.\n3. The participants are not allowed to bring any materials of their own.\n4. The time limit will be 3 hours.\n5. A team can have a maximum of 4 members.\n6. The top of the structure must have a flat platform having a minimum area of half an ice-cream stick square on which the loading is applied."
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="\n\u25cf 200 ice\u00adcream sticks will be provided per team along with a limited amount of glue.\n\u25cf Scissors, knives and measuring instruments will be provided on request.\n\u25cf Participants are not allowed to bring any materials of their own.\n\u25cf Time limit will be 3 hours.\n\u25cf A team can have a maximum of 4 members\n\u25cf The boom should have a minimum inclination of 30 degrees to the vertical.\n\u25cf The boom should have a minimum clear length of 25 cm.\n\u25cf A base of dimension 15x15x15 cm should be provided as c\n"
                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
+            </LinearLayout>
+            
+         	
+         	
+         	    <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_civil_erecthion_prizes" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_civil_erecthion_prizes" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_civil_erecthion_prizes" android:layout_width="match_parent" android:layout_height="match_parent">
+                   
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="First\tRs. 3000/-\nSecond\tRs. 2000/-\nThird\tRs. 1000/-\n\n"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+          </LinearLayout>
+          </ScrollView>
             </LinearLayout>
             
             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_civil_erecthion_contact" android:layout_height="match_parent" android:orientation="vertical">
                <ScrollView android:id="@+id/scrollView_civil_erecthion_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_civil_erecthion_contact" android:layout_width="match_parent" android:layout_height="match_parent">
                    
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="Imran Haris\nEvent Manager\nPhone: +91 949 764 1309\nE-mail: imran@tathva.org"
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="\nSOORAJ KUMAR\nEvent Manager\nPhone:+918547586974\nE-mail:erecthion@tathva.org\n\nSARATH K.S.\nEvent Manager\nPhone:+919400788745\nE-mail:erecthion@tathva.org\n\nALFIYA FATHIMA\nEvent Manager\nPhone:+918891942037\nE-mail:erecthion@tathva.org\n"
                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
           </LinearLayout>
           </ScrollView>

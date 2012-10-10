@@ -60,7 +60,7 @@
                 <ScrollView android:layout_height="wrap_content" android:id="@+id/scrollView1" android:layout_width="match_parent">
                     <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_floating_title" android:text ="Age of Floating Empires" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
-                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="The year is 2040 AD. Global warming has taken its toll. Land is scarce. People are desperate. The brightest minds gather together and reach a final conclusion that floating cities are inevitable. Invitations are extended to engineers all over the world to come up with the most innovative designs. Make mankind proud." android:id="@+id/textTransIntro"></TextView>
+                        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="The earliest humans may have lived in caves, but eventually they learned to make dwellings on their own. Mud and clay - being easy to mold - were among the first building materials used. Straw, hay, sticks and other organic fibers were used to help hold the mud. The advent of bricks and cement paved the way for more advanced construction techniques, which really changed the face of the world. Now it\'s time to defy these conventions and think out of the box, here at TOUBLO.\n" android:id="@+id/textTransIntro"></TextView>
                     </LinearLayout>
                 </ScrollView>
             </LinearLayout>
@@ -69,7 +69,7 @@
                	<ScrollView android:id="@+id/scrollView_civil_floating_criteria" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_civil_floating_criteria" android:layout_width="match_parent" android:layout_height="match_parent">
                    
-               	 <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="1. Judging is based on the self weight of the structure, eccentric loading and central loading.\n2. The eccentric loading will be applied at half the distance from the centre to a corner.\n3. Failure is defined as the point at which the top surface comes in contact with the water surface.\n4. The following formula will be used for determining the score for each design\n  Score* = (Central loading + 1.5 x Eccentric Loading) / Self weight of the design\n5. A team can have a maximum of four members\n6. Judge's decision will be final in all respects.\n\n* To qualify for this score, the condition that Eccentric loading >= 10% of central loading should be satisfied."
+               	 <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="1. Evaluation will be done on the basis of feasibility, application, economy and specific features of the materials presented (acoustic characteristics, fire resistance etc.)\n2. Any advantage or feature should be stated and proved clearly.\n3. Presenting adequate test results, images, videos or software support to justify your product\'s capability will gain you an advantage.\n4. The submission will be prone to disqualification if it is found to be a complete or partial imitation of an already existing material.\n"
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                  </LinearLayout>
                  </ScrollView>
@@ -79,17 +79,41 @@
                <ScrollView android:id="@+id/scrollView_civil_floating_spec" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_civil_floating_spec" android:layout_width="match_parent" android:layout_height="match_parent">
                    
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="1. Maximum of 4 members per team.\n2. The area of the surface should be 30cm x 30cm and flat.\n3. The whole structure should be within a 30cm x 30cm x 35cm cuboidal space. Also, the height of the structure should be at least 10 cm.\n4. The choice of design materials is left to the participant's discretion."
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="\n1. A team may consist of a maximum of 4 members.\n2. Teams are supposed to submit the abstract on or before 15th October, 2012 to\n   toublo@tathva.org\n3. The abstract should contain relevant details such as\n     \u25cb Area of application of the proposed material.\n     \u25cb Advantage of the material over conventional ones used at present.\n4. The material should be presented before a panel of judges along with a detailed project\n   report (hard copy) and presentation.\n5. Judges\' decision will be final.\n"
                                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>
             
+         	
+         	
+         	<LinearLayout android:layout_width="match_parent" android:id="@+id/linear_civil_floating_stmt" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_civil_floating_stmt" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_civil_floating_stmt" android:layout_width="match_parent" android:layout_height="match_parent">
+                   
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="You are required to design a new and innovative building material or make improvements on existing ones."
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+          </LinearLayout>
+          </ScrollView>
+            </LinearLayout>
+            
+         	
+         	<LinearLayout android:layout_width="match_parent" android:id="@+id/linear_civil_floating_prizes" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_civil_floating_prizes" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_civil_floating_prizes" android:layout_width="match_parent" android:layout_height="match_parent">
+                   
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="\nFirst\tRs. 6000/-\nSecond\tRs. 4000/-\nThird\tRs. 3000/-\n"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+          </LinearLayout>
+          </ScrollView>
+            </LinearLayout>
+         	
+            
             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_civil_floating_contact" android:layout_height="match_parent" android:orientation="vertical">
                <ScrollView android:id="@+id/scrollView_civil_floating_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_civil_floating_contact" android:layout_width="match_parent" android:layout_height="match_parent">
                    
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="Koshy Thomas\nEvent Manager\nPhone: +91 956 775 3855\nE-mail: koshythomas@tathva.org"
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="\nTharun John Joseph\nEvent Manager\nPhone:+919037074600\nE-mail:toublo@tathva.org\n\nMuhammed Naina\nEvent Manager\nPhone:+919249226061\nE-mail:toublo@tathva.org\n\nVarun Kumar Reja\nEvent Manager\nPhone:+918714402140\nE-mail:toublo@tathva.org\n"
                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
           </LinearLayout>
           </ScrollView>

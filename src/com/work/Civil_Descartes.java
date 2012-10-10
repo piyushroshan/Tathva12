@@ -38,6 +38,13 @@ public class Civil_Descartes extends Activity {
 
 	        tabs.addTab(spec5);
 	        
+	        TabHost.TabSpec spec13 = tabs.newTabSpec("prizes");
+
+	        spec13.setContent(R.id.linear_civil_descartes_prizes);
+	        spec13.setIndicator("  Prizes  ");
+
+	        tabs.addTab(spec13);
+	        
 	        
 	        TabHost.TabSpec spec3 = tabs.newTabSpec("Contact");
 

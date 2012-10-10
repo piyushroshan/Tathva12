@@ -44,7 +44,15 @@ public class Civil_Floating extends Activity {
 	        spec5.setIndicator("  Criteria  ");
 
 	        tabs.addTab(spec5);
+
 	        
+	        
+	        TabHost.TabSpec spec9 = tabs.newTabSpec("prizes");
+
+	        spec9.setContent(R.id.linear_civil_floating_prizes);
+	        spec9.setIndicator("  Prizes  ");
+
+	        tabs.addTab(spec9);
 	        
 	        TabHost.TabSpec spec3 = tabs.newTabSpec("Contact");
 

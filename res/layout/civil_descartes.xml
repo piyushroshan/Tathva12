@@ -52,7 +52,7 @@
                     <LinearLayout android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
                         	   <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_descartes_title" android:text ="Descartes Square" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
                         	
-                        	<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="How do you brand yourself? An orthodox mathematician fascinated by the mystifying beauty of classical mathematics or a futuristic creature with a contemporary attitude while playing with numbers?\n\nWhoever you are, Descartes Square is your CUPPA if you wanna relish the essence of Analysis, blend with Geometry and Algebra!" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        	<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="Mathematics...Numbers...\nLets see you rack your brains a little bit... Descartes Square will make you savor the perfume of mathematical divinity. Kick start your senses and put to work the rusty corners of your brain and enjoy the beauty of the three pillars of the engineering Hercules.." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                         </LinearLayout>
                 </ScrollView>
             </LinearLayout>
@@ -61,7 +61,7 @@
                	<ScrollView android:id="@+id/scrollView_civil_descartes_criteria" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_civil_descartes_criteria" android:layout_width="match_parent" android:layout_height="match_parent">
                    
-               	 <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="Preliminary Round:\n1. Each correct answer rewards you 5 points.\n2. Wrong answers do NOT carry negative points."
+               	 <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="FIRST ROUND:\n1. Each correct answer in the Fill in the blanks fetches the group 5 points with no negative marking.\n2. The multiple choice questions carry 3 points each with -1 (negative) point for each wrong answer.\nSECOND ROUND:\n1. The decision regarding the marking scheme is left to the event managers &quot; discretion.\n2. However, both the phases in this round carry equal weightage in total.\n"
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                  </LinearLayout>
                  </ScrollView>
@@ -71,7 +71,7 @@
                <ScrollView android:id="@+id/scrollView_civil_descartes_spec" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_civil_descartes_spec" android:layout_width="match_parent" android:layout_height="match_parent">
                    
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="1. Descartes Square tests your ability in confronting intricacies in the spheres of engineering and technology.\n2. The event consists of two rounds-a preliminary round and a final round.\n3. The preliminary round is a written round to test the analytical skills of participants in geometry and algebra.\nThe test consists of 20 questions to be answered in 30 minutes.\n4. Participants who qualify to the final round will be exposed to a real life challenge involving application of analytical geometry in a simulated arena.\n5. You may work on the sample tutorial provided to have a gist of the preliminary round. However, the Real Challenge will be notified only at the time of commencement of the final round."
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="1. Descartes Square puts your mathematical, logical and analytical abilities to test and\ntakes you into the spheres of engineering and technological applications.\n2. This event doesn\'t necessarily focus on the Civil Engineering areas of study and\nparticipation from other branches are encouraged.\n3. There will be two rounds\u00ada preliminary round and a final round.\n4. The first round is a written round to test the analytical skills of participants in geometry\nand algebra, consisting of filling the blanks and multiple choice questions.\n5. This round consists of 25 questions to be answered in a maximum of 40 minutes.\n6. Participants who clear the first round and are among the top 10 teams are eligible for the\nsecond round. However, the number of teams through to the second round is likely to\nchange during the course of the event depending upon the participation.The second\nround will be conducted in two phases\u00adfirst of which will be a quizzing round, and\nsecond, will be specified on the spot.\n"
                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
@@ -81,7 +81,17 @@
                <ScrollView android:id="@+id/scrollView_civil_descartes_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_civil_descartes_contact" android:layout_width="match_parent" android:layout_height="match_parent">
                    
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="Surya Teja\nEvent Manager\nPhone: +91 903 788 5813\nE-mail: suryateja@tathva.org"
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="Krishna Anish.A\nEvent Manager\nPhone:+919567947447\nE-mail:descartessquare@tathva.org\n\nHareesh.G\nEvent Manager\nPhone:+917736464879\nE-mail:descartessquare@tathva.org\n\nSarat Chandra.B\nEvent Manager\nPhone:+918089976228\nE-mail:descartessquare@tathva.org\n"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+          </LinearLayout>
+          </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_civil_descartes_prizes" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_civil_descartes_prizes" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_civil_descartes_prizes" android:layout_width="match_parent" android:layout_height="match_parent">
+                   
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransBlockSpec" android:text="First\tRs. 3000/-\nSecond\tRs. 2000/-\nThird\tRs. 1000/-\n\n"
                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
           </LinearLayout>
           </ScrollView>
