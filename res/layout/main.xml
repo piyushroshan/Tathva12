@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:background="#00688B"
+    android:background="#463E3F"
     android:layout_height="fill_parent"
     android:weightSum="0">
    
@@ -29,18 +29,19 @@
         <TextView android:text="Initiatives"  android:clickable="true" android:textSize="22dp" android:id="@+id/textmainI" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.18"></TextView>
         <TextView android:text="Help"  android:clickable="true" android:textSize="22dp" android:id="@+id/textmainHelp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.11"></TextView>
     </LinearLayout>
+
  <TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="14dip"
-    android:maxLines="1"
-    android:scrollHorizontally="true"
-    android:ellipsize="marquee"
-	   android:focusable="true"
-    android:focusableInTouchMode="true"
-    android:marqueeRepeatLimit="marquee_forever"
-    android:textColor="#ffffff"
-    android:text="  Online registrations are welcome. "
-    android:id="@+id/ticker"
-    />
+     android:id="@+id/ticker"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="14dip"
+     android:ellipsize="marquee"
+     android:focusable="true"
+     android:focusableInTouchMode="true"
+     android:marqueeRepeatLimit="marquee_forever"
+     android:maxLines="1"
+     android:scrollHorizontally="true"
+     android:text="  Online registrations are welcome. "
+     android:textColor="#ffffff" />
+
 </LinearLayout>

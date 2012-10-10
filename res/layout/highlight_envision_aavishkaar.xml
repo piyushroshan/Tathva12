@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:background="#00688B"
+    android:layout_height="fill_parent"
+    android:weightSum="0">
+   
+   
+    <LinearLayout android:id="@+id/linearLayout_highlight_envision_aavishkaar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:scaleType="fitStart"
+            android:src="@drawable/img" >
+
+		</ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_highlight_envision_aavishkaar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_aavishkaar_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_aavishkaar_title" android:text ="Aavishkaar" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_highlight_envision_aavishkaar_Intro" android:text="&quot;To raise new questions, new possibilities, to regard old problems from a new angle, requires creative imagination and marks real advance in science.&quot; \u2013 Albert Einstein\n\n&quot;Aavishkaar&quot; is a social initiative of Tathva \'12 , a social endeavor with a sole ambition of blending technological progress with social augmentation. &quot;Aavishkaar&quot; comprises of two events-&quot;Srishti&quot; and &quot;Upakrithi.&quot; \n&quot;Srishti&quot; is a project exhibition where talented students from all over the country can showcase their ideas through working models aimed at finding technology motivated solutions to problems faced by the society.\n&quot;Upakrithi&quot; is a noble venture intended to provide the Government L.P School,Chetyallathur, Wayanad with the most basic facility of electricity to lighten up the world of its students to a better future. For more details, log on to: \naavishkaar.tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+                 
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_aavishkaar_prizes" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_highlight_envision_aavishkaar_prizes" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_highlight_envision_aavishkaar_prizes" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_highlight_envision_aavishkaar_prizes" android:text="Cash prizes worth 40000/-" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout> 
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_aavishkaar_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_highlight_envision_aavishkaar_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_highlight_envision_aavishkaar_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_highlight_envision_aavishkaar_contact" android:text="A Arun\nEvent Manager\nPhone:+919633872747\nE-mail:aavishkaar@tathva.org\n\nAnirudh V\nEvent Manager\nPhone:+919567563237\nE-mail:aavishkaar@tathva.org\n\nSreyas R\nEvent Manager\nPhone:+919446460585\nE-mail:aavishkaar@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

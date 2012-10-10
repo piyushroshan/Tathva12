@@ -27,9 +27,16 @@ public class Highlights_IDP extends Activity {
 	        TabHost.TabSpec spec8 = tabs.newTabSpec("idp's");
 
 	        spec8.setContent(R.id.linear_highlight_envision_idp_details);
-	        spec8.setIndicator("  IDPs @ Tathva 11  ");
+	        spec8.setIndicator("  IDPs @ Tathva 12  ");
 
 	        tabs.addTab(spec8);
+	        
+	        TabHost.TabSpec spec9 = tabs.newTabSpec("benefits");
+
+	        spec9.setContent(R.id.linear_highlight_envision_idp_benefits);
+	        spec9.setIndicator("  Benefits ");
+
+	        tabs.addTab(spec9);
 	        
 	        
 	        TabHost.TabSpec spec3 = tabs.newTabSpec("Contact");

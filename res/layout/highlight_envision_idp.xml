@@ -51,7 +51,7 @@
                 <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
                         <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_idp_title" android:text ="IDP" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
-                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_highlight_envision_idp_Intro" android:text="'An ounce of action is worth a ton of theory.'\n- Friedrich Engels\n\nAn event to marry your academic brilliance to real life Industrial problem;\nA platform to put your imagination at work;\nA challenge to innovate and find solutions.\n\nForming a link between academia and industry, this event touches almost every aspect of engineering study- from the depth of scientific thought to the feasibility of your solution. The problem statement would be modelled on a current industry trend and the participants are expected to provide comprehensive executable solutions. So, get set to challenge your grey matter to think different and we promise you an experience of a lifetime." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_highlight_envision_idp_Intro" android:text="&quot;The real problem is not whether machines think but whether men do.&quot; \n- B. F. Skinner. \n\nAs Albert Einstein said &quot;We cannot solve problems by using the same kind of thinking we used when we created them.&quot; So this is the platform where you get bend your ideas into comprehensive executable solutions for the real time problems faced by various reputed industries in our country. The event touches almost every aspect of engineering study- from the depth of scientific thought to the feasibility of your solution. An ounce of action is worth a ton of theory. So get set to take up the challenge, and who knows, this may just be your beginning!\n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                         </LinearLayout>
                 </ScrollView>
             </LinearLayout>
@@ -60,18 +60,27 @@
                <ScrollView android:id="@+id/scrollView_highlight_envision_idp_details" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_highlight_envision_idp_details" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_highlight_envision_idp_details" android:text="Autonomous Robot for waste segregation\n\nDisaster Relief Transit Structure\n\nRiverfront Development\n\nMeasurement of Efficiency of Compressor section of a Gas Turbine"
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView_highlight_envision_idp_details" android:text="Automation in Scoring/Bending Machine
+                    \nFor details visit  http://tathva.org/2012/events.php#!automation in scoring/bending machine"
                                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>
-            
+                 
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_idp_benefits" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_highlight_envision_idp_benefits" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_highlight_envision_idp_benefits" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_highlight_envision_idp_benefits" android:text="The winners of the challenge will be either\n1. Given a opportunity to develop a prototype of the same on a payment basis OR\n2. Will be awarded other internship/project opportunities.\n" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout> 
             
             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_highlight_envision_idp_contact" android:layout_height="match_parent" android:orientation="vertical">
                 <ScrollView android:id="@+id/scrollView_highlight_envision_idp_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_highlight_envision_idp_contact" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_highlight_envision_idp_contact" android:text="Prijoe Sebastian\nEvent Manager\nPhone: +91 903 738 7460\nE-mail: prijoe@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_highlight_envision_idp_contact" android:text="Anand M\nEvent Manager\nPhone:+919446990909\nE-mail:idp@tathva.org\n\nLisha Fathima\nEvent Manager\nPhone:+919447538941\nE-mail:idp@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>

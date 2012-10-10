@@ -60,7 +60,9 @@
     <string name="app_lectures_unni">Unni</string>
     <string name="app_highlights_envision_jigyasa">Jigyasa</string>
      <string name="app_highlights_envision_yi">YI</string>
-	<string name="app_highlights_envision_srishti">Srishti</string>    
+	<string name="app_highlights_envision_idp">IDP</string>  
+	<string name="app_highlights_envision_aavishkaar">Aavishkar</string>   
+	<string name="app_highlights_envision_interface">Interface</string>     
 	<string name="app_nites_mother_jane">Mother Jane</string>
 	<string name="app_nites_hand_shadow">Hand Shadowgraphy</string>
 	<string name="app_nites_music">Sound of Music</string>
