@@ -76,7 +76,9 @@
 		<activity android:label="@string/app_lectures_unni" android:name=".Lectures_Madhavan"/>
 		<activity android:label="@string/app_highlights_envision_jigyasa" android:name="Highlights_Jigyasa"/>
 		<activity android:label="@string/app_highlights_envision_yi" android:name="Highlights_YI"/>
-		<activity android:label="@string/app_highlights_envision_srishti" android:name="Highlights_Srishti"/>
+		<activity android:label="@string/app_highlights_envision_idp" android:name="Highlights_IDP"/>
+		<activity android:label="@string/app_highlights_envision_aavishkaar" android:name="Highlights_Aavishkaar"/>
+		<activity android:label="@string/app_highlights_envision_interface" android:name="Highlights_Interface"/>
 		<activity android:label="@string/app_nites_mother_jane" android:name=".Nites_Suchithra"/>
 		<activity android:label="@string/app_nites_hand_shadow" android:name=".Nites_Rahul_Nambiar"/>
 		<activity android:label="@string/app_nites_music" android:name=".Nites_Acrobatics"/>

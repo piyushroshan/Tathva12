@@ -31,6 +31,46 @@ public class Initiatives extends Activity {
 			}
 		});
 		
+		ImageView imgJigyasa = (ImageView)findViewById(R.id.img_envision_jigyasa);
+		imgJigyasa.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent myIntent = new Intent(Initiatives.this, Highlights_Jigyasa.class);
+				Initiatives.this.startActivity(myIntent);
+			}
+		});
+		
+		ImageView imgAavishkaar = (ImageView)findViewById(R.id.img_envision_aavishkaar);
+		imgAavishkaar.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent myIntent = new Intent(Initiatives.this, Highlights_Aavishkaar.class);
+				Initiatives.this.startActivity(myIntent);
+			}
+		});
+		
+		ImageView imgInterface = (ImageView)findViewById(R.id.img_envision_interface);
+		imgInterface.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent myIntent = new Intent(Initiatives.this, Highlights_Interface.class);
+				Initiatives.this.startActivity(myIntent);
+			}
+		});
+		
+		ImageView imgIDP = (ImageView)findViewById(R.id.img_envision_idp);
+		imgIDP.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent myIntent = new Intent(Initiatives.this, Highlights_IDP.class);
+				Initiatives.this.startActivity(myIntent);
+			}
+		});
+		
 
 	}
 }

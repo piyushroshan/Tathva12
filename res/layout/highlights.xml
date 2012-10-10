@@ -35,8 +35,10 @@
              <TextView android:textSize="20dp" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView1" android:text="Envision"></TextView>
              <HorizontalScrollView android:id="@+id/horizontalScrollView1" android:layout_height="wrap_content" android:scrollbarAlwaysDrawHorizontalTrack="false" android:layout_width="wrap_content" android:scrollbars="none">
                  <LinearLayout android:id="@+id/linearLayout5" android:orientation="horizontal" android:layout_height="match_parent" android:layout_width="match_parent">
-                     <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/srishti1" android:layout_width="wrap_content" android:id="@+id/img_envision_shristi"></ImageView>
+                     <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/idp1" android:layout_width="wrap_content" android:id="@+id/img_envision_idp"></ImageView>
                      <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/jigyasa" android:layout_width="wrap_content" android:id="@+id/img_envision_jigyasa"></ImageView>
+                     <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/aavishkaar" android:layout_width="wrap_content" android:id="@+id/img_envision_aavishkaar"></ImageView>
+                     <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/interface1" android:layout_width="wrap_content" android:id="@+id/img_envision_interface"></ImageView>
                      <ImageView android:paddingRight="5dp"  android:layout_height="wrap_content" android:src="@drawable/youngengineer1" android:layout_width="wrap_content" android:id="@+id/img_envision_young_engineer"></ImageView>
                  </LinearLayout>
              </HorizontalScrollView>
