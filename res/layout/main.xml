@@ -8,11 +8,12 @@
    
    
 
-    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:background="#000000" android:layout_height="wrap_content">
                <ImageView
             android:id="@+id/image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_weight="0.08"
             android:scaleType="fitStart"
             android:src="@drawable/img" >
@@ -28,6 +29,7 @@
         <TextView android:text="Highlights"  android:clickable="true" android:textSize="22dp" android:id="@+id/textmainH" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.15"></TextView>
         <TextView android:text="Initiatives"  android:clickable="true" android:textSize="22dp" android:id="@+id/textmainI" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.18"></TextView>
         <TextView android:text="Help"  android:clickable="true" android:textSize="22dp" android:id="@+id/textmainHelp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.11"></TextView>
+        <TextView android:text="Update"  android:clickable="true" android:textSize="22dp" android:id="@+id/textmainUpdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.11"></TextView>
     </LinearLayout>
 
  <TextView
@@ -41,7 +43,7 @@
      android:marqueeRepeatLimit="marquee_forever"
      android:maxLines="1"
      android:scrollHorizontally="true"
-     android:text="  Online registrations are welcome. "
+     android:text="  Online registrations are welcome. Visit www.tathva.org/2012/ to register. "
      android:textColor="#ffffff" />
 
 </LinearLayout>

@@ -8,8 +8,8 @@
     android:weightSum="0">
    
    
-    <LinearLayout android:id="@+id/linearLayout_robo_coll_outer" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <ImageView android:id="@+id/image_robo_collision_course_outer" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
+    <LinearLayout android:id="@+id/linearLayout_robo_coll_outer" android:background="#000000" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image_robo_collision_course_outer" android:layout_height="wrap_content" android:src="@drawable/img"  android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
     </LinearLayout>
     <TabHost 
     android:id="@+id/tabhost_robo_collision_course"

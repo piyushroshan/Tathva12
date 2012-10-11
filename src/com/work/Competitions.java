@@ -225,7 +225,7 @@ public class Competitions extends Activity {
 			
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Competitions.this, EE_Mouse_Drive.class);
+				Intent myIntent = new Intent(Competitions.this, EE_Accelerobotx.class);
 				Competitions.this.startActivity(myIntent);
 			}
 		});
@@ -250,7 +250,7 @@ public class Competitions extends Activity {
 			
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Competitions.this, EC_Sonic.class);
+				Intent myIntent = new Intent(Competitions.this, EC_AnalogIQ.class);
 				Competitions.this.startActivity(myIntent);
 			}
 		});

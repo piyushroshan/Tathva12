@@ -89,5 +89,8 @@
 	<string name="app_help_contacts">Contacts</string>
 	<string name="app_help_reach_us">Reach Us</string>
 	<string name="app_help_info">Information</string>
+	<string name="app_update_tathva">Update Tathva</string>
+	<string name="app_androidaboutme">AndroidAboutME</string>
+	<string name="app_tets_update">Test Update</string>
 </resources>
 

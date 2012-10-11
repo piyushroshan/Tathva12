@@ -7,9 +7,17 @@
      android:background="#00688B"
     android:weightSum="1">
     
-    <LinearLayout android:id="@+id/linearLayout_workshop_automotive" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <ImageView android:id="@+id/image" android:layout_height="wrap_content" android:src="@drawable/img" android:layout_weight="0.08" android:layout_width="wrap_content"></ImageView>
-    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout_workshop_automotive" android:layout_width="fill_parent" android:background="#000000" android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.08"
+            android:scaleType="fitStart"
+            android:src="@drawable/img" >
+ </ImageView>    </LinearLayout>
     <TabHost 
     android:id="@+id/tabhost_workshop_automotive"
     android:layout_width="fill_parent"

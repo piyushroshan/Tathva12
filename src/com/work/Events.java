@@ -227,7 +227,7 @@ public class Events extends Activity {
 			 
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Events.this, EE_Mouse_Drive.class);
+				Intent myIntent = new Intent(Events.this, EE_Accelerobotx.class);
 				Events.this.startActivity(myIntent);
 			}
 		});
@@ -254,7 +254,7 @@ public class Events extends Activity {
 			 
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Events.this, EC_Sonic.class);
+				Intent myIntent = new Intent(Events.this, EC_AnalogIQ.class);
 				Events.this.startActivity(myIntent);
 			}
 		});

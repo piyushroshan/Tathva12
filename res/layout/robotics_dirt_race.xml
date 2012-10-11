@@ -8,11 +8,12 @@
     android:weightSum="0">
    
    
-    <LinearLayout android:id="@+id/linearLayouttrans" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/linearLayouttrans" android:layout_width="fill_parent" android:background="#000000" android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_weight="0.08"
             android:scaleType="fitStart"
             android:src="@drawable/img" >
@@ -74,10 +75,11 @@
             
             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_robo_dir_arena" android:layout_height="match_parent" android:orientation="vertical">
                	<ScrollView android:id="@+id/scrollView_robo_dirt_arena" android:layout_width="match_parent" android:layout_height="wrap_content">
-                    <LinearLayout android:id="@+id/linearLayout_robo_dirt_arena" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:id="@+id/linearLayout_robo_dirt_arena" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
                    
                	 <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransContact" android:text="1.The actual arena will be displayed only at the venue.\n2.The bot may use any shortcut it finds in the racecourse, but it must complete all the obstacles.\n3.Different terrains like concrete, sand, soil, gravel, glass, wood, etc. will be used in the track.\n4.Two minutes preparatory time will be given to the teams before the start to study the arena and devise game-play strategies.\n5.There may be bridges, inclined planes, wedges, death wells, rotating platforms, and many more surprise elements.\n6.Final aim is to reach the finish line before the other bots.\n7.The actual arena may or may not have the above mentioned elements.\n8.Apart from these, the arena may hold any other such contrivances which will be revealed only at the venue."
                  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+               	 <ImageView android:layout_height="wrap_content" android:src="@drawable/dirtraces_arena" android:layout_width="wrap_content" android:id="@+id/text_robo_mini_mouse_arena" > </ImageView>
                  </LinearLayout>
                  </ScrollView>
             </LinearLayout>

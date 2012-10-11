@@ -78,6 +78,15 @@ public class Tathva extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Intent myIntent = new Intent(Tathva.this, Help.class);
+				Tathva.this.startActivity(myIntent); 
+			}
+    	});
+    	TextView tvUpdate = (TextView)findViewById(R.id.textmainUpdate);
+    	tvUpdate.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent myIntent = new Intent(Tathva.this, AndroidAboutMe.class);
 				Tathva.this.startActivity(myIntent);
 			}
 		});

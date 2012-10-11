@@ -21,84 +21,84 @@ import android.widget.ImageView;
 
 
 public class Test_Update extends Activity {
-    private Handler mHandler;
+	private Handler mHandler;
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-        mHandler = new Handler();
-        
-        /* Get Last Update Time from Preferences */
-        SharedPreferences prefs = getPreferences(0);
-        long lastUpdateTime = prefs.getLong("lastUpdateTime", 0);
-        
-        /* Should Activity Check for Updates Now? */
-        if ((lastUpdateTime + (24 * 60 * 60 * 1000)) < System.currentTimeMillis()) {
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
+		mHandler = new Handler();
 
-            /* Save current timestamp for next Check*/
-            lastUpdateTime = System.currentTimeMillis();            
-            SharedPreferences.Editor editor = getPreferences(0).edit();
-            editor.putLong("lastUpdateTime", lastUpdateTime);
-            editor.commit();        
+		/* Get Last Update Time from Preferences */
+		SharedPreferences prefs = getPreferences(0);
+		long lastUpdateTime = prefs.getLong("lastUpdateTime", 0);
 
-            /* Start Update */            
-            checkUpdate.start();
-        }
-    }
-    
-    /* This Thread checks for Updates in the Background */
-    private Thread checkUpdate = new Thread() {
-        public void run() {
-            try {
-                URL updateURL = new URL("http://athena.nitc.ac.in/~roshan_bcs10/");                
-                URLConnection conn = updateURL.openConnection(); 
-                InputStream is = conn.getInputStream();
-                BufferedInputStream bis = new BufferedInputStream(is);
-                ByteArrayBuffer baf = new ByteArrayBuffer(50);
-                
-                int current = 0;
-                while((current = bis.read()) != -1){
-                     baf.append((byte)current);
-                }
+		/* Should Activity Check for Updates Now? */
+		if ((lastUpdateTime + (10*1)) < System.currentTimeMillis()) {
 
-                /* Convert the Bytes read to a String. */
-                final String s = new String(baf.toByteArray());         
-                
-                /* Get current Version Number */
-                int curVersion = getPackageManager().getPackageInfo("your.app.id", 0).versionCode;
-                int newVersion = Integer.valueOf(s);
-                
-                /* Is a higher version than the current already out? */
-                if (newVersion > curVersion) {
-                    /* Post a Handler for the UI to pick up and open the Dialog */
-                    mHandler.post(showUpdate);
-                }                
-            } catch (Exception e) {
-            }
-        }
-    };
+			/* Save current timestamp for next Check*/
+			lastUpdateTime = System.currentTimeMillis();            
+			SharedPreferences.Editor editor = getPreferences(0).edit();
+			editor.putLong("lastUpdateTime", lastUpdateTime);
+			editor.commit();        
 
-    /* This Runnable creates a Dialog and asks the user to open the Market */ 
-    private Runnable showUpdate = new Runnable(){
-           public void run(){
-            new AlertDialog.Builder(Test_Update.this)
-            .setIcon(R.drawable.icon)
-            .setTitle("Update Available")
-            .setMessage("An update for is available!\\n\\nOpen Android Market and see the details?")
-            .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int whichButton) {
-                            /* User clicked OK so do some stuff */
-                            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://search?q=pname:your.app.id"));
-                            startActivity(intent);
-                    }
-            })
-            .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int whichButton) {
-                            /* User clicked Cancel */
-                    }
-            })
-            .show();
-           }
-    };    
+			/* Start Update */            
+			checkUpdate.start();
+		}
+	}
+
+	/* This Thread checks for Updates in the Background */
+	private Thread checkUpdate = new Thread() {
+		public void run() {
+			try {
+				URL updateURL = new URL("http://127.0.0.1/tathva/tathva.txt");                
+				URLConnection conn = updateURL.openConnection(); 
+				InputStream is = conn.getInputStream();
+				BufferedInputStream bis = new BufferedInputStream(is);
+				ByteArrayBuffer baf = new ByteArrayBuffer(50);
+
+				int current = 0;
+				while((current = bis.read()) != -1){
+					baf.append((byte)current);
+				}
+
+				/* Convert the Bytes read to a String. */
+				final String s = new String(baf.toByteArray());         
+
+				/* Get current Version Number */
+				int curVersion = getPackageManager().getPackageInfo("your.app.id", 0).versionCode;
+				int newVersion = Integer.valueOf(s);
+
+				/* Is a higher version than the current already out? */
+				if (newVersion > curVersion) {
+					/* Post a Handler for the UI to pick up and open the Dialog */
+					mHandler.post(showUpdate);
+				}                
+			} catch (Exception e) {
+			}
+		}
+	};
+
+	/* This Runnable creates a Dialog and asks the user to open the Market */ 
+	private Runnable showUpdate = new Runnable(){
+		public void run(){
+			new AlertDialog.Builder(Test_Update.this)
+			.setIcon(R.drawable.icon)
+			.setTitle("Update Available")
+			.setMessage("An update for is available!\\n\\nOpen Android Market and see the details?")
+			.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog, int whichButton) {
+					/* User clicked OK so do some stuff */
+					Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://127.0.0.1/tathva/Tathva2012.apk"));
+					startActivity(intent);
+				}
+			})
+			.setNegativeButton("No", new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog, int whichButton) {
+					/* User clicked Cancel */
+				}
+			})
+			.show();
+		}
+	};    
 }
