@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="com.work"
       android:versionName="1.0"
-    android:versionCode="3">
+    android:versionCode="1">
 <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="10"></uses-sdk>
 <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
 <uses-permission android:name="android.permission.INTERNET"></uses-permission>

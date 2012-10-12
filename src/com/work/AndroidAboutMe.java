@@ -62,24 +62,20 @@ public class AndroidAboutMe extends Activity {
 					break;
 				} 
 			}
+			version = Integer.valueOf(testline);
+			myVersion = Integer.valueOf(getPackageManager().getPackageInfo(getPackageName(), 0).versionCode);
+			if (version !=null && myVersion !=null && myVersion < version )
+			{
+				Toast.makeText(AndroidAboutMe.this.getApplicationContext(),"A new version is available\n Cick on update to download now.",
+						Toast.LENGTH_SHORT).show();
+			}
+				
 		} catch(Exception e){
 			Log.i(myTag,e.toString());
 			Toast.makeText(AndroidAboutMe.this.getApplicationContext(), e.toString(),
-					Toast.LENGTH_LONG).show();
+					Toast.LENGTH_SHORT).show();
 		} 
 		Log.i(myTag,testline);	
-		try{
-			version = Integer.valueOf(testline);
-		}catch(Exception e)
-		{
-
-		};
-		try {
-			myVersion = Integer.valueOf(getPackageManager().getPackageInfo(getPackageName(), 0).versionCode);
-		} catch (NameNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 
 
@@ -105,8 +101,10 @@ public class AndroidAboutMe extends Activity {
 						HttpURLConnection c = (HttpURLConnection) url.openConnection();
 						c.setRequestMethod("GET");
 						c.setDoOutput(true);
+						c.setConnectTimeout(30000);
 						c.connect();
-
+						
+						final int fileLength = c.getContentLength();
 						String PATH = Environment.getExternalStorageDirectory()
 								+ "/download/";
 						File file = new File(PATH);
@@ -124,8 +122,12 @@ public class AndroidAboutMe extends Activity {
 
 						byte[] buffer = new byte[1024];
 						int len1 = 0;
+						int count = 0;
+						int percent = 0;
 						while ((len1 = is.read(buffer)) != -1) {
 							fos.write(buffer, 0, len1);
+							count=count+len1;
+							
 						}
 						fos.close();
 						is.close();// .apk is download to sdcard in download file
@@ -143,7 +145,7 @@ public class AndroidAboutMe extends Activity {
 						AndroidAboutMe.this.startActivity(intent);
 					} catch (Exception e) {
 						Toast.makeText(AndroidAboutMe.this.getApplicationContext(), "Update error!\n"+e.toString(),
-								Toast.LENGTH_LONG).show();
+								Toast.LENGTH_SHORT).show();
 						Log.i(myTag,e.toString());
 					}
 					dialog.cancel();
@@ -186,7 +188,7 @@ public class AndroidAboutMe extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		Toast.makeText(AndroidAboutMe.this.getApplicationContext(), "Checking for new version",
-				Toast.LENGTH_LONG).show();
+				Toast.LENGTH_SHORT).show();
 		checkVersion();
 		setContentView(R.layout.version);
 		Button buttonAboutMe = (Button)findViewById(R.id.aboutme);

@@ -35,14 +35,12 @@ public class Schedule extends Activity {
 		//startNextMatchingActivity(new Intent(Intent.ACTION_VIEW, uri));
 		myTag="Log";
 		Log.i(myTag,"Download Starting");	
-		String apkurl = "http://tathva.org/2012/files/t12_schedule.pdf";
+		final String apkurl = "http://tathva.org/2012/files/t12_schedule.pdf";
 		final String outputFileName = "schedule.pdf";
 		try{
-			URL url = new URL(apkurl);
-			final HttpURLConnection c = (HttpURLConnection) url.openConnection();
-			c.setRequestMethod("GET");
-			c.setDoOutput(true);
-			c.connect();
+
+
+
 			Log.i(myTag,"Download began");
 			String PATH = Environment.getExternalStorageDirectory()
 					+ "/download/";
@@ -56,20 +54,38 @@ public class Schedule extends Activity {
 				.setPositiveButton("OK",
 						new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int id) {
-						Log.i(myTag,"Update");	
-						outputFile.delete();
-						Log.i(myTag,"Delete");	
-						FileOutputStream fos;
-							try {
-								fos = new FileOutputStream(outputFile);
+						URL url;
+						dialog.cancel();
+						Toast.makeText(Schedule.this.getApplicationContext(), "Please wait while file is being downloaded",
+								Toast.LENGTH_LONG).show();
+						try {
+							
+							url = new URL(apkurl);
+							
+							
+							HttpURLConnection c = (HttpURLConnection) url.openConnection();
+							c.setRequestMethod("GET");
+							c.setDoOutput(true);
+							c.connect();
+							final int fileLength = c.getContentLength();
+							Log.i(myTag,"Update");	
+							outputFile.delete();
+							Log.i(myTag,"Delete");	
+							FileOutputStream fos;
+
+							fos = new FileOutputStream(outputFile);
 
 							Log.i(myTag,"Update file");	
 
 							InputStream is = c.getInputStream();
 							byte[] buffer = new byte[1024];
 							int len1 = 0;
+							int count = 0;
+							int percent = 0;
 							while ((len1 = is.read(buffer)) != -1) {
 								fos.write(buffer, 0, len1);
+								count=count+len1;
+								percent=count*100/fileLength;
 							}
 							fos.close();
 							is.close();// .apk is download to sdcard in download file
@@ -77,6 +93,16 @@ public class Schedule extends Activity {
 							//       Toast.LENGTH_LONG).show();
 							// install the .apk
 							Log.i(myTag,"Downloaded");	
+
+						} catch (Exception e) {
+							// TODO Auto-generated catch block
+							dialog.cancel();
+							Toast.makeText(Schedule.this.getApplicationContext(), "Update error!\n"+e.toString(),
+									Toast.LENGTH_SHORT).show();
+						}
+						finally
+						{
+							
 							Intent intent = new Intent(Intent.ACTION_VIEW);
 							intent.setDataAndType(Uri.fromFile(new File(Environment
 									.getExternalStorageDirectory()
@@ -85,30 +111,40 @@ public class Schedule extends Activity {
 									"application/pdf");
 							intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 							Schedule.this.startActivity(intent);
-							} catch (Exception e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							}
+						}
 
-							dialog.cancel();
+						
 					}
 				})
-					.setNegativeButton("Cancel",
-							new DialogInterface.OnClickListener() {
-						public void onClick(DialogInterface dialog, int id) {
+				.setNegativeButton("Cancel",
+						new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog, int id) {
+						Intent intent = new Intent(Intent.ACTION_VIEW);
+						intent.setDataAndType(Uri.fromFile(new File(Environment
+								.getExternalStorageDirectory()
+								+ "/download/"
+								+ outputFileName)),
+								"application/pdf");
+						intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+						Schedule.this.startActivity(intent);
+						dialog.cancel();
+					}
+				});
 
-
-						}
-					});
-			
 				AlertDialog alertDialog = builder.create();
 				alertDialog.show();
-
+				
 			}
 			else
 			{
 				FileOutputStream fos;
 				try {
+					URL url = new URL(apkurl);
+					final HttpURLConnection c = (HttpURLConnection) url.openConnection();
+					c.setRequestMethod("GET");
+					c.setDoOutput(true);
+					c.setConnectTimeout(30000);
+					c.connect();
 					fos = new FileOutputStream(outputFile);
 
 					Log.i(myTag,"Update file");	
@@ -135,7 +171,8 @@ public class Schedule extends Activity {
 					Schedule.this.startActivity(intent);
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
+					Toast.makeText(Schedule.this.getApplicationContext(), "Update error!\n"+e.toString(),
+							Toast.LENGTH_SHORT).show();
 				}
 
 
