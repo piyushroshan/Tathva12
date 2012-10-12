@@ -72,6 +72,16 @@ public class Tathva extends Activity {
 			}
 		});
     	
+    	TextView tvSchedule = (TextView)findViewById(R.id.textmainSchedule);
+    	tvSchedule.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent myIntent = new Intent(Tathva.this, Schedule.class);
+				Tathva.this.startActivity(myIntent);
+			}
+		});
+    	
     	TextView tvHelp = (TextView)findViewById(R.id.textmainHelp);
     	tvHelp.setOnClickListener(new OnClickListener() {
 			

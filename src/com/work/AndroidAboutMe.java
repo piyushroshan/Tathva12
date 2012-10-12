@@ -22,16 +22,16 @@ public class AndroidAboutMe extends Activity {
 	Integer myVersion;
 	String myTag;
 	private boolean alreadyDone;
-	
+
 	Handler handler;
 
 	public void checkVersion()
 	{
 		String nextLine;
 		String testline = new String("");
-		version=1;
+		//version=;
 		URL url = null;
-		
+
 
 		URLConnection urlConn = null;
 		InputStreamReader  inStream = null;
@@ -64,15 +64,15 @@ public class AndroidAboutMe extends Activity {
 			}
 		} catch(Exception e){
 			Log.i(myTag,e.toString());
-			Toast.makeText(AndroidAboutMe.this.getApplicationContext(), "Could not connect",
-			          Toast.LENGTH_LONG).show();
+			Toast.makeText(AndroidAboutMe.this.getApplicationContext(), e.toString(),
+					Toast.LENGTH_LONG).show();
 		} 
 		Log.i(myTag,testline);	
 		try{
-		version = Integer.valueOf(testline);
+			version = Integer.valueOf(testline);
 		}catch(Exception e)
 		{
-			
+
 		};
 		try {
 			myVersion = Integer.valueOf(getPackageManager().getPackageInfo(getPackageName(), 0).versionCode);
@@ -87,7 +87,7 @@ public class AndroidAboutMe extends Activity {
 	public void handleMessage() 
 	{  
 		Log.i(myTag, myVersion + "   " + version);
-		if(version!=null || myVersion < version) 
+		if(version!=null && myVersion < version) 
 		{
 			AlertDialog.Builder builder = new AlertDialog.Builder(AndroidAboutMe.this);
 			builder.setMessage("There is a newer version. Would you like to install it now?")
@@ -99,53 +99,53 @@ public class AndroidAboutMe extends Activity {
 					//Uri uri = "http://athena.nitc.ac.in/~roshan_bcs10/tathva/Tathva2012.apk";
 					//startNextMatchingActivity(new Intent(Intent.ACTION_VIEW, uri));
 					String apkurl = "http://athena.nitc.ac.in/~roshan_bcs10/tathva/Tathva2012.apk";
-				    String outputFileName = "Tathva2012.apk.apk";
-				    try {
-				      URL url = new URL(apkurl);
-				      HttpURLConnection c = (HttpURLConnection) url.openConnection();
-				      c.setRequestMethod("GET");
-				      c.setDoOutput(true);
-				      c.connect();
+					String outputFileName = "Tathva2012.apk.apk";
+					try {
+						URL url = new URL(apkurl);
+						HttpURLConnection c = (HttpURLConnection) url.openConnection();
+						c.setRequestMethod("GET");
+						c.setDoOutput(true);
+						c.connect();
 
-				      String PATH = Environment.getExternalStorageDirectory()
-				          + "/download/";
-				      File file = new File(PATH);
-				      file.mkdirs();
-				      File outputFile = new File(file, outputFileName);
-				      if(outputFile.exists()){
-			                outputFile.delete();
-			                Log.i(myTag,"Delete");	
-			            }
-				      Log.i(myTag,"Update");	
-				  
-				      FileOutputStream fos = new FileOutputStream(outputFile);
-				      Log.i(myTag,"Update file");	
-				      InputStream is = c.getInputStream();
+						String PATH = Environment.getExternalStorageDirectory()
+								+ "/download/";
+						File file = new File(PATH);
+						file.mkdirs();
+						File outputFile = new File(file, outputFileName);
+						if(outputFile.exists()){
+							outputFile.delete();
+							Log.i(myTag,"Delete");	
+						}
+						Log.i(myTag,"Update");	
 
-				      byte[] buffer = new byte[1024];
-				      int len1 = 0;
-				      while ((len1 = is.read(buffer)) != -1) {
-				        fos.write(buffer, 0, len1);
-				      }
-				      fos.close();
-				      is.close();// .apk is download to sdcard in download file
-				      //Toast.makeText(AndroidAboutMe.this.getApplicationContext(), "Downloaded",
-					   //       Toast.LENGTH_LONG).show();
-				      // install the .apk
-				      Log.i(myTag,"Downloaded");	
-				      Intent intent = new Intent(Intent.ACTION_VIEW);
-				      intent.setDataAndType(Uri.fromFile(new File(Environment
-				          .getExternalStorageDirectory()
-				          + "/download/"
-				          + outputFileName)),
-				          "application/vnd.android.package-archive");
-				     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-				     AndroidAboutMe.this.startActivity(intent);
-				    } catch (Exception e) {
-				      Toast.makeText(AndroidAboutMe.this.getApplicationContext(), "Update error!",
-				          Toast.LENGTH_LONG).show();
-				      Log.i(myTag,e.toString());
-				    }
+						FileOutputStream fos = new FileOutputStream(outputFile);
+						Log.i(myTag,"Update file");	
+						InputStream is = c.getInputStream();
+
+						byte[] buffer = new byte[1024];
+						int len1 = 0;
+						while ((len1 = is.read(buffer)) != -1) {
+							fos.write(buffer, 0, len1);
+						}
+						fos.close();
+						is.close();// .apk is download to sdcard in download file
+						//Toast.makeText(AndroidAboutMe.this.getApplicationContext(), "Downloaded",
+						//       Toast.LENGTH_LONG).show();
+						// install the .apk
+						Log.i(myTag,"Downloaded");	
+						Intent intent = new Intent(Intent.ACTION_VIEW);
+						intent.setDataAndType(Uri.fromFile(new File(Environment
+								.getExternalStorageDirectory()
+								+ "/download/"
+								+ outputFileName)),
+								"application/vnd.android.package-archive");
+						intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+						AndroidAboutMe.this.startActivity(intent);
+					} catch (Exception e) {
+						Toast.makeText(AndroidAboutMe.this.getApplicationContext(), "Update error!\n"+e.toString(),
+								Toast.LENGTH_LONG).show();
+						Log.i(myTag,e.toString());
+					}
 					dialog.cancel();
 				}
 			})
@@ -175,10 +175,10 @@ public class AndroidAboutMe extends Activity {
 			AlertDialog alertDialog = builder.create();
 			alertDialog.show();
 		}
-			
+
 	}
 
-	
+
 
 
 
@@ -186,10 +186,11 @@ public class AndroidAboutMe extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		Toast.makeText(AndroidAboutMe.this.getApplicationContext(), "Checking for new version",
-		          Toast.LENGTH_LONG).show();
+				Toast.LENGTH_LONG).show();
+		checkVersion();
 		setContentView(R.layout.version);
 		Button buttonAboutMe = (Button)findViewById(R.id.aboutme);
-		
+
 
 		buttonAboutMe.setOnClickListener(new OnClickListener(){
 			public void onClick(View v) {
@@ -214,12 +215,12 @@ public class AndroidAboutMe extends Activity {
 						new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int which) {}
 				}).show();
-				
+
 			}});
-		
-		
+
+
 		Button buttonUpdates = (Button)findViewById(R.id.update);
-		
+
 
 		buttonUpdates.setOnClickListener(new OnClickListener(){
 			public void onClick(View v) {

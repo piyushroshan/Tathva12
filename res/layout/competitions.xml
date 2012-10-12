@@ -6,17 +6,7 @@
     android:layout_height="fill_parent"
     android:weightSum="0">
    
-   
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:background="#00688B"
-    android:layout_height="fill_parent"
-    android:weightSum="1">
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:background="#3b5999"
-    android:layout_height="fill_parent"
-    android:weightSum="1">
+
     <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:background="#000000" android:layout_height="wrap_content">
        <ImageView
             android:id="@+id/image"
@@ -74,7 +64,14 @@
                  <LinearLayout android:id="@+id/linearLayout14" android:orientation="horizontal" android:layout_height="match_parent" android:layout_width="match_parent">
                      <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/coil1" android:layout_width="wrap_content" android:id="@+id/imgCoil"></ImageView>
                      <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/puretric1" android:layout_width="wrap_content" android:id="@+id/imgpure"></ImageView>
-                     <ImageView android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/mouse2" android:layout_width="wrap_content" android:id="@+id/imgMouse"></ImageView>
+
+                     <ImageView
+                         android:id="@+id/imgMouse"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:paddingRight="5dp"
+                         android:src="@drawable/accelerobotix1" >
+</ImageView>
                  </LinearLayout>
              </HorizontalScrollView>
          </LinearLayout>
