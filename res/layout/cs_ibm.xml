@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:background="#3b5999"
+    android:layout_height="fill_parent"
+    android:weightSum="0">
+   
+    <LinearLayout android:id="@+id/linearLayout_cs_ibm" android:layout_width="fill_parent" android:background="#000000" android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.08"
+            android:scaleType="fitStart"
+            android:src="@drawable/img" >
+
+		</ImageView>
+    </LinearLayout>
+    <TabHost 
+    android:id="@+id/tabhost_cs_ibm"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
+        <HorizontalScrollView  android:id="@+id/horizontalScrollView1" 
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <TabWidget
+        
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            />
+            </LinearLayout>
+    </HorizontalScrollView>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_cs_ibm_intro" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ibm_title" android:text ="Tux of War" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="Linux kernel, the most successful open-source product, is made virtualization capable with a simple kernel module called Kernel-based Virtual Machine (KVM). KVM is perceived as a very promising hypervisor by users and vendors and hence going to be a very prominent candidate for virtualization and cloud in the near future. This contest is conducted by IBM to help participants improve their Linux and KVM skills." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_cs_ibm_tutorial" android:layout_height="match_parent" android:orientation="vertical">
+               <ScrollView android:id="@+id/scrollView_cs_ibm_tutorial" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_cs_ibm_tutorial" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView2" android:text="Participants are directed to get Fedora 17 to a VT\u00adenabled x86 system and try out KVM. You\ncan get the iso images for that from the following links:\n1.http://download.fedoraproject.org/pub/fedora/linux/releases/17/Live/i686/Fedora\u00ad17\u00adi686\u00adLiv\ne\u00adDesktop.iso\n2.http://download.fedoraproject.org/pub/fedora/linux/releases/17/Fedora/i386/iso/Fedora\u00ad17\u00adi3\n86\u00adDVD.iso\nParticipants can try out following scenarios with Linux and KVM:\n\u25cf KVM setup\n\u25cf Create Virtual Machines\n\u25cf Start, shutdown, reboot VM\'s\n\u25cf Configure networking between host and guest.\n\u25cf Configure public bridge network\n\u25cf Able to browse internet or run applications on Virtual Machine.\n\u25cf Allocate CPU/Memory/Disk/Network resources\n\u25cf Use para virt drivers (virtio block, net etc.)\n\u25cf Live Migration of VMs across machines.\n\u25cf Listing domain stat information (domblkstat, cpustats, memstats etc.)\nYou are free to try to more advanced scenarios like dynamic attach/detach of resources,\nsnapshotting etc." 
+                 android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+                 
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_cs_ibm_phase1" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_cs_ibm_phase1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_cs_ibm_phase1" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_cs_ibm_phase1" android:text="Phase one will be conducted from 10:00am on 20-August-2012 and it will be a 30mins object oriented test focusing on hands-on experience with Linux and KVM virtualization using Fedora 17. It is conducted mainly to evaluate the participants\u2019 proficiency in Linux and Virtualization concepts.\n\nMaximum participants for this event are limited to 60 and if there is a higher participation demand for the event, students will be eliminated on a first come first serve basis. From this group, 10 students will be selected for Phase II."  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+                        <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_cs_ibm_phase2" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_cs_ibm_phase2" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_cs_ibm_phase2" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_cs_ibm_phase2" android:text="Phase II will be conducted from 2:00pm on 20-August-2012 it mainly evaluates problem solving and programming skills in Linux and Virtualization area. Participants will be given programming questions related to KVM during this round. Participants can use python scripts to solve given problems."  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+            
+            
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_cs_ibm_prizes" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_cs_ibm_prizes" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_cs_ibm_prizes" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_cs_ibm_prizes" android:text="First Prize : Laptop\nSecond Prize : iPad\nThird Prize : 1 TB HDD \nAll others selected to Phase-II will receive goodies." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            	
+                     
+            <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_cs_ibm_contact" android:layout_height="match_parent" android:orientation="vertical">
+                <ScrollView android:id="@+id/scrollView_cs_ibm_contact" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout_cs_ibm_contact" android:layout_width="match_parent" android:layout_height="match_parent">
+                        
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_cs_ibm_contact" android:text="Johns Paul\nEvent Manager\nPhone:+919497366617\nE-mail:ibmvirtualtux@tathva.org\n\nAkash K T\nEvent Manager\nPhone:+919447058761\nE-mail:ibmvirtualtux@tathva.org\n\nArjun Dev\nEvent Manager\nPhone:+918891152635\nE-mail:ibmvirtualtux@tathva.org" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            
+          </FrameLayout>
+            
+    </LinearLayout>
+    
+</TabHost>
+ </LinearLayout>

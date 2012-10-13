@@ -169,6 +169,18 @@ public class Competitions extends Activity {
 			}
 		});
 		
+		ImageView imgIBM= (ImageView)findViewById(R.id.imgIBM);
+		imgIBM.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				
+				Intent myIntent = new Intent(Competitions.this, CS_IBM.class);
+				Competitions.this.startActivity(myIntent);
+				
+			}
+		});
+		
 		
 		ImageView imgBef = (ImageView)findViewById(R.id.imgBef);
 		imgBef.setOnClickListener(new OnClickListener() {

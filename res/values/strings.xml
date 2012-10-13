@@ -93,5 +93,15 @@
 	<string name="app_androidaboutme">AndroidAboutME</string>
 	<string name="app_schedule">Schedule</string>
 	<string name="app_tets_update">Test Update</string>
+	<string name="app_lectures">Lectures</string>
+	<string name="app_nights">Nights</string>
+	<string name="app_interface">Interface</string>
+	<string name="app_wheels">Wheels</string>
+	<string name="app_idpp">IDP</string>
+	<string name="app_youngi">YI</string>
+	<string name="app_aavish">Aavishkaaar</string>
+	<string name="app_informals">Informals</string>
+	<string name="app_ibm">IBM</string>
+	
 </resources>
 

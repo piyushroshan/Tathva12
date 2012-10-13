@@ -85,7 +85,11 @@ public class AndroidAboutMe extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				new CheckVersion().execute("http://athena.nitc.ac.in/~roshan_bcs10/tathva/tathva.txt");
+				if(update == true)
 				new DownloadFileUrl().execute("http://athena.nitc.ac.in/~roshan_bcs10/tathva/Tathva2012.apk");
+				else
+					Toast.makeText(AndroidAboutMe.this.getApplicationContext(),"You have the latest version installed",
+							Toast.LENGTH_SHORT).show();
 			}});
 
 

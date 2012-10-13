@@ -111,6 +111,16 @@
 		<activity android:label="@string/app_androidaboutme" android:name="AndroidAboutMe"/>
 		<activity android:label="@string/app_schedule" android:name="Schedule"/>
 		<activity android:label="@string/app_tets_update" android:name="Test_Update"/>
+		<activity android:label="@string/app_lectures" android:name="Lectures"/>
+		<activity android:label="@string/app_nights" android:name="Nights"/>
+		<activity android:label="@string/app_interface" android:name="Highlights_Interfacee"/>
+		<activity android:label="@string/app_wheels" android:name="Highlights_Wheels"/>
+		<activity android:label="@string/app_idpp" android:name="Highlights_IDPP"/>
+		<activity android:label="@string/app_youngi" android:name="Highlights_YoungEn"/>
+		<activity android:label="@string/app_aavish" android:name="Highlights_Aavishkaaar"/>
+		<activity android:label="@string/app_informals" android:name="Highlights_Informals"/>
+		<activity android:label="@string/app_ibm" android:name="CS_IBM"/>
+		
     </application>
 </manifest>
 

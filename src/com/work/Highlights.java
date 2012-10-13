@@ -19,54 +19,25 @@ public class Highlights extends Activity {
 	
 	private void setControls()  {
 		
-		ImageView imgRaju = (ImageView)findViewById(R.id.img_lectures_raju);
-		imgRaju.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Highlights.this, Lectures_Raju.class);
-				Highlights.this.startActivity(myIntent);
-			}
-		});
-				
 		
-		ImageView imgArchana = (ImageView)findViewById(R.id.img_lectures_archana);
-		imgArchana.setOnClickListener(new OnClickListener() {
+		
+		
+		ImageView imgInformals = (ImageView)findViewById(R.id.img_informals);
+		imgInformals.setOnClickListener(new OnClickListener() {
 			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Highlights.this, Lectures_Archana.class);
-				Highlights.this.startActivity(myIntent);
-			}
-		});
-
-		ImageView imgShivathanu = (ImageView)findViewById(R.id.img_lectures_shivathanu);
-		imgShivathanu.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Highlights.this, Lectures_Shivathanu.class);
-				Highlights.this.startActivity(myIntent);
-			}
-		});
-			
-		ImageView imgMadhavan = (ImageView)findViewById(R.id.img_lectures_madhavan);
-		imgMadhavan.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Highlights.this, Lectures_Madhavan.class);
+				Intent myIntent = new Intent(Highlights.this, Highlights_Informals.class);
 				Highlights.this.startActivity(myIntent);
 			}
 		});
 		
-		
-		ImageView imgJigyasa = (ImageView)findViewById(R.id.img_envision_jigyasa);
+		ImageView imgJigyasa = (ImageView)findViewById(R.id.img_wheels);
 		imgJigyasa.setOnClickListener(new OnClickListener() {
 			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Highlights.this, Highlights_Jigyasa.class);
+				Intent myIntent = new Intent(Highlights.this, Highlights_Wheels.class);
 				Highlights.this.startActivity(myIntent);
 			}
 		});
@@ -76,7 +47,7 @@ public class Highlights extends Activity {
 			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Highlights.this, Highlights_Aavishkaar.class);
+				Intent myIntent = new Intent(Highlights.this, Highlights_Aavishkaaar.class);
 				Highlights.this.startActivity(myIntent);
 			}
 		});
@@ -86,7 +57,7 @@ public class Highlights extends Activity {
 			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Highlights.this, Highlights_Interface.class);
+				Intent myIntent = new Intent(Highlights.this, Highlights_Interfacee.class);
 				Highlights.this.startActivity(myIntent);
 			}
 		});
@@ -96,7 +67,7 @@ public class Highlights extends Activity {
 			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Highlights.this, Highlights_IDP.class);
+				Intent myIntent = new Intent(Highlights.this, Highlights_IDPP.class);
 				Highlights.this.startActivity(myIntent);
 			}
 		});
@@ -106,53 +77,12 @@ public class Highlights extends Activity {
 			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Highlights.this, Highlights_YI.class);
+				Intent myIntent = new Intent(Highlights.this, Highlights_YoungEn.class);
 				Highlights.this.startActivity(myIntent);
 			}
 		});
 		
 		
-		ImageView imgRahul = (ImageView)findViewById(R.id.img_nites_rahul_nambiar);
-		imgRahul.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Highlights.this, Nites_Rahul_Nambiar.class);
-				Highlights.this.startActivity(myIntent);
-			}
-		});
-		
-		
-		ImageView imgSuchithra = (ImageView)findViewById(R.id.img_nites_suchithra);
-		imgSuchithra.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Highlights.this, Nites_Suchithra.class);
-				Highlights.this.startActivity(myIntent);
-			}
-		});
-		
-
-		ImageView imgAcrobatics = (ImageView)findViewById(R.id.img_nites_acrobatics);
-		imgAcrobatics.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Highlights.this, Nites_Acrobatics.class);
-				Highlights.this.startActivity(myIntent);
-			}
-		});
-		
-		ImageView imgAgam = (ImageView)findViewById(R.id.img_nites_agam);
-		imgAgam.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Highlights.this, Nites_Agam.class);
-				Highlights.this.startActivity(myIntent);
-			}
-		});
 		
 
 
