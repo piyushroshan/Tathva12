@@ -72,6 +72,26 @@ public class Tathva extends Activity {
 			}
 		});
     	
+    	TextView tvLectures = (TextView)findViewById(R.id.textmainLe);
+    	tvLectures.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent myIntent = new Intent(Tathva.this, Lectures.class);
+				Tathva.this.startActivity(myIntent);
+			}
+		});
+    	
+    	TextView tvNights = (TextView)findViewById(R.id.textmainNi);
+    	tvNights.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent myIntent = new Intent(Tathva.this, Nights.class);
+				Tathva.this.startActivity(myIntent);
+			}
+		});
+    	
     	TextView tvSchedule = (TextView)findViewById(R.id.textmainSchedule);
     	tvSchedule.setOnClickListener(new OnClickListener() {
 			

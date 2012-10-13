@@ -1,14 +1,7 @@
 package com.work;
-
-import java.io.*;
-import java.net.*;
-
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
+import android.app.Dialog;
 import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager.NameNotFoundException;
 import android.net.Uri;
 import android.os.*;
 import android.util.Log;
@@ -16,166 +9,60 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 import android.view.View.OnClickListener;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.os.AsyncTask;
+import android.os.Environment;
 
 public class Schedule extends Activity {
 	Integer version;
 	Integer myVersion;
 	String myTag;
-	private boolean alreadyDone;
+	Button btnShowProgress;
+	private final int progress_bar_type = 0;
+	private ProgressDialog pDialog;
+	final String outputFileName = "schedule.pdf";
 
-	Handler handler;
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.schedule);
+		String PATH = Environment.getExternalStorageDirectory()+ "/download/";
+		File file = new File(PATH);
+		file.mkdirs();
+		File outputFile = new File(file , outputFileName);
 
 
-
-
-
-	public void handleMessageDownload() 
-	{  
-		//Uri uri = "http://athena.nitc.ac.in/~roshan_bcs10/tathva/Tathva2012.apk";
-		//startNextMatchingActivity(new Intent(Intent.ACTION_VIEW, uri));
-		myTag="Log";
-		Log.i(myTag,"Download Starting");	
-		final String apkurl = "http://tathva.org/2012/files/t12_schedule.pdf";
-		final String outputFileName = "schedule.pdf";
+		Button buttonSchedule = (Button)findViewById(R.id.schedulebutton);
+		btnShowProgress = (Button) findViewById(R.id.schedulebutton);
+		final Button btnswitch = (Button) findViewById(R.id.button1);
 		try{
-
-
-
-			Log.i(myTag,"Download began");
-			String PATH = Environment.getExternalStorageDirectory()
-					+ "/download/";
-			File file = new File(PATH);
-			file.mkdirs();
-			final File outputFile = new File(file, outputFileName);
-			if(outputFile.exists()){
-				AlertDialog.Builder builder = new AlertDialog.Builder(Schedule.this);
-
-				builder.setMessage("File Already exists.\n Do you want to download a new version")
-				.setPositiveButton("OK",
-						new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog, int id) {
-						URL url;
-						dialog.cancel();
-						Toast.makeText(Schedule.this.getApplicationContext(), "Please wait while file is being downloaded",
-								Toast.LENGTH_LONG).show();
-						try {
-							
-							url = new URL(apkurl);
-							
-							
-							HttpURLConnection c = (HttpURLConnection) url.openConnection();
-							c.setRequestMethod("GET");
-							c.setDoOutput(true);
-							c.connect();
-							final int fileLength = c.getContentLength();
-							Log.i(myTag,"Update");	
-							outputFile.delete();
-							Log.i(myTag,"Delete");	
-							FileOutputStream fos;
-
-							fos = new FileOutputStream(outputFile);
-
-							Log.i(myTag,"Update file");	
-
-							InputStream is = c.getInputStream();
-							byte[] buffer = new byte[1024];
-							int len1 = 0;
-							int count = 0;
-							int percent = 0;
-							while ((len1 = is.read(buffer)) != -1) {
-								fos.write(buffer, 0, len1);
-								count=count+len1;
-								percent=count*100/fileLength;
-							}
-							fos.close();
-							is.close();// .apk is download to sdcard in download file
-							//Toast.makeText(AndroidAboutMe.this.getApplicationContext(), "Downloaded",
-							//       Toast.LENGTH_LONG).show();
-							// install the .apk
-							Log.i(myTag,"Downloaded");	
-
-						} catch (Exception e) {
-							// TODO Auto-generated catch block
-							dialog.cancel();
-							Toast.makeText(Schedule.this.getApplicationContext(), "Update error!\n"+e.toString(),
-									Toast.LENGTH_SHORT).show();
-						}
-						finally
-						{
-							
-							Intent intent = new Intent(Intent.ACTION_VIEW);
-							intent.setDataAndType(Uri.fromFile(new File(Environment
-									.getExternalStorageDirectory()
-									+ "/download/"
-									+ outputFileName)),
-									"application/pdf");
-							intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-							Schedule.this.startActivity(intent);
-						}
-
-						
-					}
-				})
-				.setNegativeButton("Cancel",
-						new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog, int id) {
-						Intent intent = new Intent(Intent.ACTION_VIEW);
-						intent.setDataAndType(Uri.fromFile(new File(Environment
-								.getExternalStorageDirectory()
-								+ "/download/"
-								+ outputFileName)),
-								"application/pdf");
-						intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-						Schedule.this.startActivity(intent);
-						dialog.cancel();
-					}
-				});
-
-				AlertDialog alertDialog = builder.create();
-				alertDialog.show();
-				
-			}
+			if(outputFile.exists())
+				btnswitch.setText("Open Schedule");
 			else
-			{
-				FileOutputStream fos;
-				try {
-					URL url = new URL(apkurl);
-					final HttpURLConnection c = (HttpURLConnection) url.openConnection();
-					c.setRequestMethod("GET");
-					c.setDoOutput(true);
-					c.setConnectTimeout(30000);
-					c.connect();
-					fos = new FileOutputStream(outputFile);
+				btnswitch.setText("No schedule Found");
+		}catch(Exception e)
+		{
 
-					Log.i(myTag,"Update file");	
+		}
+		buttonSchedule.setOnClickListener(new OnClickListener(){
+			public void onClick(View v) {
+				// TODO Auto-generated method stu
+				final String apkurl = "http://tathva.org/2012/files/t12_schedule.pdf";
 
-					InputStream is = c.getInputStream();
-					byte[] buffer = new byte[1024];
-					int len1 = 0;
-					while ((len1 = is.read(buffer)) != -1) {
-						fos.write(buffer, 0, len1);
-					}
-					fos.close();
-					is.close();// .apk is download to sdcard in download file
-					//Toast.makeText(AndroidAboutMe.this.getApplicationContext(), "Downloaded",
-					//       Toast.LENGTH_LONG).show();
-					// install the .apk
-					Log.i(myTag,"Downloaded");	
-					Intent intent = new Intent(Intent.ACTION_VIEW);
-					intent.setDataAndType(Uri.fromFile(new File(Environment
-							.getExternalStorageDirectory()
-							+ "/download/"
-							+ outputFileName)),
-							"application/pdf");
-					intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-					Schedule.this.startActivity(intent);
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					Toast.makeText(Schedule.this.getApplicationContext(), "Update error!\n"+e.toString(),
-							Toast.LENGTH_SHORT).show();
-				}
+				new DownloadFileUrl().execute(apkurl);
 
-
+			}});
+		btnswitch.setOnClickListener(new OnClickListener(){
+			public void onClick(View v) {
+				if(btnswitch.getText()=="Open Schedule")
+				{
 				Intent intent = new Intent(Intent.ACTION_VIEW);
 				intent.setDataAndType(Uri.fromFile(new File(Environment
 						.getExternalStorageDirectory()
@@ -184,12 +71,15 @@ public class Schedule extends Activity {
 						"application/pdf");
 				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				Schedule.this.startActivity(intent);
+				}
+				else
+				{
+					Toast.makeText(Schedule.this.getApplicationContext(), "No schedule found!\n Click on &quot;Download Schedule &quot; to download. ",
+							Toast.LENGTH_SHORT).show();
+				}
 			}
-		}catch(Exception e)
-		{
-			Log.i(myTag,e.toString());	
+		});
 
-		}
 
 
 	}
@@ -200,20 +90,121 @@ public class Schedule extends Activity {
 
 
 	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.schedule);
-		Button buttonSchedule = (Button)findViewById(R.id.schedulebutton);
+	protected Dialog onCreateDialog(int id) {
+		switch (id) {
+		case progress_bar_type:
+			pDialog = new ProgressDialog(this);
+			pDialog.setMessage("Downloading file. Please wait...");
+			pDialog.setIndeterminate(false);
+			pDialog.setMax(100);
+			pDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+			pDialog.setCancelable(true);
+			pDialog.show();
+			return pDialog;
+		default:
+			return null;
+		}
+	}
 
 
-		buttonSchedule.setOnClickListener(new OnClickListener(){
-			public void onClick(View v) {
-				// TODO Auto-generated method stu
-				handleMessageDownload();
-			}});
+	public class DownloadFileUrl extends AsyncTask<String, String, String> {
+
+		Context context;
+		String urls;
+		String fileName = "schedule.pdf";
+
+		public void Download(String urls) {
+			this.urls=urls;
+
+		}
+
+		@Override
+		protected void onPreExecute() {
+			super.onPreExecute();
+			showDialog(progress_bar_type);
+		}
+
+		protected void onProgressUpdate(String... progress) {
+			// setting progress percentage
+			pDialog.setProgress(Integer.parseInt(progress[0]));
+		}
+
+		protected String doInBackground(String ... urls) {
+
+			String PATH = Environment.getExternalStorageDirectory()+ "/download/";
+			File file = new File(PATH);
+			file.mkdirs();
+			File outputFile = new File(file , fileName);
+			// //////////////////////
+			try {
+				URL url =new URL(urls[0]);
+				HttpURLConnection c = (HttpURLConnection) url.openConnection();
+				c.setRequestMethod("GET");
+				c.setDoOutput(true);
+				c.connect();
+				if (outputFile.exists())
+				{
+					outputFile.delete();
+				}
+
+				int lengthOfFile = c.getContentLength();
+				FileOutputStream fos = new FileOutputStream(outputFile);
+				InputStream is = c.getInputStream();
+
+				byte[] buffer = new byte[1024];
+				int len1 = 0;
+				int total=0;
+				int percent=0;
+				while ((len1 = is.read(buffer)) != -1) {
+					total+=len1;
+					fos.write(buffer, 0, len1);
+					percent=total*100/lengthOfFile;
+
+					this.publishProgress(""+percent);
+				}
+				fos.close();
+				is.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+				return "error";
+			}
+			catch (Exception e)
+			{
+				e.printStackTrace();
+				return "error";
+			}
+			return "done";
+		}
+
+		@Override
+		protected void onPostExecute(String result) {
+
+			dismissDialog(progress_bar_type);
+			if(result=="done")
+			{
+				Intent intent = new Intent(Intent.ACTION_VIEW);
+				intent.setDataAndType(Uri.fromFile(new File(Environment
+						.getExternalStorageDirectory()
+						+ "/download/"
+						+ fileName)),
+						"application/pdf");
+				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				Schedule.this.startActivity(intent);
+			}
+			else if (result=="error") {
+				Toast.makeText(Schedule.this.getApplicationContext(), "Update error!",
+						Toast.LENGTH_SHORT).show();
+			}
+
+		}
+
+
 
 
 	}
 
 
+
+
 }
+

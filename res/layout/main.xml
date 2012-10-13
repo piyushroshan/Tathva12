@@ -23,102 +23,240 @@
         </ImageView>
     </LinearLayout>
 
+<ScrollView
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:fillViewport="false"
+    android:scrollbarAlwaysDrawHorizontalTrack="false"
+    android:scrollbars="none|vertical" >
+
     <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.74"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:paddingTop="20dp"
-        android:weightSum="1" >
+         android:id="@+id/linearLayout2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         
+         android:orientation="vertical"
+         android:weightSum="1" >
+         
+     <LinearLayout
+         android:id="@+id/linearLayout3"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:orientation="vertical"
+         android:weightSum="1" >
 
         <TextView
             android:id="@+id/textmainC"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.13"
+            android:layout_height="47dp"
+            android:gravity="center_vertical|center_horizontal"
             android:clickable="true"
+            android:orientation="vertical"
             android:text="Competitions"
             android:textSize="22dp" >
-        </TextView>
 
+        </TextView>
+        
+        </LinearLayout>
+    <LinearLayout
+         android:id="@+id/linearLayout4"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:orientation="vertical"
+         android:weightSum="1" >
+        
         <TextView
             android:id="@+id/textmainW"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.11"
             android:clickable="true"
+            android:layout_height="47dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
             android:text="Workshops"
             android:textSize="22dp" >
         </TextView>
 
+        </LinearLayout>
+    <LinearLayout
+         android:id="@+id/linearLayout5"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:orientation="vertical"
+         android:weightSum="1" >
+        
         <TextView
             android:id="@+id/textmainEx"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.12"
             android:clickable="true"
+            android:layout_height="47dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
             android:text="Exhibitions"
             android:textSize="22dp" >
         </TextView>
+        
+        </LinearLayout>
+    <LinearLayout
+         android:id="@+id/linearLayout4"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:orientation="vertical"
+         android:weightSum="1" >
+        
+         <TextView
+            android:id="@+id/textmainLe"
+            android:layout_width="wrap_content"
+            android:clickable="true"
+            android:layout_height="47dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:text="Lectures"
+            android:textSize="22dp" >
+        </TextView>
 
+         </LinearLayout>
+    <LinearLayout
+         android:id="@+id/linearLayout4"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:orientation="vertical"
+         android:weightSum="1" >
+         
+        <TextView
+            android:id="@+id/textmainNi"
+            android:layout_width="wrap_content"
+            android:clickable="true"
+            android:layout_height="47dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:text="Nights"
+            android:textSize="22dp" >
+        </TextView>
+
+        </LinearLayout>
+    <LinearLayout
+         android:id="@+id/linearLayout4"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         
+         android:orientation="vertical"
+         android:weightSum="1" >
+        
         <TextView
             android:id="@+id/textmainH"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.15"
+           
             android:clickable="true"
+            android:layout_height="47dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
             android:text="Highlights"
             android:textSize="22dp" >
         </TextView>
 
+        </LinearLayout>
+    <LinearLayout
+         android:id="@+id/linearLayout4"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:orientation="vertical"
+         android:weightSum="1" >
+        
         <TextView
             android:id="@+id/textmainI"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.18"
+            
             android:clickable="true"
+            android:layout_height="47dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
             android:text="Initiatives"
             android:textSize="22dp" >
         </TextView>
 
+        </LinearLayout>
+    <LinearLayout
+         android:id="@+id/linearLayout4"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:orientation="vertical"
+         android:weightSum="1" >
+        
         <TextView
             android:id="@+id/textmainSchedule"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.18"
             android:clickable="true"
+            android:layout_height="47dp"
+            android:gravity="center_vertical|center_horizontal"
             android:text="Schedule"
+            android:orientation="vertical"
             android:textSize="22dp" >
         </TextView>
 
+        </LinearLayout>
+    <LinearLayout
+         android:id="@+id/linearLayout4"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:orientation="vertical"
+         android:weightSum="1" >
         <TextView
             android:id="@+id/textmainHelp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.11"
             android:clickable="true"
+            android:layout_height="47dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
             android:text="Help"
             android:textSize="22dp" >
         </TextView>
 
+        </LinearLayout>
+    <LinearLayout
+         android:id="@+id/linearLayout4"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:orientation="vertical"
+         android:weightSum="1" >
+        
         <TextView
             android:id="@+id/textmainUpdate"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.11"
             android:clickable="true"
+            android:layout_height="47dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
             android:text="Update"
             android:textSize="22dp" >
         </TextView>
+        </LinearLayout>
+      
+    
     </LinearLayout>
-
-    <TextView
+ </ScrollView>
+ <LinearLayout
+        android:id="@+id/linearLayout17"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000" >
+    	<TextView
         android:id="@+id/ticker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dip"
+        android:layout_marginTop="14dp"
         android:ellipsize="marquee"
         android:focusable="true"
         android:focusableInTouchMode="true"
@@ -127,5 +265,5 @@
         android:scrollHorizontally="true"
         android:text="  Online registrations are welcome. Visit www.tathva.org/2012/ to register. "
         android:textColor="#ffffff" />
-
+</LinearLayout>
 </LinearLayout>
