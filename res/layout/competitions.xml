@@ -146,7 +146,6 @@
                      <ImageView  android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/tots1" android:layout_width="wrap_content" android:id="@+id/imgTOTS"></ImageView>
                      <ImageView  android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/quiz1" android:layout_width="wrap_content" android:id="@+id/imgQuiz"></ImageView>
                      <ImageView  android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/log1" android:layout_width="wrap_content" android:id="@+id/imgLOG"></ImageView>
-                     <ImageView  android:paddingRight="5dp" android:layout_height="wrap_content" android:src="@drawable/biz1" android:layout_width="wrap_content" android:id="@+id/imgBiz"></ImageView>
                  </LinearLayout>
              </HorizontalScrollView>
          </LinearLayout>

@@ -50,7 +50,7 @@
             <LinearLayout android:layout_width="match_parent" android:id="@+id/linear_cs_ibm_intro" android:layout_height="match_parent" android:orientation="vertical">
                 <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
-                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ibm_title" android:text ="Tux of War" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
+                       <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_ibm_title" android:text ="IBM Virtual Tux" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_gravity="center"  android:gravity="center"  android:textSize="20dp" android:layout_weight="0.03"></TextView>
                         <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textTransIntro" android:text="Linux kernel, the most successful open-source product, is made virtualization capable with a simple kernel module called Kernel-based Virtual Machine (KVM). KVM is perceived as a very promising hypervisor by users and vendors and hence going to be a very prominent candidate for virtualization and cloud in the near future. This contest is conducted by IBM to help participants improve their Linux and KVM skills." android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                         </LinearLayout>
                 </ScrollView>
@@ -72,7 +72,7 @@
                 <ScrollView android:id="@+id/scrollView_cs_ibm_phase1" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_cs_ibm_phase1" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_cs_ibm_phase1" android:text="Phase one will be conducted from 10:00am on 20-August-2012 and it will be a 30mins object oriented test focusing on hands-on experience with Linux and KVM virtualization using Fedora 17. It is conducted mainly to evaluate the participants\u2019 proficiency in Linux and Virtualization concepts.\n\nMaximum participants for this event are limited to 60 and if there is a higher participation demand for the event, students will be eliminated on a first come first serve basis. From this group, 10 students will be selected for Phase II."  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_cs_ibm_phase1" android:text="Phase one will be conducted from 10:00am on 20-October-2012 and it will be a 30mins object oriented test focusing on hands-on experience with Linux and KVM virtualization using Fedora 17. It is conducted mainly to evaluate the participants\u2019 proficiency in Linux and Virtualization concepts.\n\nMaximum participants for this event are limited to 60 and if there is a higher participation demand for the event, students will be eliminated on a first come first serve basis. From this group, 10 students will be selected for Phase II."  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>
@@ -81,7 +81,7 @@
                 <ScrollView android:id="@+id/scrollView_cs_ibm_phase2" android:layout_width="match_parent" android:layout_height="wrap_content">
                     <LinearLayout android:id="@+id/linearLayout_cs_ibm_phase2" android:layout_width="match_parent" android:layout_height="match_parent">
                         
-                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_cs_ibm_phase2" android:text="Phase II will be conducted from 2:00pm on 20-August-2012 it mainly evaluates problem solving and programming skills in Linux and Virtualization area. Participants will be given programming questions related to KVM during this round. Participants can use python scripts to solve given problems."  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/text_cs_ibm_phase2" android:text="Phase II will be conducted from 2:00pm on 20-October-2012 it mainly evaluates problem solving and programming skills in Linux and Virtualization area. Participants will be given programming questions related to KVM during this round. Participants can use python scripts to solve given problems."  android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 </ScrollView>
             </LinearLayout>

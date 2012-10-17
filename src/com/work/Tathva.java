@@ -101,6 +101,16 @@ public class Tathva extends Activity {
 				Tathva.this.startActivity(myIntent);
 			}
 		});
+
+    	TextView tvCampus = (TextView)findViewById(R.id.textmainCampus);
+    	tvCampus.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent myIntent = new Intent(Tathva.this, image_campus.class);
+				Tathva.this.startActivity(myIntent); 
+			}
+    	});
     	
     	TextView tvHelp = (TextView)findViewById(R.id.textmainHelp);
     	tvHelp.setOnClickListener(new OnClickListener() {

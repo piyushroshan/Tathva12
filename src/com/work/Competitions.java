@@ -313,15 +313,7 @@ public class Competitions extends Activity {
 			}
 		});
 		
-		ImageView imgBizbio = (ImageView)findViewById(R.id.imgBiz);
-		imgBizbio.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				Intent myIntent = new Intent(Competitions.this, GEN_Bizbio_Perzanta.class);
-				Competitions.this.startActivity(myIntent);
-			}
-		});
+
 		
 		ImageView imgBlue = (ImageView)findViewById(R.id.imgBlueprint);
 		imgBlue.setOnClickListener(new OnClickListener() {

@@ -44,9 +44,9 @@ public class Schedule extends Activity {
 		final Button btnswitch = (Button) findViewById(R.id.button1);
 		try{
 			if(outputFile.exists())
-				btnswitch.setText("Open Schedule");
+				btnswitch.setText("Open Downloaded Schedule");
 			else
-				btnswitch.setText("No schedule Found");
+				btnswitch.setText("Open Schedule");
 		}catch(Exception e)
 		{
 
@@ -61,7 +61,7 @@ public class Schedule extends Activity {
 			}});
 		btnswitch.setOnClickListener(new OnClickListener(){
 			public void onClick(View v) {
-				if(btnswitch.getText()=="Open Schedule")
+				if(btnswitch.getText()=="Open Downloaded Schedule")
 				{
 				Intent intent = new Intent(Intent.ACTION_VIEW);
 				intent.setDataAndType(Uri.fromFile(new File(Environment
@@ -74,8 +74,8 @@ public class Schedule extends Activity {
 				}
 				else
 				{
-					Toast.makeText(Schedule.this.getApplicationContext(), "No schedule found!\n Click on &quot;Download Schedule &quot; to download. ",
-							Toast.LENGTH_SHORT).show();
+					Intent myIntent = new Intent(Schedule.this, image_schedule.class);
+					Schedule.this.startActivity(myIntent); 
 				}
 			}
 		});
